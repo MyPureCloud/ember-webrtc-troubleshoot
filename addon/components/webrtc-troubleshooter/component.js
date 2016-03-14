@@ -41,6 +41,10 @@ export default Ember.Component.extend({
   },
 
   startTroubleshooter: function () {
+    if (!navigator.mediaDevices) {
+      this.set('video', false)
+      this.set('audio', false)
+    }
     var iceConfig = {
       iceServers: this.get('iceServers') || [],
       iceTransports: 'relay'
@@ -93,39 +97,41 @@ export default Ember.Component.extend({
       testSuite.addTest(bandwidthTest)
     }
 
-    var connectivityTest = new ConnectivityTest(iceConfig, (err, logs) => {
-      this.setProperties({
-        checkingConnectivity: false,
-        checkConnectivitySuccess: !err
+    if (window.RTCPeerConnection) {
+      var connectivityTest = new ConnectivityTest(iceConfig, (err, logs) => {
+        this.setProperties({
+          checkingConnectivity: false,
+          checkConnectivitySuccess: !err
+        })
+        this.get('troubleshootingLog').push(logs)
       })
-      this.get('troubleshootingLog').push(logs)
-    })
 
-    var throughputTest = new ThroughputTest(iceConfig, (err, logs) => {
-      this.setProperties({
-        checkingThroughput: false,
-        checkThroughputSuccess: !err
+      var throughputTest = new ThroughputTest(iceConfig, (err, logs) => {
+        this.setProperties({
+          checkingThroughput: false,
+          checkThroughputSuccess: !err
+        })
+        this.get('troubleshootingLog').push(logs)
       })
-      this.get('troubleshootingLog').push(logs)
-    })
 
-    testSuite.addTest(connectivityTest)
-    testSuite.addTest(throughputTest)
+      testSuite.addTest(connectivityTest)
+      testSuite.addTest(throughputTest)
+    }
 
     testSuite.runNextTest(() => {
-      Ember.logger.info('WebRTC Troubleshooting results', this.get('troubleshootingLog'))
+      Ember.Logger.info('WebRTC Troubleshooting results', this.get('troubleshootingLog'))
       this.sendAction('results', this.get('troubleshootingLog'))
     })
 
     this.set('testSuite', testSuite)
   },
 
-  destroyTroubleShooter: function () {
-    try {
-      var testSuite = this.get('testSuite')
-      if (testSuite && testSuite.running) {
-        testSuite.stopAllTests()
-      }
-    } catch (e) { /* don't care - just want to destroy */ }
-  }.on('willDestroyElement')
+  willDestroyElement () {
+    // try {
+    //   var testSuite = this.get('testSuite')
+    //   if (testSuite && testSuite.running) {
+    //     testSuite.stopAllTests()
+    //   }
+    // } catch (e) { /* don't care - just want to destroy */ }
+  }
 })
