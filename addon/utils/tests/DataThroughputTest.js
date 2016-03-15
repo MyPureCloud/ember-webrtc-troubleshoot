@@ -6,129 +6,129 @@
 
 /* global _ */
 
-import WebrtcCall from '../WebrtcCall'
-import { Test } from '../TestSuite'
-import Ember from 'ember'
+import WebrtcCall from '../WebrtcCall';
+import { Test } from '../TestSuite';
+import Ember from 'ember';
 
-const { RSVP } = Ember
+const { RSVP } = Ember;
 
 class DataChannelThroughputTest extends Test {
   constructor () {
-    super(...arguments)
-    this.testDurationSeconds = 5.0
-    this.startTime = null
-    this.sentPayloadBytes = 0
-    this.receivedPayloadBytes = 0
+    super(...arguments);
+    this.testDurationSeconds = 5.0;
+    this.startTime = null;
+    this.sentPayloadBytes = 0;
+    this.receivedPayloadBytes = 0;
 
-    this.stopSending = false
+    this.stopSending = false;
 
     const makeString = () => {
-      this.samplePacket = ''
+      this.samplePacket = '';
 
       for (let i = 0; i !== 1024; ++i) {
-        this.samplePacket += 'h'
+        this.samplePacket += 'h';
       }
-    }
-    makeString()
+    };
+    makeString();
 
-    this.maxNumberOfPacketsToSend = 1
-    this.bytesToKeepBuffered = 1024 * this.maxNumberOfPacketsToSend
-    this.lastBitrateMeasureTime = null
-    this.lastReceivedPayloadBytes = 0
+    this.maxNumberOfPacketsToSend = 1;
+    this.bytesToKeepBuffered = 1024 * this.maxNumberOfPacketsToSend;
+    this.lastBitrateMeasureTime = null;
+    this.lastReceivedPayloadBytes = 0;
 
-    this.call = null
-    this.senderChannel = null
-    this.receiveChannel = null
+    this.call = null;
+    this.senderChannel = null;
+    this.receiveChannel = null;
   }
   start () {
-    super.start()
-    this.deferred = RSVP.defer()
-    this.log = this.results = {log: []}
-    this.addLog('info', 'DataChannelThroughputTest starting')
+    super.start();
+    this.deferred = RSVP.defer();
+    this.log = this.results = {log: []};
+    this.addLog('info', 'DataChannelThroughputTest starting');
 
     if (!this.options.iceServers.length) {
-      this.addLog('fatal', 'No ice servers were provided')
-      this.deferred.reject(_.last(this.results.log))
+      this.addLog('fatal', 'No ice servers were provided');
+      this.deferred.reject(_.last(this.results.log));
     } else {
-      this.call = new WebrtcCall(this.options)
-      this.call.setIceCandidateFilter(WebrtcCall.isRelay)
-      this.senderChannel = this.call.pc1.createDataChannel(null)
-      this.senderChannel.addEventListener('open', this.sendingStep.bind(this))
+      this.call = new WebrtcCall(this.options);
+      this.call.setIceCandidateFilter(WebrtcCall.isRelay);
+      this.senderChannel = this.call.pc1.createDataChannel(null);
+      this.senderChannel.addEventListener('open', this.sendingStep.bind(this));
 
-      this.call.pc2.addEventListener('datachannel', this.onReceiverChannel.bind(this))
+      this.call.pc2.addEventListener('datachannel', this.onReceiverChannel.bind(this));
 
-      this.call.establishConnection()
+      this.call.establishConnection();
     }
 
-    return this.deferred.promise
+    return this.deferred.promise;
   }
   addLog (level, msg) {
     if (_.isObject(msg)) {
-      msg = JSON.stringify
+      msg = JSON.stringify;
     }
 
-    this.results.log.push(`${level} - ${msg}`)
+    this.results.log.push(`${level} - ${msg}`);
   }
   done () {
-    this.deferred.resolve()
+    this.deferred.resolve();
   }
   onReceiverChannel (event) {
-    this.receiveChannel = event.channel
-    this.receiveChannel.addEventListener('message', this.onMessageReceived.bind(this))
+    this.receiveChannel = event.channel;
+    this.receiveChannel.addEventListener('message', this.onMessageReceived.bind(this));
   }
   sendingStep () {
-    const now = new Date()
+    const now = new Date();
     if (!this.startTime) {
-      this.startTime = now
-      this.lastBitrateMeasureTime = now
+      this.startTime = now;
+      this.lastBitrateMeasureTime = now;
     }
 
     for (let i = 0; i !== this.maxNumberOfPacketsToSend; ++i) {
       if (this.senderChannel.bufferedAmount >= this.bytesToKeepBuffered) {
-        break
+        break;
       }
-      this.sentPayloadBytes += this.samplePacket.length
-      this.senderChannel.send(this.samplePacket)
+      this.sentPayloadBytes += this.samplePacket.length;
+      this.senderChannel.send(this.samplePacket);
     }
 
     if (now - this.startTime >= 1000 * this.testDurationSeconds) {
-      this.stopSending = true
+      this.stopSending = true;
     } else {
-      this.throughputTimeout = setTimeout(this.sendingStep.bind(this), 1)
+      this.throughputTimeout = setTimeout(this.sendingStep.bind(this), 1);
     }
   }
   onMessageReceived (event) {
-    this.receivedPayloadBytes += event.data.length
-    const now = new Date()
+    this.receivedPayloadBytes += event.data.length;
+    const now = new Date();
     if (now - this.lastBitrateMeasureTime >= 1000) {
-      let bitrate = (this.receivedPayloadBytes - this.lastReceivedPayloadBytes) / (now - this.lastBitrateMeasureTime)
-      bitrate = Math.round(bitrate * 1000 * 8) / 1000
-      this.addLog('info', `Transmitting at ${bitrate} kbps.`)
-      this.lastReceivedPayloadBytes = this.receivedPayloadBytes
-      this.lastBitrateMeasureTime = now
+      let bitrate = (this.receivedPayloadBytes - this.lastReceivedPayloadBytes) / (now - this.lastBitrateMeasureTime);
+      bitrate = Math.round(bitrate * 1000 * 8) / 1000;
+      this.addLog('info', `Transmitting at ${bitrate} kbps.`);
+      this.lastReceivedPayloadBytes = this.receivedPayloadBytes;
+      this.lastBitrateMeasureTime = now;
     }
     if (this.stopSending && this.sentPayloadBytes === this.receivedPayloadBytes) {
-      this.call.close()
-      this.call = null
+      this.call.close();
+      this.call = null;
 
-      const elapsedTime = Math.round((now - this.startTime) * 10) / 10000.0
-      const receivedKBits = this.receivedPayloadBytes * 8 / 1000
-      this.addLog('info', `Total transmitted: ${receivedKBits} kilo-bits in ${elapsedTime} seconds.`)
+      const elapsedTime = Math.round((now - this.startTime) * 10) / 10000.0;
+      const receivedKBits = this.receivedPayloadBytes * 8 / 1000;
+      this.addLog('info', `Total transmitted: ${receivedKBits} kilo-bits in ${elapsedTime} seconds.`);
       this.results.stats = {
         receivedKBits,
         elapsedSeconds: elapsedTime
-      }
-      this.done()
+      };
+      this.done();
     }
   }
   destroy () {
-    super.destroy()
-    window.clearTimeout(this.throughputTimeout)
+    super.destroy();
+    window.clearTimeout(this.throughputTimeout);
     if (this.call) {
-      this.call.close()
-      this.call = null
+      this.call.close();
+      this.call = null;
     }
   }
 }
 
-export default DataChannelThroughputTest
+export default DataChannelThroughputTest;

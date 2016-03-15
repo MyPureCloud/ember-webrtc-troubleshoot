@@ -1,9 +1,9 @@
-import AudioTest from './AudioTest'
-import VideoTest from './VideoTest'
-import ConnectivityTest from './ConnectivityTest'
-import AdvancedCameraTest from './AdvancedCameraTest'
-import ThroughputTest from './DataThroughputTest'
-import VideoBandwidthTest from './VideoBandwidthTest'
+import AudioTest from './AudioTest';
+import VideoTest from './VideoTest';
+import ConnectivityTest from './ConnectivityTest';
+import AdvancedCameraTest from './AdvancedCameraTest';
+import ThroughputTest from './DataThroughputTest';
+import VideoBandwidthTest from './VideoBandwidthTest';
 
 export {
   AudioTest,
@@ -12,4 +12,4 @@ export {
   AdvancedCameraTest,
   ThroughputTest,
   VideoBandwidthTest
-}
+};

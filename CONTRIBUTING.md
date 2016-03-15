@@ -3,7 +3,7 @@ I'm glad you're here. It takes a lot to maintain
 open source projects, so everyone's help counts.
 
 ### Code style:
-We use [Standardjs](http://github.com/feross/standard) because it's just easier than arguing over rules and maintaining jscs and jshint rc files.
+We use [semistandard](http://github.com/flet/semistandard) because it's just easier than arguing over rules and maintaining jscs and jshint rc files.
 
 ### Pull requests
 I try to respond to all pull requests as soon as possible, but it's not always instant. If I don't get back to you in a few days, ping me on twitter [@xanderdumaine](https://twitter.com/xanderdumaine).

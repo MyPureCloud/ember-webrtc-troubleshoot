@@ -1,63 +1,63 @@
 /* global _ */
 
-import Ember from 'ember'
+import Ember from 'ember';
 
 class TestSuite {
   constructor () {
-    this.allTestsComplete = false
-    this.running = false
-    this.queue = []
+    this.allTestsComplete = false;
+    this.running = false;
+    this.queue = [];
   }
 
   addTest (test) {
-    this.queue.push(test)
+    this.queue.push(test);
   }
 
   runNextTest (done) {
-    this.running = true
-    var test = this.queue.shift()
+    this.running = true;
+    var test = this.queue.shift();
     if (!test) {
-      this.running = false
-      this.allTestsComplete = true
-      return done()
+      this.running = false;
+      this.allTestsComplete = true;
+      return done();
     }
-    this.activeTest = test
+    this.activeTest = test;
     test.start().then(() => {
-      test.callback(null, test.log)
+      test.callback(null, test.log);
     }).catch((err) => {
-      Ember.Logger.warn('WebRTC Diagnostic test failure: ', err, test.log)
-      test.callback(err, test.log)
+      Ember.Logger.warn('WebRTC Diagnostic test failure: ', err, test.log);
+      test.callback(err, test.log);
     }).finally(() => {
-      test.running = false
-      test.destroy()
-      this.runNextTest(done)
-    })
+      test.running = false;
+      test.destroy();
+      this.runNextTest(done);
+    });
   }
 
   stopAllTests () {
-    this.activeTest.destroy()
-    this.queue = []
+    this.activeTest.destroy();
+    this.queue = [];
   }
 }
 
 class Test {
   constructor (options, callback) {
-    this.log = []
-    this.options = options
-    this.callback = callback || _.noop
+    this.log = [];
+    this.options = options;
+    this.callback = callback || _.noop;
   }
 
   start () {
     this.timeout = window.setTimeout(() => {
       if (this.reject) {
-        this.reject('timeout', this.log)
+        this.reject('timeout', this.log);
       }
-    }, 30000)
+    }, 30000);
   }
 
   destroy () {
-    window.clearTimeout(this.timeout)
+    window.clearTimeout(this.timeout);
   }
 }
 
-export { TestSuite, Test }
+export { TestSuite, Test };

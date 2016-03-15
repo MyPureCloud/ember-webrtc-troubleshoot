@@ -1,15 +1,8 @@
-import Ember from 'ember'
-import layout from './template'
+import Ember from 'ember';
+import layout from './template';
 
-import { TestSuite } from '../../utils/TestSuite'
-import {
-  AudioTest,
-  VideoTest,
-  ConnectivityTest,
-  AdvancedCameraTest,
-  ThroughputTest,
-  VideoBandwidthTest
-} from '../../utils/tests/defaultTests'
+import { TestSuite } from '../../utils/TestSuite';
+import { AudioTest, VideoTest, ConnectivityTest, AdvancedCameraTest, ThroughputTest, VideoBandwidthTest } from '../../utils/tests/defaultTests';
 
 export default Ember.Component.extend({
   layout,
@@ -35,23 +28,23 @@ export default Ember.Component.extend({
   iceServers: null,
 
   init () {
-    this._super(...arguments)
-    this.set('troubleshootingLog', [])
-    this.startTroubleshooter()
+    this._super(...arguments);
+    this.set('troubleshootingLog', []);
+    this.startTroubleshooter();
   },
 
   startTroubleshooter: function () {
     if (!navigator.mediaDevices) {
-      this.set('video', false)
-      this.set('audio', false)
+      this.set('video', false);
+      this.set('audio', false);
     }
     var iceConfig = {
       iceServers: this.get('iceServers') || [],
       iceTransports: 'relay'
-    }
-    var mediaOptions = this.get('mediaOptions') || { audio: true, video: true }
+    };
+    var mediaOptions = this.get('mediaOptions') || { audio: true, video: true };
 
-    var testSuite = new TestSuite()
+    var testSuite = new TestSuite();
 
     if (this.get('audio')) {
       var audioTest = new AudioTest(mediaOptions, (err, logs) => {
@@ -60,11 +53,11 @@ export default Ember.Component.extend({
           checkMicrophoneSuccess: !err,
           checkingVolume: false,
           checkVolumeSuccess: !err
-        })
-        this.get('troubleshootingLog').push(logs)
-      })
+        });
+        this.get('troubleshootingLog').push(logs);
+      });
 
-      testSuite.addTest(audioTest)
+      testSuite.addTest(audioTest);
     }
 
     if (this.get('video')) {
@@ -72,29 +65,29 @@ export default Ember.Component.extend({
         this.setProperties({
           checkingCamera: false,
           checkCameraSuccess: !err
-        })
-        this.get('troubleshootingLog').push(logs)
-      })
+        });
+        this.get('troubleshootingLog').push(logs);
+      });
 
       var advancedCameraTest = new AdvancedCameraTest(mediaOptions, (err, logs) => {
         this.setProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: !err
-        })
-        this.get('troubleshootingLog').push(logs)
-      })
+        });
+        this.get('troubleshootingLog').push(logs);
+      });
 
       var bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions}, (err, logs) => {
         this.setProperties({
           checkingBandwidth: false,
           checkBandwidthSuccess: !err
-        })
-        this.get('troubleshootingLog').push(logs)
-      })
+        });
+        this.get('troubleshootingLog').push(logs);
+      });
 
-      testSuite.addTest(videoTest)
-      testSuite.addTest(advancedCameraTest)
-      testSuite.addTest(bandwidthTest)
+      testSuite.addTest(videoTest);
+      testSuite.addTest(advancedCameraTest);
+      testSuite.addTest(bandwidthTest);
     }
 
     if (window.RTCPeerConnection) {
@@ -102,36 +95,36 @@ export default Ember.Component.extend({
         this.setProperties({
           checkingConnectivity: false,
           checkConnectivitySuccess: !err
-        })
-        this.get('troubleshootingLog').push(logs)
-      })
+        });
+        this.get('troubleshootingLog').push(logs);
+      });
 
       var throughputTest = new ThroughputTest(iceConfig, (err, logs) => {
         this.setProperties({
           checkingThroughput: false,
           checkThroughputSuccess: !err
-        })
-        this.get('troubleshootingLog').push(logs)
-      })
+        });
+        this.get('troubleshootingLog').push(logs);
+      });
 
-      testSuite.addTest(connectivityTest)
-      testSuite.addTest(throughputTest)
+      testSuite.addTest(connectivityTest);
+      testSuite.addTest(throughputTest);
     }
 
     testSuite.runNextTest(() => {
-      Ember.Logger.info('WebRTC Troubleshooting results', this.get('troubleshootingLog'))
-      this.sendAction('results', this.get('troubleshootingLog'))
-    })
+      Ember.Logger.info('WebRTC Troubleshooting results', this.get('troubleshootingLog'));
+      this.sendAction('results', this.get('troubleshootingLog'));
+    });
 
-    this.set('testSuite', testSuite)
+    this.set('testSuite', testSuite);
   },
 
   willDestroyElement () {
-    // try {
-    //   var testSuite = this.get('testSuite')
-    //   if (testSuite && testSuite.running) {
-    //     testSuite.stopAllTests()
-    //   }
-    // } catch (e) { /* don't care - just want to destroy */ }
+    try {
+      var testSuite = this.get('testSuite');
+      if (testSuite && testSuite.running) {
+        testSuite.stopAllTests();
+      }
+    } catch (e) { /* don't care - just want to destroy */ }
   }
-})
+});
