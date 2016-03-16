@@ -10,6 +10,7 @@ module.exports = {
 
     app.import(app.bowerDirectory + '/lodash/lodash.js');
     app.import(app.bowerDirectory + '/localmedia/localMedia.bundle.js');
+    app.import(app.bowerDirectory + '/requirejs/require.js');
 
     // Fix when https://github.com/webrtc/adapter/issues/206
     app.import(app.bowerDirectory + '/webrtc-adapter/adapter-1.0.4.js');
