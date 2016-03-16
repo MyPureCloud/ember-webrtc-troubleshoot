@@ -1,5 +1,9 @@
 'use strict';
 
+const mergeTrees = require('broccoli-merge-trees');
+const WatchedDir = require('broccoli-source').WatchedDir;
+const json = require('broccoli-json-module');
+
 module.exports = {
   name: 'webrtc-troubleshoot',
   isDevelopingAddon: function () {
@@ -8,6 +12,8 @@ module.exports = {
   included: function (app) {
     this._super.included(app);
 
+    this.translation = new WatchedDir('translations');
+
     app.import(app.bowerDirectory + '/lodash/lodash.js');
     app.import(app.bowerDirectory + '/localmedia/localMedia.bundle.js');
     app.import(app.bowerDirectory + '/requirejs/require.js');
@@ -15,5 +21,11 @@ module.exports = {
     // Fix when https://github.com/webrtc/adapter/issues/206
     app.import(app.bowerDirectory + '/webrtc-adapter/adapter-1.0.4.js');
     app.import(app.bowerDirectory + '/rtcpeerconnection/rtcpeerconnection.bundle.js');
+  },
+  treeForApp: function (tree) {
+    const trees = [tree];
+    trees.push(json(tree));
+
+    return mergeTrees(trees, { overwrite: true });
   }
 };
