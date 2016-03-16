@@ -6,7 +6,7 @@ export function initialize (appInstance) {
   if (intlService) {
     _.each(SUPPORTED_LOCALES, function (locale) {
       let componentLocale;
-      let path = `webrtc-devices/translations/${locale}`;
+      let path = `webrtc-troubleshoot/translations/${locale}`;
       try {
         componentLocale = requirejs(path)['default'];
         intlService.addTranslations(locale, componentLocale);
