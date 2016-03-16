@@ -1,0 +1,24 @@
+export default {
+  'webrtcTroubleshoot': {
+    'checkMicrophone': 'Checking microphone ...',
+    'checkMicrophoneSuccess': 'No microphone issues',
+    'checkMicrophoneFail': 'Oops, there was a microphone issue!',
+    'checkVolumeFailure': 'Oops, we can\'t hear you! You might have a problem with your microphone!',
+    'checkCamera': 'Checking camera ...',
+    'checkCameraSuccess': 'No camera issues',
+    'checkCameraFail': 'Oops, there was a camera issue!',
+    'checkCameraAdvanced': 'Performing advanced camera tests ...',
+    'checkCameraAdvancedSuccess': 'Advanced camera tests complete',
+    'checkCameraAdvancedFail': 'Advanced camera tests failed',
+    'checkThroughput': 'Checking network throughput ...',
+    'checkThroughputSuccess': 'Throughput check complete',
+    'checkThroughputFail': 'Throughput check failed',
+    'checkBandwidth': 'Checking video bandwidth ...',
+    'checkBandwidthSuccess': 'Bandwidth check complete',
+    'checkBandwidthFail': 'Bandwidth check failed',
+    'checkConnectivity': 'Checking connectivity ...',
+    'checkConnectivitySuccess': 'No connectivity issues',
+    'checkConnectivityFail': 'Oops, there was a connectivity issue!',
+    'troubleshootTimeWarning': 'These tests may take up to 2 minutes to run.'
+  }
+};
