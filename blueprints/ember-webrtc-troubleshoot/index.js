@@ -9,8 +9,6 @@ module.exports = {
       return this.addBowerPackageToProject('xdumaine/localmedia');
     }).then(() => {
       return this.addBowerPackageToProject('otalk/RTCPeerConnection');
-    }).then(() => {
-      return this.addBowerPackageToProject('requirejs');
     });
   }
 };
