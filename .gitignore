@@ -8,6 +8,8 @@
 /node_modules
 /bower_components
 
+bower.json.ember-try
+
 # misc
 /.sass-cache
 /connect.lock

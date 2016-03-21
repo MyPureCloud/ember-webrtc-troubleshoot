@@ -7,9 +7,10 @@ TODO:
 * [ ] create dummy application
 * [ ] more unit tests
 * [ ] more integration tests
-* [ ] use try:testall to test multiple ember versions
 
 # webrtc-troubleshoot
+
+[![Build Status](https://travis-ci.org/MyPureCloud/ember-webrtc-troubleshoot.svg?branch=master)](https://travis-ci.org/MyPureCloud/ember-webrtc-troubleshoot)
 
 This addon is designed to provide you with two things:
 
