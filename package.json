@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "semistandard && ember test"
   },
-  "repository": "",
+  "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {
     "node": ">= 4.4.0"
   },
