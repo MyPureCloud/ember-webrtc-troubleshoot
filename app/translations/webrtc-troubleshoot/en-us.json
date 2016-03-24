@@ -1,5 +1,6 @@
 {
   "webrtcTroubleshoot": {
+    "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
     "checkMicrophone": "Checking microphone ...",
     "checkMicrophoneSuccess": "No microphone issues",
     "checkMicrophoneFail": "Oops, there was a microphone issue!",
@@ -19,6 +20,5 @@
     "checkConnectivity": "Checking connectivity ...",
     "checkConnectivitySuccess": "No connectivity issues",
     "checkConnectivityFail": "Oops, there was a connectivity issue!",
-    "troubleshootTimeWarning": "These tests may take up to 2 minutes to run."
   }
 };

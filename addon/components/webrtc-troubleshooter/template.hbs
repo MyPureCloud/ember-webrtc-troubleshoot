@@ -1,31 +1,31 @@
 <div class="options">
     {{#if video}}
-        <div class="entry-row">{{t "webrtcTroubleshoot.troubleshootTimeWarning"}}</div>
+        <div class="entry-row time">{{t "webrtcTroubleshoot.troubleshootTimeWarning"}}</div>
         <div class="entry-row">
             <div class="entry-label">
                 <i class="pc-moon pc-video"></i>
             </div>
             <div class="entry-values">
                 {{#if checkingCamera}}
-                    {{t "webrtcTroubleshoot.checkCamera"}} <i class="pc-moon pc-loading pc-spin"></i>
+                    {{t "webrtcTroubleshoot.checkCamera"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
                 {{else if checkCameraSuccess}}
-                    {{t "webrtcTroubleshoot.checkCameraSuccess"}} <i class="pc pc-check"></i>
+                    {{t "webrtcTroubleshoot.checkCameraSuccess"}} <i class="status-icon pc pc-check"></i>
                 {{else}}
-                    {{t "webrtcTroubleshoot.checkCameraFail"}} <i class="pc pc-close"></i>
+                    {{t "webrtcTroubleshoot.checkCameraFail"}} <i class="status-icon pc pc-close"></i>
                 {{/if}}
             </div>
         </div>
         <div class="entry-row">
             <div class="entry-label">
-                <i class="pc pc-flask"></i>
+                <i class="pc pc-video"></i>
             </div>
             <div class="entry-values">
                 {{#if checkingCameraAdvanced}}
-                    {{t "webrtcTroubleshoot.checkCameraAdvanced"}} <i class="pc-moon pc-loading pc-spin"></i>
+                    {{t "webrtcTroubleshoot.checkCameraAdvanced"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
                 {{else if checkCameraAdvancedSuccess}}
-                    {{t "webrtcTroubleshoot.checkCameraAdvancedSuccess"}} <i class="pc pc-check"></i>
+                    {{t "webrtcTroubleshoot.checkCameraAdvancedSuccess"}} <i class="status-icon pc pc-check"></i>
                 {{else}}
-                    {{t "webrtcTroubleshoot.checkCameraAdvancedFail"}} <i class="pc pc-close"></i>
+                    {{t "webrtcTroubleshoot.checkCameraAdvancedFail"}} <i class="status-icon pc pc-close"></i>
                 {{/if}}
             </div>
         </div>
@@ -37,15 +37,15 @@
             </div>
             <div class="entry-values">
                 {{#if checkingMicrophone}}
-                    {{t "webrtcTroubleshoot.checkMicrophone"}} <i class="pc-moon pc-loading pc-spin"></i>
+                    {{t "webrtcTroubleshoot.checkMicrophone"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
                 {{else if checkMicrophoneSuccess}}
                     {{#if checkVolumeSuccess}}
-                        {{t "webrtcTroubleshoot.checkMicrophoneSuccess"}} <i class="pc pc-check"></i>
+                        {{t "webrtcTroubleshoot.checkMicrophoneSuccess"}} <i class="status-icon pc pc-check"></i>
                     {{else}}
-                        {{t "webrtcTroubleshoot.checkVolumeFailure"}} <i class="pc pc-close"></i>
+                        {{t "webrtcTroubleshoot.checkVolumeFailure"}} <i class="status-icon pc pc-close"></i>
                     {{/if}}
                 {{else}}
-                    {{t "webrtcTroubleshoot.checkMicrophoneFail"}} <i class="pc pc-close"></i>
+                    {{t "webrtcTroubleshoot.checkMicrophoneFail"}} <i class="status-icon pc pc-close"></i>
                 {{/if}}
             </div>
         </div>
@@ -56,11 +56,11 @@
         </div>
         <div class="entry-values">
             {{#if checkingConnectivity}}
-                {{t "webrtcTroubleshoot.checkConnectivity"}} <i class="pc-moon pc-loading pc-spin"></i>
+                {{t "webrtcTroubleshoot.checkConnectivity"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
             {{else if checkConnectivitySuccess}}
-                {{t "webrtcTroubleshoot.checkConnectivitySuccess"}} <i class="pc pc-check"></i>
+                {{t "webrtcTroubleshoot.checkConnectivitySuccess"}} <i class="status-icon pc pc-check"></i>
             {{else}}
-                {{t "webrtcTroubleshoot.checkConnectivityFail"}} <i class="pc pc-close"></i>
+                {{t "webrtcTroubleshoot.checkConnectivityFail"}} <i class="status-icon pc pc-close"></i>
             {{/if}}
         </div>
     </div>
@@ -70,11 +70,11 @@
         </div>
         <div class="entry-values">
             {{#if checkingThroughput}}
-                {{t "webrtcTroubleshoot.checkThroughput"}} <i class="pc-moon pc-loading pc-spin"></i>
+                {{t "webrtcTroubleshoot.checkThroughput"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
             {{else if checkThroughputSuccess}}
-                {{t "webrtcTroubleshoot.checkThroughputSuccess"}} <i class="pc pc-check"></i>
+                {{t "webrtcTroubleshoot.checkThroughputSuccess"}} <i class="status-icon pc pc-check"></i>
             {{else}}
-                {{t "webrtcTroubleshoot.checkThroughputFail"}} <i class="pc pc-close"></i>
+                {{t "webrtcTroubleshoot.checkThroughputFail"}} <i class="status-icon pc pc-close"></i>
             {{/if}}
         </div>
     </div>
@@ -85,11 +85,11 @@
             </div>
             <div class="entry-values">
                 {{#if checkingBandwidth}}
-                    {{t "webrtcTroubleshoot.checkBandwidth"}} <i class="pc-moon pc-loading pc-spin"></i>
+                    {{t "webrtcTroubleshoot.checkBandwidth"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
                 {{else if checkBandwidthSuccess}}
-                    {{t "webrtcTroubleshoot.checkBandwidthSuccess"}} <i class="pc pc-check"></i>
+                    {{t "webrtcTroubleshoot.checkBandwidthSuccess"}} <i class="status-icon pc pc-check"></i>
                 {{else}}
-                    {{t "webrtcTroubleshoot.checkBandwidthFail"}} <i class="pc pc-close"></i>
+                    {{t "webrtcTroubleshoot.checkBandwidthFail"}} <i class="status-icon pc pc-close"></i>
                 {{/if}}
             </div>
         </div>
