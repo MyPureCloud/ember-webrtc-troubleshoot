@@ -7,10 +7,12 @@ const json = require('broccoli-json-module');
 module.exports = {
   name: 'webrtc-troubleshoot',
   isDevelopingAddon: function () {
-    return true;
+    return this.app && this.app.env === 'development';
   },
   included: function (app) {
     this._super.included(app);
+
+    this.app = app;
 
     this.translation = new WatchedDir('translations');
 
