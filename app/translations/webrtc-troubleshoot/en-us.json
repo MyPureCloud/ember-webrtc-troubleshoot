@@ -19,6 +19,6 @@
     "checkBandwidthFail": "Bandwidth check failed",
     "checkConnectivity": "Checking connectivity ...",
     "checkConnectivitySuccess": "No connectivity issues",
-    "checkConnectivityFail": "Oops, there was a connectivity issue!",
+    "checkConnectivityFail": "Oops, there was a connectivity issue!"
   }
 };
