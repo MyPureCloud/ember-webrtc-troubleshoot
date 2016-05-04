@@ -24,7 +24,6 @@ class VideoBandwidthTest extends Test {
     this.constraints = {
       audio: false,
       video: {
-        deviceId: this.options.mediaOptions.video.deviceId,
         width: {
           min: 640,
           ideal: 1280,
@@ -37,6 +36,9 @@ class VideoBandwidthTest extends Test {
         }
       }
     };
+    if (this.options.mediaOptions.video.deviceId) {
+      this.constraints.video.deviceId = this.options.mediaOptions.video.deviceId;
+    }
     this.logs = [];
   }
   start () {
