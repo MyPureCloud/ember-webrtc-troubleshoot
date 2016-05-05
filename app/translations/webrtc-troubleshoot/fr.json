@@ -1,24 +1,24 @@
 {
-  "webrtcTroubleshoot": {
-    "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
-    "checkMicrophone": "Checking microphone ...",
-    "checkMicrophoneSuccess": "No microphone issues",
-    "checkMicrophoneFail": "Oops, there was a microphone issue!",
-    "checkVolumeFailure": "Oops, we can't hear you! You might have a problem with your microphone!",
-    "checkCamera": "Checking camera ...",
-    "checkCameraSuccess": "No camera issues",
-    "checkCameraFail": "Oops, there was a camera issue!",
-    "checkCameraAdvanced": "Performing advanced camera tests ...",
-    "checkCameraAdvancedSuccess": "Advanced camera tests complete",
-    "checkCameraAdvancedFail": "Advanced camera tests failed",
-    "checkThroughput": "Checking network throughput ...",
-    "checkThroughputSuccess": "Throughput check complete",
-    "checkThroughputFail": "Throughput check failed",
-    "checkBandwidth": "Checking video bandwidth ...",
-    "checkBandwidthSuccess": "Bandwidth check complete",
-    "checkBandwidthFail": "Bandwidth check failed",
-    "checkConnectivity": "Checking connectivity ...",
-    "checkConnectivitySuccess": "No connectivity issues",
-    "checkConnectivityFail": "Oops, there was a connectivity issue!"
-  }
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "Ces tests peuvent prendre 2 minutes au plus.",
+        "checkMicrophone": "Vérification du microphone...",
+        "checkMicrophoneSuccess": "Aucun problème de microphone",
+        "checkMicrophoneFail": "Désolé ! Une erreur s'est produite avec le microphone.",
+        "checkVolumeFailure": "Désolé ! Nous ne vous entendons pas. Il se peut que votre microphone ait un problème.",
+        "checkCamera": "Vérification de la caméra...",
+        "checkCameraSuccess": "Aucun problème avec la caméra",
+        "checkCameraFail": "Désolé ! Une erreur s'est produite avec la caméra.",
+        "checkCameraAdvanced": "Tests de caméras avancés en cours...",
+        "checkCameraAdvancedSuccess": "Tests de caméras avancés terminés",
+        "checkCameraAdvancedFail": "Échec des tests de caméras avancés",
+        "checkThroughput": "Vérification du débit du réseau...",
+        "checkThroughputSuccess": "Vérification du débit terminée...",
+        "checkThroughputFail": "Échec de la vérification du débit",
+        "checkBandwidth": "Vérification de la bande passante vidéo...",
+        "checkBandwidthSuccess": "Vérification de la bande passante vidéo terminée",
+        "checkBandwidthFail": "Échec de la vérification de la bande passante vidéo...",
+        "checkConnectivity": "Vérification de la connectivité...",
+        "checkConnectivitySuccess": "Aucun problème de connectivité",
+        "checkConnectivityFail": "Désolé ! Il y a eu un problème de connectivité."
+    }
 }

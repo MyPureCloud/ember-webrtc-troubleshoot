@@ -1,24 +1,24 @@
 {
-  "webrtcTroubleshoot": {
-    "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
-    "checkMicrophone": "Checking microphone ...",
-    "checkMicrophoneSuccess": "No microphone issues",
-    "checkMicrophoneFail": "Oops, there was a microphone issue!",
-    "checkVolumeFailure": "Oops, we can't hear you! You might have a problem with your microphone!",
-    "checkCamera": "Checking camera ...",
-    "checkCameraSuccess": "No camera issues",
-    "checkCameraFail": "Oops, there was a camera issue!",
-    "checkCameraAdvanced": "Performing advanced camera tests ...",
-    "checkCameraAdvancedSuccess": "Advanced camera tests complete",
-    "checkCameraAdvancedFail": "Advanced camera tests failed",
-    "checkThroughput": "Checking network throughput ...",
-    "checkThroughputSuccess": "Throughput check complete",
-    "checkThroughputFail": "Throughput check failed",
-    "checkBandwidth": "Checking video bandwidth ...",
-    "checkBandwidthSuccess": "Bandwidth check complete",
-    "checkBandwidthFail": "Bandwidth check failed",
-    "checkConnectivity": "Checking connectivity ...",
-    "checkConnectivitySuccess": "No connectivity issues",
-    "checkConnectivityFail": "Oops, there was a connectivity issue!"
-  }
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "Deze tests kunnen 2 minuten duren.",
+        "checkMicrophone": "Microfoon controleren...",
+        "checkMicrophoneSuccess": "Geen microfoonproblemen",
+        "checkMicrophoneFail": "Er is een probleem met de microfoon.",
+        "checkVolumeFailure": "We kunnen u niet horen. Er is mogelijk een probleem met uw microfoon.",
+        "checkCamera": "Camera controleren...",
+        "checkCameraSuccess": "Geen cameraproblemen",
+        "checkCameraFail": "Er is een probleem met de camera.",
+        "checkCameraAdvanced": "Uitvoeren van uitgebreide cameratests...",
+        "checkCameraAdvancedSuccess": "Uitgebreide cameratests voltooid",
+        "checkCameraAdvancedFail": "Uitgebreide cameratests mislukt",
+        "checkThroughput": "Controleren van netwerkverbinding...",
+        "checkThroughputSuccess": "Netwerkcontrole voltooid",
+        "checkThroughputFail": "Netwerkcontrole mislukt",
+        "checkBandwidth": "Controleren van videobandbreedte...",
+        "checkBandwidthSuccess": "Controle van bandbreedte voltooid",
+        "checkBandwidthFail": "Controle van bandbreedte mislukt",
+        "checkConnectivity": "Connectiviteit controleren...",
+        "checkConnectivitySuccess": "Geen connectiviteitsproblemen",
+        "checkConnectivityFail": "Er is een probleem met de connectiviteit."
+    }
 }
