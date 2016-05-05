@@ -1,24 +1,24 @@
 {
-  "webrtcTroubleshoot": {
-    "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
-    "checkMicrophone": "Checking microphone ...",
-    "checkMicrophoneSuccess": "No microphone issues",
-    "checkMicrophoneFail": "Oops, there was a microphone issue!",
-    "checkVolumeFailure": "Oops, we can't hear you! You might have a problem with your microphone!",
-    "checkCamera": "Checking camera ...",
-    "checkCameraSuccess": "No camera issues",
-    "checkCameraFail": "Oops, there was a camera issue!",
-    "checkCameraAdvanced": "Performing advanced camera tests ...",
-    "checkCameraAdvancedSuccess": "Advanced camera tests complete",
-    "checkCameraAdvancedFail": "Advanced camera tests failed",
-    "checkThroughput": "Checking network throughput ...",
-    "checkThroughputSuccess": "Throughput check complete",
-    "checkThroughputFail": "Throughput check failed",
-    "checkBandwidth": "Checking video bandwidth ...",
-    "checkBandwidthSuccess": "Bandwidth check complete",
-    "checkBandwidthFail": "Bandwidth check failed",
-    "checkConnectivity": "Checking connectivity ...",
-    "checkConnectivitySuccess": "No connectivity issues",
-    "checkConnectivityFail": "Oops, there was a connectivity issue!"
-  }
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "Bu testler 2 dakika sürebilir.",
+        "checkMicrophone": "Mikrofon denetleniyor...",
+        "checkMicrophoneSuccess": "Mikrofonla ilgili bir sorun yok",
+        "checkMicrophoneFail": "Ne yazık ki mikrofonla ilgili bir sorun var!",
+        "checkVolumeFailure": "Ne yazık ki sizi duyamıyoruz! Mikrofonunuzla ilgili bir sorun olabilir!",
+        "checkCamera": "Kamera denetleniyor...",
+        "checkCameraSuccess": "Kamerayla ilgili sorun yok",
+        "checkCameraFail": "Ne yazık ki kamerayla ilgili bir sorun var!",
+        "checkCameraAdvanced": "Gelişmiş kamera testleri gerçekleştiriliyor...",
+        "checkCameraAdvancedSuccess": "Gelişmiş kamera testleri tamamlandı",
+        "checkCameraAdvancedFail": "Gelişmiş kamera testleri başarısız oldu",
+        "checkThroughput": "Ağ performansı denetleniyor...",
+        "checkThroughputSuccess": "Performans denetimi tamamlandı",
+        "checkThroughputFail": "Performans denetimi başarısız oldu",
+        "checkBandwidth": "Video bant genişliği denetleniyor...",
+        "checkBandwidthSuccess": "Bant genişliği denetimi tamamlandı",
+        "checkBandwidthFail": "Bant genişliği denetimi başarısız oldu",
+        "checkConnectivity": "Bağlantı denetleniyor...",
+        "checkConnectivitySuccess": "Bağlantı sorunu yok",
+        "checkConnectivityFail": "Ne yazık ki bağlantıyla ilgili bir sorun var!"
+    }
 }

@@ -1,24 +1,24 @@
 {
-  "webrtcTroubleshoot": {
-    "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
-    "checkMicrophone": "Checking microphone ...",
-    "checkMicrophoneSuccess": "No microphone issues",
-    "checkMicrophoneFail": "Oops, there was a microphone issue!",
-    "checkVolumeFailure": "Oops, we can't hear you! You might have a problem with your microphone!",
-    "checkCamera": "Checking camera ...",
-    "checkCameraSuccess": "No camera issues",
-    "checkCameraFail": "Oops, there was a camera issue!",
-    "checkCameraAdvanced": "Performing advanced camera tests ...",
-    "checkCameraAdvancedSuccess": "Advanced camera tests complete",
-    "checkCameraAdvancedFail": "Advanced camera tests failed",
-    "checkThroughput": "Checking network throughput ...",
-    "checkThroughputSuccess": "Throughput check complete",
-    "checkThroughputFail": "Throughput check failed",
-    "checkBandwidth": "Checking video bandwidth ...",
-    "checkBandwidthSuccess": "Bandwidth check complete",
-    "checkBandwidthFail": "Bandwidth check failed",
-    "checkConnectivity": "Checking connectivity ...",
-    "checkConnectivitySuccess": "No connectivity issues",
-    "checkConnectivityFail": "Oops, there was a connectivity issue!"
-  }
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "Wykonanie testów może zająć do 2 minut.",
+        "checkMicrophone": "Sprawdzanie mikrofonu...",
+        "checkMicrophoneSuccess": "Brak problemów z mikrofonem",
+        "checkMicrophoneFail": "Ups! Wystąpił problem z mikrofonem.",
+        "checkVolumeFailure": "Nie słyszę Cię! Być może wystąpił problem z mikrofonem.",
+        "checkCamera": "Sprawdzanie kamery...",
+        "checkCameraSuccess": "Brak problemów z kamerą",
+        "checkCameraFail": "Ups! Wystąpił problem z kamerą.",
+        "checkCameraAdvanced": "Wykonywanie zaawansowanych testów kamery...",
+        "checkCameraAdvancedSuccess": "Zaawansowane testy kamery zakończone",
+        "checkCameraAdvancedFail": "Zaawansowane testy kamery nie powiodły się",
+        "checkThroughput": "Sprawdzanie przepływności sieci...",
+        "checkThroughputSuccess": "Kontrola przepływności zakończona",
+        "checkThroughputFail": "Kontrola przepływności zakończona niepowodzeniem",
+        "checkBandwidth": "Sprawdzanie przepustowości wideo...",
+        "checkBandwidthSuccess": "Kontrola przepustowości zakończona",
+        "checkBandwidthFail": "Kontrola przepustowości zakończona niepowodzeniem",
+        "checkConnectivity": "Sprawdzanie łączności...",
+        "checkConnectivitySuccess": "Brak problemów z łącznością",
+        "checkConnectivityFail": "Ups! Wystąpił problem z łącznością."
+    }
 }

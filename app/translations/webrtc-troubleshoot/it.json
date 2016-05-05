@@ -1,24 +1,24 @@
 {
-  "webrtcTroubleshoot": {
-    "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
-    "checkMicrophone": "Checking microphone ...",
-    "checkMicrophoneSuccess": "No microphone issues",
-    "checkMicrophoneFail": "Oops, there was a microphone issue!",
-    "checkVolumeFailure": "Oops, we can't hear you! You might have a problem with your microphone!",
-    "checkCamera": "Checking camera ...",
-    "checkCameraSuccess": "No camera issues",
-    "checkCameraFail": "Oops, there was a camera issue!",
-    "checkCameraAdvanced": "Performing advanced camera tests ...",
-    "checkCameraAdvancedSuccess": "Advanced camera tests complete",
-    "checkCameraAdvancedFail": "Advanced camera tests failed",
-    "checkThroughput": "Checking network throughput ...",
-    "checkThroughputSuccess": "Throughput check complete",
-    "checkThroughputFail": "Throughput check failed",
-    "checkBandwidth": "Checking video bandwidth ...",
-    "checkBandwidthSuccess": "Bandwidth check complete",
-    "checkBandwidthFail": "Bandwidth check failed",
-    "checkConnectivity": "Checking connectivity ...",
-    "checkConnectivitySuccess": "No connectivity issues",
-    "checkConnectivityFail": "Oops, there was a connectivity issue!"
-  }
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "La verifica potrebbe richiedere fino a 2 minuti.",
+        "checkMicrophone": "Verifica microfono in corso...",
+        "checkMicrophoneSuccess": "Il microfono funziona",
+        "checkMicrophoneFail": "Il microfono non funziona!",
+        "checkVolumeFailure": "Impossibile udire l'utente. Il microfono non funziona.",
+        "checkCamera": "Verifica videocamera in corso...",
+        "checkCameraSuccess": "La videocamera funziona",
+        "checkCameraFail": "La videocamera non funziona!",
+        "checkCameraAdvanced": "Esecuzione verifiche avanzate videocamera in corso...",
+        "checkCameraAdvancedSuccess": "Verifiche avanzate videocamera completate",
+        "checkCameraAdvancedFail": "Verifiche avanzate videocamera non completate",
+        "checkThroughput": "Verifica velocità rete in corso...",
+        "checkThroughputSuccess": "Verifica velocità completata",
+        "checkThroughputFail": "Verifica velocità non completata",
+        "checkBandwidth": "Verifica larghezza banda video in corso...",
+        "checkBandwidthSuccess": "Verifica larghezza banda completata",
+        "checkBandwidthFail": "Verifica larghezza banda non completata",
+        "checkConnectivity": "Verifica connettività in corso...",
+        "checkConnectivitySuccess": "Nessun problema di connettività",
+        "checkConnectivityFail": "Problema di connettività!"
+    }
 }
