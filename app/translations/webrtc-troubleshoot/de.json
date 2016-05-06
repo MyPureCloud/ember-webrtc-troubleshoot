@@ -1,0 +1,24 @@
+{
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "Diese Test können bis zu zwei Minuten dauern.",
+        "checkMicrophone": "Mikrofon wird überprüft...",
+        "checkMicrophoneSuccess": "Keine Mikrofonprobleme",
+        "checkMicrophoneFail": "Hoppla, es gibt ein Mikrofonproblem!",
+        "checkVolumeFailure": "Hoppla, wir können Sie nicht hören! Sie haben möglicherweise ein Problem mit Ihrem Mikrofon!",
+        "checkCamera": "Kamera wird überprüft...",
+        "checkCameraSuccess": "Keine Kameraprobleme",
+        "checkCameraFail": "Hoppla, es gibt ein Kameraproblem!",
+        "checkCameraAdvanced": "Erweiterte Kameratests werden ausgeführt ...",
+        "checkCameraAdvancedSuccess": "Erweiterte Kameratests abgeschlossen",
+        "checkCameraAdvancedFail": "Fehler bei den erweiterten Kameratests",
+        "checkThroughput": "Netzwerkdurchsatz wird überprüft ...",
+        "checkThroughputSuccess": "Durchsatzüberprüfung abgeschlossen",
+        "checkThroughputFail": "Fehler bei der Durchsatzüberprüfung",
+        "checkBandwidth": "Videobandbreite wird überprüft ...",
+        "checkBandwidthSuccess": "Bandbreitenüberprüfung abgeschlossen",
+        "checkBandwidthFail": "Fehler bei der Bandbreitenüberprüfung",
+        "checkConnectivity": "Verbindung wird überprüft...",
+        "checkConnectivitySuccess": "Keine Verbindungsprobleme",
+        "checkConnectivityFail": "Hoppla, es gibt ein Verbindungsproblem!"
+    }
+}

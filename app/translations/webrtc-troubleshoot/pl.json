@@ -1,0 +1,24 @@
+{
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "Wykonanie testów może zająć do 2 minut.",
+        "checkMicrophone": "Sprawdzanie mikrofonu...",
+        "checkMicrophoneSuccess": "Brak problemów z mikrofonem",
+        "checkMicrophoneFail": "Ups! Wystąpił problem z mikrofonem.",
+        "checkVolumeFailure": "Nie słyszę Cię! Być może wystąpił problem z mikrofonem.",
+        "checkCamera": "Sprawdzanie kamery...",
+        "checkCameraSuccess": "Brak problemów z kamerą",
+        "checkCameraFail": "Ups! Wystąpił problem z kamerą.",
+        "checkCameraAdvanced": "Wykonywanie zaawansowanych testów kamery...",
+        "checkCameraAdvancedSuccess": "Zaawansowane testy kamery zakończone",
+        "checkCameraAdvancedFail": "Zaawansowane testy kamery nie powiodły się",
+        "checkThroughput": "Sprawdzanie przepływności sieci...",
+        "checkThroughputSuccess": "Kontrola przepływności zakończona",
+        "checkThroughputFail": "Kontrola przepływności zakończona niepowodzeniem",
+        "checkBandwidth": "Sprawdzanie przepustowości wideo...",
+        "checkBandwidthSuccess": "Kontrola przepustowości zakończona",
+        "checkBandwidthFail": "Kontrola przepustowości zakończona niepowodzeniem",
+        "checkConnectivity": "Sprawdzanie łączności...",
+        "checkConnectivitySuccess": "Brak problemów z łącznością",
+        "checkConnectivityFail": "Ups! Wystąpił problem z łącznością."
+    }
+}

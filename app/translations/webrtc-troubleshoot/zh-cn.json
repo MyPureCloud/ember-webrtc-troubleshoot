@@ -1,0 +1,24 @@
+{
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "这些测试可能需要 2 分钟。",
+        "checkMicrophone": "正在检查麦克风...",
+        "checkMicrophoneSuccess": "麦克风正常",
+        "checkMicrophoneFail": "哎呀，麦克风出问题了！",
+        "checkVolumeFailure": "哎呀，我们听不到您讲话！您的麦克风可能出现问题！",
+        "checkCamera": "正在检查摄像头...",
+        "checkCameraSuccess": "摄像头正常",
+        "checkCameraFail": "哎呀，摄像头出问题了！",
+        "checkCameraAdvanced": "执行高级摄像头测试...",
+        "checkCameraAdvancedSuccess": "高级摄像头测试完成",
+        "checkCameraAdvancedFail": "高级摄像头测试失败",
+        "checkThroughput": "正在检查网络吞吐量...",
+        "checkThroughputSuccess": "吞吐量检查完成",
+        "checkThroughputFail": "吞吐量检查失败",
+        "checkBandwidth": "正在检查视频带宽...",
+        "checkBandwidthSuccess": "带宽检查完成",
+        "checkBandwidthFail": "带宽检查失败",
+        "checkConnectivity": "正在检查连接...",
+        "checkConnectivitySuccess": "连接正常",
+        "checkConnectivityFail": "哎呀，连接出问题了！"
+    }
+}

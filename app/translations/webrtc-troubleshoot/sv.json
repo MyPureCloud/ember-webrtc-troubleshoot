@@ -1,0 +1,24 @@
+{
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "Det kan ta upp till 2 minuter att köra dessa tester.",
+        "checkMicrophone": "Kontrollerar mikrofon ...",
+        "checkMicrophoneSuccess": "Inga mikrofonproblem",
+        "checkMicrophoneFail": "Ojdå, det har uppstått ett mikrofonproblem!",
+        "checkVolumeFailure": "Hallå, vi kan inte höra dig! Du kanske har problem med mikrofonen!",
+        "checkCamera": "Kontrollerar kamera ...",
+        "checkCameraSuccess": "Inga problem med kameran",
+        "checkCameraFail": "Ojdå, det har uppstått ett problem med kameran!",
+        "checkCameraAdvanced": "Utför avancerade kameratester ...",
+        "checkCameraAdvancedSuccess": "Avancerade kameratester slutförda",
+        "checkCameraAdvancedFail": "Avancerade kameratester misslyckades",
+        "checkThroughput": "Kontrollerar nätverkets dataflöde ...",
+        "checkThroughputSuccess": "Dataflödeskontroll klar",
+        "checkThroughputFail": "Dataflödeskontroll misslyckades",
+        "checkBandwidth": "Kontrollerar videobandbredd ...",
+        "checkBandwidthSuccess": "Bandbreddskontroll klar",
+        "checkBandwidthFail": "Bandbreddskontroll misslyckades",
+        "checkConnectivity": "Kontrollerar anslutningen...",
+        "checkConnectivitySuccess": "Inga anslutningsproblem",
+        "checkConnectivityFail": "Ojdå, det har uppstått ett anslutningsproblem!"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "이러한 테스트는 최대 2분이 걸릴 수 있습니다.",
+        "checkMicrophone": "마이크 확인 중...",
+        "checkMicrophoneSuccess": "마이크 문제 없음",
+        "checkMicrophoneFail": "마이크 문제가 있습니다.",
+        "checkVolumeFailure": "소리가 들리지 않습니다. 마이크에 문제가 있을 수도 있습니다.",
+        "checkCamera": "카메라 검사 중...",
+        "checkCameraSuccess": "카메라 문제 없음",
+        "checkCameraFail": "카메라 문제가 있습니다.",
+        "checkCameraAdvanced": "고급 카메라 테스트 수행 중...",
+        "checkCameraAdvancedSuccess": "고급 카메라 테스트 완료",
+        "checkCameraAdvancedFail": "고급 카메라 테스트 실패",
+        "checkThroughput": "네트워크 처리량 확인 중...",
+        "checkThroughputSuccess": "처리량 확인 완료",
+        "checkThroughputFail": "처리량 확인 실패",
+        "checkBandwidth": "비디오 대역폭 확인 중...",
+        "checkBandwidthSuccess": "대역폭 확인 완료",
+        "checkBandwidthFail": "대역폭 확인 실패",
+        "checkConnectivity": "연결 검사 중...",
+        "checkConnectivitySuccess": "연결 문제 없음",
+        "checkConnectivityFail": "연결 문제가 있습니다."
+    }
+}

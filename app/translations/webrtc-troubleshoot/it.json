@@ -1,0 +1,24 @@
+{
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "La verifica potrebbe richiedere fino a 2 minuti.",
+        "checkMicrophone": "Verifica microfono in corso...",
+        "checkMicrophoneSuccess": "Il microfono funziona",
+        "checkMicrophoneFail": "Il microfono non funziona!",
+        "checkVolumeFailure": "Impossibile udire l'utente. Il microfono non funziona.",
+        "checkCamera": "Verifica videocamera in corso...",
+        "checkCameraSuccess": "La videocamera funziona",
+        "checkCameraFail": "La videocamera non funziona!",
+        "checkCameraAdvanced": "Esecuzione verifiche avanzate videocamera in corso...",
+        "checkCameraAdvancedSuccess": "Verifiche avanzate videocamera completate",
+        "checkCameraAdvancedFail": "Verifiche avanzate videocamera non completate",
+        "checkThroughput": "Verifica velocità rete in corso...",
+        "checkThroughputSuccess": "Verifica velocità completata",
+        "checkThroughputFail": "Verifica velocità non completata",
+        "checkBandwidth": "Verifica larghezza banda video in corso...",
+        "checkBandwidthSuccess": "Verifica larghezza banda completata",
+        "checkBandwidthFail": "Verifica larghezza banda non completata",
+        "checkConnectivity": "Verifica connettività in corso...",
+        "checkConnectivitySuccess": "Nessun problema di connettività",
+        "checkConnectivityFail": "Problema di connettività!"
+    }
+}

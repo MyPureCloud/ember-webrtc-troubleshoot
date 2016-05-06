@@ -1,0 +1,24 @@
+{
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "Estas pruebas pueden tardar hasta 2 minutos.",
+        "checkMicrophone": "Verificando micrófono...",
+        "checkMicrophoneSuccess": "No hay problemas con el micrófono",
+        "checkMicrophoneFail": "Hay un problema con el micrófono",
+        "checkVolumeFailure": "No podemos escucharlo. Es posible que tenga un problema con su micrófono.",
+        "checkCamera": "Verificando cámara...",
+        "checkCameraSuccess": "No hay problemas con la cámara",
+        "checkCameraFail": "Hay un problema con la cámara",
+        "checkCameraAdvanced": "Realizando pruebas avanzadas de la cámara...",
+        "checkCameraAdvancedSuccess": "Pruebas avanzadas de la cámara completadas",
+        "checkCameraAdvancedFail": "Error en las pruebas avanzadas de la cámara",
+        "checkThroughput": "Verificando rendimiento de la red...",
+        "checkThroughputSuccess": "Verificación de rendimiento completada",
+        "checkThroughputFail": "Error en la verificación de rendimiento",
+        "checkBandwidth": "Verificando ancho de banda de video...",
+        "checkBandwidthSuccess": "Verificación de ancho de banda completada",
+        "checkBandwidthFail": "Error en la verificación de ancho de banda",
+        "checkConnectivity": "Verificando conectividad...",
+        "checkConnectivitySuccess": "No hay problemas de conectividad",
+        "checkConnectivityFail": "Hay un problema con la conectividad"
+    }
+}

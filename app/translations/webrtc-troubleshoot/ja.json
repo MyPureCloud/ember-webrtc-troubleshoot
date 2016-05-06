@@ -1,0 +1,24 @@
+{
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "これらのテストには最長 2 分かかる場合があります。",
+        "checkMicrophone": "マイクをチェックしています ...",
+        "checkMicrophoneSuccess": "マイクに問題はありません",
+        "checkMicrophoneFail": "マイクに問題が見つかりました!",
+        "checkVolumeFailure": "音声が聞こえません。マイクに問題がある可能性があります。",
+        "checkCamera": "カメラをチェックしています ...",
+        "checkCameraSuccess": "カメラに問題はありません",
+        "checkCameraFail": "カメラに問題が見つかりました!",
+        "checkCameraAdvanced": "カメラの高度なテストを実行しています...",
+        "checkCameraAdvancedSuccess": "カメラの高度なテストが完了",
+        "checkCameraAdvancedFail": "カメラの高度なテストが失敗",
+        "checkThroughput": "ネットワークの処理能力をチェックしています...",
+        "checkThroughputSuccess": "処理能力チェックの完了",
+        "checkThroughputFail": "処理能力チェックの失敗",
+        "checkBandwidth": "ビデオの帯域幅をチェックしています...",
+        "checkBandwidthSuccess": "処理能力チェックの完了",
+        "checkBandwidthFail": "処理能力チェックの失敗",
+        "checkConnectivity": "接続をチェックしています ...",
+        "checkConnectivitySuccess": "接続に問題はありません",
+        "checkConnectivityFail": "接続に問題が見つかりました!"
+    }
+}
