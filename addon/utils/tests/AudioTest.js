@@ -1,4 +1,4 @@
-/* global localMedia */
+/* global LocalMedia */
 
 import { Test } from '../TestSuite';
 import Ember from 'ember';
@@ -11,7 +11,7 @@ class AudioTest extends Test {
   }
   start () {
     super.start();
-    this.localMedia = new localMedia({detectSpeakingEvents: true}); // eslint-disable-line
+    this.localMedia = new LocalMedia({detectSpeakingEvents: true});
     return new Promise((resolve, reject) => {
       this.reject = reject;
       var volumeCheckFailure = window.setTimeout(() => {
