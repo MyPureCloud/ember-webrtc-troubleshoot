@@ -1,4 +1,4 @@
-/* global localMedia */
+/* global LocalMedia */
 
 import Ember from 'ember';
 import { Test } from '../TestSuite';
@@ -12,7 +12,7 @@ class VideoTest extends Test {
   }
   start () {
     super.start();
-    this.localMedia = new localMedia(); // eslint-disable-line
+    this.localMedia = new LocalMedia();
     return new Promise((resolve, reject) => {
       this.reject = reject;
       this.localMedia.start(this.options, (err) => {
