@@ -1,4 +1,4 @@
-/* global webrtcsupport, localMedia, _ */
+/* global webrtcsupport, LocalMedia, _ */
 
 // adapted from https://github.com/webrtc/testrtc/blob/master/src/js/bandwidth_test.js
 
@@ -88,7 +88,7 @@ class VideoBandwidthTest extends Test {
     };
     try {
       this.addLog('info', {'status': 'pending', 'constraints': constraints});
-      var locMedia = new localMedia(); // eslint-disable-line
+      var locMedia = new LocalMedia();
       locMedia.start(constraints, (err, stream) => {
         if (err) {
           return failFunc(err);
