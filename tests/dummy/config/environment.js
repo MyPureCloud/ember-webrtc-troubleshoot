@@ -40,6 +40,8 @@ module.exports = function (environment) {
   if (environment === 'production') {
     ENV.locationType = 'hash';
     ENV.baseURL = '/ember-webrtc-troubleshoot/';
+    ENV.locationType = 'hash';
+    ENV.baseURL = '/ember-webrtc-troubleshoot/';
   }
 
   return ENV;
