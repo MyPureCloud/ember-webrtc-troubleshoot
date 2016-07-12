@@ -9,7 +9,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "semistandard && ember test"
+    "test": "semistandard && ember test",
+    "gh-pages": "echo \"Building for gh-pages. This may take a few minutes...\" && ember github-pages:commit --message \"Rebuild gh-pages\" && git push --no-verify gh-pages:gh-pages"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {
