@@ -3,12 +3,12 @@
 This addon is still under development and not *quite* ready for use.
 
 TODO:
-* [ ] bring in bower deps
-* [ ] create dummy application
+* [x] bring in bower deps
+* [x] create dummy application
 * [ ] more unit tests
 * [ ] more integration tests
 
-# webrtc-troubleshoot
+# ember-webrtc-troubleshoot
 
 [![Build Status](https://travis-ci.org/MyPureCloud/ember-webrtc-troubleshoot.svg?branch=master)](https://travis-ci.org/MyPureCloud/ember-webrtc-troubleshoot)
 
@@ -33,9 +33,9 @@ This addon uses [ember-intl](https://github.com/yahoo/ember-intl) for i18n. It h
 
 ## Running Tests
 
-* `npm test` (Runs `standard && ember test`)
-* `ember test`
-* `ember test --server`
+* `npm test` (Runs linter and tests)
+* `ember test` (These will fail because phantom/node have no support for webrtc)
+* `ember test --server` (Tests should pass here)
 
 ## Building
 

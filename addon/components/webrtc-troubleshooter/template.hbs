@@ -1,6 +1,28 @@
 <div class="options">
     {{#if video}}
         <div class="entry-row time">{{t "webrtcTroubleshoot.troubleshootTimeWarning"}}</div>
+    {{/if}}
+    {{#if audio}}
+        <div class="entry-row">
+            <div class="entry-label">
+                <i class="pc-moon pc-microphone"></i>
+            </div>
+            <div class="entry-values">
+                {{#if checkingMicrophone}}
+                    {{t "webrtcTroubleshoot.checkMicrophone"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
+                {{else if checkMicrophoneSuccess}}
+                    {{#if checkVolumeSuccess}}
+                        {{t "webrtcTroubleshoot.checkMicrophoneSuccess"}} <i class="status-icon pc pc-check"></i>
+                    {{else}}
+                        {{t "webrtcTroubleshoot.checkVolumeFailure"}} <i class="status-icon pc pc-close"></i>
+                    {{/if}}
+                {{else}}
+                    {{t "webrtcTroubleshoot.checkMicrophoneFail"}} <i class="status-icon pc pc-close"></i>
+                {{/if}}
+            </div>
+        </div>
+    {{/if}}
+    {{#if video}}
         <div class="entry-row">
             <div class="entry-label">
                 <i class="pc-moon pc-video"></i>
@@ -26,26 +48,6 @@
                     {{t "webrtcTroubleshoot.checkCameraAdvancedSuccess"}} <i class="status-icon pc pc-check"></i>
                 {{else}}
                     {{t "webrtcTroubleshoot.checkCameraAdvancedFail"}} <i class="status-icon pc pc-close"></i>
-                {{/if}}
-            </div>
-        </div>
-    {{/if}}
-    {{#if audio}}
-        <div class="entry-row">
-            <div class="entry-label">
-                <i class="pc-moon pc-microphone"></i>
-            </div>
-            <div class="entry-values">
-                {{#if checkingMicrophone}}
-                    {{t "webrtcTroubleshoot.checkMicrophone"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
-                {{else if checkMicrophoneSuccess}}
-                    {{#if checkVolumeSuccess}}
-                        {{t "webrtcTroubleshoot.checkMicrophoneSuccess"}} <i class="status-icon pc pc-check"></i>
-                    {{else}}
-                        {{t "webrtcTroubleshoot.checkVolumeFailure"}} <i class="status-icon pc pc-close"></i>
-                    {{/if}}
-                {{else}}
-                    {{t "webrtcTroubleshoot.checkMicrophoneFail"}} <i class="status-icon pc pc-close"></i>
                 {{/if}}
             </div>
         </div>

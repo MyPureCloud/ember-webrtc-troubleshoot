@@ -9,7 +9,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "semistandard && ember test",
+    "test": "node_modules/.bin/semistandard addon/**/*.js app/**/*.js && ember test --server",
     "gh-pages": "echo \"Building for gh-pages. This may take a few minutes...\" && ember github-pages:commit --message \"Rebuild gh-pages\" && git push --no-verify gh-pages:gh-pages"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
@@ -49,7 +49,8 @@
     "fs-promise": "^0.5.0",
     "loader.js": "^4.0.0",
     "pre-push": "^0.1.1",
-    "semistandard": "^7.0.5"
+    "semistandard": "^7.0.5",
+    "webrtc-troubleshooter": "0.0.2"
   },
   "keywords": [
     "ember-addon"
