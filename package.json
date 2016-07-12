@@ -9,7 +9,7 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "semistandard && ember test"
+    "test": "node_modules/.bin/semistandard addon/**/*.js app/**/*.js && ember test --server"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {

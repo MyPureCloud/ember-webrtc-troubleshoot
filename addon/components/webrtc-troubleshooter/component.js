@@ -12,8 +12,6 @@ const {
   VideoBandwidthTest
 } = WebRTCTroubleshooter.default;
 
-const { RSVP } = Ember;
-
 export default Ember.Component.extend({
   layout,
 
@@ -34,6 +32,7 @@ export default Ember.Component.extend({
 
   video: true,
   audio: true,
+  logger: null,
 
   iceServers: null,
 
@@ -41,6 +40,9 @@ export default Ember.Component.extend({
     this._super(...arguments);
     this.set('troubleshootingLog', []);
     this.startTroubleshooter();
+    if (!this.get('logger')) {
+      this.set('logger', Ember.Logger);
+    }
   },
 
   startTroubleshooter: function () {
@@ -56,7 +58,7 @@ export default Ember.Component.extend({
 
     const testSuite = new TestSuite();
 
-    //TODO: logs for rejections?
+    // TODO: logs for rejections?
 
     if (this.get('audio')) {
       const audioTest = new AudioTest(mediaOptions);
@@ -69,6 +71,7 @@ export default Ember.Component.extend({
         });
         this.get('troubleshootingLog').push(logs);
       }, (err) => {
+        this.logger.error(err);
         this.setProperties({
           checkingMicrophone: false,
           checkMicrophoneSuccess: false,
@@ -89,6 +92,7 @@ export default Ember.Component.extend({
         });
         this.get('troubleshootingLog').push(logs);
       }, (err) => {
+        this.logger.error(err);
         this.setProperties({
           checkingCamera: false,
           checkCameraSuccess: false
@@ -103,6 +107,7 @@ export default Ember.Component.extend({
         });
         this.get('troubleshootingLog').push(logs);
       }, (err) => {
+        this.logger.error(err);
         this.setProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: false
@@ -122,6 +127,7 @@ export default Ember.Component.extend({
         });
         this.get('troubleshootingLog').push(logs);
       }, (err) => {
+        this.logger.error(err);
         this.setProperties({
           checkingConnectivity: false,
           checkConnectivitySuccess: false
@@ -136,6 +142,7 @@ export default Ember.Component.extend({
         });
         this.get('troubleshootingLog').push(logs);
       }, (err) => {
+        this.logger.error(err);
         this.setProperties({
           checkingThroughput: false,
           checkThroughputSuccess: false
@@ -154,6 +161,7 @@ export default Ember.Component.extend({
           });
           this.get('troubleshootingLog').push(logs);
         }, (err) => {
+          this.logger.error(err);
           this.setProperties({
             checkingBandwidth: false,
             checkBandwidthSuccess: false
@@ -164,7 +172,7 @@ export default Ember.Component.extend({
     }
 
     testSuite.runNextTest(() => {
-      Ember.Logger.info('WebRTC Troubleshooting results', this.get('troubleshootingLog'));
+      this.logger.info('WebRTC Troubleshooting results', this.get('troubleshootingLog'));
       this.sendAction('results', this.get('troubleshootingLog'));
     });
 
