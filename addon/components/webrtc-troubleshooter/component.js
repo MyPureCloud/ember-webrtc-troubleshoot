@@ -1,8 +1,18 @@
+/* global WebRTCTroubleshooter */
 import Ember from 'ember';
 import layout from './template';
 
-import { TestSuite } from '../../utils/TestSuite';
-import { AudioTest, VideoTest, ConnectivityTest, AdvancedCameraTest, ThroughputTest, VideoBandwidthTest } from '../../utils/tests/defaultTests';
+const {
+  TestSuite,
+  AudioTest,
+  VideoTest,
+  ConnectivityTest,
+  AdvancedCameraTest,
+  ThroughputTest,
+  VideoBandwidthTest
+} = WebRTCTroubleshooter.default;
+
+const { RSVP } = Ember;
 
 export default Ember.Component.extend({
   layout,
@@ -38,77 +48,119 @@ export default Ember.Component.extend({
       this.set('video', false);
       this.set('audio', false);
     }
-    var iceConfig = {
+    const iceConfig = {
       iceServers: this.get('iceServers') || [],
       iceTransports: 'relay'
     };
-    var mediaOptions = this.get('mediaOptions') || { audio: true, video: true };
+    const mediaOptions = this.get('mediaOptions') || { audio: true, video: true };
 
-    var testSuite = new TestSuite();
+    const testSuite = new TestSuite();
+
+    //TODO: logs for rejections?
 
     if (this.get('audio')) {
-      var audioTest = new AudioTest(mediaOptions, (err, logs) => {
+      const audioTest = new AudioTest(mediaOptions);
+      audioTest.deferred.promise.then((logs) => {
         this.setProperties({
           checkingMicrophone: false,
-          checkMicrophoneSuccess: !err,
+          checkMicrophoneSuccess: true,
           checkingVolume: false,
-          checkVolumeSuccess: !err
+          checkVolumeSuccess: true
         });
         this.get('troubleshootingLog').push(logs);
+      }, (err) => {
+        this.setProperties({
+          checkingMicrophone: false,
+          checkMicrophoneSuccess: false,
+          checkingVolume: false,
+          checkVolumeSuccess: false
+        });
       });
 
       testSuite.addTest(audioTest);
     }
 
     if (this.get('video')) {
-      var videoTest = new VideoTest(mediaOptions, (err, logs) => {
+      const videoTest = new VideoTest(mediaOptions);
+      videoTest.deferred.promise.then((logs) => {
         this.setProperties({
           checkingCamera: false,
-          checkCameraSuccess: !err
+          checkCameraSuccess: true
         });
         this.get('troubleshootingLog').push(logs);
+      }, (err) => {
+        this.setProperties({
+          checkingCamera: false,
+          checkCameraSuccess: false
+        });
       });
 
-      var advancedCameraTest = new AdvancedCameraTest(mediaOptions, (err, logs) => {
+      const advancedCameraTest = new AdvancedCameraTest(mediaOptions);
+      advancedCameraTest.deferred.promise.then((logs) => {
         this.setProperties({
           checkingCameraAdvanced: false,
-          checkCameraAdvancedSuccess: !err
+          checkCameraAdvancedSuccess: true
         });
         this.get('troubleshootingLog').push(logs);
-      });
-
-      var bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions}, (err, logs) => {
+      }, (err) => {
         this.setProperties({
-          checkingBandwidth: false,
-          checkBandwidthSuccess: !err
+          checkingCameraAdvanced: false,
+          checkCameraAdvancedSuccess: false
         });
-        this.get('troubleshootingLog').push(logs);
       });
 
       testSuite.addTest(videoTest);
       testSuite.addTest(advancedCameraTest);
-      testSuite.addTest(bandwidthTest);
     }
 
     if (window.RTCPeerConnection) {
-      var connectivityTest = new ConnectivityTest(iceConfig, (err, logs) => {
+      const connectivityTest = new ConnectivityTest(iceConfig);
+      connectivityTest.deferred.promise.then((logs) => {
         this.setProperties({
           checkingConnectivity: false,
-          checkConnectivitySuccess: !err
+          checkConnectivitySuccess: true
         });
         this.get('troubleshootingLog').push(logs);
+      }, (err) => {
+        this.setProperties({
+          checkingConnectivity: false,
+          checkConnectivitySuccess: false
+        });
       });
 
-      var throughputTest = new ThroughputTest(iceConfig, (err, logs) => {
+      const throughputTest = new ThroughputTest(iceConfig);
+      throughputTest.deferred.promise.then((logs) => {
         this.setProperties({
           checkingThroughput: false,
-          checkThroughputSuccess: !err
+          checkThroughputSuccess: true
         });
         this.get('troubleshootingLog').push(logs);
+      }, (err) => {
+        this.setProperties({
+          checkingThroughput: false,
+          checkThroughputSuccess: false
+        });
       });
 
       testSuite.addTest(connectivityTest);
       testSuite.addTest(throughputTest);
+
+      if (this.get('video')) {
+        const bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
+        bandwidthTest.deferred.promise.then((logs) => {
+          this.setProperties({
+            checkingBandwidth: false,
+            checkBandwidthSuccess: true
+          });
+          this.get('troubleshootingLog').push(logs);
+        }, (err) => {
+          this.setProperties({
+            checkingBandwidth: false,
+            checkBandwidthSuccess: false
+          });
+        });
+        testSuite.addTest(bandwidthTest);
+      }
     }
 
     testSuite.runNextTest(() => {
