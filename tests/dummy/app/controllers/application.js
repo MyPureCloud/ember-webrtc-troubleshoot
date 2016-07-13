@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   iceServers: null,
 
-  init() {
+  init () {
     this._super(...arguments);
     const savedServers = window.localStorage.getItem('iceServers');
     if (savedServers) {
