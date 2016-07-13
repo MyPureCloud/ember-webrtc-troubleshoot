@@ -9,6 +9,8 @@ module.exports = {
       return this.addBowerPackageToProject('xdumaine/localmedia');
     }).then(() => {
       return this.addBowerPackageToProject('otalk/RTCPeerConnection');
-    });
+    }).then(() => {
+      return this.addBowerPackageToProject('webrtc-troubleshooter#0.1.5');
+    })
   }
 };
