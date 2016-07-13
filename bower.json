@@ -6,9 +6,6 @@
     "ember-cli-test-loader": "0.2.2",
     "ember-qunit-notifications": "0.1.0",
     "lodash": "^4.6.1",
-    "localmedia": "~2.1.0",
-    "webrtc-adapter": "gh-pages",
-    "rtcpeerconnection": "https://github.com/otalk/RTCPeerConnection.git",
     "webrtc-troubleshooter": "^0.1.5"
   }
 }
