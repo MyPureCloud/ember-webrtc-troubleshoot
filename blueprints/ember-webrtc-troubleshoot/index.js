@@ -4,7 +4,7 @@ module.exports = {
 
   afterInstall: function () {
     return this.addBowerPackageToProject('cheet.js', '0.3.3').then(() => {
-      return this.addBowerPackageToProject('webrtc-troubleshooter', '0.1.5');
+      return this.addBowerPackageToProject('webrtc-troubleshooter', '0.4.0');
     });
   }
 };
