@@ -28,8 +28,6 @@ export default Ember.Component.extend({
   checkingBandwidth: true,
   checkingBandwidthSuccess: false,
 
-  troubleshootingLog: null,
-
   video: true,
   audio: true,
   logger: null,
@@ -38,7 +36,6 @@ export default Ember.Component.extend({
 
   init () {
     this._super(...arguments);
-    this.set('troubleshootingLog', []);
     this.startTroubleshooter();
     if (!this.get('logger')) {
       this.set('logger', Ember.Logger);
@@ -69,7 +66,6 @@ export default Ember.Component.extend({
           checkingVolume: false,
           checkVolumeSuccess: true
         });
-        this.get('troubleshootingLog').push(logs);
       }, (err) => {
         this.logger.error(err);
         this.setProperties({
@@ -90,7 +86,6 @@ export default Ember.Component.extend({
           checkingCamera: false,
           checkCameraSuccess: true
         });
-        this.get('troubleshootingLog').push(logs);
       }, (err) => {
         this.logger.error(err);
         this.setProperties({
@@ -105,7 +100,6 @@ export default Ember.Component.extend({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: true
         });
-        this.get('troubleshootingLog').push(logs);
       }, (err) => {
         this.logger.error(err);
         this.setProperties({
@@ -125,7 +119,6 @@ export default Ember.Component.extend({
           checkingConnectivity: false,
           checkConnectivitySuccess: true
         });
-        this.get('troubleshootingLog').push(logs);
       }, (err) => {
         this.logger.error(err);
         this.setProperties({
@@ -140,7 +133,6 @@ export default Ember.Component.extend({
           checkingThroughput: false,
           checkThroughputSuccess: true
         });
-        this.get('troubleshootingLog').push(logs);
       }, (err) => {
         this.logger.error(err);
         this.setProperties({
@@ -159,7 +151,6 @@ export default Ember.Component.extend({
             checkingBandwidth: false,
             checkBandwidthSuccess: true
           });
-          this.get('troubleshootingLog').push(logs);
         }, (err) => {
           this.logger.error(err);
           this.setProperties({
@@ -171,9 +162,12 @@ export default Ember.Component.extend({
       }
     }
 
-    testSuite.runNextTest(() => {
-      this.logger.info('WebRTC Troubleshooting results', this.get('troubleshootingLog'));
-      this.sendAction('results', this.get('troubleshootingLog'));
+    testSuite.start().then((results) => {
+      this.logger.info('WebRTC Troubleshooting results', results);
+      this.sendAction('results', results);
+    }).catch((err) => {
+      this.logger.warn('WebRTC Troubleshooting results', err);
+      this.sendAction('results', err);
     });
 
     this.set('testSuite', testSuite);
