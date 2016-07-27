@@ -59,7 +59,7 @@ export default Ember.Component.extend({
 
     if (this.get('audio')) {
       const audioTest = new AudioTest(mediaOptions);
-      audioTest.deferred.promise.then((logs) => {
+      audioTest.deferred.promise.then((/*logs*/) => {
         this.setProperties({
           checkingMicrophone: false,
           checkMicrophoneSuccess: true,
@@ -81,7 +81,7 @@ export default Ember.Component.extend({
 
     if (this.get('video')) {
       const videoTest = new VideoTest(mediaOptions);
-      videoTest.deferred.promise.then((logs) => {
+      videoTest.deferred.promise.then((/*logs*/) => {
         this.setProperties({
           checkingCamera: false,
           checkCameraSuccess: true
@@ -95,7 +95,7 @@ export default Ember.Component.extend({
       });
 
       const advancedCameraTest = new AdvancedCameraTest(mediaOptions);
-      advancedCameraTest.deferred.promise.then((logs) => {
+      advancedCameraTest.deferred.promise.then((/*logs*/) => {
         this.setProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: true
@@ -114,7 +114,7 @@ export default Ember.Component.extend({
 
     if (window.RTCPeerConnection) {
       const connectivityTest = new ConnectivityTest(iceConfig);
-      connectivityTest.deferred.promise.then((logs) => {
+      connectivityTest.deferred.promise.then((/*logs*/) => {
         this.setProperties({
           checkingConnectivity: false,
           checkConnectivitySuccess: true
@@ -128,7 +128,7 @@ export default Ember.Component.extend({
       });
 
       const throughputTest = new ThroughputTest(iceConfig);
-      throughputTest.deferred.promise.then((logs) => {
+      throughputTest.deferred.promise.then((/*logs*/) => {
         this.setProperties({
           checkingThroughput: false,
           checkThroughputSuccess: true
@@ -146,7 +146,7 @@ export default Ember.Component.extend({
 
       if (this.get('video')) {
         const bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
-        bandwidthTest.deferred.promise.then((logs) => {
+        bandwidthTest.deferred.promise.then((/*logs*/) => {
           this.setProperties({
             checkingBandwidth: false,
             checkBandwidthSuccess: true
