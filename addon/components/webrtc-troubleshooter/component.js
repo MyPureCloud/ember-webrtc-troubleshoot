@@ -163,10 +163,10 @@ export default Ember.Component.extend({
     }
 
     testSuite.start().then((results) => {
-      this.logger.info('WebRTC Troubleshooting results', results);
+      this.logger.info('WebRTC Troubleshooting results (success)', results);
       this.sendAction('results', results);
     }).catch((err) => {
-      this.logger.warn('WebRTC Troubleshooting results', err);
+      this.logger.warn('WebRTC Troubleshooting results (error)', err);
       this.sendAction('results', err);
     });
 
