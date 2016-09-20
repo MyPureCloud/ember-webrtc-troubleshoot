@@ -3,8 +3,9 @@ module.exports = {
   normalizeEntityName: function () {},
 
   afterInstall: function () {
-    return this.addBowerPackageToProject('cheet.js', '0.3.3').then(() => {
-      return this.addBowerPackageToProject('webrtc-troubleshooter', '1.0.0');
-    });
+    return this.addBowerPackagesToProject([
+      { name: 'cheet.js', target: '0.3.3' },
+      { name: 'webrtc-troubleshooter', target: '1.0.0' }
+    ]);
   }
 };
