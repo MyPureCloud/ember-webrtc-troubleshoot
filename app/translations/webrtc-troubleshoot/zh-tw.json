@@ -1,24 +1,24 @@
 {
-  "webrtcTroubleshoot": {
-    "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
-    "checkMicrophone": "Checking microphone ...",
-    "checkMicrophoneSuccess": "No microphone issues",
-    "checkMicrophoneFail": "Oops, there was a microphone issue!",
-    "checkVolumeFailure": "Oops, we can't hear you! You might have a problem with your microphone!",
-    "checkCamera": "Checking camera ...",
-    "checkCameraSuccess": "No camera issues",
-    "checkCameraFail": "Oops, there was a camera issue!",
-    "checkCameraAdvanced": "Performing advanced camera tests ...",
-    "checkCameraAdvancedSuccess": "Advanced camera tests complete",
-    "checkCameraAdvancedFail": "Advanced camera tests failed",
-    "checkThroughput": "Checking network throughput ...",
-    "checkThroughputSuccess": "Throughput check complete",
-    "checkThroughputFail": "Throughput check failed",
-    "checkBandwidth": "Checking video bandwidth ...",
-    "checkBandwidthSuccess": "Bandwidth check complete",
-    "checkBandwidthFail": "Bandwidth check failed",
-    "checkConnectivity": "Checking connectivity ...",
-    "checkConnectivitySuccess": "No connectivity issues",
-    "checkConnectivityFail": "Oops, there was a connectivity issue!"
-  }
+    "webrtcTroubleshoot": {
+        "troubleshootTimeWarning": "這些測試可能需要 2 分鐘。",
+        "checkMicrophone": "正在檢查麥克風...",
+        "checkMicrophoneSuccess": "麥克風正常",
+        "checkMicrophoneFail": "哎呀，麥克風出問題了！",
+        "checkVolumeFailure": "哎呀，我們聽不到您講話！您的麥克風可能出現問題！",
+        "checkCamera": "正在檢查攝影機...",
+        "checkCameraSuccess": "攝影機正常",
+        "checkCameraFail": "哎呀，攝影機出問題了！",
+        "checkCameraAdvanced": "執行進階攝影機測試...",
+        "checkCameraAdvancedSuccess": "進階攝影機測試完成",
+        "checkCameraAdvancedFail": "進階攝影機測試失敗",
+        "checkThroughput": "正在檢查網路輸送量...",
+        "checkThroughputSuccess": "輸送量檢查完成",
+        "checkThroughputFail": "輸送量檢查失敗",
+        "checkBandwidth": "正在檢查視訊頻寬...",
+        "checkBandwidthSuccess": "頻寬檢查完成",
+        "checkBandwidthFail": "頻寬檢查失敗",
+        "checkConnectivity": "正在檢查連接...",
+        "checkConnectivitySuccess": "連接正常",
+        "checkConnectivityFail": "哎呀，連接出問題了！"
+    }
 }
