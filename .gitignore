@@ -10,6 +10,10 @@
 
 bower.json.ember-try
 
+# VSCODE Files
+/jsconfig.json
+/typings
+
 # misc
 /.sass-cache
 /connect.lock
