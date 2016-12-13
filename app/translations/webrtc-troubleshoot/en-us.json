@@ -23,14 +23,13 @@
     "showBandwidthStats": "Show Bandwidth Stats",
     "hideBandwidthStats": "Hide Bandwidth Stats",
     "resolution": "Resolution: {value}",
-    "bpsAvg": "Bit Rate Average: {value, number}",
-    "bpsMax": "Bit Rate Max: {value, number}",
+    "mbpsAvg": "Bit Rate Average: {value, number} Mbps",
+    "mbpsMax": "Bit Rate Max: {value, number} Mbps",
+    "mbpsStdDev": "Bit Rate Std Dev: {value, number} Mbps",
     "lostPackets": "Lost Packets: {value, number}",
     "rampUpTimeMs": "Ramp-up Time: {value, number}ms",
     "rttAverage": "Round Trip Average: {value, number}ms",
     "rttMax": "Round Trip Max: {value, number}ms",
-    "framerateMean": "Frame Rate Average: {value, number}",
-    "bitrateMean": "Bit Rate Average: {value, number}",
-    "bitrateStdDev": "Bit Rate Std Dev: {value, number}"
+    "framerateMean": "Frame Rate Average: {value, number}"
   }
 }
