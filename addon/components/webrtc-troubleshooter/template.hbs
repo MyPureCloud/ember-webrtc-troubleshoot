@@ -96,8 +96,8 @@
       </div>
     </div>
 
-    <div class="bandwidth-stats">
-      {{#if bandwidthStats}}
+    {{#if bandwidthStats}}
+      <div class="bandwidth-stats">
         <button type="button" class="btn btn-link" {{action "toggleBandwidthStats"}}>
           {{#if showBandwidthStats}}
             {{t "webrtcTroubleshoot.hideBandwidthStats"}}
@@ -113,7 +113,7 @@
             {{/each-in}}
           </div>
         {{/if}}
-      {{/if}}
-    </div>
+      </div>
+    {{/if}}
   {{/if}}
 </div>
