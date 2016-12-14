@@ -14,6 +14,7 @@ const {
 
 export default Ember.Component.extend({
   layout,
+  classNames: ['webrtc-troubleshooter'],
 
   checkingMicrophone: true,
   checkMicrophoneSuccess: false,
@@ -26,7 +27,8 @@ export default Ember.Component.extend({
   checkingThroughput: true,
   checkingThroughputSuccess: false,
   checkingBandwidth: true,
-  checkingBandwidthSuccess: false,
+  checkBandwidthSuccess: false,
+  showBandwidthStats: false,
 
   video: true,
   audio: true,
@@ -146,14 +148,16 @@ export default Ember.Component.extend({
 
       if (this.get('video')) {
         const bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
-        bandwidthTest.promise.then((/*logs*/) => {
+        bandwidthTest.promise.then(results => {
           this.setProperties({
+            bandwidthStats: results.stats,
             checkingBandwidth: false,
             checkBandwidthSuccess: true
           });
-        }, (err) => {
-          this.logger.error(err);
+        }, (results) => {
+          this.logger.error(results);
           this.setProperties({
+            bandwidthStats: results.stats,
             checkingBandwidth: false,
             checkBandwidthSuccess: false
           });
@@ -180,5 +184,11 @@ export default Ember.Component.extend({
         testSuite.stopAllTests();
       }
     } catch (e) { /* don't care - just want to destroy */ }
+  },
+
+  actions: {
+    toggleBandwidthStats() {
+      this.toggleProperty('showBandwidthStats');
+    }
   }
 });
