@@ -10,7 +10,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "node_modules/.bin/semistandard blueprints/**/*.js tests/**/*.js addon/**/*.js app/**/*.js && ember test",
-    "gh-pages": "echo \"Building for gh-pages. This may take a few minutes...\" && ember github-pages:commit --message \"Rebuild gh-pages\" && git push --no-verify gh-pages:gh-pages"
+    "gh-pages": "ember build --environment=production --output-path=docs"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {
@@ -28,10 +28,9 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-ajax": "2.5.3",
-    "ember-cli": "^2.3.0",
+    "ember-cli": "^2.9.0",
     "ember-cli-app-version": "^2.0.1",
     "ember-cli-dependency-checker": "^1.2.0",
-    "ember-cli-github-pages": "0.1.2",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.3.1",
     "ember-cli-qunit": "^3.0.2",
