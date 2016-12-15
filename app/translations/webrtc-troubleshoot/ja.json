@@ -19,6 +19,17 @@
         "checkBandwidthFail": "処理能力チェックの失敗",
         "checkConnectivity": "接続をチェックしています ...",
         "checkConnectivitySuccess": "接続に問題はありません",
-        "checkConnectivityFail": "接続に問題が見つかりました!"
+        "checkConnectivityFail": "接続に問題が見つかりました!",
+        "showBandwidthStats": "帯域幅の統計を表示",
+        "hideBandwidthStats": "帯域幅の統計を非表示",
+        "resolution": "解像度: {value}",
+        "mbpsAvg": "ビットレート平均: {value, number} Mbps",
+        "mbpsMax": "ビットレート最大: {value, number} Mbps",
+        "mbpsStdDev": "ビットレート標準偏差: {value, number} Mbps",
+        "packetLoss": "パケットロス: {value, number}%",
+        "rampUpTimeMs": "立ち上げ時間: {value, number}ms",
+        "rttAverage": "ラウンドトリップ平均: {value, number}ms",
+        "rttMax": "ラウンドトリップ最大: {value, number}ms",
+        "framerateMean": "フレームレート平均: {value, number}"
     }
 }
