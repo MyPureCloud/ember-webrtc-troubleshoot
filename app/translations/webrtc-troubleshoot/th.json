@@ -19,6 +19,17 @@
         "checkBandwidthFail": "การตรวจสอบแบนด์วิธล้มเหลว",
         "checkConnectivity": "กำลังตรวจสอบการเชื่อมต่อ ...",
         "checkConnectivitySuccess": "ไม่พบปัญหาเกี่ยวกับการเชื่อมต่อ",
-        "checkConnectivityFail": "ขออภัย พบปัญหาเกี่ยวกับการเชื่อมต่อ!"
+        "checkConnectivityFail": "ขออภัย พบปัญหาเกี่ยวกับการเชื่อมต่อ!",
+        "showBandwidthStats": "แสดงสถานะแบนด์วิธ",
+        "hideBandwidthStats": "ซ่อนสถานะแบนด์วิธ",
+        "resolution": "ความละเอียด: {value}",
+        "mbpsAvg": "อัตราบิตโดยเฉลี่ย: {value, number} เมกะบิตต่อวินาที",
+        "mbpsMax": "อัตราบิตสูงสุด: {value, number} เมกะบิตต่อวินาที",
+        "mbpsStdDev": "ค่าเบี่ยงเบนมาตรฐานของอัตราบิต: {value, number} เมกะบิตต่อวินาที",
+        "packetLoss": "แพคเก็ตสูญหาย: {value, number}%",
+        "rampUpTimeMs": "เวลาหน่วง: {value, number} มิลลิวินาที",
+        "rttAverage": "เวลาเดินทางไปกลับโดยเฉลี่ย: {value, number} มิลลิวินาที",
+        "rttMax": "เวลาเดินทางไปกลับสูงสุด: {value, number} มิลลิวินาที",
+        "framerateMean": "อัตราเฟรมโดยเฉลี่ย: {value, number}"
     }
 }

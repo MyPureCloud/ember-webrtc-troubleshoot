@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Échec de la vérification de la bande passante vidéo...",
         "checkConnectivity": "Vérification de la connectivité...",
         "checkConnectivitySuccess": "Aucun problème de connectivité",
-        "checkConnectivityFail": "Désolé ! Il y a eu un problème de connectivité."
+        "checkConnectivityFail": "Désolé ! Il y a eu un problème de connectivité.",
+        "showBandwidthStats": "Afficher les statistiques de bande passante",
+        "hideBandwidthStats": "Masquer les statistiques de bande passante",
+        "resolution": "Résolution : {value}",
+        "mbpsAvg": "Vitesse de transmission moyenne : {value, number} Mbits/s",
+        "mbpsMax": "Vitesse de transmission maximale : {value, number} Mbits/s",
+        "mbpsStdDev": "Écart-type de la vitesse de transmission : {value, number} Mbits/s",
+        "packetLoss": "Perte de paquets : {value, number} %",
+        "rampUpTimeMs": "Durée d'accélération : {value, number} ms",
+        "rttAverage": "Moyenne de boucle : {value, number} ms",
+        "rttMax": "Boucle maximale : {value, number} ms",
+        "framerateMean": "Fréquence d'images moyenne : {value, number}"
     }
 }
