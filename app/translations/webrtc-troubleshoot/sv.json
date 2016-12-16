@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Bandbreddskontroll misslyckades",
         "checkConnectivity": "Kontrollerar anslutningen...",
         "checkConnectivitySuccess": "Inga anslutningsproblem",
-        "checkConnectivityFail": "Ojdå, det har uppstått ett anslutningsproblem!"
+        "checkConnectivityFail": "Ojdå, det har uppstått ett anslutningsproblem!",
+        "showBandwidthStats": "Visa bandbreddsstatistik",
+        "hideBandwidthStats": "Dölj banbreddsstatistik",
+        "resolution": "Upplösning: {value}",
+        "mbpsAvg": "Genomsnittlig bithastighet: {value, number} Mbit/s",
+        "mbpsMax": "Maximal bithastighet: {value, number} Mbit/s",
+        "mbpsStdDev": "Standardavvikelse för bithastighet: {value, number} Mbit/s",
+        "packetLoss": "Paketförlust: {value, number} %",
+        "rampUpTimeMs": "Uppstartstid: {value, number} ms",
+        "rttAverage": "Genomsnittlig tur och retur: {value, number} ms",
+        "rttMax": "Maximal tur och retur: {value, number} ms",
+        "framerateMean": "Genomsnittlig bildfrekvens: {value, number}"
     }
 }

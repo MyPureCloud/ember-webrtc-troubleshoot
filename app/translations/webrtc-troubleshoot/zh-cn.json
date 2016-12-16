@@ -19,6 +19,17 @@
         "checkBandwidthFail": "带宽检查失败",
         "checkConnectivity": "正在检查连接...",
         "checkConnectivitySuccess": "连接正常",
-        "checkConnectivityFail": "哎呀，连接出问题了！"
+        "checkConnectivityFail": "哎呀，连接出问题了！",
+        "showBandwidthStats": "显示带宽状态",
+        "hideBandwidthStats": "隐藏带宽状态",
+        "resolution": "分辨率: {value}",
+        "mbpsAvg": "比特速率平均值: {value, number} Mbps",
+        "mbpsMax": "比特速率最大值: {value, number} Mbps",
+        "mbpsStdDev": "比特速率标准差: {value, number} Mbps",
+        "packetLoss": "丢包: {value, number}%",
+        "rampUpTimeMs": "加速时间: {value, number}ms",
+        "rttAverage": "往返平均值: {value, number}ms",
+        "rttMax": "往返最大值: {value, number}ms",
+        "framerateMean": "帧速率平均值: {value, number}"
     }
 }

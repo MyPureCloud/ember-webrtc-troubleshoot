@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Bant genişliği denetimi başarısız oldu",
         "checkConnectivity": "Bağlantı denetleniyor...",
         "checkConnectivitySuccess": "Bağlantı sorunu yok",
-        "checkConnectivityFail": "Ne yazık ki bağlantıyla ilgili bir sorun var!"
+        "checkConnectivityFail": "Ne yazık ki bağlantıyla ilgili bir sorun var!",
+        "showBandwidthStats": "Bant Genişliği Durumunu Göster",
+        "hideBandwidthStats": "Bant Genişliği Durumunu Gizle",
+        "resolution": "Çözünürlük: {value}",
+        "mbpsAvg": "Bit Hızı ORtalaması: {value, number} Mbps",
+        "mbpsMax": "Bit Hızı Maks: {value, number} Mbps",
+        "mbpsStdDev": "Bit Rate Std Spm: {value, number} Mbps",
+        "packetLoss": "Paket Kaybı: %{value, number}",
+        "rampUpTimeMs": "Veri Çıkışı Artış Süresi: {value, number} ms",
+        "rttAverage": "Gidiş-Geliş Ortalaması: {value, number} ms",
+        "rttMax": "Gidiş Geliş Maks: {value, number} ms",
+        "framerateMean": "Kare Hızı Ortalaması: {value, number}"
     }
 }
