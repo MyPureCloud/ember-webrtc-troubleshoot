@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Verifica larghezza banda non completata",
         "checkConnectivity": "Verifica connettività in corso...",
         "checkConnectivitySuccess": "Nessun problema di connettività",
-        "checkConnectivityFail": "Problema di connettività!"
+        "checkConnectivityFail": "Problema di connettività!",
+        "showBandwidthStats": "Mostra statistiche larghezza di banda",
+        "hideBandwidthStats": "Nascondi statistiche larghezza di banda",
+        "resolution": "Risoluzione: {value}",
+        "mbpsAvg": "Media velocità bit: {value, number} Mbps",
+        "mbpsMax": "Max velocità bit: {value, number} Mbps",
+        "mbpsStdDev": "Deviazione standard velocità bit: {value, number} Mbps",
+        "packetLoss": "Perdita pacchetto: {value, number}%",
+        "rampUpTimeMs": "Tempo incremento: {value, number}ms",
+        "rttAverage": "Media round trip: {value, number}ms",
+        "rttMax": "Max round trip: {value, number}ms",
+        "framerateMean": "Media frequenza fotogrammi: {value, number}"
     }
 }

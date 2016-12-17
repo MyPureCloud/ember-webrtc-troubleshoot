@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Verificação de largura de banda de vídeo falhou",
         "checkConnectivity": "Verificando a conectividade ...",
         "checkConnectivitySuccess": "Nenhum problema na conectividade",
-        "checkConnectivityFail": "Ops, houve um problema na conectividade!"
+        "checkConnectivityFail": "Ops, houve um problema na conectividade!",
+        "showBandwidthStats": "Mostrar estatísticas de largura de banda",
+        "hideBandwidthStats": "Ocultar estatísticas de largura de banda",
+        "resolution": "Resolução: {value}",
+        "mbpsAvg": "Taxa de bits média: {value, number} Mbps",
+        "mbpsMax": "Taxa de bits máx.: {value, number} Mbps",
+        "mbpsStdDev": "Desvio padrão da taxa de bits: {value, number} Mbps",
+        "packetLoss": "Perda de pacotes: {value, number}%",
+        "rampUpTimeMs": "Tempo de subida de rampa:  {value, number} ms",
+        "rttAverage": "Tempo médio de viagem de ida e volta: {value, number} ms",
+        "rttMax": "Tempo máx. de viagem de ida e volta: {value, number} ms",
+        "framerateMean": "Taxa de quadros média: {value, number}"
     }
 }

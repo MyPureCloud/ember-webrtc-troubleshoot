@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Fehler bei der Bandbreitenüberprüfung",
         "checkConnectivity": "Verbindung wird überprüft...",
         "checkConnectivitySuccess": "Keine Verbindungsprobleme",
-        "checkConnectivityFail": "Hoppla, es gibt ein Verbindungsproblem!"
+        "checkConnectivityFail": "Hoppla, es gibt ein Verbindungsproblem!",
+        "showBandwidthStats": "Bandbreitenstatistik einblenden",
+        "hideBandwidthStats": "Bandbreitenstatistik ausblenden",
+        "resolution": "Auflösung: {value}",
+        "mbpsAvg": "Durchschnittliche Bitrate: {value, number} MBit/s",
+        "mbpsMax": "Max. Bitrate: {value, number} MBit/s",
+        "mbpsStdDev": "Std.-Abw. der Bitrate: {value, number} MBit/s",
+        "packetLoss": "Paketverlust: {value, number} %",
+        "rampUpTimeMs": "Anlaufzeit: {value, number} ms",
+        "rttAverage": "Durchschnittliche Umlaufzeit: {value, number} ms",
+        "rttMax": "Max. Umlaufzeit: {value, number} ms",
+        "framerateMean": "Durchschnittliche Bildrate: {value, number}"
     }
 }

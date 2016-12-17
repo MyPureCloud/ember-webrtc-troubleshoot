@@ -19,6 +19,17 @@
         "checkBandwidthFail": "頻寬檢查失敗",
         "checkConnectivity": "正在檢查連接...",
         "checkConnectivitySuccess": "連接正常",
-        "checkConnectivityFail": "哎呀，連接出問題了！"
+        "checkConnectivityFail": "哎呀，連接出問題了！",
+        "showBandwidthStats": "顯示頻寬統計資料",
+        "hideBandwidthStats": "隱藏頻寬統計資料",
+        "resolution": "解析度：{value}",
+        "mbpsAvg": "平均位元速率：{value, number} Mbps",
+        "mbpsMax": "最大位元速率：{value, number} Mbps",
+        "mbpsStdDev": "位元速率標準偏差：{value, number} Mbps",
+        "packetLoss": "封包遺失：{value, number}%",
+        "rampUpTimeMs": "加速時間：{value, number}ms",
+        "rttAverage": "平均來回時間：{value, number}ms",
+        "rttMax": "最大來回時間：{value, number}ms",
+        "framerateMean": "平均畫面速率：{value, number}"
     }
 }

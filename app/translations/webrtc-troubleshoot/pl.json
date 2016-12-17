@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Kontrola przepustowości zakończona niepowodzeniem",
         "checkConnectivity": "Sprawdzanie łączności...",
         "checkConnectivitySuccess": "Brak problemów z łącznością",
-        "checkConnectivityFail": "Ups! Wystąpił problem z łącznością."
+        "checkConnectivityFail": "Ups! Wystąpił problem z łącznością.",
+        "showBandwidthStats": "Pokaż statystyki przepustowości",
+        "hideBandwidthStats": "Ukryj statystyki przepustowości",
+        "resolution": "Rozdzielczość: {value}",
+        "mbpsAvg": "Średnia szybkość bitowa: {value, number} Mb/s",
+        "mbpsMax": "Maks. szybkość bitowa: {value, number} Mb/s",
+        "mbpsStdDev": "Odch. stand. szybkości bitowej: {value, number} Mb/s",
+        "packetLoss": "Utrata pakietów: {value, number}%",
+        "rampUpTimeMs": "Czas narastania: {value, number} ms",
+        "rttAverage": "Średni czas w obie strony: {value, number} ms",
+        "rttMax": "Maks. czas w obie strony: {value, number} ms",
+        "framerateMean": "Średnia liczba klatek: {value, number}"
     }
 }
