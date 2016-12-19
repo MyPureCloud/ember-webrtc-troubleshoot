@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Sjekk av båndbredde mislyktes",
         "checkConnectivity": "Kontrollerer tilkobling ...",
         "checkConnectivitySuccess": "Ingen tilkoblingsproblemer",
-        "checkConnectivityFail": "Beklager, det oppstod et tilkoblingsproblem."
+        "checkConnectivityFail": "Beklager, det oppstod et tilkoblingsproblem.",
+        "showBandwidthStats": "Vis båndbreddestatistikk",
+        "hideBandwidthStats": "Skjul båndbreddestatistikk",
+        "resolution": "Oppløsning: {value}",
+        "mbpsAvg": "Bithastighetstjennomsnitt: {value, number} Mbps",
+        "mbpsMax": "Maks bithastighet: {value, number} Mbps",
+        "mbpsStdDev": "Std.av. for bithastighet: {value, number} Mbps",
+        "packetLoss": "Pakketap: {value, number} %",
+        "rampUpTimeMs": "Opprampingstid: {value, number} ms",
+        "rttAverage": "Tur-retur-gjennomsnitt: {value, number} ms",
+        "rttMax": "Maks for tur-retur: {value, number} ms",
+        "framerateMean": "Bildehastighetsgjennomsnitt: {value, number}"
     }
 }
