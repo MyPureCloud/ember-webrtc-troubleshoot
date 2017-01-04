@@ -146,7 +146,7 @@ export default Ember.Component.extend({
       testSuite.addTest(connectivityTest);
       testSuite.addTest(throughputTest);
 
-      if (this.get('video')) {
+      if (this.get('runBandwidthTest')) {
         const bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
         bandwidthTest.promise.then(results => {
           this.setProperties({
@@ -169,13 +169,21 @@ export default Ember.Component.extend({
     testSuite.start().then((results) => {
       this.logger.info('WebRTC Troubleshooting results (success)', results);
       this.sendAction('results', results);
+      if (this.done) {
+        this.done(results);
+      }
     }).catch((err) => {
       this.logger.warn('WebRTC Troubleshooting results (error)', err);
       this.sendAction('results', err);
+      if (this.done) {
+        this.done(err);
+      }
     });
 
     this.set('testSuite', testSuite);
   },
+
+  runBandwidthTest: Ember.computed.or('video', 'mediaOptions.screenStream'),
 
   willDestroyElement () {
     try {
