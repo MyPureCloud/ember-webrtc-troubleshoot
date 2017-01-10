@@ -25,7 +25,7 @@
         "resolution": "分辨率: {value}",
         "mbpsAvg": "比特速率平均值: {value, number} Mbps",
         "mbpsMax": "比特速率最大值: {value, number} Mbps",
-        "mbpsStdDev": "比特速率标准差: {value, number} Mbps",
+        "mbpsStdDev": "比特速率偏差: {value, number} Mbps",
         "packetLoss": "丢包: {value, number}%",
         "rampUpTimeMs": "加速时间: {value, number}ms",
         "rttAverage": "往返平均值: {value, number}ms",

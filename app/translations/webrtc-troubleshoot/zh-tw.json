@@ -30,6 +30,6 @@
         "rampUpTimeMs": "加速時間：{value, number}ms",
         "rttAverage": "平均來回時間：{value, number}ms",
         "rttMax": "最大來回時間：{value, number}ms",
-        "framerateMean": "平均畫面速率：{value, number}"
+        "framerateMean": "平均畫格速率：{value, number}"
     }
 }
