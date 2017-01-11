@@ -27,7 +27,7 @@
         "mbpsMax": "Maximale bitsnelheid: {value, number} Mbps",
         "mbpsStdDev": "Standaardafwijking bitsnelheid: {value, number} Mbps",
         "packetLoss": "Pakketverlies: {value, number}%",
-        "rampUpTimeMs": "Ramp-uptijd: {value, number} ms",
+        "rampUpTimeMs": "Aanlooptijd: {value, number} ms",
         "rttAverage": "Gemiddelde round-trip tijd: {value, number} ms",
         "rttMax": "Maximale round-trip tijd: {value, number} ms",
         "framerateMean": "Gemiddelde framesnelheid: {value, number}"
