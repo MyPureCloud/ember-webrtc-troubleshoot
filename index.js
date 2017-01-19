@@ -7,7 +7,7 @@ const json = require('broccoli-json-module');
 module.exports = {
   name: 'webrtc-troubleshoot',
   isDevelopingAddon: function () {
-    return this.app && this.app.env === 'development';
+    return Boolean(process.env.EWT_DEV_MODE);
   },
   included: function (app) {
     this._super.included(app);
