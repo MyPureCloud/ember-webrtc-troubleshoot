@@ -27,7 +27,7 @@
         "mbpsMax": "Bit Hızı Maks: {value, number} Mbps",
         "mbpsStdDev": "Bit Rate Std Spm: {value, number} Mbps",
         "packetLoss": "Paket Kaybı: %{value, number}",
-        "rampUpTimeMs": "Veri Çıkışı Artış Süresi: {value, number} ms",
+        "rampUpTimeMs": "Veri Çıkışı Süresi: {value, number} ms",
         "rttAverage": "Gidiş-Geliş Ortalaması: {value, number} ms",
         "rttMax": "Gidiş Geliş Maks: {value, number} ms",
         "framerateMean": "Kare Hızı Ortalaması: {value, number}"
