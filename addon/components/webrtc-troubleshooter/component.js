@@ -157,7 +157,7 @@ export default Ember.Component.extend({
         }, (results) => {
           this.logger.error(results);
           this.setProperties({
-            bandwidthStats: results.stats,
+            bandwidthStats: results && results.stats,
             checkingBandwidth: false,
             checkBandwidthSuccess: false
           });
