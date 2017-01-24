@@ -61,7 +61,7 @@ export default Ember.Component.extend({
 
     if (this.get('audio')) {
       const audioTest = new AudioTest(mediaOptions);
-      audioTest.promise.then((/*logs*/) => {
+      audioTest.promise.then((/* logs */) => {
         this.setProperties({
           checkingMicrophone: false,
           checkMicrophoneSuccess: true,
@@ -83,7 +83,7 @@ export default Ember.Component.extend({
 
     if (this.get('video')) {
       const videoTest = new VideoTest(mediaOptions);
-      videoTest.promise.then((/*logs*/) => {
+      videoTest.promise.then((/* logs */) => {
         this.setProperties({
           checkingCamera: false,
           checkCameraSuccess: true
@@ -97,7 +97,7 @@ export default Ember.Component.extend({
       });
 
       const advancedCameraTest = new AdvancedCameraTest(mediaOptions);
-      advancedCameraTest.promise.then((/*logs*/) => {
+      advancedCameraTest.promise.then((/* logs */) => {
         this.setProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: true
@@ -116,7 +116,7 @@ export default Ember.Component.extend({
 
     if (window.RTCPeerConnection) {
       const connectivityTest = new ConnectivityTest(iceConfig);
-      connectivityTest.promise.then((/*logs*/) => {
+      connectivityTest.promise.then((/* logs */) => {
         this.setProperties({
           checkingConnectivity: false,
           checkConnectivitySuccess: true
@@ -130,7 +130,7 @@ export default Ember.Component.extend({
       });
 
       const throughputTest = new ThroughputTest(iceConfig);
-      throughputTest.promise.then((/*logs*/) => {
+      throughputTest.promise.then((/* logs */) => {
         this.setProperties({
           checkingThroughput: false,
           checkThroughputSuccess: true
@@ -195,7 +195,7 @@ export default Ember.Component.extend({
   },
 
   actions: {
-    toggleBandwidthStats() {
+    toggleBandwidthStats () {
       this.toggleProperty('showBandwidthStats');
     }
   }
