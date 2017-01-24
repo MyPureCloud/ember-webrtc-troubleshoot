@@ -19,6 +19,17 @@
         "checkBandwidthFail": "Error en la verificación de ancho de banda",
         "checkConnectivity": "Verificando conectividad...",
         "checkConnectivitySuccess": "No hay problemas de conectividad",
-        "checkConnectivityFail": "Hay un problema con la conectividad"
+        "checkConnectivityFail": "Hay un problema con la conectividad",
+        "showBandwidthStats": "Mostrar estadísticas de banda ancha",
+        "hideBandwidthStats": "Ocultar estadísticas de banda ancha",
+        "resolution": "Resolución: {value}",
+        "mbpsAvg": "Velocidad promedio de bits: {value, number} Mbps",
+        "mbpsMax": "Velocidad máxima de bits: {value, number} Mbps",
+        "mbpsStdDev": "Desviación estándar de la velocidad de bits: {value, number} Mbps",
+        "packetLoss": "Pérdida de paquetes: {value, number}%",
+        "rampUpTimeMs": "Tiempo hasta alcanzar resolución: {value, number}ms",
+        "rttAverage": "Tiempo promedio de ida y vuelta: {value, number}ms",
+        "rttMax": "Tiempo máximo de ida y vuelta: {value, number}ms",
+        "framerateMean": "Velocidad promedio de fotogramas: {value, number}"
     }
 }
