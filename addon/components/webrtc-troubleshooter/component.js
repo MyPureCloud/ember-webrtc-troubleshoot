@@ -150,7 +150,7 @@ export default Ember.Component.extend({
         const bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
         bandwidthTest.promise.then(results => {
           this.setProperties({
-            bandwidthStats: results.stats,
+            bandwidthStats: results && results.stats,
             checkingBandwidth: false,
             checkBandwidthSuccess: true
           });
