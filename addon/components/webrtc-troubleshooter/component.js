@@ -55,7 +55,7 @@ export default Ember.Component.extend({
     };
     const mediaOptions = this.get('mediaOptions') || { audio: true, video: true };
 
-    const testSuite = new TestSuite();
+    const testSuite = new TestSuite({ logger: this.get('logger') });
 
     // TODO: logs for rejections?
 
@@ -173,7 +173,7 @@ export default Ember.Component.extend({
         this.done(results);
       }
     }).catch((err) => {
-      this.logger.warn('WebRTC Troubleshooting results (error)', err);
+      this.logger.warn('WebRTC Troubleshooting results (error)', err, err && err.details);
       this.sendAction('results', err);
       if (this.done) {
         this.done(err);
