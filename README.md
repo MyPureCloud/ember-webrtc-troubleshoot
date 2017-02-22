@@ -11,6 +11,7 @@ TODO:
 # ember-webrtc-troubleshoot
 
 [![Build Status](https://travis-ci.org/MyPureCloud/ember-webrtc-troubleshoot.svg?branch=master)](https://travis-ci.org/MyPureCloud/ember-webrtc-troubleshoot)
+[![Coverage Status](https://coveralls.io/repos/github/MyPureCloud/ember-webrtc-troubleshoot/badge.svg?branch=master)](https://coveralls.io/github/MyPureCloud/ember-webrtc-troubleshoot)
 
 This addon is designed to provide you with two things:
 
