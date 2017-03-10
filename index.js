@@ -1,14 +1,18 @@
 'use strict';
 
-const mergeTrees = require('broccoli-merge-trees');
+const TreeMerger = require('broccoli-merge-trees');
 const WatchedDir = require('broccoli-source').WatchedDir;
 const json = require('broccoli-json-module');
+const Funnel = require('broccoli-funnel');
+const path = require('path');
 
 module.exports = {
   name: 'webrtc-troubleshoot',
+
   isDevelopingAddon: function () {
     return Boolean(process.env.EWT_DEV_MODE);
   },
+
   included: function (app) {
     this._super.included(app);
 
@@ -16,12 +20,31 @@ module.exports = {
 
     this.translation = new WatchedDir('translations');
 
-    app.import(app.bowerDirectory + '/webrtc-troubleshooter/dist/webrtc-troubleshooter.bundle.js');
+    app.import('vendor/webrtc-troubleshooter.bundle.js');
   },
+
+  treeForVendor (vendorTree) {
+    const npmDeps = [
+      {
+        path: 'webrtc-troubleshoot/dist/webrtc-troubleshooter.bundle.js',
+        files: [ 'webrtc-troubleshooter.bundle.js' ]
+      }
+    ];
+    const trees = npmDeps.map((dep) => {
+      return new Funnel(path.dirname(require.resolve(dep.path)), {
+        files: dep.files
+      });
+    });
+    if (vendorTree) {
+      trees.push(vendorTree);
+    }
+    return new TreeMerger(trees);
+  },
+
   treeForApp: function (tree) {
     const trees = [tree];
     trees.push(json(tree));
 
-    return mergeTrees(trees, { overwrite: true });
+    return TreeMerger(trees, { overwrite: true });
   }
 };
