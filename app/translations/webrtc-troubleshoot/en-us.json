@@ -27,6 +27,8 @@
     "mbpsMax": "Bit Rate Max: {value, number} Mbps",
     "mbpsStdDev": "Bit Rate Std Dev: {value, number} Mbps",
     "packetLoss": "Packet Loss: {value, number}%",
+    "packetsSent": "Packets Sent: {value, number}",
+    "jitter": "Jitter: {value, number}ms",
     "rampUpTimeMs": "Ramp-up Time: {value, number}ms",
     "rttAverage": "Round Trip Average: {value, number}ms",
     "rttMax": "Round Trip Max: {value, number}ms",

@@ -9,7 +9,8 @@ const {
   ConnectivityTest,
   AdvancedCameraTest,
   ThroughputTest,
-  VideoBandwidthTest
+  VideoBandwidthTest,
+  AudioBandwidthTest
 } = WebRTCTroubleshooter.default;
 
 export default Ember.Component.extend({
@@ -146,8 +147,15 @@ export default Ember.Component.extend({
       testSuite.addTest(connectivityTest);
       testSuite.addTest(throughputTest);
 
-      if (this.get('runBandwidthTest')) {
-        const bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
+      let bandwidthTest;
+
+      if (this.get('runVideoBandwidthTest')) {
+        bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
+      } else if (this.get('runAudioBandwidthTest')) {
+        bandwidthTest = new AudioBandwidthTest({iceConfig, mediaOptions});
+      }
+
+      if (bandwidthTest) {
         bandwidthTest.promise.then(results => {
           this.setProperties({
             bandwidthStats: results && results.stats,
@@ -183,7 +191,13 @@ export default Ember.Component.extend({
     this.set('testSuite', testSuite);
   },
 
-  runBandwidthTest: Ember.computed.or('video', 'mediaOptions.screenStream'),
+  runVideoBandwidthTest: Ember.computed.or('video', 'mediaOptions.screenStream'),
+
+  runAudioBandwidthTest: Ember.computed('audio', 'runVideoBandwidthTest', function () {
+    return !this.get('runVideoBandwidthTest') && this.get('audio');
+  }),
+
+  runBandwidthTest: Ember.computed.or('runVideoBandwidthTest', 'runAudioBandwidthTest'),
 
   willDestroyElement () {
     try {
