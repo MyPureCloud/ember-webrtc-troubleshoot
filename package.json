@@ -1,6 +1,6 @@
 {
   "name": "ember-webrtc-troubleshoot",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "An ember addon for adding webrtc-troubleshooting to your application",
   "directories": {
     "doc": "doc",
