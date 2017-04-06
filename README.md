@@ -1,5 +1,7 @@
 #### PSA
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/MyPureCloud/ember-webrtc-troubleshoot.svg)](https://greenkeeper.io/)
+
 This addon is still under development and not *quite* ready for use.
 
 TODO:
