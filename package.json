@@ -1,6 +1,6 @@
 {
   "name": "ember-webrtc-troubleshoot",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "description": "An ember addon for adding webrtc-troubleshooting to your application",
   "directories": {
     "doc": "doc",
@@ -21,7 +21,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "broccoli-json-module": "0.0.2",
+    "broccoli-json-module": "1.0.0",
     "broccoli-merge-trees": "^1.1.1",
     "broccoli-source": "^1.1.0",
     "ember-cli-babel": "^5.1.5",
@@ -45,7 +45,7 @@
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
-    "ember-intl": "^2.4.1",
+    "ember-intl": "^2.26.2",
     "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
     "ember-try": "^0.2.8",
@@ -62,10 +62,5 @@
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "semistandard": {
-    "ignore": [
-      "/app/translations/webrtc-troubleshoot"
-    ]
   }
 }

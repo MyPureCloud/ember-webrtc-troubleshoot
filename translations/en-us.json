@@ -14,7 +14,7 @@
     "checkThroughput": "Checking network throughput ...",
     "checkThroughputSuccess": "Throughput check complete",
     "checkThroughputFail": "Throughput check failed",
-    "checkBandwidth": "Checking video bandwidth ...",
+    "checkBandwidth": "Checking bandwidth ...",
     "checkBandwidthSuccess": "Bandwidth check complete",
     "checkBandwidthFail": "Bandwidth check failed",
     "checkConnectivity": "Checking connectivity ...",
