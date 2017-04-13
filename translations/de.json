@@ -22,7 +22,7 @@
         "checkConnectivityFail": "Hoppla, es gibt ein Verbindungsproblem!",
         "showBandwidthStats": "Bandbreitenstatistik einblenden",
         "hideBandwidthStats": "Bandbreitenstatistik ausblenden",
-        "resolution": "Auflösung: {value}",
+        "resolution": "Lösung: {value}",
         "mbpsAvg": "Durchschnittliche Bitrate: {value, number} MBit/s",
         "mbpsMax": "Max. Bitrate: {value, number} MBit/s",
         "mbpsStdDev": "Std.-Abw. der Bitrate: {value, number} MBit/s",
