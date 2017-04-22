@@ -24,7 +24,7 @@
     "broccoli-json-module": "1.0.0",
     "broccoli-merge-trees": "^1.1.1",
     "broccoli-source": "^1.1.0",
-    "ember-cli-babel": "^5.1.5",
+    "ember-cli-babel": "^6.0.0",
     "ember-cli-htmlbars": "^1.0.3",
     "webrtc-troubleshoot": "^3.0.0"
   },
