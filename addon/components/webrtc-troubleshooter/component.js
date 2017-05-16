@@ -10,7 +10,8 @@ const {
   AdvancedCameraTest,
   ThroughputTest,
   VideoBandwidthTest,
-  AudioBandwidthTest
+  AudioBandwidthTest,
+  SymmetricNatTest
 } = WebRTCTroubleshooter.default;
 
 export default Ember.Component.extend({
@@ -23,6 +24,7 @@ export default Ember.Component.extend({
   checkCameraSuccess: false,
   checkingCameraAdvanced: true,
   checkCameraAdvancedSuccess: false,
+  checkingSymmetricNat: true,
   checkingConnectivity: true,
   checkConnectivitySuccess: false,
   checkingThroughput: true,
@@ -116,6 +118,20 @@ export default Ember.Component.extend({
     }
 
     if (window.RTCPeerConnection) {
+      const symmentricNatTest = new SymmetricNatTest();
+      symmentricNatTest.promise.then(res => {
+        this.setProperties({
+          checkingSymmetricNat: false,
+          symmentricNatResult: `webrtcTroubleshoot.${res}`
+        });
+      }, (err) => {
+        this.logger.error(err);
+        this.setProperties({
+          checkingSymmetricNat: false,
+          symmentricNatResult: 'webrtcTroubleshoot.nat.error'
+        });
+      });
+
       const connectivityTest = new ConnectivityTest(iceConfig);
       connectivityTest.promise.then((/* logs */) => {
         this.setProperties({
@@ -144,6 +160,7 @@ export default Ember.Component.extend({
         });
       });
 
+      testSuite.addTest(symmentricNatTest);
       testSuite.addTest(connectivityTest);
       testSuite.addTest(throughputTest);
 
@@ -198,6 +215,16 @@ export default Ember.Component.extend({
   }),
 
   runBandwidthTest: Ember.computed.or('runVideoBandwidthTest', 'runAudioBandwidthTest'),
+
+  symmentricNatResultGood: Ember.computed('symmentricNatResult', function () {
+    const result = this.get('symmentricNatResult');
+    switch (result) {
+      case 'webrtcTroubleshoot.nat.symmetric':
+        return true;
+      default:
+        return false;
+    }
+  }),
 
   willDestroyElement () {
     try {

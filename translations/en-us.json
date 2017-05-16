@@ -18,6 +18,7 @@
     "checkBandwidthSuccess": "Bandwidth check complete",
     "checkBandwidthFail": "Bandwidth check failed",
     "checkConnectivity": "Checking connectivity ...",
+    "checkingSymmetricNat": "Checking network topology ...",
     "checkConnectivitySuccess": "No connectivity issues",
     "checkConnectivityFail": "Oops, there was a connectivity issue!",
     "showBandwidthStats": "Show Bandwidth Stats",
@@ -32,6 +33,12 @@
     "rampUpTimeMs": "Ramp-up Time: {value, number}ms",
     "rttAverage": "Round Trip Average: {value, number}ms",
     "rttMax": "Round Trip Max: {value, number}ms",
-    "framerateMean": "Frame Rate Average: {value, number}"
+    "framerateMean": "Frame Rate Average: {value, number}",
+    "nat": {
+      "symmetric": "Your network appears to be a symmetric NAT. This can cause problems for WebRTC connectivity.",
+      "asymmetric": "Network topology looks good.",
+      "noSrflx": "Unable to direct connect with WebRTC. Relaying may be effective but can affect connectivity and latency.",
+      "error": "An error occurred checking network topology."
+    }
   }
 }
