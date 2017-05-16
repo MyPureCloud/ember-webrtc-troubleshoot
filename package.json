@@ -10,7 +10,8 @@
     "build": "ember build",
     "start": "ember server",
     "coverage": "COVERAGE=true ember test",
-    "test": "node_modules/.bin/semistandard blueprints/**/*.js tests/**/*.js addon/**/*.js app/**/*.js && npm run coverage",
+    "test": "semistandard blueprints/**/*.js tests/**/*.js addon/**/*.js app/**/*.js && npm run coverage",
+    "test:only": "ember test",
     "posttest": "cat ./coverage/lcov.info | coveralls",
     "deploy:gh-pages": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -"
   },
@@ -63,5 +64,12 @@
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "semistandard": {
+    "ignore": [
+      "**/dist",
+      "**/tmp",
+      "**/coverage"
+    ]
   }
 }
