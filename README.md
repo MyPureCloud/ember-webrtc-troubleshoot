@@ -37,8 +37,10 @@ This addon uses [ember-intl](https://github.com/yahoo/ember-intl) for i18n. It h
 ## Running Tests
 
 * `npm test` (Runs linter and tests)
-* `ember test` (These will fail because phantom/node have no support for webrtc)
-* `ember test --server` (Tests should pass here)
+* `ember test`
+  * Install Google Chrome Beta to get the latest Chrome Version
+  * Using Headless Chrome which requires Google Chrome Version 59
+  * `ember test --server` will fail if you don't have Chrome Beta otherwise
 
 ## Building
 
