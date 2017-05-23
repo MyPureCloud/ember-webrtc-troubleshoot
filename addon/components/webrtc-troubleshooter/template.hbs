@@ -57,6 +57,20 @@
       <i class="pc pc-signal"></i>
     </div>
     <div class="entry-values">
+      {{#if checkingSymmetricNat}}
+        {{t "webrtcTroubleshoot.checkingSymmetricNat"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
+      {{else if symmentricNatResultGood}}
+        {{t symmentricNatResult}} <i class="status-icon pc pc-check"></i>
+      {{else}}
+        {{t symmentricNatResult}} <i class="status-icon pc pc-close"></i>
+      {{/if}}
+    </div>
+  </div>
+  <div class="entry-row">
+    <div class="entry-label">
+      <i class="pc pc-signal"></i>
+    </div>
+    <div class="entry-values">
       {{#if checkingConnectivity}}
         {{t "webrtcTroubleshoot.checkConnectivity"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
       {{else if checkConnectivitySuccess}}
