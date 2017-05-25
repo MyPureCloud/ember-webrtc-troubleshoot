@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "Vérification de la bande passante vidéo terminée",
         "checkBandwidthFail": "Échec de la vérification de la bande passante vidéo...",
         "checkConnectivity": "Vérification de la connectivité...",
+        "checkingSymmetricNat": "Vérification de la topologie du réseau...",
         "checkConnectivitySuccess": "Aucun problème de connectivité",
         "checkConnectivityFail": "Désolé ! Il y a eu un problème de connectivité.",
         "showBandwidthStats": "Afficher les statistiques de bande passante",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "Durée d'accélération : {value, number} ms",
         "rttAverage": "Moyenne de boucle : {value, number} ms",
         "rttMax": "Boucle maximale : {value, number} ms",
-        "framerateMean": "Fréquence d'images moyenne : {value, number}"
+        "framerateMean": "Fréquence d'images moyenne : {value, number}",
+        "nat": {
+            "symmetric": "Votre réseau semble être un NAT symétrique. Cela peut poser des problèmes avec la connectivité WebRTC.",
+            "asymmetric": "La topologie du réseau semble correcte.",
+            "noSrflx": "Connexion directe à WebRTC impossible. La mise en place d'un relais peut fonctionner, mais cela peut affecter la connectivité et la latence.",
+            "error": "Une erreur s'est produite lors de la vérification de la topologie du réseau."
+        }
     }
 }
