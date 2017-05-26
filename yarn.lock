@@ -1603,13 +1603,13 @@ ember-cli-code-coverage@0.3.12:
     source-map "0.5.6"
     string.prototype.startswith "^0.2.0"
 
-ember-cli-dependency-checker@^1.2.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-dependency-checker/-/ember-cli-dependency-checker-1.4.0.tgz#2b13f977e1eea843fc1a21a001be6ca5d4ef1942"
+ember-cli-dependency-checker@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-dependency-checker/-/ember-cli-dependency-checker-2.0.0.tgz#f2f2ff144acce7447cde7e0a8666dbfe5029a355"
   dependencies:
-    chalk "^0.5.1"
-    is-git-url "^0.2.0"
-    semver "^4.1.0"
+    chalk "^1.1.3"
+    is-git-url "^1.0.0"
+    semver "^5.3.0"
 
 ember-cli-get-component-path-option@^1.0.0:
   version "1.0.0"
@@ -2808,17 +2808,9 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-getscreenmedia@^1.0.0:
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/getscreenmedia/-/getscreenmedia-1.5.6.tgz#a5b244b2e38b397844b43839a62b8faf3b133cad"
-  dependencies:
-    getusermedia "^2.0.0"
-
-getusermedia@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/getusermedia/-/getusermedia-2.0.1.tgz#f81af9795bc5934649813f7d092dd65030b34655"
-  dependencies:
-    webrtc-adapter "^2.0.2"
+getscreenmedia@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/getscreenmedia/-/getscreenmedia-4.0.0.tgz#c0b13a60176c3c7855ea1879b070224c1547386d"
 
 git-repo-info@^1.4.1:
   version "1.4.1"
@@ -3281,6 +3273,10 @@ is-git-url@^0.2.0:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/is-git-url/-/is-git-url-0.2.3.tgz#445200d6fbd6da028fb5e01440d9afc93f3ccb64"
 
+is-git-url@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-git-url/-/is-git-url-1.0.0.tgz#53f684cd143285b52c3244b4e6f28253527af66b"
+
 is-glob@^2.0.0, is-glob@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-2.0.1.tgz#d096f926a3ded5600f3fdfd91198cb0888c2d863"
@@ -3603,14 +3599,13 @@ locale-emoji@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/locale-emoji/-/locale-emoji-0.2.0.tgz#bc9847a688ad01639fc7afd895774fccaa7859b2"
 
-localmedia@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/localmedia/-/localmedia-3.1.0.tgz#fceb3a6c4ab73a5949fae107577fa11cf299059e"
+localmedia@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/localmedia/-/localmedia-4.0.0.tgz#9606b79a1e8613eef8b7493ebfb1b7f558657214"
   dependencies:
-    getscreenmedia "^1.0.0"
+    getscreenmedia "^4.0.0"
     hark "^1.0.0"
     mockconsole "0.0.x"
-    webrtc-adapter "^2.0.2"
     wildemitter "^1.0.0"
 
 locate-path@^2.0.0:
@@ -4810,13 +4805,12 @@ rsvp@~3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/rsvp/-/rsvp-3.2.1.tgz#07cb4a5df25add9e826ebc67dcc9fd89db27d84a"
 
-rtcpeerconnection@~7.0.0:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/rtcpeerconnection/-/rtcpeerconnection-7.0.2.tgz#72c7a74be3831fb6120f53c5f65a1da5bb4d8777"
+rtcpeerconnection@~8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/rtcpeerconnection/-/rtcpeerconnection-8.0.0.tgz#e07304301e2cfa4d7393af377f1f5dcb54414409"
   dependencies:
     lodash.clonedeep "^4.3.2"
     sdp-jingle-json "^3.0.0"
-    webrtc-adapter "^3.1.0"
     wildemitter "1.x"
 
 run-async@^0.1.0:
@@ -4873,7 +4867,7 @@ sdp-jingle-json@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/sdp-jingle-json/-/sdp-jingle-json-3.0.0.tgz#94e19b7e9a2a74128e0f2fdf0b19ad9dad40bd06"
 
-sdp@^1.0.0, sdp@^1.5.0:
+sdp@^1.5.0:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/sdp/-/sdp-1.5.2.tgz#57a6f24aa5e606357e7df0760990aadd6495ce9f"
 
@@ -4896,7 +4890,7 @@ semver@5.3.0, semver@^5.1.0, semver@^5.1.1, semver@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
-semver@^4.1.0, semver@^4.3.1:
+semver@^4.3.1:
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/semver/-/semver-4.3.6.tgz#300bc6e0e86374f7ba61068b5b1ecd57fc6532da"
 
@@ -5596,24 +5590,18 @@ watch@~0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/watch/-/watch-0.10.0.tgz#77798b2da0f9910d595f1ace5b0c2258521f21dc"
 
-webrtc-adapter@^2.0.2:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-2.1.0.tgz#612b5bc6ce8e73c9d0660038a21f9255a867bf3e"
-  dependencies:
-    sdp "^1.0.0"
-
-webrtc-adapter@^3.1.0, webrtc-adapter@^3.1.1:
+webrtc-adapter@^3.1.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-3.4.1.tgz#280a86c1be5679042d8aaa57cc8f061ee35ebc71"
   dependencies:
     sdp "^1.5.0"
 
-webrtc-troubleshoot@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-3.2.0.tgz#819ab094bb05e8f672bfd2b8214d992c29e14b8f"
+webrtc-troubleshoot@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-4.0.0.tgz#d2e2cc1be09996169d9b3bfc6642f7caa67c6a44"
   dependencies:
-    localmedia "^3.0.0"
-    rtcpeerconnection "~7.0.0"
+    localmedia "^4.0.0"
+    rtcpeerconnection "~8.0.0"
     webrtc-adapter "^3.1.1"
 
 websocket-driver@>=0.5.1:
