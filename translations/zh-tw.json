@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "頻寬檢查完成",
         "checkBandwidthFail": "頻寬檢查失敗",
         "checkConnectivity": "正在檢查連接...",
+        "checkingSymmetricNat": "正在檢查網路拓撲...",
         "checkConnectivitySuccess": "連接正常",
         "checkConnectivityFail": "哎呀，連接出問題了！",
         "showBandwidthStats": "顯示頻寬統計資料",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "加速時間：{value, number}ms",
         "rttAverage": "平均來回時間：{value, number}ms",
         "rttMax": "最大來回時間：{value, number}ms",
-        "framerateMean": "平均畫格速率：{value, number}"
+        "framerateMean": "平均畫格速率：{value, number}",
+        "nat": {
+            "symmetric": "您的網路顯示為對稱的 NAT，這可能會造成 WebRTC 連接發生問題。",
+            "asymmetric": "網路拓撲看起來良好。",
+            "noSrflx": "無法使用 WebRTC 直接連接，中繼可能有效但是會影響連接和延遲。",
+            "error": "檢查網路拓撲時發生錯誤。"
+        }
     }
 }

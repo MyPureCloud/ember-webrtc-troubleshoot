@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "带宽检查完成",
         "checkBandwidthFail": "带宽检查失败",
         "checkConnectivity": "正在检查连接...",
+        "checkingSymmetricNat": "正在检查网络拓扑...",
         "checkConnectivitySuccess": "连接正常",
         "checkConnectivityFail": "哎呀，连接出问题了！",
         "showBandwidthStats": "显示带宽状态",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "加速时间: {value, number}ms",
         "rttAverage": "往返平均值: {value, number}ms",
         "rttMax": "往返最大值: {value, number}ms",
-        "framerateMean": "帧速率平均值: {value, number}"
+        "framerateMean": "帧速率平均值: {value, number}",
+        "nat": {
+            "symmetric": "您的网络似乎是对称 NAT。 这可能会导致 WebRTC 连接问题。",
+            "asymmetric": "网络拓扑看起来很好。",
+            "noSrflx": "无法直接连接 WebRTC。中继可能是有效的，但会影响连接性和延迟。",
+            "error": "检查网络拓扑时出现问题。"
+        }
     }
 }

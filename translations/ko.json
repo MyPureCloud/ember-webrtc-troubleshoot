@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "대역폭 확인 완료",
         "checkBandwidthFail": "대역폭 확인 실패",
         "checkConnectivity": "연결 검사 중...",
+        "checkingSymmetricNat": "네트워크 토폴로지 확인 중...",
         "checkConnectivitySuccess": "연결 문제 없음",
         "checkConnectivityFail": "연결 문제가 있습니다.",
         "showBandwidthStats": "대역폭 상태 보기",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "램프업 시간: {value, number}ms",
         "rttAverage": "평균 라운드트립: {value, number}ms",
         "rttMax": "최대 라운드트립: {value, number}ms",
-        "framerateMean": "평균 프레임레이트: {value, number}"
+        "framerateMean": "평균 프레임레이트: {value, number}",
+        "nat": {
+            "symmetric": "네트워크가 대칭 NAT인 것 같습니다. WebRTC 연결에 문제가 발생할 수 있습니다.",
+            "asymmetric": "네트워크 토폴로지가 정상입니다.",
+            "noSrflx": "WebRTC에 직접 연결할 수 없습니다. 릴레이가 효과적이지만 연결과 대기 시간에 영향을 줄 수 있습니다.",
+            "error": "네트워크 토폴로지 확인 중 오류가 발생했습니다."
+        }
     }
 }

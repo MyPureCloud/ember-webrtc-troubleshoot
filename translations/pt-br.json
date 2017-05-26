@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "Verificação de largura de banda de vídeo concluída",
         "checkBandwidthFail": "Verificação de largura de banda de vídeo falhou",
         "checkConnectivity": "Verificando a conectividade ...",
+        "checkingSymmetricNat": "Verificando a topologia da rede...",
         "checkConnectivitySuccess": "Nenhum problema na conectividade",
         "checkConnectivityFail": "Ops, houve um problema na conectividade!",
         "showBandwidthStats": "Mostrar estatísticas de largura de banda",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "Tempo para alcançar a resolução: {value, number} ms",
         "rttAverage": "Tempo médio de viagem de ida e volta: {value, number} ms",
         "rttMax": "Tempo máx. de viagem de ida e volta: {value, number} ms",
-        "framerateMean": "Taxa de quadros média: {value, number}"
+        "framerateMean": "Taxa de quadros média: {value, number}",
+        "nat": {
+            "symmetric": "Sua rede parece ser uma NAT simétrica. Isso pode causar problemas na conectividade de WebRTC.",
+            "asymmetric": "A topologia de rede parece estar bem.",
+            "noSrflx": "Não é possível conectar com a WebRTC. A retransmissão pode ser eficaz mas pode afetar a conectividade e latência.",
+            "error": "Ocorreu um erro ao verificar a topologia de rede."
+        }
     }
 }
