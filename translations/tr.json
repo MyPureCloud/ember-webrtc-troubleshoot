@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "Bant genişliği denetimi tamamlandı",
         "checkBandwidthFail": "Bant genişliği denetimi başarısız oldu",
         "checkConnectivity": "Bağlantı denetleniyor...",
+        "checkingSymmetricNat": "Ağ topolojisi denetleniyor ...",
         "checkConnectivitySuccess": "Bağlantı sorunu yok",
         "checkConnectivityFail": "Ne yazık ki bağlantıyla ilgili bir sorun var!",
         "showBandwidthStats": "Bant Genişliği Durumunu Göster",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "Veri Çıkışı Süresi: {value, number} ms",
         "rttAverage": "Gidiş-Geliş Ortalaması: {value, number} ms",
         "rttMax": "Gidiş Geliş Maks: {value, number} ms",
-        "framerateMean": "Kare Hızı Ortalaması: {value, number}"
+        "framerateMean": "Kare Hızı Ortalaması: {value, number}",
+        "nat": {
+            "symmetric": "Ağınız bir simetrik NAT gibi görünüyor. Bu durum WebRTC bağlantısı için sorunlara yol açabilir.",
+            "asymmetric": "Ağ topolojisi iyi görünüyor.",
+            "noSrflx": "WebRTC ile doğrudan bağlantı kurulamıyor. Aktarma etkili olabilir ancak bağlantıyı ve gecikmeyi etkileyebilir.",
+            "error": "Ağ topolojisi denetlenirken bir hata oluştu."
+        }
     }
 }
