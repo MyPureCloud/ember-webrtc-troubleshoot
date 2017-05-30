@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "Bandbreddskontroll klar",
         "checkBandwidthFail": "Bandbreddskontroll misslyckades",
         "checkConnectivity": "Kontrollerar anslutningen...",
+        "checkingSymmetricNat": "Kontrollerar nätverkets topologi ...",
         "checkConnectivitySuccess": "Inga anslutningsproblem",
         "checkConnectivityFail": "Ojdå, det har uppstått ett anslutningsproblem!",
         "showBandwidthStats": "Visa bandbreddsstatistik",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "Uppstartstid: {value, number} ms",
         "rttAverage": "Genomsnittlig tur och retur: {value, number} ms",
         "rttMax": "Maximal tur och retur: {value, number} ms",
-        "framerateMean": "Genomsnittlig bildfrekvens: {value, number}"
+        "framerateMean": "Genomsnittlig bildfrekvens: {value, number}",
+        "nat": {
+            "symmetric": "Ditt nätverk verkar vara av typen symmetrisk NAT. Detta kan skapa problem för WebRTC-anslutningar.",
+            "asymmetric": "Nätverkets topologi ser bra ut.",
+            "noSrflx": "Det gick inte att ansluta direkt till WebRTC. Vidarebefordring kan fungera, men det kan påverka både anslutning och latens.",
+            "error": "Ett fel uppstod när nätverkets topologi skulle kontrolleras."
+        }
     }
 }

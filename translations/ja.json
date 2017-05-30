@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "処理能力チェックの完了",
         "checkBandwidthFail": "処理能力チェックの失敗",
         "checkConnectivity": "接続をチェックしています ...",
+        "checkingSymmetricNat": "ネットワーク トポロジーをチェックしています...",
         "checkConnectivitySuccess": "接続に問題はありません",
         "checkConnectivityFail": "接続に問題が見つかりました!",
         "showBandwidthStats": "帯域幅の統計を表示",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "立ち上げ時間: {value, number}ms",
         "rttAverage": "ラウンドトリップ平均: {value, number}ms",
         "rttMax": "ラウンドトリップ最大: {value, number}ms",
-        "framerateMean": "フレームレート平均: {value, number}"
+        "framerateMean": "フレームレート平均: {value, number}",
+        "nat": {
+            "symmetric": "ネットワークが対称型 NAT のようです。WebRTC の接続性に問題が発生する可能性があります。",
+            "asymmetric": "ネットワーク トポロジーに問題は無いようです。",
+            "noSrflx": "WebRTC と直接接続できません。リレー接続できるかもしれませんが、接続性や遅延に影響する可能性があります。",
+            "error": "ネットワーク トポロジーのチェック中にエラーが発生しました。"
+        }
     }
 }

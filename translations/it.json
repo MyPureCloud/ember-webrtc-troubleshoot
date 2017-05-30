@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "Verifica larghezza banda completata",
         "checkBandwidthFail": "Verifica larghezza banda non completata",
         "checkConnectivity": "Verifica connettività in corso...",
+        "checkingSymmetricNat": "Controllo topologia di rete...",
         "checkConnectivitySuccess": "Nessun problema di connettività",
         "checkConnectivityFail": "Problema di connettività!",
         "showBandwidthStats": "Mostra statistiche larghezza di banda",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "Tempo incremento: {value, number}ms",
         "rttAverage": "Media round trip: {value, number}ms",
         "rttMax": "Max round trip: {value, number}ms",
-        "framerateMean": "Media frequenza fotogrammi: {value, number}"
+        "framerateMean": "Media frequenza fotogrammi: {value, number}",
+        "nat": {
+            "symmetric": "La rete risulta essere di tipo NAT simmetrico. Ciò può causare problemi di connettività WebRTC.",
+            "asymmetric": "La topologia di rete risulta corretta.",
+            "noSrflx": "Impossibile effettuare una connessione diretta con WebRTC. Il relay potrebbe risultare efficace ma è in grado di influire su connettività e latenza.",
+            "error": "Errore durante il controllo della topologia di rete."
+        }
     }
 }

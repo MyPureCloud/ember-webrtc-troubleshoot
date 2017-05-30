@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "Bandbreitenüberprüfung abgeschlossen",
         "checkBandwidthFail": "Fehler bei der Bandbreitenüberprüfung",
         "checkConnectivity": "Verbindung wird überprüft...",
+        "checkingSymmetricNat": "Netzwerktopologie wird überprüft...",
         "checkConnectivitySuccess": "Keine Verbindungsprobleme",
         "checkConnectivityFail": "Hoppla, es gibt ein Verbindungsproblem!",
         "showBandwidthStats": "Bandbreitenstatistik einblenden",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "Anlaufzeit: {value, number} ms",
         "rttAverage": "Durchschnittliche Umlaufzeit: {value, number} ms",
         "rttMax": "Max. Umlaufzeit: {value, number} ms",
-        "framerateMean": "Durchschnittliche Bildrate: {value, number}"
+        "framerateMean": "Durchschnittliche Bildrate: {value, number}",
+        "nat": {
+            "symmetric": "Ihr Netzwerk scheint ein symmetrisches NAT zu sein. Dies kann Probleme bei der WebRTC-Verbindung verursachen.",
+            "asymmetric": "Die Netzwerktopologie sieht gut aus.",
+            "noSrflx": "Direkte Verbindung mit WebRTC konnte nicht hergestellt weren. Die Weiterleitung ist möglicherweise erfolgreich, sie kann sich aber auf die Verbindung und Latenz auswirken.",
+            "error": "Beim Überprüfen der Netzwerktopologie ist ein Fehler aufgetreten."
+        }
     }
 }
