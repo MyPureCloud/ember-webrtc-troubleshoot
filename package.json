@@ -13,8 +13,7 @@
     "test": "semistandard blueprints/**/*.js tests/**/*.js addon/**/*.js app/**/*.js && npm run coverage",
     "test:only": "ember test",
     "posttest": "cat ./coverage/lcov.info | coveralls",
-    "deploy:gh-pages": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -",
-    "postinstall": "cp node_modules/webrtc-adapter/out/adapter.js vendor/adapter.js"
+    "deploy:gh-pages": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {

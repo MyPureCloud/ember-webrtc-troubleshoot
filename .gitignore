@@ -22,5 +22,3 @@ bower.json.ember-try
 npm-debug.log
 testem.log
 .idea
-
-vendor/adapter.js
