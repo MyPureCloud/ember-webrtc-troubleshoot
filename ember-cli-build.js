@@ -11,6 +11,9 @@ module.exports = function (defaults) {
     }
   });
 
+  // we do this because we don't want the addon to bundle it, but we need it for dev
+  app.import('vendor/adapter.js');
+
   /*
     This build file specifies the options for the dummy test app of this
     addon, located in `/tests/dummy`

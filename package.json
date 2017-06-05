@@ -13,7 +13,8 @@
     "test": "semistandard blueprints/**/*.js tests/**/*.js addon/**/*.js app/**/*.js && npm run coverage",
     "test:only": "ember test",
     "posttest": "cat ./coverage/lcov.info | coveralls",
-    "deploy:gh-pages": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -"
+    "deploy:gh-pages": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -",
+    "postinstall": "cp node_modules/webrtc-adapter/out/adapter.js vendor/adapter.js"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {
@@ -27,7 +28,7 @@
     "broccoli-source": "^1.1.0",
     "ember-cli-babel": "^5.1.5",
     "ember-cli-htmlbars": "^1.0.3",
-    "webrtc-troubleshoot": "^4.0.0"
+    "webrtc-troubleshoot": "^5.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -54,7 +55,8 @@
     "fs-promise": "^2.0.3",
     "loader.js": "^4.0.0",
     "pre-push": "^0.1.1",
-    "semistandard": "^11.0.0"
+    "semistandard": "^11.0.0",
+    "webrtc-adapter": "^4.0.0"
   },
   "keywords": [
     "ember-addon"
