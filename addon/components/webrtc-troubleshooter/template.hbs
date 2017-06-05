@@ -54,15 +54,15 @@
   {{/if}}
   <div class="entry-row">
     <div class="entry-label">
-      <i class="pc pc-signal"></i>
+      <i class="pc pc-exchange"></i>
     </div>
     <div class="entry-values">
       {{#if checkingSymmetricNat}}
         {{t "webrtcTroubleshoot.checkingSymmetricNat"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
-      {{else if symmentricNatResultGood}}
-        {{t symmentricNatResult}} <i class="status-icon pc pc-check"></i>
+      {{else if symmetricNatResultGood}}
+        {{t symmetricNatResult}} <i class="status-icon pc pc-check"></i>
       {{else}}
-        {{t symmentricNatResult}} <i class="status-icon pc pc-close"></i>
+        {{t symmetricNatResult}} <i class="status-icon pc pc-close"></i>
       {{/if}}
     </div>
   </div>

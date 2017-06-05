@@ -118,17 +118,17 @@ export default Ember.Component.extend({
     }
 
     if (window.RTCPeerConnection) {
-      const symmentricNatTest = new SymmetricNatTest();
-      symmentricNatTest.promise.then(res => {
+      const symmetricNatTest = new SymmetricNatTest();
+      symmetricNatTest.promise.then(res => {
         this.setProperties({
           checkingSymmetricNat: false,
-          symmentricNatResult: `webrtcTroubleshoot.${res}`
+          symmetricNatResult: `webrtcTroubleshoot.${res}`
         });
       }, (err) => {
         this.logger.error(err);
         this.setProperties({
           checkingSymmetricNat: false,
-          symmentricNatResult: 'webrtcTroubleshoot.nat.error'
+          symmetricNatResult: 'webrtcTroubleshoot.nat.error'
         });
       });
 
@@ -160,7 +160,7 @@ export default Ember.Component.extend({
         });
       });
 
-      testSuite.addTest(symmentricNatTest);
+      testSuite.addTest(symmetricNatTest);
       testSuite.addTest(connectivityTest);
       testSuite.addTest(throughputTest);
 
@@ -216,10 +216,10 @@ export default Ember.Component.extend({
 
   runBandwidthTest: Ember.computed.or('runVideoBandwidthTest', 'runAudioBandwidthTest'),
 
-  symmentricNatResultGood: Ember.computed('symmentricNatResult', function () {
-    const result = this.get('symmentricNatResult');
+  symmetricNatResultGood: Ember.computed('symmetricNatResult', function () {
+    const result = this.get('symmetricNatResult');
     switch (result) {
-      case 'webrtcTroubleshoot.nat.symmetric':
+      case 'webrtcTroubleshoot.nat.asymmetric':
         return true;
       default:
         return false;
