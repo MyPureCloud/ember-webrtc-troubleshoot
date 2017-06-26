@@ -18,6 +18,7 @@
         "checkBandwidthSuccess": "Controle van bandbreedte voltooid",
         "checkBandwidthFail": "Controle van bandbreedte mislukt",
         "checkConnectivity": "Connectiviteit controleren...",
+        "checkingSymmetricNat": "Netwerktopologie controleren...",
         "checkConnectivitySuccess": "Geen connectiviteitsproblemen",
         "checkConnectivityFail": "Er is een probleem met de connectiviteit.",
         "showBandwidthStats": "Bandbreedtestatistieken weergeven",
@@ -32,6 +33,12 @@
         "rampUpTimeMs": "Aanlooptijd: {value, number} ms",
         "rttAverage": "Gemiddelde round-trip tijd: {value, number} ms",
         "rttMax": "Maximale round-trip tijd: {value, number} ms",
-        "framerateMean": "Gemiddelde framesnelheid: {value, number}"
+        "framerateMean": "Gemiddelde framesnelheid: {value, number}",
+        "nat": {
+            "symmetric": "Het lijkt erop dat uw netwerk een symmetrische NAT is. Dit kan problemen veroorzaken voor connectiviteit met WebRTC.",
+            "asymmetric": "De netwerktopologie ziet er goed uit.",
+            "noSrflx": "Kan geen directe verbinding met WebRTC maken. Relaying kan efficiënt zijn, maar kan invloed hebben op de connectiviteit en latentie.",
+            "error": "Er is een fout opgetreden bij het controleren van de netwerktopologie."
+        }
     }
 }
