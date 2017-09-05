@@ -6128,9 +6128,9 @@ webrtc-adapter@^4.0.0:
   dependencies:
     sdp "^1.5.0"
 
-webrtc-troubleshoot@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-6.0.0.tgz#e925fc36281512dab4cfecf49a2b47a9ce010cf2"
+webrtc-troubleshoot@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-6.1.1.tgz#20d4ef1877cb19ec6f1b55186a5ac356c32b06e2"
   dependencies:
     localmedia "^4.0.0"
     rtcpeerconnection "^8.0.1"
