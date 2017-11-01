@@ -1,15 +1,3 @@
-#### PSA
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/MyPureCloud/ember-webrtc-troubleshoot.svg)](https://greenkeeper.io/)
-
-This addon is still under development and not *quite* ready for use.
-
-TODO:
-* [x] bring in bower deps
-* [x] create dummy application
-* [ ] more unit tests
-* [ ] more integration tests
-
 # ember-webrtc-troubleshoot
 
 [![Build Status](https://travis-ci.org/MyPureCloud/ember-webrtc-troubleshoot.svg?branch=master)](https://travis-ci.org/MyPureCloud/ember-webrtc-troubleshoot)
