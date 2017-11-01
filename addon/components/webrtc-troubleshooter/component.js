@@ -41,10 +41,10 @@ export default Ember.Component.extend({
 
   init () {
     this._super(...arguments);
-    this.startTroubleshooter();
     if (!this.get('logger')) {
       this.set('logger', Ember.Logger);
     }
+    this.startTroubleshooter();
   },
 
   startTroubleshooter: function () {
