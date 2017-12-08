@@ -55,7 +55,7 @@
     "loader.js": "^4.5.1",
     "pre-push": "^0.1.1",
     "semistandard": "^11.0.0",
-    "webrtc-adapter": "^5.0.6"
+    "webrtc-adapter": "^6.0.3"
   },
   "keywords": [
     "ember-addon"
