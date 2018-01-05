@@ -47,6 +47,15 @@ export default Ember.Component.extend({
     this.startTroubleshooter();
   },
 
+  safeSetProperties (obj) {
+    Ember.run(() => {
+      if (this.get('isDestroyed') || this.get('isDestroying')) {
+        return;
+      }
+      this.setProperties(obj);
+    });
+  },
+
   startTroubleshooter: function () {
     if (!navigator.mediaDevices) {
       this.set('video', false);
@@ -65,7 +74,7 @@ export default Ember.Component.extend({
     if (this.get('audio')) {
       const audioTest = new AudioTest(mediaOptions);
       audioTest.promise.then((/* logs */) => {
-        this.setProperties({
+        this.safeSetProperties({
           checkingMicrophone: false,
           checkMicrophoneSuccess: true,
           checkingVolume: false,
@@ -73,7 +82,7 @@ export default Ember.Component.extend({
         });
       }, (err) => {
         this.logger.error(err);
-        this.setProperties({
+        this.safeSetProperties({
           checkingMicrophone: false,
           checkMicrophoneSuccess: false,
           checkingVolume: false,
@@ -87,13 +96,13 @@ export default Ember.Component.extend({
     if (this.get('video')) {
       const videoTest = new VideoTest(mediaOptions);
       videoTest.promise.then((/* logs */) => {
-        this.setProperties({
+        this.safeSetProperties({
           checkingCamera: false,
           checkCameraSuccess: true
         });
       }, (err) => {
         this.logger.error(err);
-        this.setProperties({
+        this.safeSetProperties({
           checkingCamera: false,
           checkCameraSuccess: false
         });
@@ -101,13 +110,13 @@ export default Ember.Component.extend({
 
       const advancedCameraTest = new AdvancedCameraTest(mediaOptions);
       advancedCameraTest.promise.then((/* logs */) => {
-        this.setProperties({
+        this.safeSetProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: true
         });
       }, (err) => {
         this.logger.error(err);
-        this.setProperties({
+        this.safeSetProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: false
         });
@@ -120,13 +129,13 @@ export default Ember.Component.extend({
     if (window.RTCPeerConnection) {
       const symmetricNatTest = new SymmetricNatTest();
       symmetricNatTest.promise.then(res => {
-        this.setProperties({
+        this.safeSetProperties({
           checkingSymmetricNat: false,
           symmetricNatResult: `webrtcTroubleshoot.${res}`
         });
       }, (err) => {
         this.logger.error(err);
-        this.setProperties({
+        this.safeSetProperties({
           checkingSymmetricNat: false,
           symmetricNatResult: 'webrtcTroubleshoot.nat.error'
         });
@@ -134,13 +143,13 @@ export default Ember.Component.extend({
 
       const connectivityTest = new ConnectivityTest(iceConfig);
       connectivityTest.promise.then((/* logs */) => {
-        this.setProperties({
+        this.safeSetProperties({
           checkingConnectivity: false,
           checkConnectivitySuccess: true
         });
       }, (err) => {
         this.logger.error(err);
-        this.setProperties({
+        this.safeSetProperties({
           checkingConnectivity: false,
           checkConnectivitySuccess: false
         });
@@ -148,13 +157,13 @@ export default Ember.Component.extend({
 
       const throughputTest = new ThroughputTest(iceConfig);
       throughputTest.promise.then((/* logs */) => {
-        this.setProperties({
+        this.safeSetProperties({
           checkingThroughput: false,
           checkThroughputSuccess: true
         });
       }, (err) => {
         this.logger.error(err);
-        this.setProperties({
+        this.safeSetProperties({
           checkingThroughput: false,
           checkThroughputSuccess: false
         });
@@ -174,14 +183,14 @@ export default Ember.Component.extend({
 
       if (bandwidthTest) {
         bandwidthTest.promise.then(results => {
-          this.setProperties({
+          this.safeSetProperties({
             bandwidthStats: results && results.stats,
             checkingBandwidth: false,
             checkBandwidthSuccess: true
           });
         }, (results) => {
           this.logger.error(results);
-          this.setProperties({
+          this.safeSetProperties({
             bandwidthStats: results && results.stats,
             checkingBandwidth: false,
             checkBandwidthSuccess: false
