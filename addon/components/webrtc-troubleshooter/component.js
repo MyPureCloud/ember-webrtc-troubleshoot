@@ -81,7 +81,7 @@ export default Ember.Component.extend({
           checkVolumeSuccess: true
         });
       }, (err) => {
-        this.logger.error(err);
+        this.logger.error('audioTest failed', err);
         this.safeSetProperties({
           checkingMicrophone: false,
           checkMicrophoneSuccess: false,
@@ -101,7 +101,7 @@ export default Ember.Component.extend({
           checkCameraSuccess: true
         });
       }, (err) => {
-        this.logger.error(err);
+        this.logger.error('videoTest failed', err);
         this.safeSetProperties({
           checkingCamera: false,
           checkCameraSuccess: false
@@ -115,7 +115,7 @@ export default Ember.Component.extend({
           checkCameraAdvancedSuccess: true
         });
       }, (err) => {
-        this.logger.error(err);
+        this.logger.error('advancedCameraTest failed', err);
         this.safeSetProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: false
@@ -134,7 +134,7 @@ export default Ember.Component.extend({
           symmetricNatResult: `webrtcTroubleshoot.${res}`
         });
       }, (err) => {
-        this.logger.error(err);
+        this.logger.error('symmetricNatTest failed', err);
         this.safeSetProperties({
           checkingSymmetricNat: false,
           symmetricNatResult: 'webrtcTroubleshoot.nat.error'
@@ -148,7 +148,7 @@ export default Ember.Component.extend({
           checkConnectivitySuccess: true
         });
       }, (err) => {
-        this.logger.error(err);
+        this.logger.error('connectivityTest failed', err);
         this.safeSetProperties({
           checkingConnectivity: false,
           checkConnectivitySuccess: false
@@ -162,7 +162,7 @@ export default Ember.Component.extend({
           checkThroughputSuccess: true
         });
       }, (err) => {
-        this.logger.error(err);
+        this.logger.error('throughputTest failed', err);
         this.safeSetProperties({
           checkingThroughput: false,
           checkThroughputSuccess: false
@@ -189,7 +189,7 @@ export default Ember.Component.extend({
             checkBandwidthSuccess: true
           });
         }, (results) => {
-          this.logger.error(results);
+          this.logger.error('bandwidthTest failed', results);
           this.safeSetProperties({
             bandwidthStats: results && results.stats,
             checkingBandwidth: false,
