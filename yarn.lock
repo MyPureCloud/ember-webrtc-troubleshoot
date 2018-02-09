@@ -6629,16 +6629,16 @@ watch@~0.18.0:
     exec-sh "^0.2.0"
     minimist "^1.2.0"
 
-webrtc-adapter@^5.0.6:
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-5.0.6.tgz#7946fca194dadf869bb6c8cae1011dfda03f40c7"
+webrtc-adapter@^6.0.0:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-6.1.1.tgz#83ab2a7e2a364a9a9fd7cd3cad807e2eeb5edec6"
   dependencies:
     rtcpeerconnection-shim "^1.1.13"
     sdp "^2.3.0"
 
-webrtc-troubleshoot@^6.1.1:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-6.1.2.tgz#eaafd6b6f81dc2b1477da52c7b62c151a57ef183"
+webrtc-troubleshoot@^6.1.4:
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-6.1.4.tgz#f77d6fefe075b09c96a2db10dc79272dc6a7c3b5"
   dependencies:
     localmedia "^4.0.0"
     rtcpeerconnection "^8.0.1"
