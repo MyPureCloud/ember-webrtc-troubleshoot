@@ -6636,9 +6636,9 @@ webrtc-adapter@^6.0.0:
     rtcpeerconnection-shim "^1.1.13"
     sdp "^2.3.0"
 
-webrtc-troubleshoot@^6.1.5:
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-6.1.5.tgz#fd306f9cdf0d83cf2ca58cc7fa828fd967c999e4"
+webrtc-troubleshoot@^6.1.6:
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-6.1.6.tgz#bd5762f9e187078cdb1279b8fe28c8b0ef9e7635"
   dependencies:
     localmedia "^4.0.0"
     rtcpeerconnection "^8.0.1"
