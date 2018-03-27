@@ -50,7 +50,7 @@
     "ember-intl": "^2.26.2",
     "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
-    "ember-try": "^0.2.8",
+    "ember-try": "^1.0.0-beta.0",
     "fs-promise": "^2.0.3",
     "loader.js": "^4.5.1",
     "pre-push": "^0.1.1",
