@@ -1,0 +1,63 @@
+{
+    "name": "webrtc-troubleshooter",
+    "buildNumber": "Unknown",
+    "buildDate": "2018-04-17T21:39:24.569Z",
+    "indexFiles": [
+        {
+            "url": "/webrtc-troubleshooter/",
+            "file": "/index.html"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/dummy-29d8e9a73c4cd2db36268a8e2370d093.js",
+            "file": "/assets/dummy-29d8e9a73c4cd2db36268a8e2370d093.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/dummy-502681a745f12e9d5712bcc69111715c.js",
+            "file": "/assets/dummy-502681a745f12e9d5712bcc69111715c.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/dummy-6df051c0c66509ea67951a698561af57.css",
+            "file": "/assets/dummy-6df051c0c66509ea67951a698561af57.css"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/dummy-6e8d6ad67eb009bb98bc042bf70fe97b.js",
+            "file": "/assets/dummy-6e8d6ad67eb009bb98bc042bf70fe97b.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/dummy-76f198579ba4c4da524db130e22c825f.js",
+            "file": "/assets/dummy-76f198579ba4c4da524db130e22c825f.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/dummy-77c7c52b35c923d596b87dca41e5cbe4.js",
+            "file": "/assets/dummy-77c7c52b35c923d596b87dca41e5cbe4.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css",
+            "file": "/assets/dummy-d41d8cd98f00b204e9800998ecf8427e.css"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/vendor-0cde7bfb66a82481331f5184ad21ac16.js",
+            "file": "/assets/vendor-0cde7bfb66a82481331f5184ad21ac16.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/vendor-1ffd81961557d66dabd1a6ca9a566598.js",
+            "file": "/assets/vendor-1ffd81961557d66dabd1a6ca9a566598.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/vendor-8059feb1b8fc08eebd5e60a7bee2c646.js",
+            "file": "/assets/vendor-8059feb1b8fc08eebd5e60a7bee2c646.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/vendor-8967935348583781631a4c27a5301a87.js",
+            "file": "/assets/vendor-8967935348583781631a4c27a5301a87.js"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css",
+            "file": "/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css"
+        },
+        {
+            "url": "/webrtc-troubleshooter/assets/vendor-dc7a1febfd58abcf67f8891caeba9474.js",
+            "file": "/assets/vendor-dc7a1febfd58abcf67f8891caeba9474.js"
+        }
+    ]
+}
