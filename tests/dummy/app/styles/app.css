@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  color: #0a0a0a;
+}
+
+.primary-intro, h1 {
+  text-align: center;
+}
+.intro {
+  padding: 20px;
+}
+
+body > div.ember-view {
+  padding-bottom: 50px;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  position: fixed;
+  margin: 0;
+  padding: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: white;
+  font-weight: 100;
+}
+
+h1, .footer {
+  background-image: linear-gradient(to right, #613e5c, #e54d28);
+}
+
+.flashy-webrtc-troubleshooter .options {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.flashy-webrtc-troubleshooter .options > * {
+  width: 100%;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  background: linear-gradiant
+}
+
+.flashy-webrtc-troubleshooter {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.flashy-webrtc-troubleshooter .btn.btn-link {
+  background: none;
+  text-decoration: underline;
+  font-size: 13px;
+  border: none;
+}
+
+.entry-label {
+  padding: 10px;
+}
+
+.ion-load-a:before {
+  animation: spin 2s linear infinite;
+}
+
+textarea {
+  padding: 5px;
+  border: 1px solid #0a0a0a;
+  border-radius: 3px;
+  height: 100px;
+  font-family: monospace;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  text-align: left;
+  z-index: 1;
+}
+
+.footer * {
+  color: #afafaf;
+}
+
+.footer a {
+  padding: 10px;
+}
+
+.footer svg {
+  position: absolute;
+  right: 0;
+  height: 80%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 2px;
+  top: 0;
+  background: white;
+}

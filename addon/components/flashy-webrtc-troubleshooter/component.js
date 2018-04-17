@@ -14,9 +14,52 @@ const {
   SymmetricNatTest
 } = WebRTCTroubleshooter.default;
 
+const LOGLEVELS = [ 'debug', 'info', 'log', 'warn', 'error' ];
+
+let logBuffer = [];
+const Logger = {};
+LOGLEVELS.forEach(level => {
+  Logger[level] = function () {
+    const textarea = document.getElementsByTagName('textarea')[0];
+    const args = [...arguments];
+    const toBuffer = [];
+    args.forEach(a => {
+      let toLog = a;
+      if (a instanceof Error) {
+        toLog = {
+          message: a.message,
+          details: a.details,
+          name: a.name,
+          status: a.status
+        };
+      }
+      toBuffer.push(toLog);
+    });
+    logBuffer.push([level, toBuffer]);
+    if (textarea) {
+      textarea.value = JSON.stringify(logBuffer, null, 2);
+    }
+    Ember.Logger[level](...arguments);
+  };
+});
+
+const download = function (filename) {
+  const element = document.createElement('a');
+  const text = document.getElementsByTagName('textarea')[0].value;
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+};
+
 export default Ember.Component.extend({
   layout,
-  classNames: ['webrtc-troubleshooter'],
+  classNames: ['flashy-webrtc-troubleshooter'],
 
   checkingMicrophone: true,
   checkMicrophoneSuccess: false,
@@ -42,7 +85,7 @@ export default Ember.Component.extend({
   init () {
     this._super(...arguments);
     if (!this.get('logger')) {
-      this.set('logger', Ember.Logger);
+      this.set('logger', Logger);
     }
     this.startTroubleshooter();
   },
@@ -63,11 +106,13 @@ export default Ember.Component.extend({
     }
     const iceConfig = {
       iceServers: this.get('iceServers') || [],
-      iceTransports: 'relay'
+      iceTransports: 'relay',
+      logger: this.get('logger')
     };
-    const mediaOptions = this.get('mediaOptions') || { audio: true, video: true };
+    const mediaOptions = this.get('mediaOptions') || { audio: true, video: true, logger: this.get('logger') };
 
     const testSuite = new TestSuite({ logger: this.get('logger') });
+    window.testSuite = testSuite;
 
     // TODO: logs for rejections?
 
@@ -129,7 +174,7 @@ export default Ember.Component.extend({
     }
 
     if (window.RTCPeerConnection) {
-      const symmetricNatTest = new SymmetricNatTest();
+      const symmetricNatTest = new SymmetricNatTest({ logger: this.get('logger') });
       symmetricNatTest.promise.then(res => {
         this.safeSetProperties({
           checkingSymmetricNat: false,
@@ -208,6 +253,7 @@ export default Ember.Component.extend({
       if (this.done) {
         this.done(results);
       }
+      this.send('downloadDiagnosticReport');
     }).catch((err) => {
       this.logger.warn('WebRTC Troubleshooting results (error)', err, err && err.details);
       this.sendAction('results', err);
@@ -247,8 +293,8 @@ export default Ember.Component.extend({
   },
 
   actions: {
-    toggleBandwidthStats () {
-      this.toggleProperty('showBandwidthStats');
+    downloadDiagnosticReport () {
+      download('purecloud-diagnostics-' + new Date().getTime() + '.json');
     }
   }
 });

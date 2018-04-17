@@ -29,6 +29,7 @@ install:
   - npm install -g bower
   - npm install
   - bower install
+  - npm run install-chromium
 
 script:
   - ember try $EMBER_TRY_SCENARIO test

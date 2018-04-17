@@ -1,3 +1,11 @@
-<h2 id="title">Welcome to Ember</h2>
+<h1>{{t "dummy.title"}}</h1>
 
-{{webrtc-troubleshooter iceServers=iceServers}}
+<div class="primary-intro">
+  <p>
+    {{t "dummy.description"}}
+  </p>
+  <a href="https://help.mypurecloud.com/articles/about-purecloud-webrtc-phones/" target="_blank">{{t "dummy.learnMore"}}</a>
+</div>
+{{#if realtimeConnected}}
+  {{flashy-webrtc-troubleshooter iceServers=iceServers}}
+{{/if}}
