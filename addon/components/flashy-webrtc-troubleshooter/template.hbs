@@ -1,0 +1,134 @@
+<div class="intro">
+  <div class="entry-row time">{{t "webrtcTroubleshoot.troubleshootTimeWarning"}}</div>
+</div>
+<div class="options">
+  {{#if audio}}
+    <div class="entry-row">
+      <div class="entry-label">
+        <i class="ion-mic-a"></i>
+      </div>
+      <div class="entry-values">
+        {{#if checkingMicrophone}}
+          {{t "webrtcTroubleshoot.checkMicrophone"}} <i class="status-icon ion-load-a"></i>
+        {{else if checkMicrophoneSuccess}}
+          {{#if checkVolumeSuccess}}
+            {{t "webrtcTroubleshoot.checkMicrophoneSuccess"}} <i class="status-icon ion-checkmark"></i>
+          {{else}}
+            {{t "webrtcTroubleshoot.checkVolumeFailure"}} <i class="status-icon ion-alert-circled"></i>
+          {{/if}}
+        {{else}}
+          {{t "webrtcTroubleshoot.checkMicrophoneFail"}} <i class="status-icon ion-alert-circled"></i>
+        {{/if}}
+      </div>
+    </div>
+  {{/if}}
+  {{#if video}}
+    <div class="entry-row">
+      <div class="entry-label">
+        <i class="ion-ios-videocam"></i>
+      </div>
+      <div class="entry-values">
+        {{#if checkingCamera}}
+          {{t "webrtcTroubleshoot.checkCamera"}} <i class="status-icon ion-load-a"></i>
+        {{else if checkCameraSuccess}}
+          {{t "webrtcTroubleshoot.checkCameraSuccess"}} <i class="status-icon ion-checkmark"></i>
+        {{else}}
+          {{t "webrtcTroubleshoot.checkCameraFail"}} <i class="status-icon ion-alert-circled"></i>
+        {{/if}}
+      </div>
+    </div>
+    <div class="entry-row">
+      <div class="entry-label">
+        <i class="ion-videocamera"></i>
+      </div>
+      <div class="entry-values">
+        {{#if checkingCameraAdvanced}}
+          {{t "webrtcTroubleshoot.checkCameraAdvanced"}} <i class="status-icon ion-load-a"></i>
+        {{else if checkCameraAdvancedSuccess}}
+          {{t "webrtcTroubleshoot.checkCameraAdvancedSuccess"}} <i class="status-icon ion-checkmark"></i>
+        {{else}}
+          {{t "webrtcTroubleshoot.checkCameraAdvancedFail"}} <i class="status-icon ion-alert-circled"></i>
+        {{/if}}
+      </div>
+    </div>
+  {{/if}}
+  <div class="entry-row">
+    <div class="entry-label">
+      <i class="ion-network"></i>
+    </div>
+    <div class="entry-values">
+      {{#if checkingSymmetricNat}}
+        {{t "webrtcTroubleshoot.checkingSymmetricNat"}} <i class="status-icon ion-load-a"></i>
+      {{else if symmetricNatResultGood}}
+        {{t symmetricNatResult}} <i class="status-icon ion-checkmark"></i>
+      {{else}}
+        {{t symmetricNatResult}} <i class="status-icon ion-alert-circled"></i>
+      {{/if}}
+    </div>
+  </div>
+  <div class="entry-row">
+    <div class="entry-label">
+      <i class="ion-android-wifi"></i>
+    </div>
+    <div class="entry-values">
+      {{#if checkingConnectivity}}
+        {{t "webrtcTroubleshoot.checkConnectivity"}} <i class="status-icon ion-load-a"></i>
+      {{else if checkConnectivitySuccess}}
+        {{t "webrtcTroubleshoot.checkConnectivitySuccess"}} <i class="status-icon ion-checkmark"></i>
+      {{else}}
+        {{t "webrtcTroubleshoot.checkConnectivityFail"}} <i class="status-icon ion-alert-circled"></i>
+      {{/if}}
+    </div>
+  </div>
+  <div class="entry-row">
+    <div class="entry-label">
+      <i class="ion-arrow-swap"></i>
+    </div>
+    <div class="entry-values">
+      {{#if checkingThroughput}}
+        {{t "webrtcTroubleshoot.checkThroughput"}} <i class="status-icon ion-load-a"></i>
+      {{else if checkThroughputSuccess}}
+        {{t "webrtcTroubleshoot.checkThroughputSuccess"}} <i class="status-icon ion-checkmark"></i>
+      {{else}}
+        {{t "webrtcTroubleshoot.checkThroughputFail"}} <i class="status-icon ion-alert-circled"></i>
+      {{/if}}
+    </div>
+  </div>
+  {{#if runBandwidthTest}}
+    <div class="entry-row">
+      <div class="entry-label">
+        <i class="ion-speedometer"></i>
+      </div>
+      <div class="entry-values">
+        {{#if checkingBandwidth}}
+          {{t "webrtcTroubleshoot.checkBandwidth"}} <i class="status-icon ion-load-a"></i>
+        {{else if checkBandwidthSuccess}}
+          {{t "webrtcTroubleshoot.checkBandwidthSuccess"}} <i class="status-icon ion-checkmark"></i>
+        {{else}}
+          {{t "webrtcTroubleshoot.checkBandwidthFail"}} <i class="status-icon ion-alert-circled"></i>
+        {{/if}}
+      </div>
+    </div>
+    {{#if bandwidthStats}}
+      <div class="entry-row">
+        <div class="entry-label">
+          <i class="ion-speedometer"></i>
+        </div>
+        <div class="entry-values">
+          <div class="bandwidth-stats">
+            <div class="stats-container">
+              {{#each-in bandwidthStats as |stat value|}}
+                <div class="stats-row">{{t (concat "webrtcTroubleshoot." stat) value=value}}</div>
+              {{/each-in}}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/if}}
+  {{/if}}
+
+  <p>Diagnostics log:</p>
+  <textarea></textarea>
+  <p>This report will output a json file of the results after tests complete. <a href="#" {{action "downloadDiagnosticReport"}}>Download Report Now.</a></p>
+
+</div>

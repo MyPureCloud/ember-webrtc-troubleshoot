@@ -1,6 +1,6 @@
 {
   "name": "ember-webrtc-troubleshoot",
-  "version": "6.5.5",
+  "version": "7.0.0",
   "description": "An ember addon for adding webrtc-troubleshooting to your application",
   "directories": {
     "doc": "doc",
@@ -13,7 +13,7 @@
     "test": "semistandard blueprints/**/*.js tests/**/*.js addon/**/*.js app/**/*.js && npm run coverage",
     "test:only": "ember test",
     "posttest": "cat ./coverage/lcov.info | coveralls",
-    "deploy:gh-pages": "ember github-pages:commit --message \"Deploy gh-pages from commit $(git rev-parse HEAD)\"; git push; git checkout -"
+    "install-chromium": "node node_modules/ember-chromium/download-chrome.js"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {
@@ -25,9 +25,10 @@
     "broccoli-json-module": "1.0.0",
     "broccoli-merge-trees": "^1.1.1",
     "broccoli-source": "^1.1.0",
+    "ember-chromium": "^1.1.2",
     "ember-cli-babel": "^5.1.5",
     "ember-cli-htmlbars": "^1.0.3",
-    "webrtc-troubleshoot": "^7.0.0"
+    "webrtc-troubleshoot": "^8.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
