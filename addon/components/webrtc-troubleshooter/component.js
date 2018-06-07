@@ -33,6 +33,8 @@ export default Ember.Component.extend({
   checkBandwidthSuccess: false,
   showBandwidthStats: false,
 
+  saveSuiteToWindow: false,
+
   video: true,
   audio: true,
   logger: null,
@@ -63,11 +65,16 @@ export default Ember.Component.extend({
     }
     const iceConfig = {
       iceServers: this.get('iceServers') || [],
-      iceTransports: 'relay'
+      iceTransports: 'relay',
+      logger: this.get('logger')
     };
-    const mediaOptions = this.get('mediaOptions') || { audio: true, video: true };
+    const mediaOptions = this.get('mediaOptions') || { audio: true, video: true, logger: this.get('logger') };
 
     const testSuite = new TestSuite({ logger: this.get('logger') });
+
+    if (this.get('saveSuiteToWindow')) {
+      window.testSuite = testSuite;
+    }
 
     // TODO: logs for rejections?
 
@@ -202,19 +209,25 @@ export default Ember.Component.extend({
       }
     }
 
-    testSuite.start().then((results) => {
-      this.logger.info('WebRTC Troubleshooting results (success)', results);
-      this.sendAction('results', results);
-      if (this.done) {
-        this.done(results);
-      }
-    }).catch((err) => {
-      this.logger.warn('WebRTC Troubleshooting results (error)', err, err && err.details);
-      this.sendAction('results', err);
-      if (this.done) {
-        this.done(err);
-      }
-    });
+    navigator.mediaDevices.enumerateDevices()
+      .then((devices) => {
+        this.logger.log('media devices', devices);
+        this.logger.log('mediaOptions', mediaOptions);
+        return testSuite.start();
+      })
+      .then((results) => {
+        this.logger.info('WebRTC Troubleshooting results (success)', results);
+        this.sendAction('results', results);
+        if (this.done) {
+          this.done(results);
+        }
+      }).catch((err) => {
+        this.logger.warn('WebRTC Troubleshooting results (error)', err, err && err.details);
+        this.sendAction('results', err);
+        if (this.done) {
+          this.done(err);
+        }
+      });
 
     this.set('testSuite', testSuite);
   },
