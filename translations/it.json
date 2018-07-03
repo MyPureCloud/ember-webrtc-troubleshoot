@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Questa applicazione esegue una serie di test diagnostici per la risoluzione dei problemi al fine di individuare i problemi più comuni di WebRTC. I test sono validi esclusivamente per questo client. Permettono di controllare l'accesso dell'hardware al microfono e alla videocamera, inoltre effettuano connessioni loopback all'infrastruttura PureCloud per verificare l'accesso alla rete da parte del client.",
+        "title": "Diagnostica di PureCloud WebRTC ",
+        "learnMore": "Ulteriori informazioni su PureCloud WebRTC"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "La verifica potrebbe richiedere fino a 2 minuti.",
         "checkMicrophone": "Verifica microfono in corso...",
         "checkMicrophoneSuccess": "Il microfono funziona",
-        "checkMicrophoneFail": "Il microfono non funziona!",
-        "checkVolumeFailure": "Impossibile udire l'utente. Il microfono non funziona.",
+        "checkMicrophoneFail": "Impossibile acquisire il supporto dal microfono",
+        "checkVolumeFailure": "Nessun segnale audio rilevato dal microfono",
         "checkCamera": "Verifica videocamera in corso...",
         "checkCameraSuccess": "La videocamera funziona",
-        "checkCameraFail": "La videocamera non funziona!",
-        "checkCameraAdvanced": "Esecuzione verifiche avanzate videocamera in corso...",
-        "checkCameraAdvancedSuccess": "Verifiche avanzate videocamera completate",
-        "checkCameraAdvancedFail": "Verifiche avanzate videocamera non completate",
+        "checkCameraFail": "Impossibile acquisire video dalla videocamera",
+        "checkCameraAdvanced": "Verifica delle risoluzioni disponibili dalla videocamera...",
+        "checkCameraAdvancedSuccess": "Test di risoluzione videocamera completati.",
+        "checkCameraAdvancedFail": "La videocamera non supporta tutte le risoluzioni.",
         "checkThroughput": "Verifica velocità rete in corso...",
         "checkThroughputSuccess": "Verifica velocità completata",
         "checkThroughputFail": "Verifica velocità non completata",
@@ -36,7 +41,7 @@
         "framerateMean": "Media frequenza fotogrammi: {value, number}",
         "nat": {
             "symmetric": "La rete risulta essere di tipo NAT simmetrico. Ciò può causare problemi di connettività WebRTC.",
-            "asymmetric": "La topologia di rete risulta corretta.",
+            "asymmetric": "La topologia della rete non presenta problemi (asimmetrica o non NAT)",
             "noSrflx": "Impossibile effettuare una connessione diretta con WebRTC. Il relay potrebbe risultare efficace ma è in grado di influire su connettività e latenza.",
             "error": "Errore durante il controllo della topologia di rete."
         }

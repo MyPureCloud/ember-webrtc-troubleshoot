@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "此应用程序运行一系列诊断排除故障测试，进而识别 WebRTC 的常见问题。这些测试仅适用于此客户端。除了检查对麦克风和摄像头的硬件访问，还会对 PureCloud 基础设施进行环回连接以检查客户端的网络访问。",
+        "title": "PureCloud WebRTC 诊断",
+        "learnMore": "了解更多关于 PureCloud WebRTC 的信息"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "这些测试可能需要 2 分钟。",
         "checkMicrophone": "正在检查麦克风...",
         "checkMicrophoneSuccess": "麦克风正常",
-        "checkMicrophoneFail": "哎呀，麦克风出问题了！",
-        "checkVolumeFailure": "哎呀，我们听不到您讲话！您的麦克风可能出现问题！",
+        "checkMicrophoneFail": "无法从麦克风中捕获媒体。",
+        "checkVolumeFailure": "未从麦克风中检测到声音。",
         "checkCamera": "正在检查摄像头...",
         "checkCameraSuccess": "摄像头正常",
-        "checkCameraFail": "哎呀，摄像头出问题了！",
-        "checkCameraAdvanced": "执行高级摄像头测试...",
-        "checkCameraAdvancedSuccess": "高级摄像头测试完成",
-        "checkCameraAdvancedFail": "高级摄像头测试失败",
+        "checkCameraFail": "无法从摄像头中捕获视频。",
+        "checkCameraAdvanced": "正在测试摄像头可用分辨率...",
+        "checkCameraAdvancedSuccess": "摄像头分辨率测试完成。",
+        "checkCameraAdvancedFail": "您的摄像头不支持所有分辨率。",
         "checkThroughput": "正在检查网络吞吐量...",
         "checkThroughputSuccess": "吞吐量检查完成",
         "checkThroughputFail": "吞吐量检查失败",
@@ -36,7 +41,7 @@
         "framerateMean": "帧速率平均值: {value, number}",
         "nat": {
             "symmetric": "您的网络似乎是对称 NAT。 这可能会导致 WebRTC 连接问题。",
-            "asymmetric": "网络拓扑看起来很好。",
+            "asymmetric": "网络拓扑看起来很好（不对称或无 NAT）",
             "noSrflx": "无法直接连接 WebRTC。中继可能是有效的，但会影响连接性和延迟。",
             "error": "检查网络拓扑时出现问题。"
         }

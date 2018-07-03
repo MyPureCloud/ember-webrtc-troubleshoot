@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Bu uygulama, WebRTC ile ortak sorunları tanımlamak için bir dizi tanısal sorun giderme testi yürütür. Testler yalnızca bu istemci için geçerlidir. Mikrofon ve kamera için donanım erişimi kontrol edilir, ayrıca istemcinin ağ erişimini kontrol etmek için PureCloud altyapısına geri döngü bağlantıları yapılır.",
+        "title": "PureCloud WebRTC Tanılama",
+        "learnMore": "PureCloud WebRTC hakkında daha fazlasını öğrenin"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Bu testler 2 dakika sürebilir.",
         "checkMicrophone": "Mikrofon denetleniyor...",
         "checkMicrophoneSuccess": "Mikrofonla ilgili bir sorun yok",
-        "checkMicrophoneFail": "Ne yazık ki mikrofonla ilgili bir sorun var!",
-        "checkVolumeFailure": "Ne yazık ki sizi duyamıyoruz! Mikrofonunuzla ilgili bir sorun olabilir!",
+        "checkMicrophoneFail": "Mikrofondan ortam yakalanamadı",
+        "checkVolumeFailure": "Mikrofondan ses algılanamadı.",
         "checkCamera": "Kamera denetleniyor...",
         "checkCameraSuccess": "Kamerayla ilgili sorun yok",
-        "checkCameraFail": "Ne yazık ki kamerayla ilgili bir sorun var!",
-        "checkCameraAdvanced": "Gelişmiş kamera testleri gerçekleştiriliyor...",
-        "checkCameraAdvancedSuccess": "Gelişmiş kamera testleri tamamlandı",
-        "checkCameraAdvancedFail": "Gelişmiş kamera testleri başarısız oldu",
+        "checkCameraFail": "Kameradan video çekilemedi",
+        "checkCameraAdvanced": "Kameradan uygun çözünürlükler test ediliyor...",
+        "checkCameraAdvancedSuccess": "Kamera çözünürlük testleri tamamlandı.",
+        "checkCameraAdvancedFail": "Kameranız tüm çözünürlükleri desteklemiyor.",
         "checkThroughput": "Ağ performansı denetleniyor...",
         "checkThroughputSuccess": "Performans denetimi tamamlandı",
         "checkThroughputFail": "Performans denetimi başarısız oldu",
@@ -36,7 +41,7 @@
         "framerateMean": "Kare Hızı Ortalaması: {value, number}",
         "nat": {
             "symmetric": "Ağınız bir simetrik NAT gibi görünüyor. Bu durum WebRTC bağlantısı için sorunlara yol açabilir.",
-            "asymmetric": "Ağ topolojisi iyi görünüyor.",
+            "asymmetric": "Ağ topolojisi iyi görünüyor (asimetrik veya NAT yok)",
             "noSrflx": "WebRTC ile doğrudan bağlantı kurulamıyor. Aktarma etkili olabilir ancak bağlantıyı ve gecikmeyi etkileyebilir.",
             "error": "Ağ topolojisi denetlenirken bir hata oluştu."
         }
