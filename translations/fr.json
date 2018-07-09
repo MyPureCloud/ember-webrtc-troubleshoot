@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Cette application effectue une série de tests de diagnostic et de dépannage pour identifier les problèmes courants avec WebRTC. Les tests s'appliquent au client uniquement. Ils vérifient l'accès matériel au microphone et à la caméra et effectuent des connexions de bouclage à l'infrastructure PureCloud pour vérifier l'accès au réseau du client.",
+        "title": "Diagnostics PureCloud WebRTC",
+        "learnMore": "En savoir plus sur PureCloud WebRTC"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Ces tests peuvent prendre 2 minutes au plus.",
         "checkMicrophone": "Vérification du microphone...",
         "checkMicrophoneSuccess": "Aucun problème de microphone",
-        "checkMicrophoneFail": "Désolé ! Une erreur s'est produite avec le microphone.",
-        "checkVolumeFailure": "Désolé ! Nous ne vous entendons pas. Il se peut que votre microphone ait un problème.",
+        "checkMicrophoneFail": "Échec de capture du média avec le microphone",
+        "checkVolumeFailure": "Aucun son détecté dans le microphone.",
         "checkCamera": "Vérification de la caméra...",
         "checkCameraSuccess": "Aucun problème avec la caméra",
-        "checkCameraFail": "Désolé ! Une erreur s'est produite avec la caméra.",
-        "checkCameraAdvanced": "Tests de caméras avancés en cours...",
-        "checkCameraAdvancedSuccess": "Tests de caméras avancés terminés",
-        "checkCameraAdvancedFail": "Échec des tests de caméras avancés",
+        "checkCameraFail": "Échec de capture de la vidéo avec la caméra",
+        "checkCameraAdvanced": "Test des résolutions disponibles avec la caméra...",
+        "checkCameraAdvancedSuccess": "Tests de résolution de la caméra terminés.",
+        "checkCameraAdvancedFail": "Votre caméra ne prend pas en charge toutes les résolutions.",
         "checkThroughput": "Vérification du débit du réseau...",
         "checkThroughputSuccess": "Vérification du débit terminée...",
         "checkThroughputFail": "Échec de la vérification du débit",
@@ -36,7 +41,7 @@
         "framerateMean": "Fréquence d'images moyenne : {value, number}",
         "nat": {
             "symmetric": "Votre réseau semble être un NAT symétrique. Cela peut poser des problèmes avec la connectivité WebRTC.",
-            "asymmetric": "La topologie du réseau semble correcte.",
+            "asymmetric": "La topologie du réseau semble correcte (asymétrique ou pas de NAT)",
             "noSrflx": "Connexion directe à WebRTC impossible. La mise en place d'un relais peut fonctionner, mais cela peut affecter la connectivité et la latence.",
             "error": "Une erreur s'est produite lors de la vérification de la topologie du réseau."
         }

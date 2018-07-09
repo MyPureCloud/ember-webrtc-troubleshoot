@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Den här appen kör en rad diagnostiska felsökningstester för att identifiera vanliga problem med WebRTC. Testerna gäller endast den här klienten. Testerna kontrollerar tillgång till hårdvara som mikrofon och kamera, samt anslutningar till PureClouds infrastruktur för att bekräfta klientens nätverkstillgång.",
+        "title": "PureCloud WebRTC diagnostik",
+        "learnMore": "Läs mer om PureCloud WebRTC"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Det kan ta upp till 2 minuter att köra dessa tester.",
         "checkMicrophone": "Kontrollerar mikrofon ...",
         "checkMicrophoneSuccess": "Inga mikrofonproblem",
-        "checkMicrophoneFail": "Ojdå, det har uppstått ett mikrofonproblem!",
-        "checkVolumeFailure": "Hallå, vi kan inte höra dig! Du kanske har problem med mikrofonen!",
+        "checkMicrophoneFail": "Det gick inte att överföra media från mikrofon",
+        "checkVolumeFailure": "Inget ljud hörs från mikrofonen.",
         "checkCamera": "Kontrollerar kamera ...",
         "checkCameraSuccess": "Inga problem med kameran",
-        "checkCameraFail": "Ojdå, det har uppstått ett problem med kameran!",
-        "checkCameraAdvanced": "Utför avancerade kameratester ...",
-        "checkCameraAdvancedSuccess": "Avancerade kameratester slutförda",
-        "checkCameraAdvancedFail": "Avancerade kameratester misslyckades",
+        "checkCameraFail": "Det gick inte att överföra video från kameran",
+        "checkCameraAdvanced": "Testar tillgängliga upplösningar från kameran ...",
+        "checkCameraAdvancedSuccess": "Kamerans upplösningstester klara.",
+        "checkCameraAdvancedFail": "Din kamera stöder inte alla upplösningar.",
         "checkThroughput": "Kontrollerar nätverkets dataflöde ...",
         "checkThroughputSuccess": "Dataflödeskontroll klar",
         "checkThroughputFail": "Dataflödeskontroll misslyckades",
@@ -36,7 +41,7 @@
         "framerateMean": "Genomsnittlig bildfrekvens: {value, number}",
         "nat": {
             "symmetric": "Ditt nätverk verkar vara av typen symmetrisk NAT. Detta kan skapa problem för WebRTC-anslutningar.",
-            "asymmetric": "Nätverkets topologi ser bra ut.",
+            "asymmetric": "Nätverkets topologi ser bra ut (asymmetrisk eller utan NAT) ",
             "noSrflx": "Det gick inte att ansluta direkt till WebRTC. Vidarebefordring kan fungera, men det kan påverka både anslutning och latens.",
             "error": "Ett fel uppstod när nätverkets topologi skulle kontrolleras."
         }

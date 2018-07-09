@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Esta aplicación ejecuta una serie de pruebas de diagnóstico y solución de problemas para detectar problemas comunes con WebRTC. Las pruebas se aplican únicamente a este cliente. Verifican el acceso del hardware para el micrófono y la cámara, y establecen conexiones de bucle invertido a la infraestructura de PureCloud para comprobar el acceso a la red del cliente.",
+        "title": "Diagnóstico de WebRTC para PureCloud",
+        "learnMore": "Más información de WebRTC para PureCloud"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Estas pruebas pueden tardar hasta 2 minutos.",
         "checkMicrophone": "Verificando micrófono...",
         "checkMicrophoneSuccess": "No hay problemas con el micrófono",
-        "checkMicrophoneFail": "Hay un problema con el micrófono",
-        "checkVolumeFailure": "No podemos escucharlo. Es posible que tenga un problema con su micrófono.",
+        "checkMicrophoneFail": "Error al capturar medios del micrófono",
+        "checkVolumeFailure": "No se detectó sonido en el micrófono.",
         "checkCamera": "Verificando cámara...",
         "checkCameraSuccess": "No hay problemas con la cámara",
-        "checkCameraFail": "Hay un problema con la cámara",
-        "checkCameraAdvanced": "Realizando pruebas avanzadas de la cámara...",
-        "checkCameraAdvancedSuccess": "Pruebas avanzadas de la cámara completadas",
-        "checkCameraAdvancedFail": "Error en las pruebas avanzadas de la cámara",
+        "checkCameraFail": "Error al capturar video en la cámara",
+        "checkCameraAdvanced": "Probando resoluciones disponibles en la cámara...",
+        "checkCameraAdvancedSuccess": "Pruebas de resolución de la cámara completas.",
+        "checkCameraAdvancedFail": "Su cámara no es compatible con todas las resoluciones.",
         "checkThroughput": "Verificando rendimiento de la red...",
         "checkThroughputSuccess": "Verificación de rendimiento completada",
         "checkThroughputFail": "Error en la verificación de rendimiento",
@@ -36,7 +41,7 @@
         "framerateMean": "Velocidad promedio de fotogramas: {value, number}",
         "nat": {
             "symmetric": "Aparentemente su red es un NAT simétrico. Esto puede causar problemas para la conectividad de WebRTC.",
-            "asymmetric": "La topología de la red no tiene errores.",
+            "asymmetric": "La topología de la red no tiene errores (asimétrica o no NAT)",
             "noSrflx": "No es posible conectarse directamente con WebRTC. Es posible que la retransmisión funcione, pero afectará la conectividad y latencia.",
             "error": "Error al verificar topología de la red."
         }

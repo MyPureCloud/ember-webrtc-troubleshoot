@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Diese App führt eine Reihe von diagnostischen Fehlerbehebungstests aus, um häufige Probleme mit WebRTC zu identifizieren. Die Tests gelten nur für diesen Client. Sie überprüfen den Hardwarezugriff für Mikrofon und Kamera und stellen Loopback-Verbindungen zur PureCloud-Infrastruktur her, um den Netzwerkzugriff des Clients zu überprüfen.",
+        "title": "PureCloud-WebRTC-Diagnosen",
+        "learnMore": "Erfahren Sie mehr über PureCloud-WebRTC"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Diese Test können bis zu zwei Minuten dauern.",
         "checkMicrophone": "Mikrofon wird überprüft...",
         "checkMicrophoneSuccess": "Keine Mikrofonprobleme",
-        "checkMicrophoneFail": "Hoppla, es gibt ein Mikrofonproblem!",
-        "checkVolumeFailure": "Hoppla, wir können Sie nicht hören! Sie haben möglicherweise ein Problem mit Ihrem Mikrofon!",
+        "checkMicrophoneFail": "Fehler beim Erfassen von Medien vom Mikrofon",
+        "checkVolumeFailure": "Es wurde kein Ton vom Mikrofon festgestellt.",
         "checkCamera": "Kamera wird überprüft...",
         "checkCameraSuccess": "Keine Kameraprobleme",
-        "checkCameraFail": "Hoppla, es gibt ein Kameraproblem!",
-        "checkCameraAdvanced": "Erweiterte Kameratests werden ausgeführt ...",
-        "checkCameraAdvancedSuccess": "Erweiterte Kameratests abgeschlossen",
-        "checkCameraAdvancedFail": "Fehler bei den erweiterten Kameratests",
+        "checkCameraFail": "Fehler beim Erfassen von Video von der Kamera",
+        "checkCameraAdvanced": "Verfügbare Auflösungen von der Kamera werden getestet...",
+        "checkCameraAdvancedSuccess": "Kamera-Auflösungs-Test abgeschlossen.",
+        "checkCameraAdvancedFail": "Ihre Kamera unterstützt nicht alle Auflösungen.",
         "checkThroughput": "Netzwerkdurchsatz wird überprüft ...",
         "checkThroughputSuccess": "Durchsatzüberprüfung abgeschlossen",
         "checkThroughputFail": "Fehler bei der Durchsatzüberprüfung",
@@ -36,7 +41,7 @@
         "framerateMean": "Durchschnittliche Bildrate: {value, number}",
         "nat": {
             "symmetric": "Ihr Netzwerk scheint ein symmetrisches NAT zu sein. Dies kann Probleme bei der WebRTC-Verbindung verursachen.",
-            "asymmetric": "Die Netzwerktopologie sieht gut aus.",
+            "asymmetric": "Die Netzwerktopologie sieht gut aus (asymmetrisch oder kein NAT)",
             "noSrflx": "Direkte Verbindung mit WebRTC konnte nicht hergestellt weren. Die Weiterleitung ist möglicherweise erfolgreich, sie kann sich aber auf die Verbindung und Latenz auswirken.",
             "error": "Beim Überprüfen der Netzwerktopologie ist ein Fehler aufgetreten."
         }

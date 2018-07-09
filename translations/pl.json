@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Ta aplikacja przeprowadza serię testów diagnostycznych w celu zidentyfikowania typowych problemów z WebRTC. Testy dotyczą tylko tego klienta. Podczas testów jest sprawdzany dostęp sprzętowy do mikrofonu i kamery, a także połączenia pętli zwrotnej z infrastrukturą PureCloud w celu sprawdzenia dostępu sieciowego klienta.",
+        "title": "Diagnostyka WebRTC PureCloud",
+        "learnMore": "Dowiedz się więcej o PureCloud WebRTC"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Wykonanie testów może zająć do 2 minut.",
         "checkMicrophone": "Sprawdzanie mikrofonu...",
         "checkMicrophoneSuccess": "Brak problemów z mikrofonem",
-        "checkMicrophoneFail": "Ups! Wystąpił problem z mikrofonem.",
-        "checkVolumeFailure": "Nie słyszę Cię! Być może wystąpił problem z mikrofonem.",
+        "checkMicrophoneFail": "Rejestracja multimediów z mikrofonu nie powiodła się",
+        "checkVolumeFailure": "Nie wykryto dźwięku z mikrofonu.",
         "checkCamera": "Sprawdzanie kamery...",
         "checkCameraSuccess": "Brak problemów z kamerą",
-        "checkCameraFail": "Ups! Wystąpił problem z kamerą.",
-        "checkCameraAdvanced": "Wykonywanie zaawansowanych testów kamery...",
-        "checkCameraAdvancedSuccess": "Zaawansowane testy kamery zakończone",
-        "checkCameraAdvancedFail": "Zaawansowane testy kamery nie powiodły się",
+        "checkCameraFail": "Rejestracja wideo z kamery nie powiodła się",
+        "checkCameraAdvanced": "Testowanie dostępnych rozdzielczości kamery...",
+        "checkCameraAdvancedSuccess": "Testy rozdzielczości kamery zostały ukończone.",
+        "checkCameraAdvancedFail": "Kamera nie obsługuje wszystkich rozdzielczości.",
         "checkThroughput": "Sprawdzanie przepływności sieci...",
         "checkThroughputSuccess": "Kontrola przepływności zakończona",
         "checkThroughputFail": "Kontrola przepływności zakończona niepowodzeniem",
@@ -36,7 +41,7 @@
         "framerateMean": "Średnia liczba klatek: {value, number}",
         "nat": {
             "symmetric": "W sieci stosowana jest prawdopodobnie symetryczna translacja NAT, co może powodować problemy z łącznością WebRTC.",
-            "asymmetric": "Topologia sieci nie budzi zastrzeżeń.",
+            "asymmetric": "Topologia sieci nie budzi zastrzeżeń (asymetryczna metoda NAT lub brak)",
             "noSrflx": "Nie można połączyć bezpośrednio z WebRTC. Przekazywanie może być skuteczne, ale może też wpływać negatywnie na łączność i opóźnienia.",
             "error": "Podczas sprawdzania topologii sieci wystąpił błąd."
         }

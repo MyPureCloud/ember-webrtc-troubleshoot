@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "このアプリは一連の診断トラブルシューティング テストを実行して WebRTC に共通の問題を特定します。テストはこのクライアントのみに適用されます。マイクとカメラのハードウェア アクセスをチェックし、PureCloud インフラへのループバック接続も行って、クライアントのネットワーク アクセスをチェックします。",
+        "title": "PureCloud WebRTC 診断",
+        "learnMore": "PureCloud WebRTC の詳細を表示"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "これらのテストには最長 2 分かかる場合があります。",
         "checkMicrophone": "マイクをチェックしています ...",
         "checkMicrophoneSuccess": "マイクに問題はありません",
-        "checkMicrophoneFail": "マイクに問題が見つかりました!",
-        "checkVolumeFailure": "音声が聞こえません。マイクに問題がある可能性があります。",
+        "checkMicrophoneFail": "マイクからのメディアのキャプチャに失敗しました",
+        "checkVolumeFailure": "マイクからサウンドは認識されませんでした。",
         "checkCamera": "カメラをチェックしています ...",
         "checkCameraSuccess": "カメラに問題はありません",
-        "checkCameraFail": "カメラに問題が見つかりました!",
-        "checkCameraAdvanced": "カメラの高度なテストを実行しています...",
-        "checkCameraAdvancedSuccess": "カメラの高度なテストが完了",
-        "checkCameraAdvancedFail": "カメラの高度なテストが失敗",
+        "checkCameraFail": "カメラからのビデオのキャプチャに失敗しました",
+        "checkCameraAdvanced": "カメラで利用可能な解像度をテストしています...",
+        "checkCameraAdvancedSuccess": "カメラの解像度テストが完了しました。",
+        "checkCameraAdvancedFail": "カメラはすべての解像度をサポートしているわけではありません。",
         "checkThroughput": "ネットワークの処理能力をチェックしています...",
         "checkThroughputSuccess": "処理能力チェックの完了",
         "checkThroughputFail": "処理能力チェックの失敗",
@@ -36,7 +41,7 @@
         "framerateMean": "フレームレート平均: {value, number}",
         "nat": {
             "symmetric": "ネットワークが対称型 NAT のようです。WebRTC の接続性に問題が発生する可能性があります。",
-            "asymmetric": "ネットワーク トポロジーに問題は無いようです。",
+            "asymmetric": "ネットワーク トポロジーに問題は無いようです (非対称型 NAT または NAT なし)",
             "noSrflx": "WebRTC と直接接続できません。リレー接続できるかもしれませんが、接続性や遅延に影響する可能性があります。",
             "error": "ネットワーク トポロジーのチェック中にエラーが発生しました。"
         }
