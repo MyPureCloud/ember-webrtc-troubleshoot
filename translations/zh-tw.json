@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "此應用程式執行一系列診斷故障排除測試，以識別 WebRTC 的一般問題。測試僅適用於此用戶端，其檢查麥克風和攝影機的硬體存取，以及回送連線到 PureCloud 基礎架構，以檢查用戶端的網路存取。",
+        "title": "PureCloud WebRTC 診斷",
+        "learnMore": "深入瞭解 PureCloud WebRTC"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "這些測試可能需要 2 分鐘。",
         "checkMicrophone": "正在檢查麥克風...",
         "checkMicrophoneSuccess": "麥克風正常",
-        "checkMicrophoneFail": "哎呀，麥克風出問題了！",
-        "checkVolumeFailure": "哎呀，我們聽不到您講話！您的麥克風可能出現問題！",
+        "checkMicrophoneFail": "無法從麥克風擷取媒體",
+        "checkVolumeFailure": "未偵測到麥克風的聲音。",
         "checkCamera": "正在檢查攝影機...",
         "checkCameraSuccess": "攝影機正常",
-        "checkCameraFail": "哎呀，攝影機出問題了！",
-        "checkCameraAdvanced": "執行進階攝影機測試...",
-        "checkCameraAdvancedSuccess": "進階攝影機測試完成",
-        "checkCameraAdvancedFail": "進階攝影機測試失敗",
+        "checkCameraFail": "無法從攝影機擷取視訊",
+        "checkCameraAdvanced": "正在測試攝影機的可用解析度...",
+        "checkCameraAdvancedSuccess": "攝影機解析度測試完成。",
+        "checkCameraAdvancedFail": "您的攝影機並不支援所有的解析度。",
         "checkThroughput": "正在檢查網路輸送量...",
         "checkThroughputSuccess": "輸送量檢查完成",
         "checkThroughputFail": "輸送量檢查失敗",
@@ -36,7 +41,7 @@
         "framerateMean": "平均畫格速率：{value, number}",
         "nat": {
             "symmetric": "您的網路顯示為對稱的 NAT，這可能會造成 WebRTC 連接發生問題。",
-            "asymmetric": "網路拓撲看起來良好。",
+            "asymmetric": "網路拓撲看起來良好 (非對稱或無 NAT)",
             "noSrflx": "無法使用 WebRTC 直接連接，中繼可能有效但是會影響連接和延遲。",
             "error": "檢查網路拓撲時發生錯誤。"
         }

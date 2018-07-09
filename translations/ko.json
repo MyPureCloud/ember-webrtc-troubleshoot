@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "이 애플리케이션은 일련의 진단 문제 해결 테스트를 실행하여 WebRTC의 일반적인 문제를 식별합니다. 테스트는 이 클라이언트에만 적용됩니다. PureCloud 인프라에 대한 루프백 연결은 물론 마이크 및 카메라에 대한 하드웨어 액세스를 확인하여 클라이언트의 네트워크 액세스를 확인합니다.",
+        "title": "PureCloud WebRTC 진단",
+        "learnMore": "PureCloud WebRTC 더 알아보기"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "이러한 테스트는 최대 2분이 걸릴 수 있습니다.",
         "checkMicrophone": "마이크 확인 중...",
         "checkMicrophoneSuccess": "마이크 문제 없음",
-        "checkMicrophoneFail": "마이크 문제가 있습니다.",
-        "checkVolumeFailure": "소리가 들리지 않습니다. 마이크에 문제가 있을 수도 있습니다.",
+        "checkMicrophoneFail": "마이크에서 미디어 캡처 실패",
+        "checkVolumeFailure": "마이크에서 감지된 소리가 없습니다.",
         "checkCamera": "카메라 검사 중...",
         "checkCameraSuccess": "카메라 문제 없음",
-        "checkCameraFail": "카메라 문제가 있습니다.",
-        "checkCameraAdvanced": "고급 카메라 테스트 수행 중...",
-        "checkCameraAdvancedSuccess": "고급 카메라 테스트 완료",
-        "checkCameraAdvancedFail": "고급 카메라 테스트 실패",
+        "checkCameraFail": "카메라에서 영상 캡처 실패",
+        "checkCameraAdvanced": "카메라에서 가능한 해상도 테스트 중...",
+        "checkCameraAdvancedSuccess": "카메라 해상도 테스트 완료.",
+        "checkCameraAdvancedFail": "카메라는 모든 해상도를 지원하지 않습니다.",
         "checkThroughput": "네트워크 처리량 확인 중...",
         "checkThroughputSuccess": "처리량 확인 완료",
         "checkThroughputFail": "처리량 확인 실패",
@@ -36,7 +41,7 @@
         "framerateMean": "평균 프레임레이트: {value, number}",
         "nat": {
             "symmetric": "네트워크가 대칭 NAT인 것 같습니다. WebRTC 연결에 문제가 발생할 수 있습니다.",
-            "asymmetric": "네트워크 토폴로지가 정상입니다.",
+            "asymmetric": "네트워크 토폴로지가 정상입니다. (비대칭 또는 NAT 없음)",
             "noSrflx": "WebRTC에 직접 연결할 수 없습니다. 릴레이가 효과적이지만 연결과 대기 시간에 영향을 줄 수 있습니다.",
             "error": "네트워크 토폴로지 확인 중 오류가 발생했습니다."
         }

@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Deze app voert een reeks diagnostische troubleshoottests uit om veelvoorkomende problemen met WebRTC vast te stellen. De tests zijn alleen van toepassing op deze client. Bij de tests wordt de hardwaretoegang voor de microfoon en camera gecontroleerd en worden er loopbackverbindingen met de infrastructuur van PureCloud gelegd om de netwerktoegang van de client te controleren.",
+        "title": "Diagnostische gegevens van PureCloud WebRTC",
+        "learnMore": "Meer informatie over PureCloud WebRTC"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Deze tests kunnen 2 minuten duren.",
         "checkMicrophone": "Microfoon controleren...",
         "checkMicrophoneSuccess": "Geen microfoonproblemen",
-        "checkMicrophoneFail": "Er is een probleem met de microfoon.",
-        "checkVolumeFailure": "We kunnen u niet horen. Er is mogelijk een probleem met uw microfoon.",
+        "checkMicrophoneFail": "Media van microfoon vastleggen mislukt",
+        "checkVolumeFailure": "Geen geluid van microfoon gedetecteerd.",
         "checkCamera": "Camera controleren...",
         "checkCameraSuccess": "Geen cameraproblemen",
-        "checkCameraFail": "Er is een probleem met de camera.",
-        "checkCameraAdvanced": "Uitvoeren van uitgebreide cameratests...",
-        "checkCameraAdvancedSuccess": "Uitgebreide cameratests voltooid",
-        "checkCameraAdvancedFail": "Uitgebreide cameratests mislukt",
+        "checkCameraFail": "Video van camera vastleggen mislukt",
+        "checkCameraAdvanced": "Beschikbare resoluties van camera testen …",
+        "checkCameraAdvancedSuccess": "Resolutietests camera voltooid.",
+        "checkCameraAdvancedFail": "Uw camera ondersteunt niet alle resoluties.",
         "checkThroughput": "Controleren van netwerkverbinding...",
         "checkThroughputSuccess": "Netwerkcontrole voltooid",
         "checkThroughputFail": "Netwerkcontrole mislukt",
@@ -36,7 +41,7 @@
         "framerateMean": "Gemiddelde framesnelheid: {value, number}",
         "nat": {
             "symmetric": "Het lijkt erop dat uw netwerk een symmetrische NAT is. Dit kan problemen veroorzaken voor connectiviteit met WebRTC.",
-            "asymmetric": "De netwerktopologie ziet er goed uit.",
+            "asymmetric": "De netwerktopologie ziet er goed uit (asymmetrisch of geen NAT)",
             "noSrflx": "Kan geen directe verbinding met WebRTC maken. Relaying kan efficiënt zijn, maar kan invloed hebben op de connectiviteit en latentie.",
             "error": "Er is een fout opgetreden bij het controleren van de netwerktopologie."
         }

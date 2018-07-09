@@ -1,16 +1,21 @@
 {
+    "dummy": {
+        "description": "Este aplicativo executa uma série de testes diagnósticos de soluções de problemas para identificar problemas comuns com o WebRTC. Os testes são aplicáveis somente a este cliente. Eles verificam o acesso de hardware para microfone e câmera, como também realizam conexões loopback à infraestrutura do PureCloud para verificar o acesso de rede do cliente.",
+        "title": "Diagnósticos WebRTC PureCloud",
+        "learnMore": "Saiba mais sobre o WebRTC PureCloud"
+    },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Estes testes podem demorar até 2 minutos.",
         "checkMicrophone": "Verificando o microfone ...",
         "checkMicrophoneSuccess": "Nenhum problema no microfone",
-        "checkMicrophoneFail": "Ops, houve um problema no microfone!",
-        "checkVolumeFailure": "Ops, não conseguimos ouvir você! Deve ter algum problema com seu microfone!",
+        "checkMicrophoneFail": "Falha ao capturar mídia do microfone",
+        "checkVolumeFailure": "Nenhum som detectado do microfone.",
         "checkCamera": "Verificando a câmera ...",
         "checkCameraSuccess": "Nenhum problema na câmera",
-        "checkCameraFail": "Ops, houve um problema na câmera!",
-        "checkCameraAdvanced": "Realizando testes avançados de câmera...",
-        "checkCameraAdvancedSuccess": "Testes avançados de câmera concluídos",
-        "checkCameraAdvancedFail": "Testes avançados de câmera falharam",
+        "checkCameraFail": "Falha ao capturar vídeo da câmera",
+        "checkCameraAdvanced": "Testando resoluções disponíveis da câmera...",
+        "checkCameraAdvancedSuccess": "Testes de resolução da câmera concluídos.",
+        "checkCameraAdvancedFail": "A sua câmera não é compatível com todas as resoluções.",
         "checkThroughput": "Verificando a taxa de transferência de rede...",
         "checkThroughputSuccess": "Verificação de taxa de transferência concluída",
         "checkThroughputFail": "Verificação de taxa de transferência falhou",
@@ -36,7 +41,7 @@
         "framerateMean": "Taxa de quadros média: {value, number}",
         "nat": {
             "symmetric": "Sua rede parece ser uma NAT simétrica. Isso pode causar problemas na conectividade de WebRTC.",
-            "asymmetric": "A topologia de rede parece estar bem.",
+            "asymmetric": "A topologia de rede parece estar bem (NAT assimétrico ou sem NAT)",
             "noSrflx": "Não é possível conectar com a WebRTC. A retransmissão pode ser eficaz mas pode afetar a conectividade e latência.",
             "error": "Ocorreu um erro ao verificar a topologia de rede."
         }

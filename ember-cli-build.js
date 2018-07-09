@@ -1,6 +1,8 @@
 /* global require, module */
 var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
+const cdnUrl = process.env.CDN_URL || '/';
+
 module.exports = function (defaults) {
   var app = new EmberAddon(defaults, {
     'ember-cli-babel': {
@@ -8,6 +10,10 @@ module.exports = function (defaults) {
     },
     'ember-cli-qunit': {
       useLintTree: false // we use standard instead
+    },
+    fingerprint: {
+      prepend: cdnUrl,
+      extensions: ['js', 'css']
     }
   });
 

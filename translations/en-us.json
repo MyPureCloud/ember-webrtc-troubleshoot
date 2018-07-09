@@ -1,16 +1,21 @@
 {
+  "dummy": {
+    "description": "This app runs a series of diagnostic troubleshooting tests to identify common problems with WebRTC. The tests apply to this client only. They check hardware access for microphone and camera, as well as doing loopback connections to PureCloud infrastructure to check the network access of the client.",
+    "title": "PureCloud WebRTC Diagnostics",
+    "learnMore": "Learn more about PureCloud WebRTC"
+  },
   "webrtcTroubleshoot": {
     "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
     "checkMicrophone": "Checking microphone ...",
     "checkMicrophoneSuccess": "No microphone issues",
-    "checkMicrophoneFail": "Oops, there was a microphone issue!",
-    "checkVolumeFailure": "Oops, we can't hear you! You might have a problem with your microphone!",
+    "checkMicrophoneFail": "Failed to capture media from microphone",
+    "checkVolumeFailure": "No sound detected from microphone.",
     "checkCamera": "Checking camera ...",
     "checkCameraSuccess": "No camera issues",
-    "checkCameraFail": "Oops, there was a camera issue!",
-    "checkCameraAdvanced": "Performing advanced camera tests ...",
-    "checkCameraAdvancedSuccess": "Advanced camera tests complete",
-    "checkCameraAdvancedFail": "Advanced camera tests failed",
+    "checkCameraFail": "Failed to capture video from camera",
+    "checkCameraAdvanced": "Testing available resolutions from camera ...",
+    "checkCameraAdvancedSuccess": "Camera resolution tests complete.",
+    "checkCameraAdvancedFail": "Your camera doesn't support all resolutions.",
     "checkThroughput": "Checking network throughput ...",
     "checkThroughputSuccess": "Throughput check complete",
     "checkThroughputFail": "Throughput check failed",
@@ -36,7 +41,7 @@
     "framerateMean": "Frame Rate Average: {value, number}",
     "nat": {
       "symmetric": "Your network appears to be a symmetric NAT. This can cause problems for WebRTC connectivity.",
-      "asymmetric": "Network topology looks good.",
+      "asymmetric": "Network topology looks good (asymmetric or no NAT)",
       "noSrflx": "Unable to direct connect with WebRTC. Relaying may be effective but can affect connectivity and latency.",
       "error": "An error occurred checking network topology."
     }
