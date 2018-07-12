@@ -51,7 +51,7 @@ h1, .footer {
   padding: 10px;
 
   display: flex;
-  align-items: center;
+  align-items: start;
   background: linear-gradiant
 }
 
@@ -72,6 +72,14 @@ h1, .footer {
 
 .entry-label {
   padding: 10px;
+}
+
+.entry-values {
+  padding: 10px 0 0 0;
+}
+
+.entry-value {
+  padding: 0 0 10px 0;
 }
 
 .ion-load-a:before {
