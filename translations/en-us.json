@@ -30,6 +30,8 @@
     "checkConnectivitySuccess": "No connectivity issues",
     "checkConnectivityFail": "Oops, there was a connectivity issue!",
     "showBandwidthStats": "Show Bandwidth Stats",
+    "testFailed": "Test failed",
+    "testSuccess": "Test successful",
     "hideBandwidthStats": "Hide Bandwidth Stats",
     "resolution": "Resolution: {value}",
     "mbpsAvg": "Bit Rate Average: {value, number} Mbps",
