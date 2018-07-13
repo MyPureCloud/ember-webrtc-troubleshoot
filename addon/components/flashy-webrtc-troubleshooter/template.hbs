@@ -14,10 +14,12 @@
           {{#if checkVolumeSuccess}}
             {{t "webrtcTroubleshoot.checkMicrophoneSuccess"}} <i class="status-icon ion-checkmark"></i>
           {{else}}
-            {{t "webrtcTroubleshoot.checkVolumeFailure"}} <i class="status-icon ion-alert-circled"></i>
+            <div class="entry-value">{{t "webrtcTroubleshoot.checkVolumeFailure"}} <i class="status-icon ion-alert-circled"></i></div>
+            <div class="entry-value">{{t "webrtcTroubleshoot.checkVolumeFailure2"}}</div>
           {{/if}}
         {{else}}
-          {{t "webrtcTroubleshoot.checkMicrophoneFail"}} <i class="status-icon ion-alert-circled"></i>
+          <div class="entry-value">{{t "webrtcTroubleshoot.checkMicrophoneFail"}} <i class="status-icon ion-alert-circled"></i></div>
+          <div class="entry-value">{{t "webrtcTroubleshoot.checkMicrophoneFail2"}}</div>
         {{/if}}
       </div>
     </div>
@@ -33,7 +35,8 @@
         {{else if checkCameraSuccess}}
           {{t "webrtcTroubleshoot.checkCameraSuccess"}} <i class="status-icon ion-checkmark"></i>
         {{else}}
-          {{t "webrtcTroubleshoot.checkCameraFail"}} <i class="status-icon ion-alert-circled"></i>
+          <div class="entry-value">{{t "webrtcTroubleshoot.checkCameraFail"}} <i class="status-icon ion-alert-circled"></i></div>
+          <div class="entry-value">{{t "webrtcTroubleshoot.checkCameraFail2"}}</div>
         {{/if}}
       </div>
     </div>
