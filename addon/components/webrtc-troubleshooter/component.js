@@ -142,7 +142,7 @@ export default Ember.Component.extend({
 
       const advancedCameraTest = new AdvancedCameraTest(mediaOptions);
       advancedCameraTest.promise.then((testResults) => {
-        console.log('success - logs: ', testResults);
+        this.logger.info('success - logs: ', testResults);
         this.set('advancedCameraTestResults', testResults);
 
         this.safeSetProperties({
@@ -150,7 +150,7 @@ export default Ember.Component.extend({
           checkCameraAdvancedSuccess: true
         });
       }, (err) => {
-        console.log('error - logs: ', err);
+        this.logger.info('error - logs: ', err);
         this.set('advancedCameraTestResults', err.details);
 
         this.logger.error('advancedCameraTest failed', err);
