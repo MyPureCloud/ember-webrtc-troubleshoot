@@ -38,12 +38,35 @@ export default Ember.Component.extend({
   bandwidthIceError: false,
 
   saveSuiteToWindow: false,
+  advancedCameraTestResults: [],
 
   video: true,
   audio: true,
   logger: null,
 
   iceServers: null,
+
+  advCameraResolutions: Ember.computed('advancedCameraTestResults', function() {
+    const results = this.get('advancedCameraTestResults');
+    if (!results.map) {
+      return [];
+    }
+
+    return this.get('advancedCameraTestResults').map(testLog => {
+      const success = testLog.status === 'passed';
+
+      let testResolution;
+      if (success) {
+        testResolution = testLog.results.resolutions[0];
+      } else {
+        testResolution = testLog.details.resolutions[0];
+      }
+
+      const resolution = `${testResolution[0]}x${testResolution[1]}`;
+
+      return {resolution, success};
+    });
+  }),
 
   init () {
     this._super(...arguments);
@@ -122,12 +145,18 @@ export default Ember.Component.extend({
       });
 
       const advancedCameraTest = new AdvancedCameraTest(mediaOptions);
-      advancedCameraTest.promise.then((/* logs */) => {
+      advancedCameraTest.promise.then((testResults) => {
+        this.logger.info('success - logs: ', testResults);
+        this.set('advancedCameraTestResults', testResults);
+
         this.safeSetProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: true
         });
       }, (err) => {
+        this.logger.info('error - logs: ', err);
+        this.set('advancedCameraTestResults', err.details);
+
         this.logger.error('advancedCameraTest failed', err);
         this.safeSetProperties({
           checkingCameraAdvanced: false,

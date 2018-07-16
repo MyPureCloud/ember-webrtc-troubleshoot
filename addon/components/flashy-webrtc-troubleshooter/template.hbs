@@ -48,9 +48,29 @@
         {{#if checkingCameraAdvanced}}
           {{t "webrtcTroubleshoot.checkCameraAdvanced"}} <i class="status-icon ion-load-a"></i>
         {{else if checkCameraAdvancedSuccess}}
-          {{t "webrtcTroubleshoot.checkCameraAdvancedSuccess"}} <i class="status-icon ion-checkmark"></i>
+          <div class="entry-value">
+            {{t "webrtcTroubleshoot.checkCameraAdvancedSuccess"}}
+            <i class="status-icon ion-checkmark"></i>
+          </div>
         {{else}}
-          {{t "webrtcTroubleshoot.checkCameraAdvancedFail"}} <i class="status-icon ion-alert-circled"></i>
+          <div class="entry-value">
+            {{t "webrtcTroubleshoot.checkCameraAdvancedFail"}}
+          </div>
+        {{/if}}
+
+        {{#if checkingCameraAdvanced}}
+          {{#each advCameraResolutions as |testResult|}}
+            <div class="entry-value">
+              <span class="cam-test-result">
+                {{#if testResult.success}}
+                  <i class="status-icon ion-checkmark"></i>
+                {{else}}
+                  <i class="status-icon ion-close"></i>
+                {{/if}}
+                {{t "webrtcTroubleshoot.resolution" value=testResult.resolution}}
+              </span>
+            </div>
+          {{/each}}
         {{/if}}
       </div>
     </div>
