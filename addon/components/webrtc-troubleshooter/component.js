@@ -3,6 +3,7 @@ import Ember from 'ember';
 import layout from './template';
 
 const {
+  ERROR_CODES,
   TestSuite,
   AudioTest,
   VideoTest,
@@ -32,6 +33,9 @@ export default Ember.Component.extend({
   checkingBandwidth: true,
   checkBandwidthSuccess: false,
   showBandwidthStats: false,
+
+  bandwidthMediaError: false,
+  bandwidthIceError: false,
 
   saveSuiteToWindow: false,
 
@@ -198,7 +202,15 @@ export default Ember.Component.extend({
             checkBandwidthSuccess: true
           });
         }, (results) => {
-          this.logger.error('bandwidthTest failed', results);
+          if (results.pcCode === ERROR_CODES.ICE) {
+            this.set('bandwidthIceError', true);
+          } else if (results.pcCode === ERROR_CODES.MEDIA) {
+            this.set('bandwidthMediaError', true);
+          } else {
+            this.set('bandWidthTestError', results);
+            this.logger.error('bandwidthTest failed', results);
+          }
+
           this.safeSetProperties({
             bandwidthStats: results && results.stats,
             checkingBandwidth: false,
