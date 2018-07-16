@@ -6755,9 +6755,9 @@ webrtc-stats-gatherer@^4.2.10:
   version "4.2.13"
   resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-4.2.13.tgz#5ae041e0c98fa15ae6964975ae36ac8a03cbb360"
 
-webrtc-troubleshoot@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-8.0.0.tgz#5c5395d7e6ca677eb734c28b06fce57272b7afea"
+webrtc-troubleshoot@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-8.1.0.tgz#d29ea95efd9c86943b587050ab16ef42297f6007"
   dependencies:
     localmedia "^4.0.0"
     rtcpeerconnection "^8.0.1"
