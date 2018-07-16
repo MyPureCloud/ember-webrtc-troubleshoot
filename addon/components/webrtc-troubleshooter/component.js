@@ -34,7 +34,7 @@ export default Ember.Component.extend({
   showBandwidthStats: false,
 
   saveSuiteToWindow: false,
-  // advancedCameraTestResults: [],
+  advancedCameraTestResults: [],
 
   video: true,
   audio: true,
@@ -42,16 +42,27 @@ export default Ember.Component.extend({
 
   iceServers: null,
 
-//   advCameraResolutions: Ember.computed('advancedCameraTestResults', function() {
-//     return this.get('advancedCameraTestResults').map(testLog => {
-//       const testResolution = testLog.results.resolutions[0];
-//       const resolution = `${testResolution[0]}x${testResolution[1]}`;
-//       const success = testLog.status === 'passed';
-// const result = {resolution, success};
-// console.log(JSON.stringify(result, null, 2));
-//       return {resolution, success};
-//     });
-//   }),
+  advCameraResolutions: Ember.computed('advancedCameraTestResults', function() {
+    const results = this.get('advancedCameraTestResults');
+    if (!results.map) {
+      return [];
+    }
+
+    return this.get('advancedCameraTestResults').map(testLog => {
+      const success = testLog.status === 'passed';
+
+      let testResolution;
+      if (success) {
+        testResolution = testLog.results.resolutions[0];
+      } else {
+        testResolution = testLog.details.resolutions[0];
+      }
+
+      const resolution = `${testResolution[0]}x${testResolution[1]}`;
+
+      return {resolution, success};
+    });
+  }),
 
   init () {
     this._super(...arguments);
@@ -111,7 +122,7 @@ export default Ember.Component.extend({
         });
       });
 
-      // testSuite.addTest(audioTest);
+      testSuite.addTest(audioTest);
     }
 
     if (this.get('video')) {
@@ -132,15 +143,15 @@ export default Ember.Component.extend({
       const advancedCameraTest = new AdvancedCameraTest(mediaOptions);
       advancedCameraTest.promise.then((testResults) => {
         console.log('success - logs: ', testResults);
-        // this.set('advancedCameraTestResults', testResults);
+        this.set('advancedCameraTestResults', testResults);
 
         this.safeSetProperties({
           checkingCameraAdvanced: false,
           checkCameraAdvancedSuccess: true
         });
       }, (err) => {
-        console.log('error - logs: ', testResults);
-        // this.set('advancedCameraTestResults', testResults);
+        console.log('error - logs: ', err);
+        this.set('advancedCameraTestResults', err.details);
 
         this.logger.error('advancedCameraTest failed', err);
         this.safeSetProperties({
@@ -149,7 +160,7 @@ export default Ember.Component.extend({
         });
       });
 
-      // testSuite.addTest(videoTest);
+      testSuite.addTest(videoTest);
       testSuite.addTest(advancedCameraTest);
     }
 
@@ -196,9 +207,9 @@ export default Ember.Component.extend({
         });
       });
 
-      // testSuite.addTest(symmetricNatTest);
-      // testSuite.addTest(connectivityTest);
-      // testSuite.addTest(throughputTest);
+      testSuite.addTest(symmetricNatTest);
+      testSuite.addTest(connectivityTest);
+      testSuite.addTest(throughputTest);
 
       let bandwidthTest;
 
@@ -223,7 +234,7 @@ export default Ember.Component.extend({
             checkBandwidthSuccess: false
           });
         });
-        // testSuite.addTest(bandwidthTest);
+        testSuite.addTest(bandwidthTest);
       }
     }
 

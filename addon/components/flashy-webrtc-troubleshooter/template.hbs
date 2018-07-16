@@ -52,20 +52,25 @@
             {{t "webrtcTroubleshoot.checkCameraAdvancedSuccess"}}
             <i class="status-icon ion-checkmark"></i>
           </div>
-          {{!-- {{#each advCameraResolutions as |testResult|}}
+        {{else}}
+          <div class="entry-value">
+            {{t "webrtcTroubleshoot.checkCameraAdvancedFail"}}
+          </div>
+        {{/if}}
+
+        {{#if checkingCameraAdvanced}}
+          {{#each advCameraResolutions as |testResult|}}
             <div class="entry-value">
               <span class="cam-test-result">
-                {{t "webrtcTroubleshoot.resolution" value=testResult.resolution}} --
                 {{#if testResult.success}}
-                  {{t "webrtcTroubleshoot.testSuccess"}}
+                  <i class="status-icon ion-checkmark"></i>
                 {{else}}
-                  {{t "webrtcTroubleshoot.testFailure"}}
+                  <i class="status-icon ion-close"></i>
                 {{/if}}
+                {{t "webrtcTroubleshoot.resolution" value=testResult.resolution}}
               </span>
             </div>
-          {{/each}} --}}
-        {{else}}
-          {{t "webrtcTroubleshoot.checkCameraAdvancedFail"}} <i class="status-icon ion-alert-circled"></i>
+          {{/each}}
         {{/if}}
       </div>
     </div>
