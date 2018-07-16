@@ -82,6 +82,10 @@ h1, .footer {
   padding: 0 0 10px 0;
 }
 
+.cam-test-result {
+  margin: 5px 0 0 20px;
+}
+
 .ion-load-a:before {
   animation: spin 2s linear infinite;
 }
