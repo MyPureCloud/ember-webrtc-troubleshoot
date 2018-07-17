@@ -128,7 +128,13 @@
         {{else if checkBandwidthSuccess}}
           {{t "webrtcTroubleshoot.checkBandwidthSuccess"}} <i class="status-icon ion-checkmark"></i>
         {{else}}
-          {{t "webrtcTroubleshoot.checkBandwidthFail"}} <i class="status-icon ion-alert-circled"></i>
+            {{#if bandwidthIceError}}
+              {{t "webrtcTroubleshoot.checkBandwidthSkip_ice"}}
+            {{else if bandwidthMediaError}}
+              {{t "webrtcTroubleshoot.checkBandwidthSkip_media"}}
+            {{else}}
+              {{t "webrtcTroubleshoot.checkBandwidthFail"}} <i class="status-icon ion-alert-circled"></i>
+            {{/if}}
         {{/if}}
       </div>
     </div>
