@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 
   realtimeEnvironments: {
     'apps.mypurecloud.com':    { host: 'https://realtime.mypurecloud.com:443', orgId: 397 },
-    'apps.mypurecloud.com.au': { host: 'https://realtime.mypurecloud.com.au:443', orgId: 397 }, // Need an orgId for this one
+    'apps.mypurecloud.com.au': { host: 'https://realtime.mypurecloud.com.au:443', orgId: 28 }, // Need an orgId for this one
     'apps.mypurecloud.de':     { host: 'https://realtime.mypurecloud.de:443', orgId: 397 }, // Need an orgId for this one
     'apps.mypurecloud.ie':     { host: 'https://realtime.mypurecloud.ie:443', orgId: 397 }, // Need an orgId for this one
     'apps.mypurecloud.jp':     { host: 'https://realtime.mypurecloud.jp:443', orgId: 397 }, // Need an orgId for this one
@@ -40,9 +40,9 @@ export default Ember.Controller.extend({
   },
 
   getRealtimeInstance () {
-    const windowHost = window.location.host;
+    // const windowHost = window.location.host;
 
-    // const windowHost = "apps.mypurecloud.com.au"; // fail
+    const windowHost = "apps.mypurecloud.com.au"; // fail
     // const windowHost = "apps.mypurecloud.de"; // fail
     // const windowHost = "apps.mypurecloud.ie"; // fail
     // const windowHost = "apps.mypurecloud.jp"; // fail
