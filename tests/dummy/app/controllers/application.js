@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import realtimeEnvironments from '../models/realtimeEnvironments';
 
 export default Ember.Controller.extend({
   iceServers: null,
@@ -12,13 +13,7 @@ export default Ember.Controller.extend({
   },
 
   connectRealtime () {
-    const realtime = new window.Realtime({
-      host: 'https://realtime.mypurecloud.com:443',
-      guest: true,
-      orgId: 397,
-      jidRouting: true,
-      jidResource: 'webrtc-troubleshoot'
-    });
+    const realtime = this.getRealtimeInstance();
 
     realtime.on('rtcIceServers', servers => {
       console.log(JSON.stringify(servers));
@@ -32,6 +27,30 @@ export default Ember.Controller.extend({
 
     realtime.connect();
     this.set('realtime', realtime);
+  },
+
+  getRealtimeInstance () {
+    const windowHost = window.location.host;
+
+    let host;
+    let thirdPartyOrgId;
+    if (windowHost.indexOf('localhost') > -1) {
+      host = realtimeEnvironments.localhost.host;
+      thirdPartyOrgId = realtimeEnvironments.localhost.thirdPartyOrgId;
+    } else {
+      host = realtimeEnvironments[windowHost].host;
+      thirdPartyOrgId = realtimeEnvironments[windowHost].thirdPartyOrgId;
+    }
+
+    const realtime = new window.Realtime({
+      host: host,
+      guest: true,
+      orgId: thirdPartyOrgId,
+      jidRouting: true,
+      jidResource: 'webrtc-troubleshoot'
+    });
+
+    return realtime;
   },
 
   actions: {
