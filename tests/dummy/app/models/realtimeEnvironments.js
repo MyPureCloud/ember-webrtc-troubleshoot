@@ -6,7 +6,7 @@ const prod_us = {
 const prod_au = {
   host: 'https://realtime.mypurecloud.com.au:443',
   thirdPartyOrgId: 28,
-  orgName: '',
+  orgName: 'Admin_Prod_ANZ',
   orgId: '766eab18-6373-4026-8e70-07e3a07a51dd'
 };
 
