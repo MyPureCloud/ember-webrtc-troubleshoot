@@ -48,7 +48,7 @@
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-intl": "^2.26.2",
     "ember-load-initializers": "^1.1.0",
-    "ember-resolver": "^4.5.5",
+    "ember-resolver": "^5.0.0",
     "ember-try": "^0.2.8",
     "fs-promise": "^2.0.3",
     "loader.js": "~4.6.0",
