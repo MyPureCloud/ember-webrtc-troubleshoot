@@ -30,7 +30,7 @@
     "webrtc-troubleshoot": "^8.1.1"
   },
   "devDependencies": {
-    "broccoli-asset-rev": "^2.2.0",
+    "broccoli-asset-rev": "^3.0.0",
     "broccoli-funnel": "^1.1.0",
     "coveralls": "^3.0.0",
     "ember-chromium": "^3.0.1",
