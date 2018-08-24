@@ -20,14 +20,14 @@ module.exports = {
 
     this.translation = new WatchedDir('translations');
 
-    app.import('vendor/webrtc-troubleshooter.bundle.js');
+    app.import('vendor/webrtc-troubleshooter.js');
   },
 
   treeForVendor (vendorTree) {
     const npmDeps = [
       {
-        path: 'webrtc-troubleshoot/dist/webrtc-troubleshooter.bundle.js',
-        files: [ 'webrtc-troubleshooter.bundle.js' ]
+        path: 'webrtc-troubleshoot/dist/webrtc-troubleshooter.js',
+        files: [ 'webrtc-troubleshooter.js' ]
       }
     ];
     const trees = npmDeps.map((dep) => {

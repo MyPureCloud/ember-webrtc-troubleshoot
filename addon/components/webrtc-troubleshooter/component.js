@@ -1,4 +1,4 @@
-/* global WebRTCTroubleshooter */
+/* global WebrtcTroubleshooter */
 import Ember from 'ember';
 import layout from './template';
 
@@ -13,7 +13,7 @@ const {
   VideoBandwidthTest,
   AudioBandwidthTest,
   SymmetricNatTest
-} = WebRTCTroubleshooter.default;
+} = WebrtcTroubleshooter;
 
 export default Ember.Component.extend({
   layout,
@@ -46,7 +46,7 @@ export default Ember.Component.extend({
 
   iceServers: null,
 
-  advCameraResolutions: Ember.computed('advancedCameraTestResults', function() {
+  advCameraResolutions: Ember.computed('advancedCameraTestResults', function () {
     const results = this.get('advancedCameraTestResults');
     if (!results.map) {
       return [];

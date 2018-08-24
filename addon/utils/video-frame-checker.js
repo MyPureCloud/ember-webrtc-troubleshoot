@@ -1,3 +1,3 @@
-/* global WebRTCTroubleshooter */
+/* global WebrtcTroubleshooter */
 
-export default WebRTCTroubleshooter.default.VideoFrameChecker;
+export default WebrtcTroubleshooter.VideoFrameChecker;

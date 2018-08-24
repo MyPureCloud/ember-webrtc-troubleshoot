@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import layout from './template';
-import WebRTCTroubleshooterComponent from '../webrtc-troubleshooter/component';
+import WebrtcTroubleshooterComponent from '../webrtc-troubleshooter/component';
 
 const LOGLEVELS = [ 'debug', 'info', 'log', 'warn', 'error' ];
 
@@ -45,7 +45,7 @@ const download = function (filename) {
   document.body.removeChild(element);
 };
 
-export default WebRTCTroubleshooterComponent.extend({
+export default WebrtcTroubleshooterComponent.extend({
   layout,
   classNames: ['flashy-webrtc-troubleshooter'],
   saveSuiteToWindow: true,

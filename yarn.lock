@@ -2069,9 +2069,9 @@ ember-cli-code-coverage@0.4.2:
     source-map "0.5.6"
     string.prototype.startswith "^0.2.0"
 
-ember-cli-dependency-checker@^2.0.0:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/ember-cli-dependency-checker/-/ember-cli-dependency-checker-2.2.1.tgz#1eb728258dc7d528951c391d39b365e1beedecca"
+ember-cli-dependency-checker@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-dependency-checker/-/ember-cli-dependency-checker-3.0.0.tgz#61245f5f79f881dece043303111d5f41efb8621f"
   dependencies:
     chalk "^2.3.0"
     find-yarn-workspace-root "^1.1.0"
@@ -3251,9 +3251,9 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-getscreenmedia@^4.0.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/getscreenmedia/-/getscreenmedia-4.1.1.tgz#1babce3afd2b3fc654b0e5e772272f9f33b04ddc"
+getscreenmedia@^5.0.0:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/getscreenmedia/-/getscreenmedia-5.0.2.tgz#4b49667fcf5ed4171ea916c87da1ee23c3c045e2"
 
 git-repo-info@^1.4.1:
   version "1.4.1"
@@ -4215,11 +4215,11 @@ locale-emoji@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/locale-emoji/-/locale-emoji-0.3.0.tgz#7f38262f7c877bd27659725570335b263f88742a"
 
-localmedia@^4.0.0:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/localmedia/-/localmedia-4.0.2.tgz#1e6f3a0eeb2438921cea6cbaf7125915496125d7"
+localmedia@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/localmedia/-/localmedia-5.0.0.tgz#3f1dea25a554ec50b124c0b476b48063f67f7876"
   dependencies:
-    getscreenmedia "^4.0.0"
+    getscreenmedia "^5.0.0"
     hark "^1.0.0"
     mockconsole "0.0.x"
     wildemitter "^1.0.0"
@@ -6751,17 +6751,17 @@ webrtc-adapter@^6.0.0:
     rtcpeerconnection-shim "^1.2.10"
     sdp "^2.7.0"
 
-webrtc-stats-gatherer@^4.2.10:
-  version "4.2.13"
-  resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-4.2.13.tgz#5ae041e0c98fa15ae6964975ae36ac8a03cbb360"
+webrtc-stats-gatherer@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-6.0.2.tgz#b2337836a8e6be846f86679d9a24ff3ddea14c4c"
 
-webrtc-troubleshoot@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-8.1.0.tgz#d29ea95efd9c86943b587050ab16ef42297f6007"
+webrtc-troubleshoot@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-9.0.2.tgz#9c287829e09a5db51ab4de5d5b157ade98ea31e6"
   dependencies:
-    localmedia "^4.0.0"
+    localmedia "^5.0.0"
     rtcpeerconnection "^8.0.1"
-    webrtc-stats-gatherer "^4.2.10"
+    webrtc-stats-gatherer "^6.0.2"
 
 websocket-driver@>=0.5.1:
   version "0.7.0"
