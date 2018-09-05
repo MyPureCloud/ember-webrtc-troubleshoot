@@ -9,11 +9,15 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "coverage": "COVERAGE=true ember test",
-    "test": "semistandard blueprints/**/*.js tests/**/*.js addon/**/*.js app/**/*.js && npm run coverage",
-    "test:only": "ember test",
-    "posttest": "cat ./coverage/lcov.info | coveralls",
-    "install-chromium": "node node_modules/ember-chromium/download-chrome.js"
+    "lint": "semistandard",
+    "pretest": "npm run install-chromium",
+    "install-chromium": "node node_modules/ember-chromium/download-chrome.js",
+    "test": "npm run lint && npm run coverage-test",
+    "test-fast": "npm run lint && npm run pretest && ember exam --split=4 --parallel",
+    "coverage-test": "npm run pretest && COVERAGE=true ember exam --split=4 --parallel",
+    "coverage": "npm run coverage-test && npm run posttest",
+    "posttest": "ember coverage-merge && rm -rf .nyc_output_* && npm run check-coverage",
+    "check-coverage": "rm -f .nyc_output/coverage-summary.json && nyc check-coverage --lines 35 --statements 35"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {
@@ -46,12 +50,14 @@
     "ember-cli-test-loader": "^2.2.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-disable-prototype-extensions": "^1.1.0",
+    "ember-exam": "^1.0.0",
     "ember-intl": "^2.26.2",
     "ember-load-initializers": "^1.1.0",
     "ember-resolver": "^4.5.5",
     "ember-try": "^0.2.8",
     "fs-promise": "^2.0.3",
     "loader.js": "~4.6.0",
+    "nyc": "^13.0.1",
     "pre-push": "^0.1.1",
     "semistandard": "^12.0.0",
     "webrtc-adapter": "^6.0.0"
