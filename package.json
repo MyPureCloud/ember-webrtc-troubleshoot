@@ -30,7 +30,7 @@
     "broccoli-merge-trees": "^3.0.0",
     "broccoli-source": "^1.1.0",
     "ember-cli-babel": "^6.14.1",
-    "ember-cli-htmlbars": "^1.0.3",
+    "ember-cli-htmlbars": "^3.0.1",
     "webrtc-troubleshoot": "^9.0.2"
   },
   "devDependencies": {
