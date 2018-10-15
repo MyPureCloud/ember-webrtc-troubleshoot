@@ -9,6 +9,7 @@ var manifest = {
   version: process.env.BUILD_NUMBER,
   buildNumber: process.env.BUILD_NUMBER || 'Unknown',
   buildDate: buildDate.toISOString(),
+  ecosystem: 'pc',
   indexFiles: [
     {
       url: '/webrtc-troubleshooter/',
