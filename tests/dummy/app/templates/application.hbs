@@ -1,11 +1,31 @@
 <h1>{{t "dummy.title"}}</h1>
 
 <div class="primary-intro">
+
   <p>
     {{t "dummy.description"}}
   </p>
+  <nav>
+    {{#link-to "audio"}}WebRTC with Audio (Default){{/link-to}} |
+    {{#link-to "video"}}With Video{{/link-to}} |
+    {{#link-to "screen"}}Screen Capture{{/link-to}}
+  </nav>
+  <br/>
   <a href="https://help.mypurecloud.com/articles/about-purecloud-webrtc-phones/" target="_blank">{{t "dummy.learnMore"}}</a>
 </div>
-{{#if realtimeConnected}}
-  {{flashy-webrtc-troubleshooter iceServers=iceServers}}
+
+{{#if screen}}
+  Testing Screen Capture
+  <button {{action "captureScreen"}}>Capture screen</button>
+  <div>
+    <video style="height: 200px; width: 200px;" autoplay id="screen"></video>
+  </div>
+{{else if audio}}
+  {{#if realtimeConnected}}
+    {{flashy-webrtc-troubleshooter iceServers=iceServers video=false}}
+  {{/if}}
+{{else if video}}
+  {{#if realtimeConnected}}
+    {{flashy-webrtc-troubleshooter iceServers=iceServers}}
+  {{/if}}
 {{/if}}

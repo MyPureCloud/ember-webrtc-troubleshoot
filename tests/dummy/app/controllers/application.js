@@ -53,9 +53,29 @@ export default Ember.Controller.extend({
     return realtime;
   },
 
+  screen: Ember.computed('currentPath', function () {
+    return this.get('currentPath') === 'screen';
+  }),
+
+  video: Ember.computed('currentPath', function () {
+    return this.get('currentPath') === 'video';
+  }),
+
+  audio: Ember.computed('currentPath', function () {
+    return this.get('currentPath') === 'audio';
+  }),
+
   actions: {
     openTroubleshoot () {
       alert('troubleshooting!'); // eslint-disable-line
+    },
+    captureScreen () {
+      const webStoreUrl = Ember.$(`link[rel='chrome-webstore-item'][data-domain='${window.location.hostname}']`).attr('href');
+      window.iframeScreenshare.initializeScreenShare(webStoreUrl);
+      window.iframeScreenshare.requestScreenShare()
+        .then(stream => {
+          document.querySelector('video#screen').srcObject = stream;
+        });
     }
   }
 });

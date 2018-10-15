@@ -19,7 +19,7 @@ EMAIL_LIST=client-media-services@genesys.com" > ${WORKSPACE}/build.properties
 cat ${WORKSPACE}/build.properties
 
 npm install --no-save @purecloud/web-app-deploy
-export CDN_URL="$(./node_modules/.bin/cdn --web-app-name $WEB_APP_NAME --version $BUILD_NUMBER)"
+export CDN_URL="$(./node_modules/.bin/cdn --ecosystem pc --web-app-name $WEB_APP_NAME --version $BUILD_NUMBER)"
 
 echo "CDN_URL $CDN_URL"
 
@@ -37,6 +37,7 @@ cd $WORKSPACE
 
 echo "Triggering S3 Upload"
 ./node_modules/.bin/upload \
+  --ecosystem "pc" \
   --source-dir $WORKSPACE/repo/dist/ \
   --create-manifest \
   --version $BUILD_NUMBER \
@@ -44,6 +45,7 @@ echo "Triggering S3 Upload"
 
 echo "Triggering DCA Deploy"
 ./node_modules/.bin/deploy \
+  --ecosystem "pc" \
   --web-app-name $WEB_APP_NAME \
   --version $BUILD_NUMBER \
   --dest-env dev
