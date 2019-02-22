@@ -98,8 +98,10 @@
         {{t "webrtcTroubleshoot.checkConnectivity"}} <i class="status-icon ion-load-a"></i>
       {{else if checkConnectivitySuccess}}
         {{t "webrtcTroubleshoot.checkConnectivitySuccess"}} <i class="status-icon ion-checkmark"></i>
+      {{else if connectivityPortError}}
+        {{t "webrtcTroubleshoot.checkConnectivityFailPort"}} <i class="status-icon pc pc-close"></i>
       {{else}}
-        {{t "webrtcTroubleshoot.checkConnectivityFail"}} <i class="status-icon ion-alert-circled"></i>
+        {{t "webrtcTroubleshoot.checkConnectivityFail"}} <i class="status-icon pc pc-close"></i>
       {{/if}}
     </div>
   </div>

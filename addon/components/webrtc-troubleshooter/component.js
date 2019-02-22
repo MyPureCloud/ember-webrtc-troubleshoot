@@ -85,6 +85,52 @@ export default Ember.Component.extend({
     });
   },
 
+  connectivityPortAttempts: 0,
+
+  runConnectivityTest (iceConfig) {
+    const connectivityTest = new ConnectivityTest(iceConfig);
+    this.testSuite.addTest(connectivityTest);
+    let xlowPort, lowPort, medPort, highPort;
+    connectivityTest.promise.then(() => {
+      const ports = [];
+      connectivityTest.pc1._candidateBuffer.forEach(p => ports.push(p.port));
+      connectivityTest.pc2._candidateBuffer.forEach(p => ports.push(p.port));
+      ports.forEach(p => {
+        const portNum = Number(p);
+        if (portNum < 16384) {
+          xlowPort = true;
+        } else if (portNum < 32768) {
+          lowPort = true;
+        } else if (portNum < 49151) {
+          medPort = true;
+        } else {
+          highPort = true;
+        }
+      });
+      console.log('ports used', { ports, xlowPort, lowPort, medPort, highPort });
+      if (!lowPort) {
+        if (this.get('connectivityPortAttempts') < 5) {
+          this.incrementProperty('connectivityPortAttempts');
+          return this.runConnectivityTest(iceConfig);
+        }
+        const err = new Error('Failed to find port in required range (16384-32768)');
+        err.code = 'PORT_REQUIREMENT';
+        return Promise.reject(err);
+      }
+      this.safeSetProperties({
+        checkingConnectivity: false,
+        checkConnectivitySuccess: true
+      });
+    }).catch((err) => {
+      this.logger.error('connectivityTest failed', err.code);
+      this.safeSetProperties({
+        connectivityPortError: err.code === 'PORT_REQUIREMENT',
+        checkingConnectivity: false,
+        checkConnectivitySuccess: false
+      });
+    });
+  },
+
   startTroubleshooter: function () {
     if (!navigator.mediaDevices) {
       this.set('video', false);
@@ -102,6 +148,7 @@ export default Ember.Component.extend({
     if (this.get('saveSuiteToWindow')) {
       window.testSuite = testSuite;
     }
+    this.set('testSuite', testSuite);
 
     // TODO: logs for rejections?
 
@@ -183,19 +230,7 @@ export default Ember.Component.extend({
         });
       });
 
-      const connectivityTest = new ConnectivityTest(iceConfig);
-      connectivityTest.promise.then((/* logs */) => {
-        this.safeSetProperties({
-          checkingConnectivity: false,
-          checkConnectivitySuccess: true
-        });
-      }, (err) => {
-        this.logger.error('connectivityTest failed', err);
-        this.safeSetProperties({
-          checkingConnectivity: false,
-          checkConnectivitySuccess: false
-        });
-      });
+      this.runConnectivityTest(iceConfig);
 
       const throughputTest = new ThroughputTest(iceConfig);
       throughputTest.promise.then((/* logs */) => {
@@ -212,7 +247,6 @@ export default Ember.Component.extend({
       });
 
       testSuite.addTest(symmetricNatTest);
-      testSuite.addTest(connectivityTest);
       testSuite.addTest(throughputTest);
 
       let bandwidthTest;
@@ -269,8 +303,6 @@ export default Ember.Component.extend({
           this.done(err);
         }
       });
-
-    this.set('testSuite', testSuite);
   },
 
   runVideoBandwidthTest: Ember.computed.or('video', 'mediaOptions.screenStream'),

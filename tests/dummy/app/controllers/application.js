@@ -34,12 +34,15 @@ export default Ember.Controller.extend({
 
     let host;
     let thirdPartyOrgId;
+    let webchatDeploymentKey;
     if (windowHost.indexOf('localhost') > -1) {
       host = realtimeEnvironments.localhost.host;
       thirdPartyOrgId = realtimeEnvironments.localhost.thirdPartyOrgId;
+      webchatDeploymentKey = realtimeEnvironments.localhost.webchatDeploymentKey;
     } else {
       host = realtimeEnvironments[windowHost].host;
       thirdPartyOrgId = realtimeEnvironments[windowHost].thirdPartyOrgId;
+      webchatDeploymentKey = realtimeEnvironments[windowHost].webchatDeploymentKey;
     }
 
     const realtime = new window.Realtime({
@@ -47,7 +50,8 @@ export default Ember.Controller.extend({
       guest: true,
       orgId: thirdPartyOrgId,
       jidRouting: true,
-      jidResource: 'webrtc-troubleshoot'
+      jidResource: 'webrtc-troubleshoot',
+      webchatDeploymentKey
     });
 
     return realtime;

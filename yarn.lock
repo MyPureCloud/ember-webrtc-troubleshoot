@@ -4351,7 +4351,7 @@ iconv-lite@0.4.23, iconv-lite@^0.4.17, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
 
 iframe-screenshare@^6.0.0:
   version "6.0.0"
-  resolved "https://purecloud.artifactoryonline.com/purecloud/api/npm/inin-internal-npm/iframe-screenshare/-/iframe-screenshare-6.0.0.tgz#8ecc36452b66bc1003b58c4f65efc21c5589fe71"
+  resolved "https://registry.yarnpkg.com/iframe-screenshare/-/iframe-screenshare-6.0.0.tgz#8ecc36452b66bc1003b58c4f65efc21c5589fe71"
   integrity sha1-jsw2RStmvBADtYxPZe/CHFWJ/nE=
 
 ignore-walk@^3.0.1:

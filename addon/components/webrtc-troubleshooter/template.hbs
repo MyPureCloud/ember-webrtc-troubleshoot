@@ -78,6 +78,8 @@
         {{t "webrtcTroubleshoot.checkConnectivity"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
       {{else if checkConnectivitySuccess}}
         {{t "webrtcTroubleshoot.checkConnectivitySuccess"}} <i class="status-icon pc pc-check"></i>
+      {{else if connectivityPortError}}
+        {{t "webrtcTroubleshoot.checkConnectivityFailPort"}} <i class="status-icon pc pc-close"></i>
       {{else}}
         {{t "webrtcTroubleshoot.checkConnectivityFail"}} <i class="status-icon pc pc-close"></i>
       {{/if}}
