@@ -17,7 +17,7 @@
     "coverage-test": "npm run pretest && COVERAGE=true ember exam --split=4 --parallel",
     "coverage": "npm run coverage-test && npm run posttest",
     "posttest": "ember coverage-merge && rm -rf .nyc_output_* && npm run check-coverage",
-    "check-coverage": "rm -f .nyc_output/coverage-summary.json && nyc check-coverage --lines 35 --statements 35"
+    "check-coverage": "rm -f .nyc_output/coverage-summary.json && nyc check-coverage --lines 32 --statements 31"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {

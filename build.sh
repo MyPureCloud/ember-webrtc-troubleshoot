@@ -19,7 +19,7 @@ EMAIL_LIST=client-media-services@genesys.com" > ${WORKSPACE}/build.properties
 cat ${WORKSPACE}/build.properties
 
 npm install --no-save @purecloud/web-app-deploy
-export CDN_URL="$(./node_modules/.bin/cdn --ecosystem pc --web-app-name $WEB_APP_NAME --version $BUILD_NUMBER)"
+export CDN_URL="$(./node_modules/.bin/cdn --ecosystem pc --name $WEB_APP_NAME --build ${BUILD_NUMBER} --version $BUILD_NUMBER)"
 
 echo "CDN_URL $CDN_URL"
 
@@ -33,20 +33,19 @@ npm test
 
 npx ember build --env=production --dest=dist/
 
+node $WORKSPACE/repo/create-manifest.js
 cd $WORKSPACE
-
-node $WORKSPACE/scripts/scripts/create-manifest.js
 
 echo "Triggering S3 Upload"
 ./node_modules/.bin/upload \
   --ecosystem pc \
-  --source-dir $WORKSPACE/repo/web/ \
-  --manifest $WORKSPACE/repo/web/manifest.json
+  --source-dir $WORKSPACE/repo/dist/ \
+  --manifest $WORKSPACE/repo/dist/manifest.json
 
 echo "Triggering DCA Deploy"
 ./node_modules/.bin/deploy \
   --ecosystem pc \
-  --manifest $WORKSPACE/repo/web/manifest.json \
+  --manifest $WORKSPACE/repo/dist/manifest.json \
   --name $WEB_APP_NAME \
   --version $BUILD_NUMBER \
   --dest-env dev
@@ -54,7 +53,7 @@ echo "Triggering DCA Deploy"
 echo "Triggering TCA Deploy"
 ./node_modules/.bin/deploy \
   --ecosystem pc \
-  --manifest $WORKSPACE/repo/web/manifest.json \
+  --manifest $WORKSPACE/repo/dist/manifest.json \
   --name $WEB_APP_NAME \
   --version $BUILD_NUMBER \
   --dest-env test
