@@ -35,17 +35,26 @@ npx ember build --env=production --dest=dist/
 
 cd $WORKSPACE
 
+node $WORKSPACE/scripts/scripts/create-manifest.js
+
 echo "Triggering S3 Upload"
 ./node_modules/.bin/upload \
-  --ecosystem "pc" \
-  --source-dir $WORKSPACE/repo/dist/ \
-  --create-manifest \
-  --version $BUILD_NUMBER \
-  --web-app-name $WEB_APP_NAME
+  --ecosystem pc \
+  --source-dir $WORKSPACE/repo/web/ \
+  --manifest $WORKSPACE/repo/web/manifest.json
 
 echo "Triggering DCA Deploy"
 ./node_modules/.bin/deploy \
-  --ecosystem "pc" \
-  --web-app-name $WEB_APP_NAME \
+  --ecosystem pc \
+  --manifest $WORKSPACE/repo/web/manifest.json \
+  --name $WEB_APP_NAME \
   --version $BUILD_NUMBER \
   --dest-env dev
+
+echo "Triggering TCA Deploy"
+./node_modules/.bin/deploy \
+  --ecosystem pc \
+  --manifest $WORKSPACE/repo/web/manifest.json \
+  --name $WEB_APP_NAME \
+  --version $BUILD_NUMBER \
+  --dest-env test
