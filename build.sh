@@ -42,6 +42,7 @@ echo "Triggering S3 Upload"
   --source-dir $WORKSPACE/repo/dist/ \
   --manifest $WORKSPACE/repo/dist/manifest.json
 
+
 echo "Triggering DCA Deploy"
 ./node_modules/.bin/deploy \
   --ecosystem pc \
