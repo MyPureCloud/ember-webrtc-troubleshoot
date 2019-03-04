@@ -3953,10 +3953,10 @@ getpass@^0.1.1:
   dependencies:
     assert-plus "^1.0.0"
 
-getscreenmedia@^5.0.0:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/getscreenmedia/-/getscreenmedia-5.0.2.tgz#4b49667fcf5ed4171ea916c87da1ee23c3c045e2"
-  integrity sha1-S0lmf89e1BceqRbIfaHuI8PAReI=
+getscreenmedia@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/getscreenmedia/-/getscreenmedia-5.1.2.tgz#39778de5f58d0a1a664175e504badafc3895e50a"
+  integrity sha512-IFdLX1oV1/nMDWajgok7pgkAH2ayY7wDx3jNBaSyRQfB2GAALkD1RoK0SlPkElLXKwMLV/F5jXZWz5Ic+xWjcA==
 
 git-repo-info@^1.4.1:
   version "1.4.1"
@@ -5169,12 +5169,12 @@ locale-emoji@^0.3.0:
   resolved "https://registry.yarnpkg.com/locale-emoji/-/locale-emoji-0.3.0.tgz#7f38262f7c877bd27659725570335b263f88742a"
   integrity sha1-fzgmL3yHe9J2WXJVcDNbJj+IdCo=
 
-localmedia@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/localmedia/-/localmedia-5.0.0.tgz#3f1dea25a554ec50b124c0b476b48063f67f7876"
-  integrity sha1-Px3qJaVU7FCxJMC0drSAY/Z/eHY=
+localmedia@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/localmedia/-/localmedia-5.1.2.tgz#397dc48e1e43885f7915474d8596c18d81a0b44c"
+  integrity sha512-RAcjDkUqfQ2ESoI1o4uqB6glieVYX36Ay4KS/NKJeAH2FeML8YO79gaf5yO3e0o91xMVwb4RJxY7vexsX5WPvg==
   dependencies:
-    getscreenmedia "^5.0.0"
+    getscreenmedia "^5.1.2"
     hark "^1.0.0"
     mockconsole "0.0.x"
     wildemitter "^1.0.0"
@@ -8333,12 +8333,12 @@ webrtc-stats-gatherer@^6.0.2:
   resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-6.0.2.tgz#b2337836a8e6be846f86679d9a24ff3ddea14c4c"
   integrity sha1-sjN4NqjmvoRvhmedmiT/Pd6hTEw=
 
-webrtc-troubleshoot@^9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-9.0.2.tgz#9c287829e09a5db51ab4de5d5b157ade98ea31e6"
-  integrity sha1-nCh4KeCaXbUatN5dWxV63pjqMeY=
+webrtc-troubleshoot@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-10.0.2.tgz#7a6ecdd8110a9cc591e13151d8f0026d4c9ae671"
+  integrity sha512-RgH97mJLfcdfz0CsfQAzEU7FDFwObcuK9x0NwZw/izjE04nIFR4jskFWnQcfizTpzPFtjD3pbct29PWnSPF4tA==
   dependencies:
-    localmedia "^5.0.0"
+    localmedia "^5.1.2"
     rtcpeerconnection "^8.0.1"
     webrtc-stats-gatherer "^6.0.2"
 

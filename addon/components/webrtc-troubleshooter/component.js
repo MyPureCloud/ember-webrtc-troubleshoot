@@ -86,6 +86,7 @@ export default Ember.Component.extend({
   },
 
   connectivityPortAttempts: 0,
+  connectivityMaxPortAttempts: 20,
 
   runConnectivityTest (iceConfig) {
     const connectivityTest = new ConnectivityTest(iceConfig);
@@ -109,7 +110,7 @@ export default Ember.Component.extend({
       });
       console.log('ports used', { ports, xlowPort, lowPort, medPort, highPort });
       if (!lowPort) {
-        if (this.get('connectivityPortAttempts') < 5) {
+        if (this.get('connectivityPortAttempts') < this.connectivityMaxPortAttempts) {
           this.incrementProperty('connectivityPortAttempts');
           return this.runConnectivityTest(iceConfig);
         }
