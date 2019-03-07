@@ -83,7 +83,6 @@ export default Ember.Controller.extend({
   }),
 
   receiveMessage: function (e) {
-    console.log('ewt got event', e.data);
     if (e.data.direction === 'jabra-headset-extension-from-content-script') {
       this.get('frame').contentWindow.postMessage(e.data, '*');
       return;

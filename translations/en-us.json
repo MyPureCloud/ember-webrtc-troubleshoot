@@ -2,7 +2,13 @@
   "dummy": {
     "description": "This app runs a series of diagnostic troubleshooting tests to identify common problems with WebRTC. The tests apply to this client only. They check hardware access for microphone and camera, as well as doing loopback connections to PureCloud infrastructure to check the network access of the client.",
     "title": "PureCloud WebRTC Diagnostics",
-    "learnMore": "Learn more about PureCloud WebRTC"
+    "learnMore": "Learn more about PureCloud WebRTC",
+    "privacy": "Privacy Policy",
+    "audio": "WebRTC with Audio (Default)",
+    "video": "With Video",
+    "screenCaptureNoun": "Screen Capture",
+    "headsets": "Headset Integration",
+    "captureScreenVerb": "Capture Screen"
   },
   "webrtcTroubleshoot": {
     "troubleshootTimeWarning": "These tests may take up to 2 minutes.",

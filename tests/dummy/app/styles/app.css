@@ -3,9 +3,13 @@ html, body {
   margin: 0;
   background-repeat:no-repeat;
   background-attachment: fixed;
-  padding-top: 50px;
+}
+
+body {
+  padding-top: 78px;
   padding-bottom: 50px;
 }
+
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
@@ -14,13 +18,14 @@ html, body {
 
 .primary-intro, h1 {
   text-align: center;
+  margin: 0 20px;
 }
+
 .intro {
   padding: 20px;
 }
 
 body > div.ember-view {
-  margin: 0 20px;
   height: 100%;
   overflow: auto;
   display: flex;
@@ -127,6 +132,7 @@ textarea {
 .footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   height: 50px;
   width: 100%;
   background-color: white;

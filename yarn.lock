@@ -2478,10 +2478,10 @@ ember-assign-polyfill@^2.2.0:
     ember-cli-babel "^6.6.0"
     ember-cli-version-checker "^2.0.0"
 
-ember-chromium@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/ember-chromium/-/ember-chromium-3.0.1.tgz#7d9095d1ead40aa0d1733634057f85a6cbf0a2b8"
-  integrity sha1-fZCV0erUCqDRczY0BX+Fpsvworg=
+ember-chromium@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ember-chromium/-/ember-chromium-4.0.2.tgz#5caffa9e2aa501bce6fe7a90d7b9c4341e36c197"
+  integrity sha512-DD8Z1Us7AmPciPFGAv5PZ9BLVHtdakbUUsWkHPRW3epXsvtZu6q03rvQ3HnDQ+e4/a917/Dhx3CkGvvcLKFXBw==
   dependencies:
     extract-zip "^1.6.6"
     got "^8.0.3"
