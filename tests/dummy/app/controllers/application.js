@@ -10,6 +10,7 @@ export default Ember.Controller.extend({
     } else {
       Ember.run.later(this, this.connectRealtime);
     }
+    window.addEventListener('message', this.receiveMessage.bind(this), false);
   },
 
   connectRealtime () {
@@ -69,9 +70,35 @@ export default Ember.Controller.extend({
     return this.get('currentPath') === 'audio';
   }),
 
+  headsets: Ember.computed('currentPath', function () {
+    return this.get('currentPath') === 'headsets';
+  }),
+
+  headsetFrameSrc: Ember.computed(function () {
+    if (window.location.hostname.indexOf('localhost') > -1) {
+      Ember.Logger.warn('Looking for headsets dummy app on https://localhost:4201');
+      return 'https://localhost:4201';
+    }
+    return `https://${window.location.hostname}/headset-troubleshooter`;
+  }),
+
+  receiveMessage: function (e) {
+    console.log('ewt got event', e.data);
+    if (e.data.direction === 'jabra-headset-extension-from-content-script') {
+      this.get('frame').contentWindow.postMessage(e.data, '*');
+      return;
+    }
+    if (e.source !== window) {
+      window.postMessage(e.data, '*');
+    }
+  },
+
   actions: {
     openTroubleshoot () {
       alert('troubleshooting!'); // eslint-disable-line
+    },
+    onFrameLoad (e) {
+      this.set('frame', e.target);
     },
     captureScreen () {
       const webStoreUrl = Ember.$(`link[rel='chrome-webstore-item'][data-domain='${window.location.hostname}']`).attr('href');

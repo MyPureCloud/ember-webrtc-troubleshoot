@@ -20,9 +20,11 @@ html, body {
 }
 
 body > div.ember-view {
-  padding-bottom: 50px;
-  margin: 20px;
-  margin-bottom: 10px;
+  margin: 0 20px;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -49,6 +51,17 @@ nav a, button {
     cursor: pointer;
 }
 
+iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 3px;
+  padding-bottom: 20px;
+}
+
 .flashy-webrtc-troubleshooter .options {
   height: 100%;
   display: flex;
@@ -61,7 +74,6 @@ nav a, button {
 
   display: flex;
   align-items: start;
-  background: linear-gradiant
 }
 
 .flashy-webrtc-troubleshooter {

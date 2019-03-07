@@ -9,6 +9,7 @@
     {{#link-to "audio"}}WebRTC with Audio (Default){{/link-to}} |
     {{#link-to "video"}}With Video{{/link-to}} |
     {{#link-to "screen"}}Screen Capture{{/link-to}}
+    {{#link-to "headsets"}}Headset Integration{{/link-to}}
   </nav>
   <br/>
   <a href="https://help.mypurecloud.com/articles/about-purecloud-webrtc-phones/" target="_blank">{{t "dummy.learnMore"}}</a>
@@ -28,4 +29,6 @@
   {{#if realtimeConnected}}
     {{flashy-webrtc-troubleshooter iceServers=iceServers}}
   {{/if}}
+{{else if headsets}}
+  <iframe allow="microphone" src="{{headsetFrameSrc}}" onload={{action "onFrameLoad"}}></iframe>
 {{/if}}
