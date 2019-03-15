@@ -4349,10 +4349,10 @@ iconv-lite@0.4.23, iconv-lite@^0.4.17, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-iframe-screenshare@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/iframe-screenshare/-/iframe-screenshare-6.0.0.tgz#8ecc36452b66bc1003b58c4f65efc21c5589fe71"
-  integrity sha1-jsw2RStmvBADtYxPZe/CHFWJ/nE=
+iframe-screenshare@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/iframe-screenshare/-/iframe-screenshare-6.2.0.tgz#8c515dc5311c883b5e13c18006702b163b86d136"
+  integrity sha512-cWXpFyF3/X+lXrcxCyGdzTvyeHFpsWjwsU48hyDSzlAEP+JxVFb6EKw29kHdTblyRoFYDsCI0VNw/kbF/oAd5g==
 
 ignore-walk@^3.0.1:
   version "3.0.1"

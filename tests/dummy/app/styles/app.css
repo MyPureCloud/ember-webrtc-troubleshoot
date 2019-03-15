@@ -12,7 +12,7 @@ body > .ember-view {
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  color: #0a0a0a;
+  color: #33383d;
 }
 
 .primary-intro, h1 {
@@ -95,6 +95,12 @@ nav.sidebar a {
   margin-left: 210px;
   height: 100%;
   padding: 20px;
+}
+
+.primary-content button {
+  background: #33383d;
+  border-radius: 3px;
+  color: #9baab8;
 }
 
 iframe {

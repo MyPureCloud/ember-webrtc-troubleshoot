@@ -105,8 +105,7 @@ export default Ember.Controller.extend({
       this.set('frame', e.target);
     },
     captureScreen () {
-      const webStoreUrl = Ember.$(`link[rel='chrome-webstore-item'][data-domain='${window.location.hostname}']`).attr('href');
-      window.iframeScreenshare.initializeScreenShare(webStoreUrl);
+      window.iframeScreenshare.initializeScreenShare();
       window.iframeScreenshare.requestScreenShare()
         .then(stream => {
           document.querySelector('video#screen').srcObject = stream;

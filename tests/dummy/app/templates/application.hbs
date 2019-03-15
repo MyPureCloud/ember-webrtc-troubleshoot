@@ -26,7 +26,8 @@
     </div>
   {{else if screen}}
     {{t "dummy.screenCaptureNoun"}}
-    <button {{action "captureScreen"}}>{{t dummy.captureScreenVerb}}</button>
+    <p>{{t "dummy.screenCaptureDescription"}}</p>
+    <button {{action "captureScreen"}}>{{t "dummy.captureScreenVerb"}}</button>
     <div>
       <video style="height: 200px; width: 200px;" autoplay id="screen"></video>
     </div>

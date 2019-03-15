@@ -9,6 +9,7 @@
     "screenCaptureNoun": "Screen Capture",
     "headsets": "Headset Integration",
     "captureScreenVerb": "Capture Screen",
+    "screenCaptureDescription": "PureCloud uses screen capture for Screen Share and Screen Recording features. Click the Capture Screen button to verify that your browser or application supports Screen Capture.",
     "about": "About"
   },
   "webrtcTroubleshoot": {
