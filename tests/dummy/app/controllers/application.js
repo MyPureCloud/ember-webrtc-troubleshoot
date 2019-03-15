@@ -58,6 +58,11 @@ export default Ember.Controller.extend({
     return realtime;
   },
 
+  home: Ember.computed('currentPath', function () {
+    window.app = this;
+    return this.get('currentPath') === 'index';
+  }),
+
   screen: Ember.computed('currentPath', function () {
     return this.get('currentPath') === 'screen';
   }),
@@ -77,7 +82,7 @@ export default Ember.Controller.extend({
   headsetFrameSrc: Ember.computed(function () {
     if (window.location.hostname.indexOf('localhost') > -1) {
       Ember.Logger.warn('Looking for headsets dummy app on https://localhost:4201');
-      return 'https://localhost:4201';
+      return 'https://localhost:4202';
     }
     return `https://${window.location.hostname}/headset-troubleshooter`;
   }),

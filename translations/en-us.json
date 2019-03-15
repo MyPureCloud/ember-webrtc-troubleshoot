@@ -8,7 +8,8 @@
     "video": "With Video",
     "screenCaptureNoun": "Screen Capture",
     "headsets": "Headset Integration",
-    "captureScreenVerb": "Capture Screen"
+    "captureScreenVerb": "Capture Screen",
+    "about": "About"
   },
   "webrtcTroubleshoot": {
     "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
