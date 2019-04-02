@@ -8333,10 +8333,10 @@ webrtc-stats-gatherer@^6.0.2:
   resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-6.0.2.tgz#b2337836a8e6be846f86679d9a24ff3ddea14c4c"
   integrity sha1-sjN4NqjmvoRvhmedmiT/Pd6hTEw=
 
-webrtc-troubleshoot@^10.0.3:
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-10.0.3.tgz#cf4e863576a780582382d30999934bdbdcf5d07a"
-  integrity sha512-rAveTU6C8SeguJz/gzj2uxLsLyDUkPppewwTu+f589/PxXbWnRAV+MxZFaMNUzsxjSUcfvQ/FUxk8wNBPA0TrQ==
+webrtc-troubleshoot@^10.0.4:
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-10.0.4.tgz#9f3ffd973b2c39f2421c426a45f01ff6966ca3dd"
+  integrity sha512-yYZRltZl1H5PpHEqoLFjQTdhYMQTopWTlfL9zoXzwY4u594/Je3uqmpdfjXimsE4Itj/R6GvuPQU2J8P/lWhIg==
   dependencies:
     localmedia "^5.1.2"
     rtcpeerconnection "^8.0.1"
