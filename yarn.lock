@@ -4236,9 +4236,9 @@ har-validator@~5.0.3:
     har-schema "^2.0.0"
 
 hark@^1.0.0:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/hark/-/hark-1.2.2.tgz#f29f021b80a2151d6b505d8c1ab6f81b7b76b890"
-  integrity sha1-8p8CG4CiFR1rUF2MGrb4G3t2uJA=
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/hark/-/hark-1.2.3.tgz#959981400f561be5580ecd4321a9f55b16bacbd0"
+  integrity sha512-u68vz9SCa38ESiFJSDjqK8XbXqWzyot7Cj6Y2b6jk2NJ+II3MY2dIrLMg/kjtIAun4Y1DHF/20hfx4rq1G5GMg==
   dependencies:
     wildemitter "^1.2.0"
 
@@ -5270,9 +5270,9 @@ locale-emoji@^0.3.0:
   integrity sha1-fzgmL3yHe9J2WXJVcDNbJj+IdCo=
 
 localmedia@^5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/localmedia/-/localmedia-5.1.2.tgz#397dc48e1e43885f7915474d8596c18d81a0b44c"
-  integrity sha512-RAcjDkUqfQ2ESoI1o4uqB6glieVYX36Ay4KS/NKJeAH2FeML8YO79gaf5yO3e0o91xMVwb4RJxY7vexsX5WPvg==
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/localmedia/-/localmedia-5.2.0.tgz#6a15b4da14cf4313d1ec0903eea0bbe849d522fb"
+  integrity sha512-nXc3QtbUprxUDjJ3X0xTVoFSlKh4E7OPLhwVkKcGYddPEqaRLve7w9EFfl8qnypSBrrHFkMD4TwGuCX3alnLng==
   dependencies:
     getscreenmedia "^5.1.2"
     hark "^1.0.0"
@@ -7271,7 +7271,7 @@ rtcpeerconnection-shim@^1.2.10:
 rtcpeerconnection@^8.0.1:
   version "8.4.0"
   resolved "https://registry.yarnpkg.com/rtcpeerconnection/-/rtcpeerconnection-8.4.0.tgz#b8633d983353c278fef06f7179552f4daef479f1"
-  integrity sha1-uGM9mDNTwnj+8G9xeVUvTa70efE=
+  integrity sha512-HgntXWv+7DRufcGUroOSSNTpAIFRwLWCiLyutwfyVfrmPI7E5n7xP4JlwFWC6XNJV/LBILNru9bYa/FWcvyUuA==
   dependencies:
     lodash.clonedeep "^4.3.2"
     sdp-jingle-json "^3.0.0"
@@ -7355,9 +7355,9 @@ sax@^1.2.4:
   integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
 
 sdp-jingle-json@^3.0.0:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/sdp-jingle-json/-/sdp-jingle-json-3.0.3.tgz#cfee64d760251373d395fccb39cf3a077b229691"
-  integrity sha1-z+5k12AlE3PTlfzLOc86B3silpE=
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/sdp-jingle-json/-/sdp-jingle-json-3.1.0.tgz#7067d5d998ef0be754c3a01a551ef0052a0ffbfb"
+  integrity sha512-Uu+FelZD/edNoOc64NwQP8jjbBVMggAaErGU+2cSxPZgyReJTtqtp5287p2vu7bHubERxEbiW0H1pC2fnH5GEA==
 
 sdp@^2.6.0, sdp@^2.7.0:
   version "2.7.4"
@@ -8439,14 +8439,14 @@ webrtc-adapter@^6.0.0:
     sdp "^2.7.0"
 
 webrtc-stats-gatherer@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-6.0.2.tgz#b2337836a8e6be846f86679d9a24ff3ddea14c4c"
-  integrity sha1-sjN4NqjmvoRvhmedmiT/Pd6hTEw=
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-6.0.4.tgz#e1940ee4be8442cbcfde696c42a88f64eecb829d"
+  integrity sha512-0tA+XQ2ii4lvcHzpPFaCH00YgOX0RiQ88o+JtXEecYxG/6QLIQG5Z5VHdm9U73H0bb8EfPAV+z1g0QjeSV391g==
 
-webrtc-troubleshoot@^10.0.4:
-  version "10.0.4"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-10.0.4.tgz#9f3ffd973b2c39f2421c426a45f01ff6966ca3dd"
-  integrity sha512-yYZRltZl1H5PpHEqoLFjQTdhYMQTopWTlfL9zoXzwY4u594/Je3uqmpdfjXimsE4Itj/R6GvuPQU2J8P/lWhIg==
+webrtc-troubleshoot@^10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-10.1.0.tgz#4f976cddf05811df44747d9ac9fb9336c067aacf"
+  integrity sha512-Tvd2J3uqKTImWQyb+Uen28sxCNdIIS2CRjlpigfEGqeEXeevuaQO1/UHS2Wm3PyGyCsfKoRTBX2mpJB3Sn9dZA==
   dependencies:
     localmedia "^5.1.2"
     rtcpeerconnection "^8.0.1"

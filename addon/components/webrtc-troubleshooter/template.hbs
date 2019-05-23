@@ -5,6 +5,26 @@
   {{#if audio}}
     <div class="entry-row">
       <div class="entry-label">
+        <i class="pc-moon pc-key"></i>
+      </div>
+      <div class="entry-values">
+        {{#if checkingMicPermissions}}
+          {{t "webrtcTroubleshoot.checkMicPermissions"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
+        {{else if micPermissionsSuccess}}
+          {{t "webrtcTroubleshoot.micPermissionsSuccess"}} <i class="status-icon pc pc-check"></i>
+        {{else}}
+          {{t "webrtcTroubleshoot.micPermissionsFail"}} <i class="status-icon ion-alert-circled"></i>
+          {{#if noMicrophone}}
+            <div class="entry-value">{{t "webrtcTroubleshoot.noMicrophoneForCheck"}}</div>
+          {{else}}
+            <div class="entry-value">{{t "webrtcTroubleshoot.micPermissionsFail2"}}</div>
+          {{/if}}
+        {{/if}}
+      </div>
+    </div>
+
+    <div class="entry-row">
+      <div class="entry-label">
         <i class="pc-moon pc-microphone"></i>
       </div>
       <div class="entry-values">
@@ -25,6 +45,26 @@
     </div>
   {{/if}}
   {{#if video}}
+    <div class="entry-row">
+      <div class="entry-label">
+        <i class="pc-moon pc-key"></i>
+      </div>
+      <div class="entry-values">
+        {{#if checkingCameraPermissions}}
+          {{t "webrtcTroubleshoot.checkCameraPermissions"}} <i class="status-icon pc-moon pc-loading pc-spin"></i>
+        {{else if cameraPermissionsSuccess}}
+          {{t "webrtcTroubleshoot.cameraPermissionsSuccess"}} <i class="status-icon pc pc-check"></i>
+        {{else}}
+          {{t "webrtcTroubleshoot.cameraPermissionsFail"}} <i class="status-icon ion-alert-circled"></i>
+          {{#if noCamera}}
+            <div class="entry-value">{{t "webrtcTroubleshoot.noCameraForCheck"}}</div>
+          {{else}}
+            <div class="entry-value">{{t "webrtcTroubleshoot.cameraPermissionsFail2"}}</div>
+          {{/if}}
+        {{/if}}
+      </div>
+    </div>
+
     <div class="entry-row">
       <div class="entry-label">
         <i class="pc-moon pc-video"></i>
