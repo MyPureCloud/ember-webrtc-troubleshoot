@@ -14,8 +14,8 @@
   },
   "webrtcTroubleshoot": {
     "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
-    "checkMicPermissions": "Checking micrphone permissions ...",
-    "micPermissionsSuccess": "Has micrphone permissions",
+    "checkMicPermissions": "Checking microphone permissions ...",
+    "micPermissionsSuccess": "Has microphone permissions",
     "noMicrophoneForCheck": "No microphone detected which is required to check permissions",
     "micPermissionsFail": "Failed to verify microphone permissions",
     "micPermissionsFail2": "Browser does not have permission to use microphone",
