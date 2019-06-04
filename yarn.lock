@@ -8443,10 +8443,10 @@ webrtc-stats-gatherer@^6.0.2:
   resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-6.0.4.tgz#e1940ee4be8442cbcfde696c42a88f64eecb829d"
   integrity sha512-0tA+XQ2ii4lvcHzpPFaCH00YgOX0RiQ88o+JtXEecYxG/6QLIQG5Z5VHdm9U73H0bb8EfPAV+z1g0QjeSV391g==
 
-webrtc-troubleshoot@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-10.1.0.tgz#4f976cddf05811df44747d9ac9fb9336c067aacf"
-  integrity sha512-Tvd2J3uqKTImWQyb+Uen28sxCNdIIS2CRjlpigfEGqeEXeevuaQO1/UHS2Wm3PyGyCsfKoRTBX2mpJB3Sn9dZA==
+webrtc-troubleshoot@^10.2.0:
+  version "10.2.0"
+  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/webrtc-troubleshoot/-/webrtc-troubleshoot-10.2.0.tgz#00581169058e40970f93d932d8b9fcf418fbe64c"
+  integrity sha1-AFgRaQWOQJcPk9ky2Ln89Bj75kw=
   dependencies:
     localmedia "^5.1.2"
     rtcpeerconnection "^8.0.1"
