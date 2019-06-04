@@ -31,7 +31,7 @@
     "broccoli-source": "^1.1.0",
     "ember-cli-babel": "^6.14.1",
     "ember-cli-htmlbars": "^1.0.3",
-    "webrtc-troubleshoot": "^10.2.0"
+    "webrtc-troubleshoot": "^10.1.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
