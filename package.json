@@ -56,7 +56,7 @@
     "ember-intl": "^2.26.2",
     "ember-load-initializers": "^1.1.0",
     "ember-resolver": "^4.5.5",
-    "ember-source": "^2.18.0",
+    "ember-source": "^3.10.1",
     "ember-try": "^0.2.8",
     "fs-promise": "^2.0.3",
     "iframe-screenshare": "^6.2.0",
