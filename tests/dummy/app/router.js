@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function () {
+  this.route('audio');
+  this.route('video');
+  this.route('screen');
+  this.route('headsets');
 });
 
 export default Router;

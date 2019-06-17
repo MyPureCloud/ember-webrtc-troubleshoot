@@ -3,41 +3,111 @@ html, body {
   margin: 0;
   background-repeat:no-repeat;
   background-attachment: fixed;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
+
+body > .ember-view {
+  padding-top: 50px;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  color: #0a0a0a;
+  color: #33383d;
 }
 
 .primary-intro, h1 {
   text-align: center;
+  margin: 0 20px;
 }
+
 .intro {
   padding: 20px;
 }
 
 body > div.ember-view {
-  padding-bottom: 50px;
-  margin: 20px;
-  margin-bottom: 10px;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
+nav.navbar {
   position: fixed;
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   left: 0;
   top: 0;
   width: 100%;
   color: white;
   font-weight: 100;
+  display: flex;
+
+  background-color: #33383d;
 }
 
-h1, .footer {
-  background-image: linear-gradient(to right, #613e5c, #e54d28);
+nav.navbar .logo, nav .logo svg {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  fill: #ff4f1f;
+}
+
+nav.navbar h1 {
+  display: inline-block;
+  color: #9baab8;
+}
+
+nav.sidebar {
+  background-color: #33383d;
+  height: calc(100% - 50px);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+}
+
+nav.sidebar > * {
+  flex: 0 0 auto;
+}
+
+nav.sidebar .spacer {
+  flex: 1 1 auto;
+}
+
+nav.sidebar a, button {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #9baab8;
+}
+
+nav.sidebar a.active {
+  background: white;
+  color: #33383d;
+}
+
+nav.sidebar a {
+  transition: all 0.3s
+}
+
+.primary-content {
+  margin-left: 210px;
+  height: 100%;
+  padding: 20px;
+}
+
+.primary-content button {
+  background: #33383d;
+  border-radius: 3px;
+  color: #9baab8;
+}
+
+iframe {
+  border: none;
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
 .flashy-webrtc-troubleshooter .options {
@@ -52,15 +122,6 @@ h1, .footer {
 
   display: flex;
   align-items: start;
-  background: linear-gradiant
-}
-
-.flashy-webrtc-troubleshooter {
-  max-width: 500px;
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 10px;
-  padding-bottom: 20px;
 }
 
 .flashy-webrtc-troubleshooter .btn.btn-link {
@@ -68,6 +129,14 @@ h1, .footer {
   text-decoration: underline;
   font-size: 13px;
   border: none;
+}
+
+.flashy-webrtc-troubleshooter textarea {
+  max-width: 500px;
+}
+
+.flashy-webrtc-troubleshooter p a {
+  padding-left: 5px;
 }
 
 .entry-label {
@@ -101,34 +170,4 @@ textarea {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  background-color: white;
-  padding: 20px;
-  text-align: left;
-  z-index: 1;
-}
-
-.footer * {
-  color: #afafaf;
-}
-
-.footer a {
-  padding: 10px;
-}
-
-.footer svg {
-  position: absolute;
-  right: 0;
-  height: 80%;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 2px;
-  top: 0;
-  background: white;
 }
