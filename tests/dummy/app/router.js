@@ -5,7 +5,11 @@ const Router = Ember.Router.extend({
   location: config.locationType
 });
 
-Router.map(function() {
+Router.map(function () {
+  this.route('audio');
+  this.route('video');
+  this.route('screen');
+  this.route('headsets');
 });
 
 export default Router;

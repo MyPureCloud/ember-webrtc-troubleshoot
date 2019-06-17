@@ -1,11 +1,45 @@
-<h1>{{t "dummy.title"}}</h1>
+<nav role="navigation" class="navbar">
+  <div class="logo">
+    <svg class="svg-icon icon-logo-genesys"><use xlink:href="#icon-logo-genesys"></use></svg>
+  </div>
+  <h1>{{t "dummy.title"}}</h1>
+</nav>
 
-<div class="primary-intro">
-  <p>
-    {{t "dummy.description"}}
-  </p>
-  <a href="https://help.mypurecloud.com/articles/about-purecloud-webrtc-phones/" target="_blank">{{t "dummy.learnMore"}}</a>
+<nav role="navigation" class="sidebar">
+  {{#link-to "index" classNameBindings="index:active" }}{{t "dummy.about"}}{{/link-to}}
+  {{#link-to "audio"}}{{t "dummy.audio"}}{{/link-to}}
+  {{#link-to "video"}}{{t "dummy.video"}}{{/link-to}}
+  {{#link-to "screen"}}{{t "dummy.screenCaptureNoun"}}{{/link-to}}
+  {{#link-to "headsets"}}{{t "dummy.headsets"}}{{/link-to}}
+  <div class="spacer"></div>
+  <a href="https://help.mypurecloud.com/articles/purecloud-privacy-policy/" target="_blank">{{t "dummy.privacy"}}</a>
+</nav>
+
+<div class="primary-content">
+  {{#if home}}
+    <div class="primary-intro">
+      <p>
+        {{t "dummy.description"}}
+      </p>
+      <br/>
+      <a href="https://help.mypurecloud.com/articles/about-purecloud-webrtc-phones/" target="_blank">{{t "dummy.learnMore"}}</a>
+    </div>
+  {{else if screen}}
+    {{t "dummy.screenCaptureNoun"}}
+    <p>{{t "dummy.screenCaptureDescription"}}</p>
+    <button {{action "captureScreen"}}>{{t "dummy.captureScreenVerb"}}</button>
+    <div>
+      <video style="height: 200px; width: 200px;" autoplay id="screen"></video>
+    </div>
+  {{else if audio}}
+    {{#if realtimeConnected}}
+      {{flashy-webrtc-troubleshooter iceServers=iceServers video=false}}
+    {{/if}}
+  {{else if video}}
+    {{#if realtimeConnected}}
+      {{flashy-webrtc-troubleshooter iceServers=iceServers}}
+    {{/if}}
+  {{else if headsets}}
+    <iframe allow="microphone" src="{{headsetFrameSrc}}" onload={{action "onFrameLoad"}}></iframe>
+  {{/if}}
 </div>
-{{#if realtimeConnected}}
-  {{flashy-webrtc-troubleshooter iceServers=iceServers}}
-{{/if}}

@@ -1,4 +1,4 @@
-/* global WebRTCTroubleshooter */
+/* global WebrtcTroubleshooter */
 import Ember from 'ember';
 import layout from './template';
 
@@ -12,15 +12,20 @@ const {
   ThroughputTest,
   VideoBandwidthTest,
   AudioBandwidthTest,
-  SymmetricNatTest
-} = WebRTCTroubleshooter.default;
+  SymmetricNatTest,
+  PermissionsTest
+} = WebrtcTroubleshooter;
 
 export default Ember.Component.extend({
   layout,
   classNames: ['webrtc-troubleshooter'],
 
+  checkingMicPermissions: true,
   checkingMicrophone: true,
   checkMicrophoneSuccess: false,
+  noMicrophona: false,
+  checkingCameraPermissions: true,
+  noCamera: false,
   checkingCamera: true,
   checkCameraSuccess: false,
   checkingCameraAdvanced: true,
@@ -46,7 +51,7 @@ export default Ember.Component.extend({
 
   iceServers: null,
 
-  advCameraResolutions: Ember.computed('advancedCameraTestResults', function() {
+  advCameraResolutions: Ember.computed('advancedCameraTestResults', function () {
     const results = this.get('advancedCameraTestResults');
     if (!results.map) {
       return [];
@@ -85,6 +90,53 @@ export default Ember.Component.extend({
     });
   },
 
+  connectivityPortAttempts: 0,
+  connectivityMaxPortAttempts: 20,
+
+  runConnectivityTest (iceConfig) {
+    const connectivityTest = new ConnectivityTest(iceConfig);
+    this.testSuite.addTest(connectivityTest);
+    let xlowPort, lowPort, medPort, highPort;
+    connectivityTest.promise.then(() => {
+      const ports = [];
+      connectivityTest.pc1._candidateBuffer.forEach(p => ports.push(p.port));
+      connectivityTest.pc2._candidateBuffer.forEach(p => ports.push(p.port));
+      ports.forEach(p => {
+        const portNum = Number(p);
+        if (portNum < 16384) {
+          xlowPort = true;
+        } else if (portNum < 32768) {
+          lowPort = true;
+        } else if (portNum < 49151) {
+          medPort = true;
+        } else {
+          highPort = true;
+        }
+      });
+      console.log('ports used', { ports, xlowPort, lowPort, medPort, highPort });
+      if (!lowPort) {
+        if (this.get('connectivityPortAttempts') < this.connectivityMaxPortAttempts) {
+          this.incrementProperty('connectivityPortAttempts');
+          return this.runConnectivityTest(iceConfig);
+        }
+        const err = new Error('Failed to find port in required range (16384-32768)');
+        err.code = 'PORT_REQUIREMENT';
+        return Promise.reject(err);
+      }
+      this.safeSetProperties({
+        checkingConnectivity: false,
+        checkConnectivitySuccess: true
+      });
+    }).catch((err) => {
+      this.logger.error('connectivityTest failed', err.code);
+      this.safeSetProperties({
+        connectivityPortError: err.code === 'PORT_REQUIREMENT',
+        checkingConnectivity: false,
+        checkConnectivitySuccess: false
+      });
+    });
+  },
+
   startTroubleshooter: function () {
     if (!navigator.mediaDevices) {
       this.set('video', false);
@@ -95,17 +147,37 @@ export default Ember.Component.extend({
       iceTransports: 'relay',
       logger: this.get('logger')
     };
-    const mediaOptions = this.get('mediaOptions') || { audio: true, video: true, logger: this.get('logger') };
+
+    const mediaOptions = this.get('mediaOptions') || this.getProperties(['audio', 'video', 'logger']);
 
     const testSuite = new TestSuite({ logger: this.get('logger') });
 
     if (this.get('saveSuiteToWindow')) {
       window.testSuite = testSuite;
     }
+    this.set('testSuite', testSuite);
 
     // TODO: logs for rejections?
 
     if (this.get('audio')) {
+      const micPermissionTest = new PermissionsTest(false, mediaOptions);
+      micPermissionTest.promise
+        .then(() => {
+          this.safeSetProperties({
+            checkingMicPermissions: false,
+            micPermissionsSuccess: true
+          });
+        })
+        .catch((err) => {
+          this.logger.error('audioTest failed', err);
+          this.safeSetProperties({
+            checkingMicPermissions: false,
+            micPermissionsSuccess: false,
+            noMicrophone: err.message === 'noDevicePermissions'
+          });
+        });
+      testSuite.addTest(micPermissionTest);
+
       const audioTest = new AudioTest(mediaOptions);
       audioTest.promise.then((/* logs */) => {
         this.safeSetProperties({
@@ -130,6 +202,24 @@ export default Ember.Component.extend({
     }
 
     if (this.get('video')) {
+      const cameraPermissionTest = new PermissionsTest(true, mediaOptions);
+      cameraPermissionTest.promise
+        .then(() => {
+          this.safeSetProperties({
+            checkingCameraPermissions: false,
+            cameraPermissionsSuccess: true
+          });
+        })
+        .catch((err) => {
+          this.logger.error('audioTest failed', err);
+          this.safeSetProperties({
+            checkingCameraPermissions: false,
+            cameraPermissionsSuccess: false,
+            noCamera: err.message === 'noDevicePermissions'
+          });
+        });
+      testSuite.addTest(cameraPermissionTest);
+
       const videoTest = new VideoTest(mediaOptions);
       videoTest.promise.then((/* logs */) => {
         this.safeSetProperties({
@@ -183,19 +273,7 @@ export default Ember.Component.extend({
         });
       });
 
-      const connectivityTest = new ConnectivityTest(iceConfig);
-      connectivityTest.promise.then((/* logs */) => {
-        this.safeSetProperties({
-          checkingConnectivity: false,
-          checkConnectivitySuccess: true
-        });
-      }, (err) => {
-        this.logger.error('connectivityTest failed', err);
-        this.safeSetProperties({
-          checkingConnectivity: false,
-          checkConnectivitySuccess: false
-        });
-      });
+      this.runConnectivityTest(iceConfig);
 
       const throughputTest = new ThroughputTest(iceConfig);
       throughputTest.promise.then((/* logs */) => {
@@ -212,7 +290,6 @@ export default Ember.Component.extend({
       });
 
       testSuite.addTest(symmetricNatTest);
-      testSuite.addTest(connectivityTest);
       testSuite.addTest(throughputTest);
 
       let bandwidthTest;
@@ -269,8 +346,6 @@ export default Ember.Component.extend({
           this.done(err);
         }
       });
-
-    this.set('testSuite', testSuite);
   },
 
   runVideoBandwidthTest: Ember.computed.or('video', 'mediaOptions.screenStream'),
