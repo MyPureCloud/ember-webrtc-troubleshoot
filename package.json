@@ -29,7 +29,7 @@
   "dependencies": {
     "broccoli-json-module": "1.0.0",
     "broccoli-merge-trees": "^3.0.0",
-    "broccoli-source": "^1.1.0",
+    "broccoli-source": "2.1.2",
     "ember-cli-babel": "^6.14.1",
     "ember-cli-htmlbars": "^3.0.1",
     "webrtc-troubleshoot": "^10.2.0"
