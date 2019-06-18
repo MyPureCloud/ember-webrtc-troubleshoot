@@ -33,4 +33,4 @@ files.forEach(file => {
   });
 });
 
-fs.writeFileSync('dist/manifest.json', JSON.stringify(manifest, null, '    '), {encoding: 'utf8'});
+fs.writeFileSync('dist/manifest.json', JSON.stringify(manifest, null, '    '), { encoding: 'utf8' });
