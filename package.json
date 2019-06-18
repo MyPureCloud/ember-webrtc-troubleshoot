@@ -1,6 +1,6 @@
 {
   "name": "ember-webrtc-troubleshoot",
-  "version": "9.0.0",
+  "version": "9.2.10",
   "description": "An ember addon for adding webrtc-troubleshooting to your application",
   "directories": {
     "doc": "doc",
@@ -17,7 +17,8 @@
     "coverage-test": "npm run pretest && COVERAGE=true ember exam --split=4 --parallel",
     "coverage": "npm run coverage-test && npm run posttest",
     "posttest": "ember coverage-merge && rm -rf .nyc_output_* && npm run check-coverage",
-    "check-coverage": "rm -f .nyc_output/coverage-summary.json && nyc check-coverage --lines 35 --statements 35"
+    "check-coverage": "rm -f .nyc_output/coverage-summary.json && nyc check-coverage --lines 32 --statements 31",
+    "dedup": "npx yarn-tools fix-duplicates yarn.lock > yarn-new.lock && mv yarn-new.lock yarn.lock && yarn --ignore-engines"
   },
   "repository": "https://github.com/MyPureCloud/ember-webrtc-troubleshoot",
   "engines": {
@@ -30,14 +31,15 @@
     "broccoli-merge-trees": "^3.0.0",
     "broccoli-source": "^1.1.0",
     "ember-cli-babel": "^6.14.1",
-    "ember-cli-htmlbars": "^1.0.3",
-    "webrtc-troubleshoot": "^9.0.2"
+    "ember-cli-htmlbars": "^3.0.1",
+    "webrtc-troubleshoot": "^10.2.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "broccoli-funnel": "^1.1.0",
     "coveralls": "^3.0.0",
-    "ember-chromium": "^3.0.1",
+    "ember": "^1.0.0",
+    "ember-chromium": "^4.0.2",
     "ember-cli": "^3.2.0",
     "ember-cli-app-version": "^3.1.3",
     "ember-cli-code-coverage": "0.4.2",
@@ -46,17 +48,19 @@
     "ember-cli-inject-live-reload": "^2.0.1",
     "ember-cli-qunit": "^4.3.0",
     "ember-cli-release": "0.2.9",
+    "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.0.0",
     "ember-cli-test-loader": "^2.2.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-exam": "^1.0.0",
-    "ember-intl": "^2.26.2",
+    "ember-intl": "^2.32.1",
     "ember-load-initializers": "^1.1.0",
-    "ember-resolver": "^4.5.5",
+    "ember-resolver": "^5.1.3",
+    "ember-source": "^2.18.0",
     "ember-try": "^0.2.8",
     "fs-promise": "^2.0.3",
-    "iframe-screenshare": "^6.0.0",
+    "iframe-screenshare": "^6.2.0",
     "loader.js": "~4.6.0",
     "nyc": "^13.0.1",
     "pre-push": "^0.1.1",
