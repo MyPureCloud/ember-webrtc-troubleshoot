@@ -69,7 +69,7 @@ export default Ember.Component.extend({
 
       const resolution = `${testResolution[0]}x${testResolution[1]}`;
 
-      return {resolution, success};
+      return { resolution, success };
     });
   }),
 
@@ -295,9 +295,9 @@ export default Ember.Component.extend({
       let bandwidthTest;
 
       if (this.get('runVideoBandwidthTest')) {
-        bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
+        bandwidthTest = new VideoBandwidthTest({ iceConfig, mediaOptions });
       } else if (this.get('runAudioBandwidthTest')) {
-        bandwidthTest = new AudioBandwidthTest({iceConfig, mediaOptions});
+        bandwidthTest = new AudioBandwidthTest({ iceConfig, mediaOptions });
       }
 
       if (bandwidthTest) {
