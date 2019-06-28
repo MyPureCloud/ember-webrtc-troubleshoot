@@ -1,5 +1,4 @@
 #!/bin/bash
-#  DEV_WORKSPACE=$PWD
 
 # function to generate key and cert
 function generate_key_and_cert {
