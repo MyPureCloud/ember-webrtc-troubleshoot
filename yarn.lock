@@ -3172,6 +3172,15 @@ detect-libc@^1.0.2:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
 
+dev-cert-authority@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/dev-cert-authority/-/dev-cert-authority-1.1.1.tgz#836e209844b65c94560bff2ded2f5a36c3651906"
+  integrity sha1-g24gmES2XJRWC/8t7S9aNsNlGQY=
+  dependencies:
+    colors "^1.1.2"
+    mkdirp "^0.5.1"
+    user-home "^2.0.0"
+
 diff@^3.2.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
@@ -9195,6 +9204,13 @@ use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
   integrity sha1-1QyMrHmhn7wg8pEfVuuXP04QBw8=
+
+user-home@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/user-home/-/user-home-2.0.0.tgz#9c70bfd8169bc1dcbf48604e0f04b8b49cde9e9f"
+  integrity sha1-nHC/2Babwdy/SGBODwS4tJzenp8=
+  dependencies:
+    os-homedir "^1.0.0"
 
 user-info@^1.0.0:
   version "1.0.0"
