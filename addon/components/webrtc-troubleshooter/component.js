@@ -12,15 +12,20 @@ const {
   ThroughputTest,
   VideoBandwidthTest,
   AudioBandwidthTest,
-  SymmetricNatTest
+  SymmetricNatTest,
+  PermissionsTest
 } = WebrtcTroubleshooter;
 
 export default Ember.Component.extend({
   layout,
   classNames: ['webrtc-troubleshooter'],
 
+  checkingMicPermissions: true,
   checkingMicrophone: true,
   checkMicrophoneSuccess: false,
+  noMicrophona: false,
+  checkingCameraPermissions: true,
+  noCamera: false,
   checkingCamera: true,
   checkCameraSuccess: false,
   checkingCameraAdvanced: true,
@@ -64,7 +69,7 @@ export default Ember.Component.extend({
 
       const resolution = `${testResolution[0]}x${testResolution[1]}`;
 
-      return {resolution, success};
+      return { resolution, success };
     });
   }),
 
@@ -142,7 +147,8 @@ export default Ember.Component.extend({
       iceTransports: 'relay',
       logger: this.get('logger')
     };
-    const mediaOptions = this.get('mediaOptions') || { audio: true, video: true, logger: this.get('logger') };
+
+    const mediaOptions = this.get('mediaOptions') || this.getProperties(['audio', 'video', 'logger']);
 
     const testSuite = new TestSuite({ logger: this.get('logger') });
 
@@ -154,6 +160,24 @@ export default Ember.Component.extend({
     // TODO: logs for rejections?
 
     if (this.get('audio')) {
+      const micPermissionTest = new PermissionsTest(false, mediaOptions);
+      micPermissionTest.promise
+        .then(() => {
+          this.safeSetProperties({
+            checkingMicPermissions: false,
+            micPermissionsSuccess: true
+          });
+        })
+        .catch((err) => {
+          this.logger.error('audioTest failed', err);
+          this.safeSetProperties({
+            checkingMicPermissions: false,
+            micPermissionsSuccess: false,
+            noMicrophone: err.message === 'noDevicePermissions'
+          });
+        });
+      testSuite.addTest(micPermissionTest);
+
       const audioTest = new AudioTest(mediaOptions);
       audioTest.promise.then((/* logs */) => {
         this.safeSetProperties({
@@ -178,6 +202,24 @@ export default Ember.Component.extend({
     }
 
     if (this.get('video')) {
+      const cameraPermissionTest = new PermissionsTest(true, mediaOptions);
+      cameraPermissionTest.promise
+        .then(() => {
+          this.safeSetProperties({
+            checkingCameraPermissions: false,
+            cameraPermissionsSuccess: true
+          });
+        })
+        .catch((err) => {
+          this.logger.error('audioTest failed', err);
+          this.safeSetProperties({
+            checkingCameraPermissions: false,
+            cameraPermissionsSuccess: false,
+            noCamera: err.message === 'noDevicePermissions'
+          });
+        });
+      testSuite.addTest(cameraPermissionTest);
+
       const videoTest = new VideoTest(mediaOptions);
       videoTest.promise.then((/* logs */) => {
         this.safeSetProperties({
@@ -253,9 +295,9 @@ export default Ember.Component.extend({
       let bandwidthTest;
 
       if (this.get('runVideoBandwidthTest')) {
-        bandwidthTest = new VideoBandwidthTest({iceConfig, mediaOptions});
+        bandwidthTest = new VideoBandwidthTest({ iceConfig, mediaOptions });
       } else if (this.get('runAudioBandwidthTest')) {
-        bandwidthTest = new AudioBandwidthTest({iceConfig, mediaOptions});
+        bandwidthTest = new AudioBandwidthTest({ iceConfig, mediaOptions });
       }
 
       if (bandwidthTest) {
