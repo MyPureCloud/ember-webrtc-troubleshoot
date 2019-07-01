@@ -7,13 +7,14 @@ webappPipeline {
         sh('node ./create-manifest.js')
         readJSON(file: 'dist/manifest.json')
     }
-    
+    buildType = { 'MAINLINE' }
+    shouldUpload = { true }
+
     buildStep = {
         sh('npm install && npm run build')
     }
 
-    shouldUpload = { true }
-    shouldDeployDev = { false }
-    shouldDeployTest = { false }
-    shouldDeployProd = { env.BRANCH_NAME == 'jenkinsfile-pipeline' }
+    postRelease = {
+        println('Do a thing after prod release!')
+    }
 }
