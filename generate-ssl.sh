@@ -3,7 +3,7 @@
 # function to generate key and cert
 function generate_key_and_cert {
   echo "running dev-cert-authority install"
-  node ./node_modules/dev-cert-authority/bin/dev-cert-authority install
+  npx dev-cert-authority install
 }
 
 # function to validate a key file exists under the $HOME directory
