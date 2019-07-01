@@ -40,16 +40,18 @@ const tca = {
 
 const dca = {
   host: 'https://realtime.inindca.com:443',
-  thirdPartyOrgId: 1111,
-  orgName: 'TEST_Auto_DevOrg',
-  orgId: '211b589c-6907-40d2-909c-6eaaea3c8985'
+  thirdPartyOrgId: 2217941,
+  orgName: 'test-valve-1ym37mj1kao',
+  orgId: '80883333-8617-472f-8274-58d5b9a10033',
+  webchatDeploymentKey: '010bca46-de58-4df0-98ae-5c24a0f4003d'
 };
 
 const localhost = {
   host: 'https://realtime.inindca.com:443',
-  thirdPartyOrgId: 1111,
-  orgName: 'TEST_Auto_DevOrg',
-  orgId: '211b589c-6907-40d2-909c-6eaaea3c8985'
+  thirdPartyOrgId: 2217941,
+  orgName: 'test-valve-1ym37mj1kao',
+  orgId: '80883333-8617-472f-8274-58d5b9a10033',
+  webchatDeploymentKey: '010bca46-de58-4df0-98ae-5c24a0f4003d'
 };
 
 const realtimeEnvironments = {

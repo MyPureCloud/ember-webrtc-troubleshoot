@@ -7,7 +7,7 @@ var buildDate = new Date();
 var manifest = {
   name: 'webrtc-troubleshooter',
   version: process.env.BUILD_NUMBER,
-  buildNumber: process.env.BUILD_NUMBER || 'Unknown',
+  build: process.env.BUILD_NUMBER || 'Unknown',
   buildDate: buildDate.toISOString(),
   ecosystem: 'pc',
   indexFiles: [
@@ -33,4 +33,4 @@ files.forEach(file => {
   });
 });
 
-fs.writeFileSync('dist/manifest.json', JSON.stringify(manifest, null, '    '), {encoding: 'utf8'});
+fs.writeFileSync('dist/manifest.json', JSON.stringify(manifest, null, '    '), { encoding: 'utf8' });
