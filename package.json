@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "start": "ember server",
+    "start": "sh ./generate-ssl.sh && ember server",
     "lint": "semistandard",
     "pretest": "npm run install-chromium",
     "install-chromium": "node node_modules/ember-chromium/download-chrome.js",
@@ -38,6 +38,7 @@
     "broccoli-funnel": "2.0.2",
     "broccoli-asset-rev": "^3.0.0",
     "coveralls": "^3.0.0",
+    "dev-cert-authority": "^1.1.1",
     "ember": "^1.0.0",
     "ember-chromium": "^4.0.2",
     "ember-cli": "^3.2.0",
