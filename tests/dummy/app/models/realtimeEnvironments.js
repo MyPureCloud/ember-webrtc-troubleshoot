@@ -3,6 +3,13 @@ const prodUS = {
   thirdPartyOrgId: 397
 };
 
+const prodUSW2 = {
+  host: 'https://realtime.usw2.pure.cloud:443',
+  orgId: '8e743581-690c-4e8f-8f81-530cd37566e9',
+  thirdPartyOrgId: 52,
+  orgName: 'iris-testing-org-30'
+};
+
 const prodAU = {
   host: 'https://realtime.mypurecloud.com.au:443',
   thirdPartyOrgId: 28,
@@ -56,6 +63,7 @@ const localhost = {
 
 const realtimeEnvironments = {
   'apps.mypurecloud.com': prodUS,
+  'apps.usw2.pure.cloud': prodUSW2,
   'apps.mypurecloud.com.au': prodAU,
   'apps.mypurecloud.de': prodDE,
   'apps.mypurecloud.ie': prodIE,
