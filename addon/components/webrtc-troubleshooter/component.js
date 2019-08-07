@@ -47,6 +47,7 @@ export default Ember.Component.extend({
 
   video: true,
   audio: true,
+  useLegacyPermissionCheck: false,
   logger: null,
 
   iceServers: null,
@@ -160,23 +161,25 @@ export default Ember.Component.extend({
     // TODO: logs for rejections?
 
     if (this.get('audio')) {
-      const micPermissionTest = new PermissionsTest(false, mediaOptions);
-      micPermissionTest.promise
-        .then(() => {
-          this.safeSetProperties({
-            checkingMicPermissions: false,
-            micPermissionsSuccess: true
+      if (!this.get('skipPermissionsCheck')) {
+        const micPermissionTest = new PermissionsTest(false, this.useLegacyPermissionCheck, mediaOptions);
+        micPermissionTest.promise
+          .then(() => {
+            this.safeSetProperties({
+              checkingMicPermissions: false,
+              micPermissionsSuccess: true
+            });
+          })
+          .catch((err) => {
+            this.logger.error('audioTest failed', err);
+            this.safeSetProperties({
+              checkingMicPermissions: false,
+              micPermissionsSuccess: false,
+              noMicrophone: err.message === 'noDevicePermissions'
+            });
           });
-        })
-        .catch((err) => {
-          this.logger.error('audioTest failed', err);
-          this.safeSetProperties({
-            checkingMicPermissions: false,
-            micPermissionsSuccess: false,
-            noMicrophone: err.message === 'noDevicePermissions'
-          });
-        });
-      testSuite.addTest(micPermissionTest);
+        testSuite.addTest(micPermissionTest);
+      }
 
       const audioTest = new AudioTest(mediaOptions);
       audioTest.promise.then((/* logs */) => {
@@ -202,23 +205,25 @@ export default Ember.Component.extend({
     }
 
     if (this.get('video')) {
-      const cameraPermissionTest = new PermissionsTest(true, mediaOptions);
-      cameraPermissionTest.promise
-        .then(() => {
-          this.safeSetProperties({
-            checkingCameraPermissions: false,
-            cameraPermissionsSuccess: true
+      if (!this.get('skipPermissionsCheck')) {
+        const cameraPermissionTest = new PermissionsTest(true, this.useLegacyPermissionCheck, mediaOptions);
+        cameraPermissionTest.promise
+          .then(() => {
+            this.safeSetProperties({
+              checkingCameraPermissions: false,
+              cameraPermissionsSuccess: true
+            });
+          })
+          .catch((err) => {
+            this.logger.error('audioTest failed', err);
+            this.safeSetProperties({
+              checkingCameraPermissions: false,
+              cameraPermissionsSuccess: false,
+              noCamera: err.message === 'noDevicePermissions'
+            });
           });
-        })
-        .catch((err) => {
-          this.logger.error('audioTest failed', err);
-          this.safeSetProperties({
-            checkingCameraPermissions: false,
-            cameraPermissionsSuccess: false,
-            noCamera: err.message === 'noDevicePermissions'
-          });
-        });
-      testSuite.addTest(cameraPermissionTest);
+        testSuite.addTest(cameraPermissionTest);
+      }
 
       const videoTest = new VideoTest(mediaOptions);
       videoTest.promise.then((/* logs */) => {
