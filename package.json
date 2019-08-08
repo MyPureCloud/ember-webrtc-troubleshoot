@@ -32,7 +32,7 @@
     "broccoli-source": "2.1.2",
     "ember-cli-babel": "^7.8.0",
     "ember-cli-htmlbars": "^3.0.1",
-    "webrtc-troubleshoot": "^10.2.0"
+    "webrtc-troubleshoot": "^11.0.1"
   },
   "devDependencies": {
     "broccoli-funnel": "2.0.2",
