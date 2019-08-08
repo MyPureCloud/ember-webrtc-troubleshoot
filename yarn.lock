@@ -9348,19 +9348,21 @@ webrtc-adapter@^6.0.0:
     rtcpeerconnection-shim "^1.2.10"
     sdp "^2.7.0"
 
-webrtc-stats-gatherer@^6.0.2:
-  version "6.0.4"
-  resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-6.0.4.tgz#e1940ee4be8442cbcfde696c42a88f64eecb829d"
-  integrity sha512-0tA+XQ2ii4lvcHzpPFaCH00YgOX0RiQ88o+JtXEecYxG/6QLIQG5Z5VHdm9U73H0bb8EfPAV+z1g0QjeSV391g==
+webrtc-stats-gatherer@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/webrtc-stats-gatherer/-/webrtc-stats-gatherer-7.1.1.tgz#d6149f8fb716e20db126beb6fa72dc78522d5879"
+  integrity sha512-RQBw4ba6mnAkeYbhMgr//I5hHpQbOxsOECKfUTv58mvfyJo4NPIzvK5RiTOFBpI3sZjkd1KgyswFTyE7U7CKyA==
+  dependencies:
+    wildemitter "^1.2.0"
 
-webrtc-troubleshoot@^10.2.0:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-10.2.0.tgz#00581169058e40970f93d932d8b9fcf418fbe64c"
-  integrity sha512-ZuA7YPQDOu1k79M4H/m9Qor1xHnnmkfp2atrxjFDberOerz/Rj2xiidvLza4+B+AMyCtDlecjFDqjpShD1VF+g==
+webrtc-troubleshoot@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-11.0.1.tgz#93d35bea550af49f8dd48e7ff7e420db0c15adfd"
+  integrity sha512-xw6QhYqHPKKHjCeLUVHkGJGj7KYRWuXrHMMpXNooHq4HcG3lLI1w8AD0sIerEOrcW1ZYEFUEnsxzywj0fX9CGg==
   dependencies:
     localmedia "^5.1.2"
     rtcpeerconnection "^8.0.1"
-    webrtc-stats-gatherer "^6.0.2"
+    webrtc-stats-gatherer "^7.1.1"
 
 websocket-driver@>=0.5.1:
   version "0.7.0"
