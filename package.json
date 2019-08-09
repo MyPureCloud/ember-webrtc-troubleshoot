@@ -6,6 +6,9 @@
     "doc": "doc",
     "test": "tests"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "ember build",
     "start": "sh ./generate-ssl.sh && ember server",
