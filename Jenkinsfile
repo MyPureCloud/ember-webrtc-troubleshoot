@@ -2,6 +2,7 @@
 
 webappPipeline {
     slaveLabel = 'dev'
+    useArtifactoryRepo = false
     projectName = 'ember-webrtc-troubleshoot'
     manifest = customManifest('./dist') {
         sh('node ./create-manifest.js')
@@ -9,6 +10,7 @@ webappPipeline {
     }
     buildType = { env.BRANCH_NAME == 'master' ? 'MAINLINE' : 'FEATURE' }
     publishPackage = { 'prod' }
+    testJob = 'valve-webrtc-troubleshooter-tests'
 
     buildStep = {
         sh('yarn && npm test && npm run build')
