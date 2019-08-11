@@ -3,17 +3,21 @@
 webappPipeline {
     slaveLabel = 'dev'
     useArtifactoryRepo = false
-    projectName = 'ember-webrtc-troubleshoot'
+    projectName = 'webrtc-troubleshooter'
     manifest = customManifest('./dist') {
         sh('node ./create-manifest.js')
         readJSON(file: 'dist/manifest.json')
     }
     buildType = { env.BRANCH_NAME == 'master' ? 'MAINLINE' : 'FEATURE' }
     publishPackage = { 'prod' }
-    testJob = 'valve-webrtc-troubleshooter-tests'
+    testJob = 'valve-webrtc-troubleshoot-tests'
 
     buildStep = {
-        sh('yarn && npm test && npm run build')
+        sh('''
+            export CDN_URL="$(npx cdn --ecosystem pc --name $APP_NAME --build $BUILD_ID --version $VERSION)"
+            echo "CDN_URL $CDN_URL"
+            yarn && npm test && npm run build
+        ''')
     }
 
     cmConfig = {
