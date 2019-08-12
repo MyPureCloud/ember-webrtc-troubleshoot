@@ -49,6 +49,7 @@ export default Ember.Component.extend({
   audio: true,
   useLegacyPermissionCheck: false,
   logger: null,
+  integrationTestMode: false,
 
   iceServers: null,
 
@@ -336,7 +337,9 @@ export default Ember.Component.extend({
       .then((devices) => {
         this.logger.log('media devices', devices);
         this.logger.log('mediaOptions', mediaOptions);
-        return testSuite.start();
+        if (!this.get('integrationTestMode')) {
+          return testSuite.start();
+        }
       })
       .then((results) => {
         this.logger.info('WebRTC Troubleshooting results (success)', results);
