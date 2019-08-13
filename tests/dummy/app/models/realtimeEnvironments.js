@@ -3,6 +3,13 @@ const prodUS = {
   thirdPartyOrgId: 397
 };
 
+const prodUSW2 = {
+  host: 'https://realtime.usw2.pure.cloud:443',
+  orgId: '8e743581-690c-4e8f-8f81-530cd37566e9',
+  thirdPartyOrgId: 52,
+  orgName: 'iris-testing-org-30'
+};
+
 const prodAU = {
   host: 'https://realtime.mypurecloud.com.au:443',
   thirdPartyOrgId: 28,
@@ -40,20 +47,23 @@ const tca = {
 
 const dca = {
   host: 'https://realtime.inindca.com:443',
-  thirdPartyOrgId: 1111,
-  orgName: 'TEST_Auto_DevOrg',
-  orgId: '211b589c-6907-40d2-909c-6eaaea3c8985'
+  thirdPartyOrgId: 2217941,
+  orgName: 'test-valve-1ym37mj1kao',
+  orgId: '80883333-8617-472f-8274-58d5b9a10033',
+  webchatDeploymentKey: '010bca46-de58-4df0-98ae-5c24a0f4003d'
 };
 
 const localhost = {
   host: 'https://realtime.inindca.com:443',
-  thirdPartyOrgId: 1111,
-  orgName: 'TEST_Auto_DevOrg',
-  orgId: '211b589c-6907-40d2-909c-6eaaea3c8985'
+  thirdPartyOrgId: 2217941,
+  orgName: 'test-valve-1ym37mj1kao',
+  orgId: '80883333-8617-472f-8274-58d5b9a10033',
+  webchatDeploymentKey: '010bca46-de58-4df0-98ae-5c24a0f4003d'
 };
 
 const realtimeEnvironments = {
   'apps.mypurecloud.com': prodUS,
+  'apps.usw2.pure.cloud': prodUSW2,
   'apps.mypurecloud.com.au': prodAU,
   'apps.mypurecloud.de': prodDE,
   'apps.mypurecloud.ie': prodIE,
