@@ -16,7 +16,7 @@ webappPipeline {
         sh('''
             export CDN_URL="$(npx cdn --ecosystem pc --name $APP_NAME --build $BUILD_ID --version $VERSION)"
             echo "CDN_URL $CDN_URL"
-            yarn && npm test && npm run build
+            yarn && npm test && npx ember build --env=production --dest=dist/
         ''')
     }
 
