@@ -49,6 +49,7 @@ test('Simulated failure in camera shows a failed check for the camera troublesho
       audio=audio
       checkingCamera=checkingCamera
       checkCameraSuccess=checkCameraSuccess
+      integrationTestMode=true
     }}
   `);
   const troubleshootTimeWarning = this.$('.entry-row.time').length > 0;
@@ -68,6 +69,7 @@ test('Simulated failure in the mic shows a failed check for the mic troubleshoot
       audio=audio
       checkingMicrophone=checkingMicrophone
       checkMicrophoneSuccess=checkMicrophoneSuccess
+      integrationTestMode=true
     }}
   `);
   assert.ok(this.$('.entry-values').text().match(/webrtcTroubleshoot.checkMicrophoneFail/));
@@ -85,6 +87,7 @@ test('Simulated failure in connected to turnserver shows a failed check for the 
       audio=audio
       checkingConnectivity=checkingConnectivity
       checkConnectivitySuccess=checkConnectivitySuccess
+      integrationTestMode=true
     }}
   `);
   assert.ok(this.$('.entry-values').text().match(/webrtcTroubleshoot.checkConnectivityFail/));
