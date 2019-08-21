@@ -342,6 +342,10 @@ export default Ember.Component.extend({
         }
       })
       .then((results) => {
+        if (this.isDestroyed || this.isDestroying) {
+          return;
+        }
+
         this.logger.info('WebRTC Troubleshooting results (success)', results);
         this.sendAction('results', results);
         if (this.done) {
