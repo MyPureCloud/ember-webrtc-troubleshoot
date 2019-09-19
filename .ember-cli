@@ -7,5 +7,7 @@
   */
   "disableAnalytics": false,
   "usePods": true,
-  "ssl": true
+  "ssl": true,
+  "ssl-key": "ssl/key.pem",
+  "ssl-cert": "ssl/cert.pem"
 }
