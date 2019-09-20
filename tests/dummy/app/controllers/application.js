@@ -5,6 +5,7 @@ export default Ember.Controller.extend({
   iceServers: null,
 
   init () {
+    this._super(...arguments);
     if (window.Realtime) {
       this.connectRealtime();
     } else {
