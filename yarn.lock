@@ -9384,10 +9384,10 @@ webrtc-stats-gatherer@^7.1.1:
   dependencies:
     wildemitter "^1.2.0"
 
-webrtc-troubleshoot@^11.0.1:
-  version "11.0.1"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-11.0.1.tgz#93d35bea550af49f8dd48e7ff7e420db0c15adfd"
-  integrity sha512-xw6QhYqHPKKHjCeLUVHkGJGj7KYRWuXrHMMpXNooHq4HcG3lLI1w8AD0sIerEOrcW1ZYEFUEnsxzywj0fX9CGg==
+webrtc-troubleshoot@^11.0.2:
+  version "11.0.2"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-11.0.2.tgz#4b7b6956de5bcd77fdf6d0de5a1150b25349c963"
+  integrity sha512-ZSFhGpS9JnelrMFogJg3qnmgjsE7bLeBoNfCJAl+kMJonS4VpT3sV57yzP7iasOqxQQ9avZVBGWITYaJyanJIQ==
   dependencies:
     localmedia "^5.1.2"
     rtcpeerconnection "^8.0.1"
