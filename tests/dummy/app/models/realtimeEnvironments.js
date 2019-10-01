@@ -70,7 +70,7 @@ const realtimeEnvironments = {
   'apps.mypurecloud.jp': prodJP,
   'apps.inintca.com': tca,
   'apps.inindca.com': dca,
-  'localhost': localhost
+  localhost: localhost
 };
 
 export default realtimeEnvironments;

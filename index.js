@@ -27,7 +27,7 @@ module.exports = {
     const npmDeps = [
       {
         path: 'webrtc-troubleshoot/dist/webrtc-troubleshooter.js',
-        files: [ 'webrtc-troubleshooter.js' ]
+        files: ['webrtc-troubleshooter.js']
       }
     ];
     const trees = npmDeps.map((dep) => {

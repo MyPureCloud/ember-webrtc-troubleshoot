@@ -10,10 +10,10 @@ module.exports = {
       name: 'ember-release',
       bower: {
         dependencies: {
-          'ember': 'components/ember#release'
+          ember: 'components/ember#release'
         },
         resolutions: {
-          'ember': 'release'
+          ember: 'release'
         }
       }
     },
@@ -21,10 +21,10 @@ module.exports = {
       name: 'ember-beta',
       bower: {
         dependencies: {
-          'ember': 'components/ember#beta'
+          ember: 'components/ember#beta'
         },
         resolutions: {
-          'ember': 'beta'
+          ember: 'beta'
         }
       }
     },
@@ -32,10 +32,10 @@ module.exports = {
       name: 'ember-canary',
       bower: {
         dependencies: {
-          'ember': 'components/ember#canary'
+          ember: 'components/ember#canary'
         },
         resolutions: {
-          'ember': 'canary'
+          ember: 'canary'
         }
       }
     }

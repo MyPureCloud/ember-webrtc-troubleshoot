@@ -2,9 +2,9 @@ import Ember from 'ember';
 import layout from './template';
 import WebrtcTroubleshooterComponent from '../webrtc-troubleshooter/component';
 
-const LOGLEVELS = [ 'debug', 'info', 'log', 'warn', 'error' ];
+const LOGLEVELS = ['debug', 'info', 'log', 'warn', 'error'];
 
-let logBuffer = [];
+const logBuffer = [];
 const Logger = {};
 LOGLEVELS.forEach(level => {
   Logger[level] = function () {
