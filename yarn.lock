@@ -742,12 +742,12 @@ accepts@~1.3.4, accepts@~1.3.5:
 
 acorn-jsx@^5.0.2:
   version "5.0.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/acorn-jsx/-/acorn-jsx-5.0.2.tgz#84b68ea44b373c4f8686023a551f61a21b7c4a4f"
+  resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-5.0.2.tgz#84b68ea44b373c4f8686023a551f61a21b7c4a4f"
   integrity sha1-hLaOpEs3PE+GhgI6VR9hoht8Sk8=
 
 acorn@^7.0.0:
   version "7.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/acorn/-/acorn-7.1.0.tgz#949d36f2c292535da602283586c2477c57eb2d6c"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.1.0.tgz#949d36f2c292535da602283586c2477c57eb2d6c"
   integrity sha1-lJ028sKSU12mAig1hsJHfFfrLWw=
 
 after@0.8.2:
@@ -767,7 +767,7 @@ ajv@^5.1.0:
 
 ajv@^6.10.0, ajv@^6.10.2:
   version "6.10.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/ajv/-/ajv-6.10.2.tgz#d3cea04d6b017b2894ad69040fec8b623eb4bd52"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.10.2.tgz#d3cea04d6b017b2894ad69040fec8b623eb4bd52"
   integrity sha1-086gTWsBeyiUrWkED+yLYj60vVI=
   dependencies:
     fast-deep-equal "^2.0.1"
@@ -811,7 +811,7 @@ ansi-escapes@^1.1.0:
 
 ansi-escapes@^3.2.0:
   version "3.2.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
+  resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-3.2.0.tgz#8780b98ff9dbf5638152d1f1fe5c1d7b4442976b"
   integrity sha1-h4C5j/nb9WOBUtHx/lwde0RCl2s=
 
 ansi-regex@^2.0.0:
@@ -993,7 +993,7 @@ ast-types@0.9.6:
 
 astral-regex@^1.0.0:
   version "1.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
+  resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-1.0.0.tgz#6c8c3fb827dd43ee3918f27b82782ab7658a6fd9"
   integrity sha1-bIw/uCfdQ+45GPJ7gngqt2WKb9k=
 
 async-disk-cache@^1.2.1:
@@ -2342,7 +2342,7 @@ callsite@1.0.0:
 
 callsites@^3.0.0:
   version "3.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
+  resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha1-s2MKvYlDQy9Us/BRkjjjPNffL3M=
 
 camelcase-keys@^2.0.0:
@@ -2439,7 +2439,7 @@ chalk@^2.4.2:
 
 chardet@^0.7.0:
   version "0.7.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
+  resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.7.0.tgz#90094849f0937f2eedc2425d0d28a9e5f0cbad9e"
   integrity sha1-kAlISfCTfy7twkJdDSip5fDLrZ4=
 
 charm@^1.0.0:
@@ -2994,7 +2994,7 @@ define-properties@^1.1.2:
 
 define-properties@^1.1.3:
   version "1.1.3"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/define-properties/-/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
+  resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
   integrity sha1-z4jabL7ib+bbcJT2HYcMvYTO6fE=
   dependencies:
     object-keys "^1.0.12"
@@ -3023,7 +3023,7 @@ define-property@^2.0.2:
 
 deglob@^4.0.0:
   version "4.0.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/deglob/-/deglob-4.0.1.tgz#0685c6383992fd6009be10653a2b1116696fad55"
+  resolved "https://registry.yarnpkg.com/deglob/-/deglob-4.0.1.tgz#0685c6383992fd6009be10653a2b1116696fad55"
   integrity sha1-BoXGODmS/WAJvhBlOisRFmlvrVU=
   dependencies:
     find-root "^1.0.0"
@@ -3111,7 +3111,7 @@ doctrine@^2.1.0:
 
 doctrine@^3.0.0:
   version "3.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/doctrine/-/doctrine-3.0.0.tgz#addebead72a6574db783639dc87a121773973961"
+  resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-3.0.0.tgz#addebead72a6574db783639dc87a121773973961"
   integrity sha1-rd6+rXKmV023g2OdyHoSF3OXOWE=
   dependencies:
     esutils "^2.0.2"
@@ -3794,7 +3794,7 @@ error@^7.0.0:
 
 es-abstract@^1.11.0, es-abstract@^1.12.0:
   version "1.14.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/es-abstract/-/es-abstract-1.14.2.tgz#7ce108fad83068c8783c3cdf62e504e084d8c497"
+  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.14.2.tgz#7ce108fad83068c8783c3cdf62e504e084d8c497"
   integrity sha1-fOEI+tgwaMh4PDzfYuUE4ITYxJc=
   dependencies:
     es-to-primitive "^1.2.0"
@@ -3830,7 +3830,7 @@ es-to-primitive@^1.1.1:
 
 es-to-primitive@^1.2.0:
   version "1.2.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/es-to-primitive/-/es-to-primitive-1.2.0.tgz#edf72478033456e8dda8ef09e00ad9650707f377"
+  resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.2.0.tgz#edf72478033456e8dda8ef09e00ad9650707f377"
   integrity sha1-7fckeAM0VujdqO8J4ArZZQcH83c=
   dependencies:
     is-callable "^1.1.4"
@@ -3866,22 +3866,22 @@ escodegen@1.8.x, escodegen@^1.8.0:
 
 eslint-config-semistandard@15.0.0:
   version "15.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-config-semistandard/-/eslint-config-semistandard-15.0.0.tgz#d8eefccfac4ca9cbc508d38de6cb8fd5e7a72fa9"
+  resolved "https://registry.yarnpkg.com/eslint-config-semistandard/-/eslint-config-semistandard-15.0.0.tgz#d8eefccfac4ca9cbc508d38de6cb8fd5e7a72fa9"
   integrity sha1-2O78z6xMqcvFCNON5suP1eenL6k=
 
 eslint-config-standard-jsx@8.1.0:
   version "8.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-config-standard-jsx/-/eslint-config-standard-jsx-8.1.0.tgz#314c62a0e6f51f75547f89aade059bec140edfc7"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard-jsx/-/eslint-config-standard-jsx-8.1.0.tgz#314c62a0e6f51f75547f89aade059bec140edfc7"
   integrity sha1-MUxioOb1H3VUf4mq3gWb7BQO38c=
 
 eslint-config-standard@14.1.0:
   version "14.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-config-standard/-/eslint-config-standard-14.1.0.tgz#b23da2b76fe5a2eba668374f246454e7058f15d4"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-14.1.0.tgz#b23da2b76fe5a2eba668374f246454e7058f15d4"
   integrity sha1-sj2it2/louumaDdPJGRU5wWPFdQ=
 
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.2.tgz#58f15fb839b8d0576ca980413476aab2472db66a"
+  resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.2.tgz#58f15fb839b8d0576ca980413476aab2472db66a"
   integrity sha1-WPFfuDm40FdsqYBBNHaqskcttmo=
   dependencies:
     debug "^2.6.9"
@@ -3889,7 +3889,7 @@ eslint-import-resolver-node@^0.3.2:
 
 eslint-module-utils@^2.4.0:
   version "2.4.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-module-utils/-/eslint-module-utils-2.4.1.tgz#7b4675875bf96b0dbf1b21977456e5bb1f5e018c"
+  resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.4.1.tgz#7b4675875bf96b0dbf1b21977456e5bb1f5e018c"
   integrity sha1-e0Z1h1v5aw2/GyGXdFblux9eAYw=
   dependencies:
     debug "^2.6.8"
@@ -3897,7 +3897,7 @@ eslint-module-utils@^2.4.0:
 
 eslint-plugin-es@^2.0.0:
   version "2.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-plugin-es/-/eslint-plugin-es-2.0.0.tgz#0f5f5da5f18aa21989feebe8a73eadefb3432976"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-es/-/eslint-plugin-es-2.0.0.tgz#0f5f5da5f18aa21989feebe8a73eadefb3432976"
   integrity sha1-D19dpfGKohmJ/uvopz6t77NDKXY=
   dependencies:
     eslint-utils "^1.4.2"
@@ -3905,7 +3905,7 @@ eslint-plugin-es@^2.0.0:
 
 eslint-plugin-import@~2.18.0:
   version "2.18.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-plugin-import/-/eslint-plugin-import-2.18.2.tgz#02f1180b90b077b33d447a17a2326ceb400aceb6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.18.2.tgz#02f1180b90b077b33d447a17a2326ceb400aceb6"
   integrity sha1-AvEYC5Cwd7M9RHoXojJs60AKzrY=
   dependencies:
     array-includes "^3.0.3"
@@ -3922,7 +3922,7 @@ eslint-plugin-import@~2.18.0:
 
 eslint-plugin-node@~10.0.0:
   version "10.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-plugin-node/-/eslint-plugin-node-10.0.0.tgz#fd1adbc7a300cf7eb6ac55cf4b0b6fc6e577f5a6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-node/-/eslint-plugin-node-10.0.0.tgz#fd1adbc7a300cf7eb6ac55cf4b0b6fc6e577f5a6"
   integrity sha1-/Rrbx6MAz362rFXPSwtvxuV39aY=
   dependencies:
     eslint-plugin-es "^2.0.0"
@@ -3934,12 +3934,12 @@ eslint-plugin-node@~10.0.0:
 
 eslint-plugin-promise@~4.2.1:
   version "4.2.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
   integrity sha1-hF/YsiYK2PglZMEiL85ErXHZQYo=
 
 eslint-plugin-react@~7.14.2:
   version "7.14.3"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-plugin-react/-/eslint-plugin-react-7.14.3.tgz#911030dd7e98ba49e1b2208599571846a66bdf13"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.14.3.tgz#911030dd7e98ba49e1b2208599571846a66bdf13"
   integrity sha1-kRAw3X6YuknhsiCFmVcYRqZr3xM=
   dependencies:
     array-includes "^3.0.3"
@@ -3959,7 +3959,7 @@ eslint-plugin-standard@~4.0.0:
 
 eslint-scope@^5.0.0:
   version "5.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-scope/-/eslint-scope-5.0.0.tgz#e87c8887c73e8d1ec84f1ca591645c358bfc8fb9"
+  resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.0.0.tgz#e87c8887c73e8d1ec84f1ca591645c358bfc8fb9"
   integrity sha1-6HyIh8c+jR7ITxylkWRcNYv8j7k=
   dependencies:
     esrecurse "^4.1.0"
@@ -3967,7 +3967,7 @@ eslint-scope@^5.0.0:
 
 eslint-utils@^1.4.2:
   version "1.4.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
+  resolved "https://registry.yarnpkg.com/eslint-utils/-/eslint-utils-1.4.2.tgz#166a5180ef6ab7eb462f162fd0e6f2463d7309ab"
   integrity sha1-FmpRgO9qt+tGLxYv0ObyRj1zCas=
   dependencies:
     eslint-visitor-keys "^1.0.0"
@@ -3979,12 +3979,12 @@ eslint-visitor-keys@^1.0.0:
 
 eslint-visitor-keys@^1.1.0:
   version "1.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
+  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha1-4qgs6oT/JGrW+1f5veW0ZiFFnsI=
 
 eslint@~6.4.0:
   version "6.4.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/eslint/-/eslint-6.4.0.tgz#5aa9227c3fbe921982b2eda94ba0d7fae858611a"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.4.0.tgz#5aa9227c3fbe921982b2eda94ba0d7fae858611a"
   integrity sha1-WqkifD++khmCsu2pS6DX+uhYYRo=
   dependencies:
     "@babel/code-frame" "^7.0.0"
@@ -4027,7 +4027,7 @@ eslint@~6.4.0:
 
 espree@^6.1.1:
   version "6.1.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/espree/-/espree-6.1.1.tgz#7f80e5f7257fc47db450022d723e356daeb1e5de"
+  resolved "https://registry.yarnpkg.com/espree/-/espree-6.1.1.tgz#7f80e5f7257fc47db450022d723e356daeb1e5de"
   integrity sha1-f4Dl9yV/xH20UAItcj41ba6x5d4=
   dependencies:
     acorn "^7.0.0"
@@ -4266,7 +4266,7 @@ external-editor@^1.1.0:
 
 external-editor@^3.0.3:
   version "3.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/external-editor/-/external-editor-3.1.0.tgz#cb03f740befae03ea4d283caed2741a83f335495"
+  resolved "https://registry.yarnpkg.com/external-editor/-/external-editor-3.1.0.tgz#cb03f740befae03ea4d283caed2741a83f335495"
   integrity sha1-ywP3QL764D6k0oPK7SdBqD8zVJU=
   dependencies:
     chardet "^0.7.0"
@@ -4380,7 +4380,7 @@ figures@^2.0.0:
 
 file-entry-cache@^5.0.1:
   version "5.0.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/file-entry-cache/-/file-entry-cache-5.0.1.tgz#ca0f6efa6dd3d561333fb14515065c2fafdf439c"
+  resolved "https://registry.yarnpkg.com/file-entry-cache/-/file-entry-cache-5.0.1.tgz#ca0f6efa6dd3d561333fb14515065c2fafdf439c"
   integrity sha1-yg9u+m3T1WEzP7FFFQZcL6/fQ5w=
   dependencies:
     flat-cache "^2.0.1"
@@ -4509,7 +4509,7 @@ fireworm@^0.7.0:
 
 flat-cache@^2.0.1:
   version "2.0.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/flat-cache/-/flat-cache-2.0.1.tgz#5d296d6f04bda44a4630a301413bdbc2ec085ec0"
+  resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-2.0.1.tgz#5d296d6f04bda44a4630a301413bdbc2ec085ec0"
   integrity sha1-XSltbwS9pEpGMKMBQTvbwuwIXsA=
   dependencies:
     flatted "^2.0.0"
@@ -4518,7 +4518,7 @@ flat-cache@^2.0.1:
 
 flatted@^2.0.0:
   version "2.0.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
+  resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
   integrity sha1-aeV8qo8OrLwoHS4stFjUb9tEngg=
 
 follow-redirects@^1.0.0:
@@ -4751,7 +4751,7 @@ get-stdin@^4.0.1:
 
 get-stdin@^7.0.0:
   version "7.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/get-stdin/-/get-stdin-7.0.0.tgz#8d5de98f15171a125c5e516643c7a6d0ea8a96f6"
+  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-7.0.0.tgz#8d5de98f15171a125c5e516643c7a6d0ea8a96f6"
   integrity sha1-jV3pjxUXGhJcXlFmQ8em0OqKlvY=
 
 get-stream@3.0.0, get-stream@^3.0.0:
@@ -4824,7 +4824,7 @@ glob-parent@^2.0.0:
 
 glob-parent@^5.0.0:
   version "5.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/glob-parent/-/glob-parent-5.1.0.tgz#5f4c1d1e748d30cd73ad2944b3577a81b081e8c2"
+  resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.0.tgz#5f4c1d1e748d30cd73ad2944b3577a81b081e8c2"
   integrity sha1-X0wdHnSNMM1zrSlEs1d6gbCB6MI=
   dependencies:
     is-glob "^4.0.1"
@@ -4992,7 +4992,7 @@ has-symbol-support-x@^1.4.1:
 
 has-symbols@^1.0.0:
   version "1.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/has-symbols/-/has-symbols-1.0.0.tgz#ba1a8f1af2a0fc39650f5c850367704122063b44"
+  resolved "https://registry.yarnpkg.com/has-symbols/-/has-symbols-1.0.0.tgz#ba1a8f1af2a0fc39650f5c850367704122063b44"
   integrity sha1-uhqPGvKg/DllD1yFA2dwQSIGO0Q=
 
 has-to-string-tag-x@^1.2.0:
@@ -5157,7 +5157,7 @@ iconv-lite@0.4.19, iconv-lite@^0.4.4:
 
 iconv-lite@^0.4.24:
   version "0.4.24"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
+  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   integrity sha1-ICK0sl+93CHS9SSXSkdKr+czkIs=
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
@@ -5176,7 +5176,7 @@ ignore-walk@^3.0.1:
 
 ignore@^4.0.6:
   version "4.0.6"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha1-dQ49tYYgh7RzfrrIIH/9HvJ7Jfw=
 
 ignore@^5.0.0:
@@ -5186,12 +5186,12 @@ ignore@^5.0.0:
 
 ignore@^5.1.1:
   version "5.1.4"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
   integrity sha1-hLez2+ZFUrbvDsqZ9nQ9vsbZet8=
 
 import-fresh@^3.0.0:
   version "3.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/import-fresh/-/import-fresh-3.1.0.tgz#6d33fa1dcef6df930fae003446f33415af905118"
+  resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.1.0.tgz#6d33fa1dcef6df930fae003446f33415af905118"
   integrity sha1-bTP6Hc7235MPrgA0RvM0Fa+QURg=
   dependencies:
     parent-module "^1.0.0"
@@ -5270,7 +5270,7 @@ inquirer@^2:
 
 inquirer@^6.4.1:
   version "6.5.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/inquirer/-/inquirer-6.5.2.tgz#ad50942375d036d327ff528c08bd5fab089928ca"
+  resolved "https://registry.yarnpkg.com/inquirer/-/inquirer-6.5.2.tgz#ad50942375d036d327ff528c08bd5fab089928ca"
   integrity sha1-rVCUI3XQNtMn/1KMCL1fqwiZKMo=
   dependencies:
     ansi-escapes "^3.2.0"
@@ -5495,7 +5495,7 @@ is-glob@^3.1.0:
 
 is-glob@^4.0.0, is-glob@^4.0.1:
   version "4.0.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/is-glob/-/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
+  resolved "https://registry.yarnpkg.com/is-glob/-/is-glob-4.0.1.tgz#7567dbe9f2f5e2467bc77ab83c4a29482407a5dc"
   integrity sha1-dWfb6fL14kZ7x3q4PEopSCQHpdw=
   dependencies:
     is-extglob "^2.1.1"
@@ -5580,7 +5580,7 @@ is-symbol@^1.0.1:
 
 is-symbol@^1.0.2:
   version "1.0.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/is-symbol/-/is-symbol-1.0.2.tgz#a055f6ae57192caee329e7a860118b497a950f38"
+  resolved "https://registry.yarnpkg.com/is-symbol/-/is-symbol-1.0.2.tgz#a055f6ae57192caee329e7a860118b497a950f38"
   integrity sha1-oFX2rlcZLK7jKeeoYBGLSXqVDzg=
   dependencies:
     has-symbols "^1.0.0"
@@ -5881,7 +5881,7 @@ jsprim@^1.2.2:
 
 jsx-ast-utils@^2.1.0:
   version "2.2.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/jsx-ast-utils/-/jsx-ast-utils-2.2.1.tgz#4d4973ebf8b9d2837ee91a8208cc66f3a2776cfb"
+  resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-2.2.1.tgz#4d4973ebf8b9d2837ee91a8208cc66f3a2776cfb"
   integrity sha1-TUlz6/i50oN+6RqCCMxm86J3bPs=
   dependencies:
     array-includes "^3.0.3"
@@ -6004,7 +6004,7 @@ load-json-file@^4.0.0:
 
 load-json-file@^5.2.0:
   version "5.3.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/load-json-file/-/load-json-file-5.3.0.tgz#4d3c1e01fa1c03ea78a60ac7af932c9ce53403f3"
+  resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-5.3.0.tgz#4d3c1e01fa1c03ea78a60ac7af932c9ce53403f3"
   integrity sha1-TTweAfocA+p4pgrHr5MsnOU0A/M=
   dependencies:
     graceful-fs "^4.1.15"
@@ -6435,7 +6435,7 @@ lodash@^4.17.11, lodash@^4.17.4, lodash@^4.3.0:
 
 lodash@^4.17.12, lodash@^4.17.14:
   version "4.17.15"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
 
 log-driver@^1.2.7:
@@ -7118,12 +7118,12 @@ object-hash@^1.3.1:
 
 object-inspect@^1.6.0:
   version "1.6.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/object-inspect/-/object-inspect-1.6.0.tgz#c70b6cbf72f274aab4c34c0c82f5167bf82cf15b"
+  resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.6.0.tgz#c70b6cbf72f274aab4c34c0c82f5167bf82cf15b"
   integrity sha1-xwtsv3LydKq0w0wMgvUWe/gs8Vs=
 
 object-keys@^1.0.11, object-keys@^1.0.12, object-keys@^1.1.1:
   version "1.1.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
+  resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
   integrity sha1-HEfyct8nfzsdrwYWd9nILiMixg4=
 
 object-keys@^1.0.8:
@@ -7140,7 +7140,7 @@ object-visit@^1.0.0:
 
 object.assign@^4.1.0:
   version "4.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/object.assign/-/object.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
+  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
   integrity sha1-lovxEA15Vrs8oIbwBvhGs7xACNo=
   dependencies:
     define-properties "^1.1.2"
@@ -7150,7 +7150,7 @@ object.assign@^4.1.0:
 
 object.entries@^1.1.0:
   version "1.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/object.entries/-/object.entries-1.1.0.tgz#2024fc6d6ba246aee38bdb0ffd5cfbcf371b7519"
+  resolved "https://registry.yarnpkg.com/object.entries/-/object.entries-1.1.0.tgz#2024fc6d6ba246aee38bdb0ffd5cfbcf371b7519"
   integrity sha1-ICT8bWuiRq7ji9sP/Vz7zzcbdRk=
   dependencies:
     define-properties "^1.1.3"
@@ -7160,7 +7160,7 @@ object.entries@^1.1.0:
 
 object.fromentries@^2.0.0:
   version "2.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/object.fromentries/-/object.fromentries-2.0.0.tgz#49a543d92151f8277b3ac9600f1e930b189d30ab"
+  resolved "https://registry.yarnpkg.com/object.fromentries/-/object.fromentries-2.0.0.tgz#49a543d92151f8277b3ac9600f1e930b189d30ab"
   integrity sha1-SaVD2SFR+Cd7OslgDx6TCxidMKs=
   dependencies:
     define-properties "^1.1.2"
@@ -7185,7 +7185,7 @@ object.pick@^1.3.0:
 
 object.values@^1.1.0:
   version "1.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/object.values/-/object.values-1.1.0.tgz#bf6810ef5da3e5325790eaaa2be213ea84624da9"
+  resolved "https://registry.yarnpkg.com/object.values/-/object.values-1.1.0.tgz#bf6810ef5da3e5325790eaaa2be213ea84624da9"
   integrity sha1-v2gQ712j5TJXkOqqK+IT6oRiTak=
   dependencies:
     define-properties "^1.1.3"
@@ -7370,7 +7370,7 @@ package-hash@^3.0.0:
 
 parent-module@^1.0.0:
   version "1.0.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/parent-module/-/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
+  resolved "https://registry.yarnpkg.com/parent-module/-/parent-module-1.0.1.tgz#691d2709e78c79fae3a156622452d00762caaaa2"
   integrity sha1-aR0nCeeMefrjoVZiJFLQB2LKqqI=
   dependencies:
     callsites "^3.0.0"
@@ -7547,7 +7547,7 @@ pinkie@^2.0.0:
 
 pkg-conf@^3.1.0:
   version "3.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/pkg-conf/-/pkg-conf-3.1.0.tgz#d9f9c75ea1bae0e77938cde045b276dac7cc69ae"
+  resolved "https://registry.yarnpkg.com/pkg-conf/-/pkg-conf-3.1.0.tgz#d9f9c75ea1bae0e77938cde045b276dac7cc69ae"
   integrity sha1-2fnHXqG64Od5OM3gRbJ22sfMaa4=
   dependencies:
     find-up "^3.0.0"
@@ -7655,7 +7655,7 @@ promise-map-series@^0.2.1:
 
 prop-types@^15.7.2:
   version "15.7.2"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
   dependencies:
     loose-envify "^1.4.0"
@@ -7955,7 +7955,7 @@ regexpp@^2.0.1:
 
 regexpp@^3.0.0:
   version "3.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/regexpp/-/regexpp-3.0.0.tgz#dd63982ee3300e67b41c1956f850aa680d9d330e"
+  resolved "https://registry.yarnpkg.com/regexpp/-/regexpp-3.0.0.tgz#dd63982ee3300e67b41c1956f850aa680d9d330e"
   integrity sha1-3WOYLuMwDme0HBlW+FCqaA2dMw4=
 
 regexpu-core@^2.0.0:
@@ -8125,7 +8125,7 @@ resolve@^1.10.0, resolve@^1.10.1, resolve@^1.3.0, resolve@^1.3.2, resolve@^1.3.3
 
 resolve@^1.11.0:
   version "1.12.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/resolve/-/resolve-1.12.0.tgz#3fc644a35c84a48554609ff26ec52b66fa577df6"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.12.0.tgz#3fc644a35c84a48554609ff26ec52b66fa577df6"
   integrity sha1-P8ZEo1yEpIVUYJ/ybsUrZvpXffY=
   dependencies:
     path-parse "^1.0.6"
@@ -8227,7 +8227,7 @@ rx@^4.1.0:
 
 rxjs@^6.4.0:
   version "6.5.3"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/rxjs/-/rxjs-6.5.3.tgz#510e26317f4db91a7eb1de77d9dd9ba0a4899a3a"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.3.tgz#510e26317f4db91a7eb1de77d9dd9ba0a4899a3a"
   integrity sha1-UQ4mMX9NuRp+sd532d2boKSJmjo=
   dependencies:
     tslib "^1.9.0"
@@ -8297,7 +8297,7 @@ sdp@^2.6.0:
 
 semistandard@^14.0.0:
   version "14.2.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/semistandard/-/semistandard-14.2.0.tgz#d722eb1eef7acb33c0e2f5b2e2e4434039dcfc41"
+  resolved "https://registry.yarnpkg.com/semistandard/-/semistandard-14.2.0.tgz#d722eb1eef7acb33c0e2f5b2e2e4434039dcfc41"
   integrity sha1-1yLrHu96yzPA4vWy4uRDQDnc/EE=
   dependencies:
     eslint "~6.4.0"
@@ -8446,7 +8446,7 @@ slash@^1.0.0:
 
 slice-ansi@^2.1.0:
   version "2.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/slice-ansi/-/slice-ansi-2.1.0.tgz#cacd7693461a637a5788d92a7dd4fba068e81636"
+  resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-2.1.0.tgz#cacd7693461a637a5788d92a7dd4fba068e81636"
   integrity sha1-ys12k0YaY3pXiNkqfdT7oGjoFjY=
   dependencies:
     ansi-styles "^3.2.0"
@@ -8717,7 +8717,7 @@ sshpk@^1.7.0:
 
 standard-engine@^12.0.0:
   version "12.0.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/standard-engine/-/standard-engine-12.0.0.tgz#1643dceba96ca9c04c535a1fb28d79bfb21b3572"
+  resolved "https://registry.yarnpkg.com/standard-engine/-/standard-engine-12.0.0.tgz#1643dceba96ca9c04c535a1fb28d79bfb21b3572"
   integrity sha1-FkPc66lsqcBMU1ofso15v7IbNXI=
   dependencies:
     deglob "^4.0.0"
@@ -8781,7 +8781,7 @@ string.prototype.startswith@^0.2.0:
 
 string.prototype.trimleft@^2.0.0:
   version "2.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/string.prototype.trimleft/-/string.prototype.trimleft-2.1.0.tgz#6cc47f0d7eb8d62b0f3701611715a3954591d634"
+  resolved "https://registry.yarnpkg.com/string.prototype.trimleft/-/string.prototype.trimleft-2.1.0.tgz#6cc47f0d7eb8d62b0f3701611715a3954591d634"
   integrity sha1-bMR/DX641isPNwFhFxWjlUWR1jQ=
   dependencies:
     define-properties "^1.1.3"
@@ -8789,7 +8789,7 @@ string.prototype.trimleft@^2.0.0:
 
 string.prototype.trimright@^2.0.0:
   version "2.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/string.prototype.trimright/-/string.prototype.trimright-2.1.0.tgz#669d164be9df9b6f7559fa8e89945b168a5a6c58"
+  resolved "https://registry.yarnpkg.com/string.prototype.trimright/-/string.prototype.trimright-2.1.0.tgz#669d164be9df9b6f7559fa8e89945b168a5a6c58"
   integrity sha1-Zp0WS+nfm291WfqOiZRbFopabFg=
   dependencies:
     define-properties "^1.1.3"
@@ -8854,7 +8854,7 @@ strip-indent@^1.0.1:
 
 strip-json-comments@^3.0.1:
   version "3.0.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/strip-json-comments/-/strip-json-comments-3.0.1.tgz#85713975a91fb87bf1b305cca77395e40d2a64a7"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.0.1.tgz#85713975a91fb87bf1b305cca77395e40d2a64a7"
   integrity sha1-hXE5dakfuHvxswXMp3OV5A0qZKc=
 
 strip-json-comments@~2.0.1:
@@ -8918,7 +8918,7 @@ sync-disk-cache@^1.3.3:
 
 table@^5.2.3:
   version "5.4.6"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
+  resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
   integrity sha1-EpLRlQDOP4YFOwXw6Ofko7shB54=
   dependencies:
     ajv "^6.10.2"
@@ -9150,7 +9150,7 @@ trim-right@^1.0.1:
 
 tslib@^1.9.0:
   version "1.10.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha1-w8GflZc/sKYpc/sJ2Q2WHuQ+XIo=
 
 tunnel-agent@^0.6.0:
@@ -9174,7 +9174,7 @@ type-check@~0.3.2:
 
 type-fest@^0.3.0:
   version "0.3.1"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/type-fest/-/type-fest-0.3.1.tgz#63d00d204e059474fe5e1b7c011112bbd1dc29e1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.3.1.tgz#63d00d204e059474fe5e1b7c011112bbd1dc29e1"
   integrity sha1-Y9ANIE4FlHT+Xht8ARESu9HcKeE=
 
 type-is@~1.6.15, type-is@~1.6.16:
@@ -9385,7 +9385,7 @@ uuid@^3.0.0, uuid@^3.1.0, uuid@^3.3.2:
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/v8-compile-cache/-/v8-compile-cache-2.1.0.tgz#e14de37b31a6d194f5690d67efc4e7f6fc6ab30e"
+  resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.1.0.tgz#e14de37b31a6d194f5690d67efc4e7f6fc6ab30e"
   integrity sha1-4U3jezGm0ZT1aQ1n78Tn9vxqsw4=
 
 validate-npm-package-license@^3.0.1:
@@ -9605,7 +9605,7 @@ write-file-atomic@^2.0.0, write-file-atomic@^2.4.2:
 
 write@1.0.3:
   version "1.0.3"
-  resolved "https://purecloud.jfrog.io/purecloud/api/npm/inin-internal-npm/write/-/write-1.0.3.tgz#0800e14523b923a387e415123c865616aae0f5c3"
+  resolved "https://registry.yarnpkg.com/write/-/write-1.0.3.tgz#0800e14523b923a387e415123c865616aae0f5c3"
   integrity sha1-CADhRSO5I6OH5BUSPIZWFqrg9cM=
   dependencies:
     mkdirp "^0.5.1"
