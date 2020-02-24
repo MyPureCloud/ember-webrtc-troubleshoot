@@ -9499,10 +9499,10 @@ webrtc-stats-gatherer@^7.1.1:
   dependencies:
     wildemitter "^1.2.0"
 
-webrtc-troubleshoot@^11.0.2:
-  version "11.0.2"
-  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-11.0.2.tgz#4b7b6956de5bcd77fdf6d0de5a1150b25349c963"
-  integrity sha512-ZSFhGpS9JnelrMFogJg3qnmgjsE7bLeBoNfCJAl+kMJonS4VpT3sV57yzP7iasOqxQQ9avZVBGWITYaJyanJIQ==
+webrtc-troubleshoot@^11.0.3:
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/webrtc-troubleshoot/-/webrtc-troubleshoot-11.0.3.tgz#79e8a5b20f220cd93e4e6b852f1f8ffa0da97674"
+  integrity sha512-kAxAB+8yTspE1QIvVTzACRwTA1AAXcFf/4Hbkpdn1yrYb1f27i4VLiTm79nHpGMwnn4tUB6zid5DnPLQ8Qy2NA==
   dependencies:
     localmedia "^5.1.2"
     rtcpeerconnection "^8.0.1"
