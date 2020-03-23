@@ -10,6 +10,27 @@ const prodUSW2 = {
   orgName: 'iris-testing-org-30'
 };
 
+const prodAPNE2 = {
+  host: 'https://realtime.apne2.pure.cloud:443',
+  orgId: '3226a078-0840-4bd2-91da-0f36668f16ea',
+  thirdPartyOrgId: 72,
+  orgName: 'seoulbtc'
+};
+
+const prodCAC1 = {
+  host: 'https://realtime.cac1.pure.cloud:443',
+  orgId: '96f4c15e-c120-49d5-b4ad-268bad025f25',
+  thirdPartyOrgId: 85,
+  orgName: 'canadabtc'
+};
+
+const prodEUW2 = {
+  host: 'https://realtime.euw2.pure.cloud:443',
+  orgId: '774e625c-7626-41d3-93b8-5704cdfd57c3',
+  thirdPartyOrgId: 65,
+  orgName: 'londonbtc'
+};
+
 const prodAU = {
   host: 'https://realtime.mypurecloud.com.au:443',
   thirdPartyOrgId: 28,
@@ -64,6 +85,9 @@ const localhost = {
 const realtimeEnvironments = {
   'apps.mypurecloud.com': prodUS,
   'apps.usw2.pure.cloud': prodUSW2,
+  'apps.apne2.pure.cloud': prodAPNE2,
+  'apps.cac1.pure.cloud': prodCAC1,
+  'apps.euw2.pure.cloud': prodEUW2,
   'apps.mypurecloud.com.au': prodAU,
   'apps.mypurecloud.de': prodDE,
   'apps.mypurecloud.ie': prodIE,
