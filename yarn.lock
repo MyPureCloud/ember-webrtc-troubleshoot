@@ -8285,10 +8285,10 @@ sdp-jingle-json@^3.0.0:
   resolved "https://registry.yarnpkg.com/sdp-jingle-json/-/sdp-jingle-json-3.1.0.tgz#7067d5d998ef0be754c3a01a551ef0052a0ffbfb"
   integrity sha512-Uu+FelZD/edNoOc64NwQP8jjbBVMggAaErGU+2cSxPZgyReJTtqtp5287p2vu7bHubERxEbiW0H1pC2fnH5GEA==
 
-sdp@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/sdp/-/sdp-2.10.0.tgz#643fff1a43cdba54a739c7b202f56bd854474af2"
-  integrity sha512-H+VjfyQpRz9GezhshJmkXTtCAT9/2g9az3GFDPYfGOz0eAOQU1fCrL3S9Dq/eUT9FtOyLi/czdR9PzK3fKUYOQ==
+sdp@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/sdp/-/sdp-2.12.0.tgz#338a106af7560c86e4523f858349680350d53b22"
+  integrity sha512-jhXqQAQVM+8Xj5EjJGVweuEzgtGWb3tmEEpl3CLP3cStInSbVHSg0QWOGQzNq8pSID4JkpeV2mPqlMDLrm0/Vw==
 
 sdp@^2.6.0:
   version "2.7.4"
@@ -9484,13 +9484,13 @@ wcwidth@^1.0.1:
   dependencies:
     defaults "^1.0.3"
 
-webrtc-adapter@^7.2.9:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-7.3.0.tgz#a65e18aad42759bab6ced7f8cfff11b051321e2a"
-  integrity sha512-pKcwt6IR6RLCD6jlcdOOi88iVwdzppHlkOhtgTSuZHtYTxdD09t5fA1Di7GJU7je8oHcCBlNfb7zwBsetERnmQ==
+webrtc-adapter@^7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/webrtc-adapter/-/webrtc-adapter-7.6.0.tgz#edcbf769b8803425d7745ea35bb8c7d4ed127e7c"
+  integrity sha512-l/f+IEfqiupo0mUA8Ye8eFI4BmGiL+8vRXJuwc+rq1bP2oa/5s7EH+rLRD/KoMiM+EDHYdozi0RXQK8K4cu2gg==
   dependencies:
     rtcpeerconnection-shim "^1.2.15"
-    sdp "^2.10.0"
+    sdp "^2.12.0"
 
 webrtc-stats-gatherer@^7.1.1:
   version "7.1.1"
