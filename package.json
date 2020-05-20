@@ -68,7 +68,7 @@
     "nyc": "^14.1.1",
     "pre-push": "^0.1.1",
     "semistandard": "^14.0.0",
-    "webrtc-adapter": "^7.2.9"
+    "webrtc-adapter": "^7.6.1"
   },
   "keywords": [
     "ember-addon"
