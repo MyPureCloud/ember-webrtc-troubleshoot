@@ -8,4 +8,4 @@ We use [semistandard](http://github.com/flet/semistandard) because it's just eas
 ### Pull requests
 I try to respond to all pull requests as soon as possible, but it's not always instant. If I don't get back to you in a few days, ping me on twitter [@xanderdumaine](https://twitter.com/xanderdumaine).
 
-Please keep in mind that we're supporting a collection of addons for broad, but not universal support. We'll likely keep our Ember version and browser support limited to what PureCloud supports as an organization. That said, you're welcome to fork this project and add additional support as required.
+Please keep in mind that we're supporting a collection of addons for broad, but not universal support. We'll likely keep our Ember version and browser support limited to what Genesys Cloud supports as an organization. That said, you're welcome to fork this project and add additional support as required.
