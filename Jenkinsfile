@@ -1,7 +1,7 @@
 @Library('pipeline-library@webapp-pipelines') _
 
 webappPipeline {
-    slaveLabel = 'dev'
+    slaveLabel = 'dev_v2'
     useArtifactoryRepo = false
     projectName = 'webrtc-troubleshooter'
     manifest = customManifest('./dist') {
