@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "Tato aplikace spouští sérii diagnostických testů na řešení potíží a identifikaci obvyklých problémů s WebRTC. Testy se provádějí pouze v rámci tohoto klienta. Kontroluje se přístup k mikrofonu a kameře a provádějí se zpětnovazební připojení k infrastruktuře PureCloud, aby se ověřilo, zda má klient přístup k síti.",
-        "title": "Diagnostika PureCloud WebRTC",
-        "learnMore": "Další informace o PureCloud WebRTC",
+        "description": "Tato aplikace spouští sérii diagnostických testů na řešení potíží a identifikaci obvyklých problémů s WebRTC. Testy se provádějí pouze v rámci tohoto klienta. Kontroluje se přístup k mikrofonu a kameře a provádějí se zpětnovazební připojení k infrastruktuře Genesys Cloud, aby se ověřilo, zda má klient přístup k síti.",
+        "title": "Diagnostika Genesys Cloud WebRTC",
+        "learnMore": "Další informace o Genesys Cloud WebRTC",
         "privacy": "Zásady ochrany osobních údajů",
         "audio": "WebRTC se zvukem (výchozí)",
         "video": "S videem",
         "screenCaptureNoun": "Snímek obrazovky",
         "headsets": "Integrace náhlavní soupravy",
         "captureScreenVerb": "Pořídit snímek obrazovky",
-        "screenCaptureDescription": "PureCloud používá snímky obrazovky u funkcí sdílení obrazovky a nahrávání obrazovky. Kliknutím na tlačítko „Pořídit snímek obrazovky“ ověřte, zda váš prohlížeč nebo aplikace podporují snímky obrazovky.",
+        "screenCaptureDescription": "Genesys Cloud používá snímky obrazovky u funkcí sdílení obrazovky a nahrávání obrazovky. Kliknutím na tlačítko „Pořídit snímek obrazovky“ ověřte, zda váš prohlížeč nebo aplikace podporují snímky obrazovky.",
         "about": "O aplikaci"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "Kontrola připojení...",
         "checkingSymmetricNat": "Kontrola topologie sítě...",
         "checkConnectivitySuccess": "Žádné problémy s připojením",
-        "checkConnectivityFail": "Nepodařilo se spojit s mediálními službami PureCloud (TURN)",
-        "checkConnectivityFailPort": "V požadovaném pásmu (16384 až 32768) se nepodařilo najít port. Zkontrolujte, zda brána firewall neblokuje potřebné porty uvedené v PureCloud Resource Center.",
+        "checkConnectivityFail": "Nepodařilo se spojit s mediálními službami Genesys Cloud (TURN)",
+        "checkConnectivityFailPort": "V požadovaném pásmu (16384 až 32768) se nepodařilo najít port. Zkontrolujte, zda brána firewall neblokuje potřebné porty uvedené v Genesys Cloud Resource Center.",
         "showBandwidthStats": "Zobrazit statistiky šířky pásma",
         "hideBandwidthStats": "Skrýt statistiky šířky pásma",
         "resolution": "Rozlišení: {value}",

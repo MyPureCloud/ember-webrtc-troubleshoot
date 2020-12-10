@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "Deze app voert een reeks diagnostische troubleshoottests uit om veelvoorkomende problemen met WebRTC vast te stellen. De tests zijn alleen van toepassing op deze client. Bij de tests wordt de hardwaretoegang voor de microfoon en camera gecontroleerd en worden er loopbackverbindingen met de infrastructuur van PureCloud gelegd om de netwerktoegang van de client te controleren.",
-        "title": "Diagnostische gegevens van PureCloud WebRTC",
-        "learnMore": "Meer informatie over PureCloud WebRTC",
+        "description": "Deze app voert een reeks diagnostische troubleshoottests uit om veelvoorkomende problemen met WebRTC vast te stellen. De tests zijn alleen van toepassing op deze client. Bij de tests wordt de hardwaretoegang voor de microfoon en camera gecontroleerd en worden er loopbackverbindingen met de infrastructuur van Genesys Cloud gelegd om de netwerktoegang van de client te controleren.",
+        "title": "Diagnostische gegevens van Genesys Cloud WebRTC",
+        "learnMore": "Meer informatie over Genesys Cloud WebRTC",
         "privacy": "Privacybeleid",
         "audio": "WebRTC met Audio (standaard)",
         "video": "Met video",
         "screenCaptureNoun": "Schermopname",
         "headsets": "Headset-integratie",
         "captureScreenVerb": "Scherm opnemen",
-        "screenCaptureDescription": "PureCloud maakt gebruik van schermopnames voor de functies 'Scherm delen' en 'Schermopname'. Klik op de knop 'Scherm opnemen' om te verifiëren of uw browser of app 'Schermopname' ondersteunt.",
+        "screenCaptureDescription": "Genesys Cloud maakt gebruik van schermopnames voor de functies 'Scherm delen' en 'Schermopname'. Klik op de knop 'Scherm opnemen' om te verifiëren of uw browser of app 'Schermopname' ondersteunt.",
         "about": "Info"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "Connectiviteit controleren...",
         "checkingSymmetricNat": "Netwerktopologie controleren...",
         "checkConnectivitySuccess": "Geen connectiviteitsproblemen",
-        "checkConnectivityFail": "Kan PureCloud-mediaservices niet bereiken (TURN)",
-        "checkConnectivityFailPort": "Kan geen poort vinden in het vereiste bereik (16384-32768). Controleer of de firewall-configuratie voldoet aan de poortvereisten zoals beschreven in het PureCloud Resource Center.",
+        "checkConnectivityFail": "Kan Genesys Cloud-mediaservices niet bereiken (TURN)",
+        "checkConnectivityFailPort": "Kan geen poort vinden in het vereiste bereik (16384-32768). Controleer of de firewall-configuratie voldoet aan de poortvereisten zoals beschreven in het Genesys Cloud Resource Center.",
         "showBandwidthStats": "Bandbreedtestatistieken weergeven",
         "hideBandwidthStats": "Bandbreedtestatistieken verbergen",
         "resolution": "Resolutie: {value}",

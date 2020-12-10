@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "此应用程序运行一系列诊断排除故障测试，进而识别 WebRTC 的常见问题。这些测试仅适用于此客户端。除了检查对麦克风和摄像头的硬件访问，还会对 PureCloud 基础设施进行环回连接以检查客户端的网络访问。",
-        "title": "PureCloud WebRTC 诊断",
-        "learnMore": "了解更多关于 PureCloud WebRTC 的信息",
+        "description": "此应用程序运行一系列诊断排除故障测试，进而识别 WebRTC 的常见问题。这些测试仅适用于此客户端。除了检查对麦克风和摄像头的硬件访问，还会对 Genesys Cloud 基础设施进行环回连接以检查客户端的网络访问。",
+        "title": "Genesys Cloud WebRTC 诊断",
+        "learnMore": "了解更多关于 Genesys Cloud WebRTC 的信息",
         "privacy": "隐私政策",
         "audio": "WebRTC 与 Audio（默认）",
         "video": "与视频",
         "screenCaptureNoun": "屏幕捕获",
         "headsets": "耳机集成",
         "captureScreenVerb": "捕获屏幕",
-        "screenCaptureDescription": "PureCloud 在“屏幕共享”和“屏幕记录”功能中使用屏幕捕获。 单击“捕获屏幕”按钮以验证您的浏览器或应用程序是否支持屏幕捕获。",
+        "screenCaptureDescription": "Genesys Cloud 在“屏幕共享”和“屏幕记录”功能中使用屏幕捕获。单击“捕获屏幕”按钮以验证您的浏览器或应用程序是否支持屏幕捕获。",
         "about": "关于"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "正在检查连接...",
         "checkingSymmetricNat": "正在检查网络拓扑...",
         "checkConnectivitySuccess": "连接正常",
-        "checkConnectivityFail": "无法访问 PureCloud 媒体服务 (TURN)",
-        "checkConnectivityFailPort": "无法在所需范围 (16384-32768) 内找到端口。根据 PureCloud 资源中心上详细说明的端口要求检查防火墙设置。",
+        "checkConnectivityFail": "无法访问 Genesys Cloud 媒体服务 (TURN)",
+        "checkConnectivityFailPort": "无法在所需范围 (16384-32768) 内找到端口。根据 Genesys Cloud 资源中心上详细说明的端口要求检查防火墙设置。",
         "showBandwidthStats": "显示带宽状态",
         "hideBandwidthStats": "隐藏带宽状态",
         "resolution": "分辨率: {value}",

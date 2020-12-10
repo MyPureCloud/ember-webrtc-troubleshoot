@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "Bu uygulama, WebRTC ile ortak sorunları tanımlamak için bir dizi tanısal sorun giderme testi yürütür. Testler yalnızca bu istemci için geçerlidir. Mikrofon ve kamera için donanım erişimi kontrol edilir, ayrıca istemcinin ağ erişimini kontrol etmek için PureCloud altyapısına geri döngü bağlantıları yapılır.",
-        "title": "PureCloud WebRTC Tanılama",
-        "learnMore": "PureCloud WebRTC hakkında daha fazlasını öğrenin",
+        "description": "Bu uygulama, WebRTC ile ortak sorunları tanımlamak için bir dizi tanısal sorun giderme testi yürütür. Testler yalnızca bu istemci için geçerlidir. Mikrofon ve kamera için donanım erişimi kontrol edilir, ayrıca istemcinin ağ erişimini kontrol etmek için Genesys Cloud altyapısına geri döngü bağlantıları yapılır.",
+        "title": "Genesys Cloud WebRTC Tanılama",
+        "learnMore": "Genesys Cloud WebRTC hakkında daha fazlasını öğrenin",
         "privacy": "Gizlilik İlkesi",
         "audio": "Sesli WebRTC (Varsayılan)",
         "video": "Videolu",
         "screenCaptureNoun": "Ekran Yakalama",
         "headsets": "Kulaklık Entegrasyonu",
         "captureScreenVerb": "Ekranı Yakala",
-        "screenCaptureDescription": "PureCloud, Ekran Paylaşımı ve Ekran Kaydı özellikleri için ekran yakalamadan yararlanır. Tarayıcınız veya uygulamanızın Ekran Yakalamayı desteklediğini doğrulamak için Ekranı Yakala düğmesine tıklayın.",
+        "screenCaptureDescription": "Genesys Cloud, Ekran Paylaşımı ve Ekran Kaydı özellikleri için ekran yakalamadan yararlanır. Tarayıcınız veya uygulamanızın Ekran Yakalamayı desteklediğini doğrulamak için Ekranı Yakala düğmesine tıklayın.",
         "about": "Hakkında"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "Bağlantı denetleniyor...",
         "checkingSymmetricNat": "Ağ topolojisi denetleniyor ...",
         "checkConnectivitySuccess": "Bağlantı sorunu yok",
-        "checkConnectivityFail": "PureCloud medya hizmetlerine ulaşılamadı (TURN)",
-        "checkConnectivityFailPort": "Gereken aralıkta (16384-32768) bir bağlantı noktası bulunamadı. Purecloud Kaynak Merkezi'nde ayrıntıları verilen bağlantı noktası gereklilikleri doğrultusunda güvenlik duvarı yapılandırmasını kontrol edin.",
+        "checkConnectivityFail": "Genesys Cloud medya hizmetlerine ulaşılamadı (TURN)",
+        "checkConnectivityFailPort": "Gereken aralıkta (16384-32768) bir bağlantı noktası bulunamadı. Genesys Cloud Kaynak Merkezi'nde ayrıntıları verilen bağlantı noktası gereklilikleri doğrultusunda güvenlik duvarı yapılandırmasını kontrol edin.",
         "showBandwidthStats": "Bant Genişliği Durumunu Göster",
         "hideBandwidthStats": "Bant Genişliği Durumunu Gizle",
         "resolution": "Çözünürlük: {value}",

@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "Questa applicazione esegue una serie di test diagnostici per la risoluzione dei problemi al fine di individuare i problemi più comuni di WebRTC. I test sono validi esclusivamente per questo client. Permettono di controllare l'accesso dell'hardware al microfono e alla videocamera, inoltre effettuano connessioni loopback all'infrastruttura PureCloud per verificare l'accesso alla rete da parte del client.",
-        "title": "Diagnostica di PureCloud WebRTC ",
-        "learnMore": "Ulteriori informazioni su PureCloud WebRTC",
+        "description": "Questa applicazione esegue una serie di test diagnostici per la risoluzione dei problemi al fine di individuare i problemi più comuni di WebRTC. I test sono validi esclusivamente per questo client. Permettono di controllare l'accesso dell'hardware al microfono e alla videocamera, inoltre effettuano connessioni loopback all'infrastruttura Genesys Cloud per verificare l'accesso alla rete da parte del client.",
+        "title": "Diagnostica di Genesys Cloud WebRTC",
+        "learnMore": "Ulteriori informazioni su Genesys Cloud WebRTC",
         "privacy": "Informativa sulla privacy",
         "audio": "WebRTC con audio (predefinito)",
         "video": "Con video",
         "screenCaptureNoun": "Acquisizione schermo",
         "headsets": "Integrazione cuffia",
         "captureScreenVerb": "Acquisisci schermo",
-        "screenCaptureDescription": "PureCloud utilizza l'acquisizione schermo per le funzionalità Condivisione schermo e Registrazione schermo. Fare clic sul pulsante Acquisisci schermo per verificare che il proprio browser o applicazione supporti Acquisizione schermo.",
+        "screenCaptureDescription": "Genesys Cloud utilizza l'acquisizione schermo per le funzionalità Condivisione schermo e Registrazione schermo. Fare clic sul pulsante Acquisisci schermo per verificare che il proprio browser o applicazione supporti Acquisizione schermo.",
         "about": "Informazioni su"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "Verifica connettività in corso...",
         "checkingSymmetricNat": "Controllo topologia di rete...",
         "checkConnectivitySuccess": "Nessun problema di connettività",
-        "checkConnectivityFail": "Impossibile raggiungere i servizi multimediali PureCloud (TURN)",
-        "checkConnectivityFailPort": "Impossibile trovare una porta nell'intervallo richiesto (16384-32768). Verificare la configurazione del firewall rispetto ai requisiti delle porte elencati in dettaglio nel PureCloud Resource Center.",
+        "checkConnectivityFail": "Impossibile raggiungere i servizi multimediali Genesys Cloud (TURN)",
+        "checkConnectivityFailPort": "Impossibile trovare una porta nell'intervallo richiesto (16384-32768). Verificare la configurazione del firewall rispetto ai requisiti delle porte elencati in dettaglio nel Genesys Cloud Resource Center.",
         "showBandwidthStats": "Mostra statistiche larghezza di banda",
         "hideBandwidthStats": "Nascondi statistiche larghezza di banda",
         "resolution": "Risoluzione: {value}",

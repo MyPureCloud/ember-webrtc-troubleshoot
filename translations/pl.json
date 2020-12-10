@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "Ta aplikacja przeprowadza serię testów diagnostycznych w celu zidentyfikowania typowych problemów z WebRTC. Testy dotyczą tylko tego klienta. Podczas testów jest sprawdzany dostęp sprzętowy do mikrofonu i kamery, a także połączenia pętli zwrotnej z infrastrukturą PureCloud w celu sprawdzenia dostępu sieciowego klienta.",
-        "title": "Diagnostyka WebRTC PureCloud",
-        "learnMore": "Dowiedz się więcej o PureCloud WebRTC",
+        "description": "Ta aplikacja przeprowadza serię testów diagnostycznych w celu zidentyfikowania typowych problemów z WebRTC. Testy dotyczą tylko tego klienta. Podczas testów jest sprawdzany dostęp sprzętowy do mikrofonu i kamery, a także połączenia pętli zwrotnej z infrastrukturą Genesys Cloud w celu sprawdzenia dostępu sieciowego klienta.",
+        "title": "Diagnostyka WebRTC Genesys Cloud",
+        "learnMore": "Dowiedz się więcej o Genesys Cloud WebRTC",
         "privacy": "Polityka prywatności",
         "audio": "WebRTC z dźwiękiem (domyślnie)",
         "video": "Z wideo",
         "screenCaptureNoun": "Przechwytywanie ekranu",
         "headsets": "Integracja z zestawem słuchawkowym",
         "captureScreenVerb": "Przechwyć ekran",
-        "screenCaptureDescription": "PureCloud stosuje przechwytywanie ekranu w funkcjach Udostępnianie ekranu i Nagrywanie ekranu. Kliknij przycisk Przechwyć ekran, aby sprawdzić, czy Twoja przeglądarka lub aplikacja obsługuje tę funkcję.",
+        "screenCaptureDescription": "Genesys Cloud stosuje przechwytywanie ekranu w funkcjach Udostępnianie ekranu i Nagrywanie ekranu. Kliknij przycisk Przechwyć ekran, aby sprawdzić, czy Twoja przeglądarka lub aplikacja obsługuje tę funkcję.",
         "about": "Informacje"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "Sprawdzanie łączności...",
         "checkingSymmetricNat": "Sprawdzanie topologii sieci ...",
         "checkConnectivitySuccess": "Brak problemów z łącznością",
-        "checkConnectivityFail": "Nie udało się połączyć z usługami multimedialnymi PureCloud (TURN)",
-        "checkConnectivityFailPort": "Nie udało się znaleźć portu w wymaganym zakresie (16384–32768). Sprawdź konfigurację zapory pod kątem wymagań określonych w Centrum zasobów PureCloud.",
+        "checkConnectivityFail": "Nie udało się połączyć z usługami multimedialnymi Genesys Cloud (TURN)",
+        "checkConnectivityFailPort": "Nie udało się znaleźć portu w wymaganym zakresie (16384–32768). Sprawdź konfigurację zapory pod kątem wymagań określonych w Centrum zasobów Genesys Cloud.",
         "showBandwidthStats": "Pokaż statystyki przepustowości",
         "hideBandwidthStats": "Ukryj statystyki przepustowości",
         "resolution": "Rozdzielczość: {value}",
