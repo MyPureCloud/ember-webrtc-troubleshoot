@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "이 애플리케이션은 일련의 진단 문제 해결 테스트를 실행하여 WebRTC의 일반적인 문제를 식별합니다. 테스트는 이 클라이언트에만 적용됩니다. PureCloud 인프라에 대한 루프백 연결은 물론 마이크 및 카메라에 대한 하드웨어 액세스를 확인하여 클라이언트의 네트워크 액세스를 확인합니다.",
-        "title": "PureCloud WebRTC 진단",
-        "learnMore": "PureCloud WebRTC 더 알아보기",
+        "description": "이 애플리케이션은 일련의 진단 문제 해결 테스트를 실행하여 WebRTC의 일반적인 문제를 식별합니다. 테스트는 이 클라이언트에만 적용됩니다. Genesys Cloud 인프라에 대한 루프백 연결은 물론 마이크 및 카메라에 대한 하드웨어 액세스를 확인하여 클라이언트의 네트워크 액세스를 확인합니다.",
+        "title": "Genesys Cloud WebRTC 진단",
+        "learnMore": "Genesys Cloud WebRTC 더 알아보기",
         "privacy": "개인 정보 취급 방침",
         "audio": "오디오가 있는 WebRTC(기본값)",
         "video": "비디오와 함께",
         "screenCaptureNoun": "화면 캡처",
         "headsets": "헤드셋 통합",
         "captureScreenVerb": "캡처 화면",
-        "screenCaptureDescription": "PureCloud는 화면 공유 및 화면 녹화 기능을 위해 화면 캡처를 사용합니다. 화면 캡처 버튼을 클릭하여 브라우저 또는 애플리케이션이 화면 캡처를 지원하는지 확인하십시오.",
+        "screenCaptureDescription": "Genesys Cloud는 화면 공유 및 화면 녹화 기능을 위해 화면 캡처를 사용합니다. 화면 캡처 버튼을 클릭하여 브라우저 또는 애플리케이션이 화면 캡처를 지원하는지 확인하십시오.",
         "about": "정보"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "연결 검사 중...",
         "checkingSymmetricNat": "네트워크 토폴로지 확인 중...",
         "checkConnectivitySuccess": "연결 문제 없음",
-        "checkConnectivityFail": "PureCloud 미디어 서비스(TURN)에 연결 실패했습니다.",
-        "checkConnectivityFailPort": "필요한 범위(16384-32768)의 포트를 찾지 못했습니다. PureCloud Resource Center에 상세 포트 요구 사항에 대한 방화벽 구성을 확인하십시오.",
+        "checkConnectivityFail": "Genesys Cloud 미디어 서비스(TURN)에 연결 실패했습니다.",
+        "checkConnectivityFailPort": "필요한 범위(16384-32768)의 포트를 찾지 못했습니다. Genesys Cloud 리소스 센터에 상세 포트 요구 사항에 대한 방화벽 구성을 확인하십시오.",
         "showBandwidthStats": "대역폭 상태 보기",
         "hideBandwidthStats": "대역폭 상태 숨기기",
         "resolution": "해상도: {value}",

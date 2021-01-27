@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "Den här appen kör en rad diagnostiska felsökningstester för att identifiera vanliga problem med WebRTC. Testerna gäller endast den här klienten. Testerna kontrollerar tillgång till hårdvara som mikrofon och kamera, samt anslutningar till PureClouds infrastruktur för att bekräfta klientens nätverkstillgång.",
-        "title": "PureCloud WebRTC diagnostik",
-        "learnMore": "Läs mer om PureCloud WebRTC",
+        "description": "Den här appen kör en rad diagnostiska felsökningstester för att identifiera vanliga problem med WebRTC. Testerna gäller endast den här klienten. Testerna kontrollerar tillgång till hårdvara som mikrofon och kamera, samt anslutningar till Genesys Cloud infrastruktur för att bekräfta klientens nätverkstillgång.",
+        "title": "Genesys Cloud WebRTC diagnostik",
+        "learnMore": "Läs mer om Genesys Cloud WebRTC",
         "privacy": "Sekretesspolicy",
         "audio": "WebRTC med ljud (standard)",
         "video": "Med video",
         "screenCaptureNoun": "Skärmbild",
         "headsets": "Headset-integrering",
         "captureScreenVerb": "Ta skärmbild",
-        "screenCaptureDescription": "PureCloud använder skärmbilder för funktionerna skärmdelning och skärminspelning. Klicka på knappen Ta skärmbild för att verifiera att din webbläsare eller ditt program stöder skärmbilder.",
+        "screenCaptureDescription": "Genesys Cloud använder skärmbilder för funktionerna skärmdelning och skärminspelning. Klicka på knappen Ta skärmbild för att verifiera att din webbläsare eller ditt program stöder skärmbilder.",
         "about": "Om"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "Kontrollerar anslutningen...",
         "checkingSymmetricNat": "Kontrollerar nätverkets topologi ...",
         "checkConnectivitySuccess": "Inga anslutningsproblem",
-        "checkConnectivityFail": "Det gick inte att nå PureClouds medietjänster (TURN)",
-        "checkConnectivityFailPort": "Det gick inte att hitta en port i den intervall som krävs (16384-32768). Kontrollera brandväggens konfigurering mot portkraven i PureClouds Resource Center.",
+        "checkConnectivityFail": "Det gick inte att nå Genesys Cloud medietjänster (TURN)",
+        "checkConnectivityFailPort": "Det gick inte att hitta en port i den intervall som krävs (16384-32768). Kontrollera brandväggens konfigurering mot portkraven i Genesys Cloud Resource Center.",
         "showBandwidthStats": "Visa bandbreddsstatistik",
         "hideBandwidthStats": "Dölj banbreddsstatistik",
         "resolution": "Upplösning: {value}",

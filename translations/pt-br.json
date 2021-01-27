@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "Este aplicativo executa uma série de testes diagnósticos de soluções de problemas para identificar problemas comuns com o WebRTC. Os testes são aplicáveis somente a este cliente. Eles verificam o acesso de hardware para microfone e câmera, como também realizam conexões loopback à infraestrutura do PureCloud para verificar o acesso de rede do cliente.",
-        "title": "Diagnósticos WebRTC PureCloud",
-        "learnMore": "Saiba mais sobre o WebRTC PureCloud",
+        "description": "Este aplicativo executa uma série de testes diagnósticos de soluções de problemas para identificar problemas comuns com o WebRTC. Os testes são aplicáveis somente a este cliente. Eles verificam o acesso de hardware para microfone e câmera, como também realizam conexões loopback à infraestrutura do Genesys Cloud para verificar o acesso de rede do cliente.",
+        "title": "Diagnósticos WebRTC do Genesys Cloud",
+        "learnMore": "Saiba mais sobre o WebRTC do Genesys Cloud",
         "privacy": "Política de privacidade",
         "audio": "WebRTC com áudio (padrão)",
         "video": "Com vídeo",
         "screenCaptureNoun": "Captura de tela",
         "headsets": "Integração do fone",
         "captureScreenVerb": "Capturar tela",
-        "screenCaptureDescription": "O PureCloud usa captura de tela para os recursos Compartilhamento de tela e Gravação de tela. Clique no botão Capturar tela para verificar se o seu navegador ou aplicativo suporta a Captura de tela.",
+        "screenCaptureDescription": "O Genesys Cloud usa captura de tela para os recursos Compartilhamento de tela e Gravação de tela. Clique no botão Capturar tela para verificar se o seu navegador ou aplicativo suporta a Captura de tela.",
         "about": "Sobre"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "Verificando a conectividade ...",
         "checkingSymmetricNat": "Verificando a topologia da rede...",
         "checkConnectivitySuccess": "Nenhum problema na conectividade",
-        "checkConnectivityFail": "Falha ao acessar os serviços de mídia PureCloud (TURN)",
-        "checkConnectivityFailPort": "Falha ao localizar uma porta no intervalo necessário (16384-32768).  Verifique a configuração de firewall em relação aos requisitos de porta detalhados no Centro de Recursos do PureCloud.",
+        "checkConnectivityFail": "Falha ao acessar os serviços de mídia do Genesys Cloud (TURN)",
+        "checkConnectivityFailPort": "Falha ao localizar uma porta no intervalo necessário (16384-32768).  Verifique a configuração de firewall em relação aos requisitos de porta detalhados no Centro de Recursos do Genesys Cloud.",
         "showBandwidthStats": "Mostrar estatísticas de largura de banda",
         "hideBandwidthStats": "Ocultar estatísticas de largura de banda",
         "resolution": "Resolução: {value}",

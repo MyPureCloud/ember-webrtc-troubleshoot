@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "此應用程式執行一系列診斷故障排除測試，以識別 WebRTC 的一般問題。測試僅適用於此用戶端，其檢查麥克風和攝影機的硬體存取，以及回送連線到 PureCloud 基礎架構，以檢查用戶端的網路存取。",
-        "title": "PureCloud WebRTC 診斷",
-        "learnMore": "深入瞭解 PureCloud WebRTC",
+        "description": "此應用程式執行一系列診斷故障排除測試，以識別 WebRTC 的一般問題。測試僅適用於此用戶端，其檢查麥克風和攝影機的硬體存取，以及回送連線到 Genesys Cloud 基礎架構，以檢查用戶端的網路存取。",
+        "title": "Genesys Cloud WebRTC 診斷",
+        "learnMore": "深入瞭解 Genesys Cloud WebRTC",
         "privacy": "隱私權政策",
         "audio": "具音訊的 WebRTC (預設)",
         "video": "具視訊",
         "screenCaptureNoun": "螢幕擷取",
         "headsets": "耳機整合",
         "captureScreenVerb": "擷取螢幕",
-        "screenCaptureDescription": "PureCloud 對於螢幕共用和螢幕記錄功能會使用螢幕擷取。按下螢幕擷取按鈕以驗證您的瀏覽器或應用程式是否支援螢幕擷取。",
+        "screenCaptureDescription": "Genesys Cloud 對於螢幕共用和螢幕記錄功能會使用螢幕擷取。按下螢幕擷取按鈕以驗證您的瀏覽器或應用程式是否支援螢幕擷取。",
         "about": "關於"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "正在檢查連接...",
         "checkingSymmetricNat": "正在檢查網路拓撲...",
         "checkConnectivitySuccess": "連接正常",
-        "checkConnectivityFail": "無法聯繫 PureCloud 媒體服務 (TURN)",
-        "checkConnectivityFailPort": "在所需的範圍 (16384-32768) 內找不到連接埠，請檢查 PureCloud 資源中心上詳細連接埠需求中的防火牆設定。",
+        "checkConnectivityFail": "無法聯繫 Genesys Cloud 媒體服務 (TURN)",
+        "checkConnectivityFailPort": "在所需的範圍 (16384-32768) 內找不到連接埠，請檢查 Genesys Cloud 資源中心上詳細連接埠需求中的防火牆設定。",
         "showBandwidthStats": "顯示頻寬統計資料",
         "hideBandwidthStats": "隱藏頻寬統計資料",
         "resolution": "解析度：{value}",

@@ -1,15 +1,15 @@
 {
     "dummy": {
-        "description": "このアプリは一連の診断トラブルシューティング テストを実行して WebRTC に共通の問題を特定します。テストはこのクライアントのみに適用されます。マイクとカメラのハードウェア アクセスをチェックし、PureCloud インフラへのループバック接続も行って、クライアントのネットワーク アクセスをチェックします。",
-        "title": "PureCloud WebRTC 診断",
-        "learnMore": "PureCloud WebRTC の詳細を表示",
+        "description": "このアプリは一連の診断トラブルシューティング テストを実行して WebRTC に共通の問題を特定します。テストはこのクライアントのみに適用されます。マイクとカメラのハードウェア アクセスをチェックし、Genesys Cloud インフラへのループバック接続も行い、クライアントのネットワーク アクセスをチェックします。",
+        "title": "Genesys Cloud WebRTC 診断",
+        "learnMore": "Genesys Cloud WebRTC の詳細を表示",
         "privacy": "プライバシーポリシー",
         "audio": "オーディオでの WebRTC (デフォルト)",
         "video": "ビデオで",
         "screenCaptureNoun": "スクリーン キャプチャ",
         "headsets": "ヘッドセット統合",
         "captureScreenVerb": "スクリーンをキャプチャ",
-        "screenCaptureDescription": "PureCloud はスクリーン共有と画面のレコーディング機能にスクリーン キャプチャを使用します。スクリーンをキャプチャするボタンをクリックして、お使いのブラウザやアプリケーションがスクリーン キャプチャをサポートしているかどうか検証してください。",
+        "screenCaptureDescription": "Genesys Cloud はスクリーン共有と画面のレコーディング機能にスクリーン キャプチャを使用します。スクリーンをキャプチャするボタンをクリックして、お使いのブラウザやアプリケーションがスクリーン キャプチャをサポートしているかどうか検証してください。",
         "about": "バージョン情報"
     },
     "webrtcTroubleshoot": {
@@ -48,8 +48,8 @@
         "checkConnectivity": "接続をチェックしています ...",
         "checkingSymmetricNat": "ネットワーク トポロジーをチェックしています...",
         "checkConnectivitySuccess": "接続に問題はありません",
-        "checkConnectivityFail": "PureCloud メディア サービスに到達できませんでした (TURN)",
-        "checkConnectivityFailPort": "要求された範囲 (16384-32768) にポートを見つけられませんでした。ファイヤーウォールのポート要件の設定を確認してください。詳細は PureCloud リソースセンターを参照してください。",
+        "checkConnectivityFail": "Genesys Cloud メディア サービスに到達できませんでした (TURN)",
+        "checkConnectivityFailPort": "要求された範囲 (16384-32768) にポートを見つけられませんでした。ポート要件に対するファイヤーウォールの設定を確認してください。詳細は Genesys Cloud リソースセンターを参照してください。",
         "showBandwidthStats": "帯域幅の統計を表示",
         "hideBandwidthStats": "帯域幅の統計を非表示",
         "resolution": "解像度: {value}",
