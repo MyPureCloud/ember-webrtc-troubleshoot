@@ -91,6 +91,21 @@ nav.sidebar a {
   transition: all 0.3s
 }
 
+.logout-link {
+  display: flex;
+}
+
+.logout-link span {
+  color: #9baab8;
+}
+
+.svg-icon {
+  fill: #9baab8;
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+}
+
 .primary-content {
   margin-left: 210px;
   height: 100%;

@@ -12,6 +12,12 @@
   {{#link-to "screen"}}{{t "dummy.screenCaptureNoun"}}{{/link-to}}
   {{#link-to "headsets"}}{{t "dummy.headsets"}}{{/link-to}}
   <div class="spacer"></div>
+  <a href="#" role="button" onclick={{action "logout"}} class="logout-link">
+      <svg class="svg-icon">
+          <use href="#icon-sign-out"></use>
+      </svg>
+      <span >{{t "dummy.logout"}}</span>
+  </a>
   <a href="https://help.mypurecloud.com/articles/purecloud-privacy-policy/" target="_blank">{{t "dummy.privacy"}}</a>
 </nav>
 
@@ -32,11 +38,11 @@
       <video style="height: 200px; width: 200px;" autoplay id="screen"></video>
     </div>
   {{else if audio}}
-    {{#if realtimeConnected}}
+    {{#if streamingClientConnected}}
       {{flashy-webrtc-troubleshooter iceServers=iceServers video=false}}
     {{/if}}
   {{else if video}}
-    {{#if realtimeConnected}}
+    {{#if streamingClientConnected}}
       {{flashy-webrtc-troubleshooter iceServers=iceServers}}
     {{/if}}
   {{else if headsets}}
