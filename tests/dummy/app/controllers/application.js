@@ -63,7 +63,7 @@ export default Ember.Controller.extend({
       config.domain = 'inindca.com';
     } else {
       const hosts = ['inindca.com', 'inintca.com'].concat(Object.values(platformClient.PureCloudRegionHosts));
-      config.domain = hosts.find(h => h.endsWith(host));
+      config.domain = hosts.find(h => host.endsWith(h));
     }
 
     config.redirectUrl = this._buildRedirectUrl();
