@@ -1,22 +1,13 @@
 import Ember from 'ember';
+import authConfig from '../models/authConfig';
 
 /* loaded in `index.html` */
 const StreamingClient = window.GenesysCloudStreamingClient;
-const platformClient = require('platformClient');
-
-const config = {
-  clientId: 'ebb9bb6c-203b-4652-8cc0-e784d5511adc',
-  domain: '',
-  redirectUrl: ''
-};
 
 export default Ember.Controller.extend({
+  application: Ember.inject.service(),
+
   streamingClient: null,
-  authClient: null,
-
-  config: null,
-  authData: null,
-
   iceServers: null,
   streamingClientConnected: false,
 
@@ -51,32 +42,13 @@ export default Ember.Controller.extend({
 
   init () {
     this._super(...arguments);
-    this.setupConfig();
-    this.fetchIceServers();
     window.addEventListener('message', this.receiveMessage.bind(this), false);
-  },
-
-  setupConfig () {
-    const host = window.location.host;
-
-    if (host.includes('localhost')) {
-      config.domain = 'inindca.com';
-    } else {
-      const hosts = ['inindca.com', 'inintca.com'].concat(Object.values(platformClient.PureCloudRegionHosts));
-      config.domain = hosts.find(h => host.endsWith(h));
-    }
-
-    config.redirectUrl = this._buildRedirectUrl();
-
-    const authClient = this.set('authClient', platformClient.ApiClient.instance);
-
-    authClient.setEnvironment(config.domain);
-    authClient.setPersistSettings(true, 'webrtc_troubleshooter');
+    this.fetchIceServers();
   },
 
   async fetchIceServers () {
-    const authData = await this.authenticate();
-    const streamingClient = await this.setupStreamingClient(authData.accessToken);
+    const accessToken = this.get('application.authData.accessToken');
+    const streamingClient = await this.setupStreamingClient(accessToken);
     const iceServers = await streamingClient.webrtcSessions.refreshIceServers();
 
     console.log('received iceServers', JSON.stringify(iceServers));
@@ -86,38 +58,11 @@ export default Ember.Controller.extend({
     await streamingClient.disconnect();
   },
 
-  authenticate () {
-    const clientId = config.clientId;
-    const redirectUrl = config.redirectUrl;
-    const redirectState = this._buildRedirectState();
-
-    return this.get('authClient').loginImplicitGrant(
-      clientId,
-      redirectUrl,
-      { state: redirectState }
-    )
-      .then(data => {
-        this.set('authData', data);
-
-        /* redirect if state was provided */
-        if (data.state && data.state !== '/') {
-          const newUrl = redirectUrl + data.state;
-
-          if (newUrl !== window.location.href) {
-            window.location.replace(newUrl);
-          }
-        }
-
-        return data;
-      })
-      .catch(console.error);
-  },
-
   async setupStreamingClient (accessToken) {
     const connectionOptions = {
       signalIceConnected: true,
-      host: `wss://streaming.${config.domain}`,
-      apiHost: config.domain,
+      host: `wss://streaming.${authConfig.domain}`,
+      apiHost: authConfig.domain,
       logger: Ember.Logger,
       authToken: accessToken
     };
@@ -134,18 +79,6 @@ export default Ember.Controller.extend({
     await connectedPromise;
 
     return connection;
-  },
-
-  _buildRedirectUrl () {
-    const origin = window.location.origin;
-
-    return window.location.pathname.startsWith('/webrtc-troubleshooter/')
-      ? origin + '/webrtc-troubleshooter/'
-      : origin;
-  },
-
-  _buildRedirectState () {
-    return window.location.href.replace(config.redirectUrl, '');
   },
 
   receiveMessage: function (e) {
@@ -173,7 +106,7 @@ export default Ember.Controller.extend({
         });
     },
     logout () {
-      this.get('authClient').logout(config.redirectUrl);
+      this.get('application').logout();
     }
   }
 });
