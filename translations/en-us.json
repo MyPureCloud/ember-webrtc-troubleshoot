@@ -10,7 +10,8 @@
     "headsets": "Headset Integration",
     "captureScreenVerb": "Capture Screen",
     "screenCaptureDescription": "Genesys Cloud uses screen capture for Screen Share and Screen Recording features. Click the Capture Screen button to verify that your browser or application supports Screen Capture.",
-    "about": "About"
+    "about": "About",
+    "logout": "Logout"
   },
   "webrtcTroubleshoot": {
     "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
