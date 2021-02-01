@@ -1,63 +1,15 @@
 import Ember from 'ember';
-import realtimeEnvironments from '../models/realtimeEnvironments';
+import authConfig from '../models/authConfig';
+
+/* loaded in `index.html` */
+const StreamingClient = window.GenesysCloudStreamingClient;
 
 export default Ember.Controller.extend({
+  application: Ember.inject.service(),
+
+  streamingClient: null,
   iceServers: null,
-
-  init () {
-    this._super(...arguments);
-    if (window.Realtime) {
-      this.connectRealtime();
-    } else {
-      Ember.run.later(this, this.connectRealtime);
-    }
-    window.addEventListener('message', this.receiveMessage.bind(this), false);
-  },
-
-  connectRealtime () {
-    const realtime = this.getRealtimeInstance();
-
-    realtime.on('rtcIceServers', servers => {
-      console.log(JSON.stringify(servers));
-      this.set('iceServers', servers);
-      this.set('realtimeConnected', true);
-    });
-
-    realtime.onConnect(() => {
-
-    });
-
-    realtime.connect();
-    this.set('realtime', realtime);
-  },
-
-  getRealtimeInstance () {
-    const windowHost = window.location.host;
-
-    let host;
-    let thirdPartyOrgId;
-    let webchatDeploymentKey;
-    if (windowHost.indexOf('localhost') > -1) {
-      host = realtimeEnvironments.localhost.host;
-      thirdPartyOrgId = realtimeEnvironments.localhost.thirdPartyOrgId;
-      webchatDeploymentKey = realtimeEnvironments.localhost.webchatDeploymentKey;
-    } else {
-      host = realtimeEnvironments[windowHost].host;
-      thirdPartyOrgId = realtimeEnvironments[windowHost].thirdPartyOrgId;
-      webchatDeploymentKey = realtimeEnvironments[windowHost].webchatDeploymentKey;
-    }
-
-    const realtime = new window.Realtime({
-      host: host,
-      guest: true,
-      orgId: thirdPartyOrgId,
-      jidRouting: true,
-      jidResource: 'webrtc-troubleshoot',
-      webchatDeploymentKey
-    });
-
-    return realtime;
-  },
+  streamingClientConnected: false,
 
   home: Ember.computed('currentPath', function () {
     window.app = this;
@@ -88,6 +40,47 @@ export default Ember.Controller.extend({
     return `https://${window.location.hostname}/headset-troubleshooter`;
   }),
 
+  init () {
+    this._super(...arguments);
+    window.addEventListener('message', this.receiveMessage.bind(this), false);
+    this.fetchIceServers();
+  },
+
+  async fetchIceServers () {
+    const accessToken = this.get('application.authData.accessToken');
+    const streamingClient = await this.setupStreamingClient(accessToken);
+    const iceServers = await streamingClient.webrtcSessions.refreshIceServers();
+
+    console.log('received iceServers', JSON.stringify(iceServers));
+    this.set('iceServers', iceServers);
+    this.set('streamingClientConnected', true);
+
+    await streamingClient.disconnect();
+  },
+
+  async setupStreamingClient (accessToken) {
+    const connectionOptions = {
+      signalIceConnected: true,
+      host: `wss://streaming.${authConfig.domain}`,
+      apiHost: authConfig.domain,
+      logger: Ember.Logger,
+      authToken: accessToken
+    };
+
+    const connection = new StreamingClient(connectionOptions);
+
+    this.set('streamingClient', connection);
+
+    const connectedPromise = new Ember.RSVP.Promise((resolve) => {
+      connection.once('connected', resolve);
+    });
+
+    await connection.connect();
+    await connectedPromise;
+
+    return connection;
+  },
+
   receiveMessage: function (e) {
     if (e.data.direction === 'jabra-headset-extension-from-content-script') {
       this.get('frame').contentWindow.postMessage(e.data, '*');
@@ -111,6 +104,9 @@ export default Ember.Controller.extend({
         .then(stream => {
           document.querySelector('video#screen').srcObject = stream;
         });
+    },
+    logout () {
+      this.get('application').logout();
     }
   }
 });
