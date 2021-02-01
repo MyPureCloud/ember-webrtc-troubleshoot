@@ -51,8 +51,17 @@ export default Ember.Route.extend({
 
     /* if we are already on the tm route */
     if (currentRoute === timemachineRoute) {
-      /* if we have a hash, transition to it */
-      return hash ? this.transitionTo(hash) : null;
+      /* if there is no hash, then we don't need to route to anything */
+      if (!hash) {
+        return null;
+      }
+      try {
+        /* if we have a hash, transition to it */
+        this.transitionTo(hash);
+      } catch (error) {
+        /* if our hash is the accessToken from auth redirect, this will throw – don't redirect */
+        return null;
+      }
     }
 
     /* otherwise, we need to switch to the tm route */
