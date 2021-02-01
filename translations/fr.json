@@ -10,7 +10,8 @@
         "headsets": "Intégration du casque",
         "captureScreenVerb": "Partage d'écran",
         "screenCaptureDescription": "Genesys Cloud utilise la capture d'écran pour les fonctions de partage d'écran et de capture d'écran. Cliquez sur le bouton Capture d'écran pour vérifier que votre navigateur ou votre application prend la capture d'écran en charge.",
-        "about": "À propos de"
+        "about": "À propos de",
+        "logout": "Déconnexion"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Ces tests peuvent prendre 2 minutes au plus.",
