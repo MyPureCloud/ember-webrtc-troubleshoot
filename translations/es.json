@@ -10,7 +10,8 @@
         "headsets": "Integración con auricular con micrófono",
         "captureScreenVerb": "Capturar pantalla",
         "screenCaptureDescription": "Genesys Cloud utiliza las capturas de pantalla para las características de uso compartido de pantalla y de grabación de pantalla. Haga clic en el botón Capturar pantalla para verificar que su navegador o aplicación admita las capturas de pantalla.",
-        "about": "Acerca de"
+        "about": "Acerca de",
+        "logout": "Cerrar sesión"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Estas pruebas pueden tardar hasta 2 minutos.",
