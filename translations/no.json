@@ -10,7 +10,8 @@
         "headsets": "Hodesettintegrasjon",
         "captureScreenVerb": "Ta opptak av skjermen",
         "screenCaptureDescription": "Genesys Cloud bruker skjermopptak til funksjonene Deling av skjerm og Skjermopptak. Klikk på Ta opptak av skjermen for å sjekke om nettleseren eller appen din støtter Skjermopptak.",
-        "about": "Om"
+        "about": "Om",
+        "logout": "Logg av"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Disse testene kan ta opptil 2 minutter.",
