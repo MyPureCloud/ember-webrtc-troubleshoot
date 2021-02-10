@@ -10,7 +10,8 @@
         "headsets": "Integrace náhlavní soupravy",
         "captureScreenVerb": "Pořídit snímek obrazovky",
         "screenCaptureDescription": "Genesys Cloud používá snímky obrazovky u funkcí sdílení obrazovky a nahrávání obrazovky. Kliknutím na tlačítko „Pořídit snímek obrazovky“ ověřte, zda váš prohlížeč nebo aplikace podporují snímky obrazovky.",
-        "about": "O aplikaci"
+        "about": "O aplikaci",
+        "logout": "Odhlásit"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Tyto testy mohou trvat až 2 minuty.",

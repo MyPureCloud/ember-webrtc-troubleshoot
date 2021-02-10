@@ -10,7 +10,8 @@
         "headsets": "ヘッドセット統合",
         "captureScreenVerb": "スクリーンをキャプチャ",
         "screenCaptureDescription": "Genesys Cloud はスクリーン共有と画面のレコーディング機能にスクリーン キャプチャを使用します。スクリーンをキャプチャするボタンをクリックして、お使いのブラウザやアプリケーションがスクリーン キャプチャをサポートしているかどうか検証してください。",
-        "about": "バージョン情報"
+        "about": "バージョン情報",
+        "logout": "ログアウト"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "これらのテストには最長 2 分かかる場合があります。",

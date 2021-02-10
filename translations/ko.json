@@ -10,7 +10,8 @@
         "headsets": "헤드셋 통합",
         "captureScreenVerb": "캡처 화면",
         "screenCaptureDescription": "Genesys Cloud는 화면 공유 및 화면 녹화 기능을 위해 화면 캡처를 사용합니다. 화면 캡처 버튼을 클릭하여 브라우저 또는 애플리케이션이 화면 캡처를 지원하는지 확인하십시오.",
-        "about": "정보"
+        "about": "정보",
+        "logout": "로그아웃"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "이러한 테스트는 최대 2분이 걸릴 수 있습니다.",

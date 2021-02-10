@@ -10,7 +10,8 @@
         "headsets": "Integrazione cuffia",
         "captureScreenVerb": "Acquisisci schermo",
         "screenCaptureDescription": "Genesys Cloud utilizza l'acquisizione schermo per le funzionalità Condivisione schermo e Registrazione schermo. Fare clic sul pulsante Acquisisci schermo per verificare che il proprio browser o applicazione supporti Acquisizione schermo.",
-        "about": "Informazioni su"
+        "about": "Informazioni su",
+        "logout": "Disconnessione"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "La verifica potrebbe richiedere fino a 2 minuti.",

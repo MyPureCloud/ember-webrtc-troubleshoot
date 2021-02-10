@@ -10,7 +10,8 @@
         "headsets": "Kulaklık Entegrasyonu",
         "captureScreenVerb": "Ekranı Yakala",
         "screenCaptureDescription": "Genesys Cloud, Ekran Paylaşımı ve Ekran Kaydı özellikleri için ekran yakalamadan yararlanır. Tarayıcınız veya uygulamanızın Ekran Yakalamayı desteklediğini doğrulamak için Ekranı Yakala düğmesine tıklayın.",
-        "about": "Hakkında"
+        "about": "Hakkında",
+        "logout": "Oturumu kapat"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Bu testler 2 dakika sürebilir.",
