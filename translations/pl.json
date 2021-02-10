@@ -10,7 +10,8 @@
         "headsets": "Integracja z zestawem słuchawkowym",
         "captureScreenVerb": "Przechwyć ekran",
         "screenCaptureDescription": "Genesys Cloud stosuje przechwytywanie ekranu w funkcjach Udostępnianie ekranu i Nagrywanie ekranu. Kliknij przycisk Przechwyć ekran, aby sprawdzić, czy Twoja przeglądarka lub aplikacja obsługuje tę funkcję.",
-        "about": "Informacje"
+        "about": "Informacje",
+        "logout": "Wyloguj się"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Wykonanie testów może zająć do 2 minut.",
