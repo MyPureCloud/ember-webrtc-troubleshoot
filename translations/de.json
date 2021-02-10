@@ -10,7 +10,8 @@
         "headsets": "Headset-Integration",
         "captureScreenVerb": "Bildschirm erfassen",
         "screenCaptureDescription": "Genesys Cloud verwendet die Bildschirmerfassung für die Funktionen Bildschirmübertragung und Bildschirmaufzeichnung. Klicken Sie auf die Schaltfläche Bildschirm erfassen, um zu überpürfen, ob Ihr Browser oder Ihre Anwendung die Bildschirmerfassung unterstützt.",
-        "about": "Info"
+        "about": "Info",
+        "logout": "Abmelden"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Diese Tests können bis zu zwei Minuten dauern.",

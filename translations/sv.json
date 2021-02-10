@@ -10,7 +10,8 @@
         "headsets": "Headset-integrering",
         "captureScreenVerb": "Ta skärmbild",
         "screenCaptureDescription": "Genesys Cloud använder skärmbilder för funktionerna skärmdelning och skärminspelning. Klicka på knappen Ta skärmbild för att verifiera att din webbläsare eller ditt program stöder skärmbilder.",
-        "about": "Om"
+        "about": "Om",
+        "logout": "Logga ut"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Det kan ta upp till 2 minuter att köra dessa tester.",

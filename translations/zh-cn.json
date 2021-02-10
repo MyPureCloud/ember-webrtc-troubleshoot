@@ -10,7 +10,8 @@
         "headsets": "耳机集成",
         "captureScreenVerb": "捕获屏幕",
         "screenCaptureDescription": "Genesys Cloud 在“屏幕共享”和“屏幕记录”功能中使用屏幕捕获。单击“捕获屏幕”按钮以验证您的浏览器或应用程序是否支持屏幕捕获。",
-        "about": "关于"
+        "about": "关于",
+        "logout": "注销"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "这些测试可能需要 2 分钟。",

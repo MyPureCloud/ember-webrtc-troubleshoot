@@ -10,7 +10,8 @@
         "headsets": "Headset-integratie",
         "captureScreenVerb": "Scherm opnemen",
         "screenCaptureDescription": "Genesys Cloud maakt gebruik van schermopnames voor de functies 'Scherm delen' en 'Schermopname'. Klik op de knop 'Scherm opnemen' om te verifiëren of uw browser of app 'Schermopname' ondersteunt.",
-        "about": "Info"
+        "about": "Info",
+        "logout": "Afmelden"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Deze tests kunnen 2 minuten duren.",

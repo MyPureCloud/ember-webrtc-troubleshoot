@@ -10,7 +10,8 @@
         "headsets": "Integração do fone",
         "captureScreenVerb": "Capturar tela",
         "screenCaptureDescription": "O Genesys Cloud usa captura de tela para os recursos Compartilhamento de tela e Gravação de tela. Clique no botão Capturar tela para verificar se o seu navegador ou aplicativo suporta a Captura de tela.",
-        "about": "Sobre"
+        "about": "Sobre",
+        "logout": "Fazer logoff"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Estes testes podem demorar até 2 minutos.",
