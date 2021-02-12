@@ -3,7 +3,7 @@
     <div class="entry-row time">{{t "webrtcTroubleshoot.troubleshootTimeWarning"}}</div>
   {{/if}}
   {{#if audio}}
-    <div class="entry-row">
+    <div class="entry-row mic-permissions">
       <div class="entry-label">
         <i class="fa fa-unlock"></i>
       </div>
@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="entry-row">
+    <div class="entry-row  mic-issues">
       <div class="entry-label">
         <i class="pc-moon pc-microphone"></i>
       </div>
@@ -45,7 +45,7 @@
     </div>
   {{/if}}
   {{#if video}}
-    <div class="entry-row">
+    <div class="entry-row camera-permissions">
       <div class="entry-label">
         <i class="fa fa-unlock"></i>
       </div>
@@ -65,7 +65,7 @@
       </div>
     </div>
 
-    <div class="entry-row">
+    <div class="entry-row camera-issues">
       <div class="entry-label">
         <i class="pc-moon pc-video"></i>
       </div>
@@ -80,7 +80,7 @@
         {{/if}}
       </div>
     </div>
-    <div class="entry-row">
+    <div class="entry-row camera-advanced">
       <div class="entry-label">
         <i class="pc-moon pc-robot-head"></i>
       </div>
@@ -95,7 +95,7 @@
       </div>
     </div>
   {{/if}}
-  <div class="entry-row">
+  <div class="entry-row network-topology">
     <div class="entry-label">
       <i class="pc pc-exchange"></i>
     </div>
@@ -109,7 +109,7 @@
       {{/if}}
     </div>
   </div>
-  <div class="entry-row">
+  <div class="entry-row connectivity">
     <div class="entry-label">
       <i class="pc pc-signal"></i>
     </div>
@@ -125,7 +125,7 @@
       {{/if}}
     </div>
   </div>
-  <div class="entry-row">
+  <div class="entry-row network-throughput">
     <div class="entry-label">
       <i class="pc pc-throughput"></i>
     </div>
@@ -140,7 +140,7 @@
     </div>
   </div>
   {{#if runBandwidthTest}}
-    <div class="entry-row">
+    <div class="entry-row bandwidth">
       <div class="entry-label">
         <i class="pc pc-bandwidth"></i>
       </div>
