@@ -101,7 +101,7 @@ export default Ember.Component.extend({
 
   async checkOldDns (env) {
     try {
-      const oldDns = 'netdiag-awspool.use1.dev-pure.cloud';
+      const oldDns = `netdiag-awspool.${env}`;
       this.set('oldDns', oldDns);
       await this.check(oldDns);
       this.set('oldDnsSuccess', true);
