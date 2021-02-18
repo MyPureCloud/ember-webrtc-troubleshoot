@@ -1,0 +1,65 @@
+<div class="intro">
+  <div class="entry-row time">{{t "networkTroubleshoot.mediaHeader"}}</div>
+</div>
+<div class="options">
+  <div class="entry-row old-dns">
+    <div class="entry-values">
+      {{#if oldDnsChecking}}
+        {{t "networkTroubleshoot.oldDnsChecking"}}
+        <i class="status-icon ion-load-a"></i>
+      {{else if oldDnsSuccess}}
+        {{t "networkTroubleshoot.oldDnsSuccess"}} <i class="status-icon ion-checkmark"></i>
+      {{else}}
+        {{t "networkTroubleshoot.oldDnsFail"}} <i class="status-icon ion-alert-circled"></i>
+      {{/if}}
+      {{#if oldDns}}
+        <div class="info">({{oldDns}})</div>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="entry-row old-ip">
+    <div class="entry-values">
+      {{#if oldIpAddressChecking}}
+        {{t "networkTroubleshoot.oldIpAddressChecking"}} <i class="status-icon ion-load-a"></i>
+      {{else if oldIpAddressSuccess}}
+        {{t "networkTroubleshoot.oldIpAddressSuccess"}} <i class="status-icon ion-checkmark"></i>
+      {{else}}
+        {{t "networkTroubleshoot.oldIpAddressFail"}} <i class="status-icon ion-alert-circled"></i>
+      {{/if}}
+      {{#if oldIpAddress}}
+        <div class="info">({{oldIpAddress}})</div>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="entry-row new-dns">
+    <div class="entry-values">
+      {{#if newDnsChecking}}
+        {{t "networkTroubleshoot.newDnsChecking"}} <i class="status-icon ion-load-a"></i>
+      {{else if newDnsSuccess}}
+        {{t "networkTroubleshoot.newDnsSuccess"}} <i class="status-icon ion-checkmark"></i>
+      {{else}}
+        {{t "networkTroubleshoot.newDnsFail"}} <i class="status-icon ion-alert-circled"></i>
+      {{/if}}
+      {{#if newDns}}
+        <div class="info">({{newDns}})</div>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="entry-row new-ip">
+    <div class="entry-values">
+      {{#if newIpAddressChecking}}
+        {{t "networkTroubleshoot.newIpAddressChecking"}} <i class="status-icon ion-load-a"></i>
+      {{else if newIpAddressSuccess}}
+        {{t "networkTroubleshoot.newIpAddressSuccess"}} <i class="status-icon ion-checkmark"></i>
+      {{else}}
+        {{t "networkTroubleshoot.newIpAddressFail"}} <i class="status-icon ion-alert-circled"></i>
+      {{/if}}
+      {{#if newIpAddress}}
+        <div class="info">({{newIpAddress}})</div>
+      {{/if}}
+    </div>
+  </div>
+</div>

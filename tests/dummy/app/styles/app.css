@@ -125,13 +125,13 @@ iframe {
   margin: auto;
 }
 
-.flashy-webrtc-troubleshooter .options {
+.flashy .options {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.flashy-webrtc-troubleshooter .options > * {
+.flashy .options > * {
   width: 100%;
   padding: 10px;
 
@@ -139,18 +139,18 @@ iframe {
   align-items: start;
 }
 
-.flashy-webrtc-troubleshooter .btn.btn-link {
+.flashy .btn.btn-link {
   background: none;
   text-decoration: underline;
   font-size: 13px;
   border: none;
 }
 
-.flashy-webrtc-troubleshooter textarea {
+.flashy textarea {
   max-width: 500px;
 }
 
-.flashy-webrtc-troubleshooter p a {
+.flashy p a {
   padding-left: 5px;
 }
 
@@ -180,6 +180,15 @@ textarea {
   border-radius: 3px;
   height: 100px;
   font-family: monospace;
+}
+
+.network-troubleshooter.flashy .intro{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.info {
+  color: #AEB9C6;
 }
 
 @keyframes spin {

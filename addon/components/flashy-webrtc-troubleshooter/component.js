@@ -47,7 +47,7 @@ const download = function (filename) {
 
 export default WebrtcTroubleshooterComponent.extend({
   layout,
-  classNames: ['flashy-webrtc-troubleshooter'],
+  classNames: ['flashy', 'flashy-webrtc-troubleshooter'],
   saveSuiteToWindow: true,
 
   init () {

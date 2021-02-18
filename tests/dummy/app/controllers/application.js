@@ -20,6 +20,10 @@ export default Ember.Controller.extend({
     return this.get('currentPath') === 'screen';
   }),
 
+  network: Ember.computed('currentPath', function () {
+    return this.get('currentPath') === 'network';
+  }),
+
   video: Ember.computed('currentPath', function () {
     return this.get('currentPath') === 'video';
   }),
