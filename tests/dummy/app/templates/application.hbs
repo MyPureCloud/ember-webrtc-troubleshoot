@@ -8,6 +8,7 @@
 <nav role="navigation" class="sidebar">
   {{#link-to "index" classNameBindings="index:active" }}{{t "dummy.about"}}{{/link-to}}
   {{#link-to "audio"}}{{t "dummy.audio"}}{{/link-to}}
+  {{#link-to "network"}}{{t "dummy.network"}}{{/link-to}}
   {{#link-to "video"}}{{t "dummy.video"}}{{/link-to}}
   {{#link-to "screen"}}{{t "dummy.screenCaptureNoun"}}{{/link-to}}
   {{#link-to "headsets"}}{{t "dummy.headsets"}}{{/link-to}}
@@ -30,6 +31,8 @@
       <br/>
       <a href="https://help.mypurecloud.com/articles/about-purecloud-webrtc-phones/" target="_blank">{{t "dummy.learnMore"}}</a>
     </div>
+  {{else if network}}
+    {{network-troubleshooter}}
   {{else if screen}}
     {{t "dummy.screenCaptureNoun"}}
     <p>{{t "dummy.screenCaptureDescription"}}</p>

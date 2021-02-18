@@ -10,6 +10,7 @@ Router.map(function () {
   this.route('video');
   this.route('screen');
   this.route('headsets');
+  this.route('network');
 });
 
 export default Router;

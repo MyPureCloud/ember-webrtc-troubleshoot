@@ -5,6 +5,7 @@
     "learnMore": "Learn more about Genesys Cloud WebRTC",
     "privacy": "Privacy Policy",
     "audio": "WebRTC with Audio (Default)",
+    "network": "Network Test",
     "video": "With Video",
     "screenCaptureNoun": "Screen Capture",
     "headsets": "Headset Integration",
@@ -12,6 +13,21 @@
     "screenCaptureDescription": "Genesys Cloud uses screen capture for Screen Share and Screen Recording features. Click the Capture Screen button to verify that your browser or application supports Screen Capture.",
     "about": "About",
     "logout": "Logout"
+  },
+  "networkTroubleshoot": {
+    "mediaHeader": "Network access to media servers",
+    "newDnsChecking": "Trying to reach the new media servers via dns lookup...",
+    "newDnsSuccess": "Able to reach the new media servers via dns",
+    "newDnsFail": "Failed to reach the new media servers via dns",
+    "newIpAddressChecking": "Trying to reach the new media servers via ip address...",
+    "newIpAddressSuccess": "Able to reach the new media servers via ip address",
+    "newIpAddressFail": "Failed to reach the new media servers via ip address",
+    "oldDnsChecking": "Trying to reach the old media servers via dns lookup...",
+    "oldDnsSuccess": "Able to reach the old media servers via dns",
+    "oldDnsFail": "Failed to reach the old media servers via dns",
+    "oldIpAddressChecking": "Trying to reach the old media servers via ip address...",
+    "oldIpAddressSuccess": "Able to reach the old media servers via ip address",
+    "oldIpAddressFail": "Failed to reach the old media servers via ip address"
   },
   "webrtcTroubleshoot": {
     "troubleshootTimeWarning": "These tests may take up to 2 minutes.",
