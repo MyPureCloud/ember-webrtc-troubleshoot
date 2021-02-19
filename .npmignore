@@ -16,3 +16,7 @@
 /ember-cli-build.js
 .gitkeep
 .gitignore
+.npmrc
+Jenkinsfile
+npm-utils
+manifest.json
