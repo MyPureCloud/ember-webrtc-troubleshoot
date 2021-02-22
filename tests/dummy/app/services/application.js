@@ -24,13 +24,13 @@ export default Ember.Service.extend({
     }
 
     const { clientId, redirectUrl } = authConfig;
-    const redirectState = this._buildRedirectState();
+    // const redirectState = this._buildRedirectState();
 
     try {
       const authData = await this.get('authClient').loginImplicitGrant(
         clientId,
-        redirectUrl,
-        { state: redirectState }
+        redirectUrl
+        // { state: redirectState }
       );
       this._setAuthData(authData);
       return authData;
