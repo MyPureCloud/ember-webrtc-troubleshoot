@@ -5,6 +5,7 @@
         "learnMore": "Genesys Cloud WebRTC hakkında daha fazlasını öğrenin",
         "privacy": "Gizlilik İlkesi",
         "audio": "Sesli WebRTC (Varsayılan)",
+        "network": "Ağ Testi",
         "video": "Videolu",
         "screenCaptureNoun": "Ekran Yakalama",
         "headsets": "Kulaklık Entegrasyonu",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud, Ekran Paylaşımı ve Ekran Kaydı özellikleri için ekran yakalamadan yararlanır. Tarayıcınız veya uygulamanızın Ekran Yakalamayı desteklediğini doğrulamak için Ekranı Yakala düğmesine tıklayın.",
         "about": "Hakkında",
         "logout": "Oturumu kapat"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Medya sunucularına ağ erişimi",
+        "newDnsChecking": "DNS araması üzerinden yeni medya sunucularına ulaşılmaya çalışılıyor...",
+        "newDnsSuccess": "DNS üzerinden yeni medya sunucularına ulaşılabiliyor",
+        "newDnsFail": "DNS üzerinden yeni medya sunucularına ulaşılamadı",
+        "newIpAddressChecking": "IP adresi üzerinden yeni medya sunucularına ulaşılmaya çalışılıyor...",
+        "newIpAddressSuccess": "IP adresi üzerinden yeni medya sunucularına ulaşılabiliyor",
+        "newIpAddressFail": "IP adresi üzerinden yeni medya sunucularına ulaşılamadı",
+        "oldDnsChecking": "DNS araması üzerinden eski medya sunucularına ulaşılmaya çalışılıyor...",
+        "oldDnsSuccess": "DNS üzerinden eski medya sunucularına ulaşılabiliyor",
+        "oldDnsFail": "DNS üzerinden eski medya sunucularına ulaşılamadı",
+        "oldIpAddressChecking": "IP adresi üzerinden eski medya sunucularına ulaşılmaya çalışılıyor...",
+        "oldIpAddressSuccess": "IP adresi üzerinden eski medya sunucularına ulaşılabiliyor",
+        "oldIpAddressFail": "IP adresi üzerinden eski medya sunucularına ulaşılamadı"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Bu testler 2 dakika sürebilir.",
