@@ -5,6 +5,7 @@
         "learnMore": "Lær mer om Genesys Cloud WebRTC",
         "privacy": "Retningslinjer for personvern",
         "audio": "WebRTC med lyd (standard)",
+        "network": "Nettverkstest",
         "video": "Med video",
         "screenCaptureNoun": "Skjermopptak",
         "headsets": "Hodesettintegrasjon",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud bruker skjermopptak til funksjonene Deling av skjerm og Skjermopptak. Klikk på Ta opptak av skjermen for å sjekke om nettleseren eller appen din støtter Skjermopptak.",
         "about": "Om",
         "logout": "Logg av"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Nettverkstilgang til medieservere",
+        "newDnsChecking": "Prøver å nå nye medieservere via DNS-oppslag ...",
+        "newDnsSuccess": "Det er mulig å nå nye medieservere via DNS",
+        "newDnsFail": "Kunne ikke nå nye medieservere via DNS",
+        "newIpAddressChecking": "Prøver å nå nye medieservere via IP-adresse ...",
+        "newIpAddressSuccess": "Det er mulig å nå nye medieservere via IP-adresse",
+        "newIpAddressFail": "Kunne ikke nå nye medieservere via IP-adresse",
+        "oldDnsChecking": "Prøver å nå gamle medieservere via DNS-oppslag ...",
+        "oldDnsSuccess": "Det er mulig å nå gamle medieservere via DNS",
+        "oldDnsFail": "Kunne ikke nå gamle medieservere via DNS",
+        "oldIpAddressChecking": "Prøver å nå gamle medieservere via IP-adresse ...",
+        "oldIpAddressSuccess": "Det er mulig å nå gamle medieservere via IP-adresse",
+        "oldIpAddressFail": "Kunne ikke nå gamle medieservere via IP-adresse"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Disse testene kan ta opptil 2 minutter.",

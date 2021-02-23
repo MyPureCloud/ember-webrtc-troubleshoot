@@ -5,6 +5,7 @@
         "learnMore": "En savoir plus sur Genesys Cloud WebRTC",
         "privacy": "Politique de confidentialité",
         "audio": "WebRTC avec audio (par défaut)",
+        "network": "Test réseau",
         "video": "Avec vidéo",
         "screenCaptureNoun": "Capture d'écran",
         "headsets": "Intégration du casque",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud utilise la capture d'écran pour les fonctions de partage d'écran et de capture d'écran. Cliquez sur le bouton Capture d'écran pour vérifier que votre navigateur ou votre application prend la capture d'écran en charge.",
         "about": "À propos de",
         "logout": "Déconnexion"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Accès réseau aux serveurs média",
+        "newDnsChecking": "Tentative d'atteinte des nouveaux serveurs média via la recherche DNS en cours",
+        "newDnsSuccess": "Nouveaux serveurs média bien atteints via DNS",
+        "newDnsFail": "Impossible d'atteindre les nouveaux serveurs média via DNS",
+        "newIpAddressChecking": "Tentative d'atteinte des nouveaux serveurs média via l'adresse IP...",
+        "newIpAddressSuccess": "Nouveaux serveurs média bien atteints via l'adresse IP",
+        "newIpAddressFail": "Impossible d'atteindre les nouveaux serveurs média via l'adresse IP",
+        "oldDnsChecking": "Tentative d'atteinte des anciens serveurs média via la recherche DNS...",
+        "oldDnsSuccess": "Anciens serveurs média bien atteints via DNS",
+        "oldDnsFail": "Impossible d'atteindre les anciens serveurs média via DNS",
+        "oldIpAddressChecking": "Tentative d'atteinte des anciens serveurs média via l'adresse IP...",
+        "oldIpAddressSuccess": "Anciens serveurs média bien atteints via l'adresse IP",
+        "oldIpAddressFail": "Impossible d'atteindre les anciens serveurs média via l'adresse IP"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Ces tests peuvent prendre 2 minutes au plus.",
