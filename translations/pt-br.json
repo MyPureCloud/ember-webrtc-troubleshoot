@@ -5,6 +5,7 @@
         "learnMore": "Saiba mais sobre o WebRTC do Genesys Cloud",
         "privacy": "Política de privacidade",
         "audio": "WebRTC com áudio (padrão)",
+        "network": "Teste de rede",
         "video": "Com vídeo",
         "screenCaptureNoun": "Captura de tela",
         "headsets": "Integração do fone",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "O Genesys Cloud usa captura de tela para os recursos Compartilhamento de tela e Gravação de tela. Clique no botão Capturar tela para verificar se o seu navegador ou aplicativo suporta a Captura de tela.",
         "about": "Sobre",
         "logout": "Fazer logoff"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Acesso de rede aos servidores de mídia",
+        "newDnsChecking": "Tentando conectar aos novos servidores de mídia via consulta de DNS...",
+        "newDnsSuccess": "Conectado aos novos servidores de mídia via DNS",
+        "newDnsFail": "Falha ao conectar aos novos servidores de mídia via DNS",
+        "newIpAddressChecking": "Tentando conectar aos novos servidores de mídia via endereço IP...",
+        "newIpAddressSuccess": "Conectado aos novos servidores de mídia via endereço IP",
+        "newIpAddressFail": "Falha ao conectar aos novos servidores de mídia via endereço IP",
+        "oldDnsChecking": "Tentando conectar aos antigos servidores de mídia via pesquisa de DNS...",
+        "oldDnsSuccess": "Conectado aos antigos servidores de mídia via DNS",
+        "oldDnsFail": "Falha ao conectar aos antigos servidores de mídia via DNS",
+        "oldIpAddressChecking": "Tentando conectar aos antigos servidores de mídia via endereço IP...",
+        "oldIpAddressSuccess": "Conectado aos antigos servidores de mídia via endereço IP",
+        "oldIpAddressFail": "Falha ao conectar aos antigos servidores de mídia via endereço IP"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Estes testes podem demorar até 2 minutos.",

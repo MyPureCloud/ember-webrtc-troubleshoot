@@ -5,6 +5,7 @@
         "learnMore": "Další informace o Genesys Cloud WebRTC",
         "privacy": "Zásady ochrany osobních údajů",
         "audio": "WebRTC se zvukem (výchozí)",
+        "network": "Test sítě",
         "video": "S videem",
         "screenCaptureNoun": "Snímek obrazovky",
         "headsets": "Integrace náhlavní soupravy",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud používá snímky obrazovky u funkcí sdílení obrazovky a nahrávání obrazovky. Kliknutím na tlačítko „Pořídit snímek obrazovky“ ověřte, zda váš prohlížeč nebo aplikace podporují snímky obrazovky.",
         "about": "O aplikaci",
         "logout": "Odhlásit"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Síťový přístup k mediálním serverům",
+        "newDnsChecking": "Probíhá pokus o přístup k novým mediálním serverům přes vyhledávání DNS…",
+        "newDnsSuccess": "Přes DNS je možné přistupovat k novým mediálním serverům",
+        "newDnsFail": "Přes DNS se nepodařilo získat přístup k novým mediálním serverům",
+        "newIpAddressChecking": "Probíhá pokus o přístup k novým mediálním serverům přes IP adresu…",
+        "newIpAddressSuccess": "Přes IP adresu je možné přistupovat k novým mediálním serverům",
+        "newIpAddressFail": "Přes IP adresu se nepodařilo získat přístup k novým mediálním serverům",
+        "oldDnsChecking": "Probíhá pokus o přístup ke starým mediálním serverům přes vyhledávání DNS…",
+        "oldDnsSuccess": "Přes DNS je možné přistupovat ke starým mediálním serverům",
+        "oldDnsFail": "Přes DNS se nepodařilo získat přístup ke starým mediálním serverům",
+        "oldIpAddressChecking": "Probíhá pokus o přístup ke starým mediálním serverům přes IP adresu…",
+        "oldIpAddressSuccess": "Přes IP adresu je možné přistupovat ke starým mediálním serverům",
+        "oldIpAddressFail": "Přes IP adresu se nepodařilo získat přístup ke starým mediálním serverům"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Tyto testy mohou trvat až 2 minuty.",

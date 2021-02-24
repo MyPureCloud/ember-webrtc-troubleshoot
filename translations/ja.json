@@ -5,6 +5,7 @@
         "learnMore": "Genesys Cloud WebRTC の詳細を表示",
         "privacy": "プライバシーポリシー",
         "audio": "オーディオでの WebRTC (デフォルト)",
+        "network": "ネットワーク テスト",
         "video": "ビデオで",
         "screenCaptureNoun": "スクリーン キャプチャ",
         "headsets": "ヘッドセット統合",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud はスクリーン共有と画面のレコーディング機能にスクリーン キャプチャを使用します。スクリーンをキャプチャするボタンをクリックして、お使いのブラウザやアプリケーションがスクリーン キャプチャをサポートしているかどうか検証してください。",
         "about": "バージョン情報",
         "logout": "ログアウト"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "メディア サーバーへのネットワーク アクセス",
+        "newDnsChecking": "DNS ルックアップ経由で新しいメディア  サーバーへのアクセスを試しています...",
+        "newDnsSuccess": "DNS 経由で新しいメディア サーバーにアクセスできます",
+        "newDnsFail": "DNS 経由で新しいメディア サーバーにアクセスできませんでした",
+        "newIpAddressChecking": "IP アドレス経由でメディア サーバーへのアクセスを試しています...",
+        "newIpAddressSuccess": "IP アドレス経由で新しいメディア サーバーにアクセスできます",
+        "newIpAddressFail": "IP アドレス経由で新しいメディア サーバーにアクセスできませんでした",
+        "oldDnsChecking": "DNS ルックアップ経由で古いメディア  サーバーへのアクセスを試しています...",
+        "oldDnsSuccess": "古いメディア サーバーに DNS 経由でアクセスできます",
+        "oldDnsFail": "DNS 経由で古いメディア サーバーにアクセスできませんでした",
+        "oldIpAddressChecking": "IP アドレス経由で古いメディア サーバーへのアクセスを試しています...",
+        "oldIpAddressSuccess": "IP アドレス経由で古いメディア サーバーにアクセスできます",
+        "oldIpAddressFail": "IP アドレス経由で古いメディア サーバーにアクセスできませんでした"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "これらのテストには最長 2 分かかる場合があります。",
