@@ -5,6 +5,7 @@
         "learnMore": "Erfahren Sie mehr über Genesys Cloud-WebRTC",
         "privacy": "Datenschutzrichtlinien",
         "audio": "WebRTC mit Audio (Standard)",
+        "network": "Netzwerktest",
         "video": "Mit Video",
         "screenCaptureNoun": "Bildschirmerfassung",
         "headsets": "Headset-Integration",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud verwendet die Bildschirmerfassung für die Funktionen Bildschirmübertragung und Bildschirmaufzeichnung. Klicken Sie auf die Schaltfläche Bildschirm erfassen, um zu überpürfen, ob Ihr Browser oder Ihre Anwendung die Bildschirmerfassung unterstützt.",
         "about": "Info",
         "logout": "Abmelden"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Netzwerkzugriff auf Medienserver",
+        "newDnsChecking": "Es wird versucht, die neuen Medienserver via DNS-Lookup zu erreichen...",
+        "newDnsSuccess": "Die neuen Medienserver sind über DNS erreichbar.",
+        "newDnsFail": "Die neuen Medienserver sind nicht über DNS erreichbar.",
+        "newIpAddressChecking": "Es wird versucht, die neuen Medienserver über die IP-Adresse zu erreichen...",
+        "newIpAddressSuccess": "Die neuen Medienserver sind über die IP-Adresse erreichbar.",
+        "newIpAddressFail": "Die neuen Medienserver sind nicht über die IP-Adresse erreichbar.",
+        "oldDnsChecking": "Es wird versucht, die alten Medienserver via DNS-Lookup zu erreichen...",
+        "oldDnsSuccess": "Die alten Medienserver sind über DNS erreichbar.",
+        "oldDnsFail": "Die alten Medienserver sind nicht über DNS erreichbar.",
+        "oldIpAddressChecking": "Es wird versucht, die alten Medienserver über die IP-Adresse zu erreichen...",
+        "oldIpAddressSuccess": "Die alten Medienserver sind über die IP-Adresse erreichbar.",
+        "oldIpAddressFail": "Die alten Medienserver sind nicht über die IP-Adresse erreichbar."
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Diese Tests können bis zu zwei Minuten dauern.",

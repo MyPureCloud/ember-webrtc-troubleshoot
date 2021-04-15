@@ -5,6 +5,7 @@
         "learnMore": "Más información de WebRTC para Genesys Cloud",
         "privacy": "Norma de privacidad",
         "audio": "WebRTC con audio (predeterminado)",
+        "network": "Prueba de red",
         "video": "Con vídeo",
         "screenCaptureNoun": "Captura de pantalla",
         "headsets": "Integración con auricular con micrófono",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud utiliza las capturas de pantalla para las características de uso compartido de pantalla y de grabación de pantalla. Haga clic en el botón Capturar pantalla para verificar que su navegador o aplicación admita las capturas de pantalla.",
         "about": "Acerca de",
         "logout": "Cerrar sesión"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Acceso de red a los servidores de medios",
+        "newDnsChecking": "Intentando alcanzar los nuevos servidores de medios a través de la búsqueda dns...",
+        "newDnsSuccess": "Se alcanzaron los nuevos servidores de medios a través de dns",
+        "newDnsFail": "Error al alcanzar los nuevos servidores de medios a través de dns",
+        "newIpAddressChecking": "Intentando alcanzar los nuevos servidores de medios a través de la dirección IP...",
+        "newIpAddressSuccess": "Se alcanzaron los nuevos servidores de medios a través de la dirección IP",
+        "newIpAddressFail": "Error al alcanzar los nuevos servidores de medios a través de la dirección IP",
+        "oldDnsChecking": "Intentando alcanzar los antiguos servidores de medios a través de la búsqueda dns...",
+        "oldDnsSuccess": "Se alcanzaron los antiguos servidores de medios a través de dns",
+        "oldDnsFail": "Error al alcanzar los antiguos servidores de medios a través de dns",
+        "oldIpAddressChecking": "Intentando alcanzar los antiguos servidores de medios a través de la dirección IP...",
+        "oldIpAddressSuccess": "Se alcanzaron los antiguos servidores de medios a través de la dirección IP",
+        "oldIpAddressFail": "Error al alcanzar los antiguos servidores de medios a través de la dirección IP"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Estas pruebas pueden tardar hasta 2 minutos.",

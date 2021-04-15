@@ -5,6 +5,7 @@
         "learnMore": "Meer informatie over Genesys Cloud WebRTC",
         "privacy": "Privacybeleid",
         "audio": "WebRTC met Audio (standaard)",
+        "network": "Netwerktest",
         "video": "Met video",
         "screenCaptureNoun": "Schermopname",
         "headsets": "Headset-integratie",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud maakt gebruik van schermopnames voor de functies 'Scherm delen' en 'Schermopname'. Klik op de knop 'Scherm opnemen' om te verifiëren of uw browser of app 'Schermopname' ondersteunt.",
         "about": "Info",
         "logout": "Afmelden"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Netwerktoegang tot mediaservers",
+        "newDnsChecking": "Poging om de nieuwe mediaservers te bereiken via een DNS-opzoekactie...",
+        "newDnsSuccess": "Kan de nieuwe mediaservers bereiken via de DNS",
+        "newDnsFail": "Kan de nieuwe mediaservers niet bereiken via de DNS",
+        "newIpAddressChecking": "Poging om de nieuwe mediaservers te bereiken via een het IP-adres...",
+        "newIpAddressSuccess": "Kan de nieuwe mediaservers bereiken via het IP-adres",
+        "newIpAddressFail": "Kan de nieuwe mediaservers niet bereiken via het IP-adres",
+        "oldDnsChecking": "Poging om de oude mediaservers te bereiken via een DNS-opzoekactie...",
+        "oldDnsSuccess": "Kan de oude mediaservers bereiken via de DNS",
+        "oldDnsFail": "Kan de oude mediaservers niet bereiken via de DNS",
+        "oldIpAddressChecking": "Poging om de oude mediaservers te bereiken via een het IP-adres...",
+        "oldIpAddressSuccess": "Kan de oude mediaservers bereiken via het IP-adres",
+        "oldIpAddressFail": "Kan de oude mediaservers niet bereiken via het IP-adres"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Deze tests kunnen 2 minuten duren.",
