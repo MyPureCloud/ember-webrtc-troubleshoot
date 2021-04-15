@@ -5,6 +5,7 @@
         "learnMore": "Ulteriori informazioni su Genesys Cloud WebRTC",
         "privacy": "Informativa sulla privacy",
         "audio": "WebRTC con audio (predefinito)",
+        "network": "Test di rete",
         "video": "Con video",
         "screenCaptureNoun": "Acquisizione schermo",
         "headsets": "Integrazione cuffia",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud utilizza l'acquisizione schermo per le funzionalità Condivisione schermo e Registrazione schermo. Fare clic sul pulsante Acquisisci schermo per verificare che il proprio browser o applicazione supporti Acquisizione schermo.",
         "about": "Informazioni su",
         "logout": "Disconnessione"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Accesso di rete ai server multimediali",
+        "newDnsChecking": "Tentativo di raggiungere i nuovi server multimediali tramite ricerca dns in corso...",
+        "newDnsSuccess": "È stato possibile raggiungere i nuovi server multimediali tramite dns",
+        "newDnsFail": "Non è stato possibile raggiungere i nuovi server multimediali tramite dns",
+        "newIpAddressChecking": "Tentativo di raggiungere i nuovi server multimediali tramite indirizzo ip in corso...",
+        "newIpAddressSuccess": "È stato possibile raggiungere i nuovi server multimediali tramite indirizzo ip",
+        "newIpAddressFail": "Non è stato possibile raggiungere i nuovi server multimediali tramite indirizzo ip",
+        "oldDnsChecking": "Tentativo di raggiungere i vecchi server multimediali tramite ricerca dns in corso...",
+        "oldDnsSuccess": "È stato possibile raggiungere i vecchi server multimediali tramite dns",
+        "oldDnsFail": "Non è stato possibile raggiungere i vecchi server multimediali tramite dns",
+        "oldIpAddressChecking": "Tentativo di raggiungere i vecchi server multimediali tramite indirizzo ip in corso...",
+        "oldIpAddressSuccess": "È stato possibile raggiungere i vecchi server multimediali tramite indirizzo ip",
+        "oldIpAddressFail": "Non è stato possibile raggiungere i vecchi server multimediali tramite indirizzo ip"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "La verifica potrebbe richiedere fino a 2 minuti.",

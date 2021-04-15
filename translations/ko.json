@@ -5,6 +5,7 @@
         "learnMore": "Genesys Cloud WebRTC 더 알아보기",
         "privacy": "개인 정보 취급 방침",
         "audio": "오디오가 있는 WebRTC(기본값)",
+        "network": "네트워크 테스트",
         "video": "비디오와 함께",
         "screenCaptureNoun": "화면 캡처",
         "headsets": "헤드셋 통합",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud는 화면 공유 및 화면 녹화 기능을 위해 화면 캡처를 사용합니다. 화면 캡처 버튼을 클릭하여 브라우저 또는 애플리케이션이 화면 캡처를 지원하는지 확인하십시오.",
         "about": "정보",
         "logout": "로그아웃"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "미디어 서버로 네트워크 엑세스",
+        "newDnsChecking": "dns lookup으로 새 미디어 서버에 접근을 시도하는 중...",
+        "newDnsSuccess": "dns로 새 미디어 서버에 접근 가능",
+        "newDnsFail": "dns로 새 미디어 서버에 접근 실패",
+        "newIpAddressChecking": "ip 주소로 새 미디어 서버에 접근을 시도하는 중...",
+        "newIpAddressSuccess": "ip 주소로 새 미디어 서버에 접근 가능",
+        "newIpAddressFail": "ip 주소로 새 미디어 서버에 접근 실패",
+        "oldDnsChecking": "dns lookup으로 구 미디어 서버에 접근을 시도하는 중...",
+        "oldDnsSuccess": "dns로 구 미디어 서버에 접근 가능",
+        "oldDnsFail": "dns로 구 미디어 서버에 접근 실패",
+        "oldIpAddressChecking": "ip 주소로 구 미디어 서버에 접근을 시도하는 중...",
+        "oldIpAddressSuccess": "ip 주소로 구 미디어 서버에 접근 가능",
+        "oldIpAddressFail": "ip 주소로 구 미디어 서버에 접근 실패"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "이러한 테스트는 최대 2분이 걸릴 수 있습니다.",
