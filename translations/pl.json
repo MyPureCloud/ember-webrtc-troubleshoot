@@ -5,6 +5,7 @@
         "learnMore": "Dowiedz się więcej o Genesys Cloud WebRTC",
         "privacy": "Polityka prywatności",
         "audio": "WebRTC z dźwiękiem (domyślnie)",
+        "network": "Test sieci",
         "video": "Z wideo",
         "screenCaptureNoun": "Przechwytywanie ekranu",
         "headsets": "Integracja z zestawem słuchawkowym",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud stosuje przechwytywanie ekranu w funkcjach Udostępnianie ekranu i Nagrywanie ekranu. Kliknij przycisk Przechwyć ekran, aby sprawdzić, czy Twoja przeglądarka lub aplikacja obsługuje tę funkcję.",
         "about": "Informacje",
         "logout": "Wyloguj się"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "Dostęp sieciowy do serwerów mediów",
+        "newDnsChecking": "Trwa próba połączenia z nowymi serwerami mediów przez wyszukiwanie DNS...",
+        "newDnsSuccess": "Pomyślnie nawiązano połączenie z nowymi serwerami mediów przez DNS",
+        "newDnsFail": "Błąd połączenia z nowymi serwerami mediów przez DNS",
+        "newIpAddressChecking": "Trwa próba połączenia z nowymi serwerami mediów przez adres IP...",
+        "newIpAddressSuccess": "Pomyślnie nawiązano połączenie z nowymi serwerami mediów przez adres IP",
+        "newIpAddressFail": "Błąd połączenia z nowymi serwerami mediów przez adres IP",
+        "oldDnsChecking": "Trwa próba połączenia ze starymi serwerami mediów przez wyszukiwanie DNS...",
+        "oldDnsSuccess": "Pomyślnie nawiązano połączenie ze starymi serwerami mediów przez DNS",
+        "oldDnsFail": "Błąd połączenia ze starymi serwerami mediów przez DNS",
+        "oldIpAddressChecking": "Trwa próba połączenia ze starymi serwerami mediów przez adres IP...",
+        "oldIpAddressSuccess": "Pomyślnie nawiązano połączenie ze starymi serwerami mediów przez adres IP",
+        "oldIpAddressFail": "Błąd połączenia ze starymi serwerami mediów przez adres IP"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "Wykonanie testów może zająć do 2 minut.",

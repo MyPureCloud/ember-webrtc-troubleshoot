@@ -5,6 +5,7 @@
         "learnMore": "深入瞭解 Genesys Cloud WebRTC",
         "privacy": "隱私權政策",
         "audio": "具音訊的 WebRTC (預設)",
+        "network": "網路測試",
         "video": "具視訊",
         "screenCaptureNoun": "螢幕擷取",
         "headsets": "耳機整合",
@@ -12,6 +13,21 @@
         "screenCaptureDescription": "Genesys Cloud 對於螢幕共用和螢幕記錄功能會使用螢幕擷取。按下螢幕擷取按鈕以驗證您的瀏覽器或應用程式是否支援螢幕擷取。",
         "about": "關於",
         "logout": "登出"
+    },
+    "networkTroubleshoot": {
+        "mediaHeader": "透過網路存取媒體伺服器",
+        "newDnsChecking": "正在嘗試經由 DNS 查詢與新媒體伺服器通訊...",
+        "newDnsSuccess": "能經由 DNS 與新媒體伺服器通訊",
+        "newDnsFail": "無法經由 DNS 與新媒體伺服器通訊",
+        "newIpAddressChecking": "正在嘗試經由 IP 位址與新媒體伺服器通訊...",
+        "newIpAddressSuccess": "能經由 IP 位址與新媒體伺服器通訊",
+        "newIpAddressFail": "無法經由 IP 位址與新媒體伺服器通訊",
+        "oldDnsChecking": "正在嘗試經由 DNS 查詢與舊媒體伺服器通訊...",
+        "oldDnsSuccess": "能經由 DNS 與舊媒體伺服器通訊",
+        "oldDnsFail": "無法經由 DNS 與舊媒體伺服器通訊",
+        "oldIpAddressChecking": "正在嘗試經由 IP 位址與舊媒體伺服器通訊...",
+        "oldIpAddressSuccess": "能經由 IP 位址與舊媒體伺服器通訊",
+        "oldIpAddressFail": "無法經由 IP 位址與舊媒體伺服器通訊"
     },
     "webrtcTroubleshoot": {
         "troubleshootTimeWarning": "這些測試可能需要 2 分鐘。",
