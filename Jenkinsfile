@@ -25,7 +25,7 @@ webappPipeline {
 
     testJob = 'valve-webrtc-troubleshoot-tests'
     buildType = getBuildType
-    nodeVersion = '12.13'
+    nodeVersion = '12.x'
 
     snykConfig = {
       return [
