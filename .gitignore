@@ -24,3 +24,4 @@ npm-debug.log
 testem.log
 .idea
 .nyc_output*
+.vscode
